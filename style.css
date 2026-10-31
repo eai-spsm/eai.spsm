@@ -18,6 +18,7 @@ html{scroll-behavior:smooth}
   ::-webkit-scrollbar-thumb{background:#d4d1cb;border-radius:999px;border:2px solid transparent;background-clip:content-box}
   .menu::-webkit-scrollbar-thumb{background:#444;background-clip:content-box}
 }
+a,button,summary,[role=button]{-webkit-tap-highlight-color:transparent}
 body{font:14px/1.65 var(--font);color:var(--ink);background:var(--paper);padding-top:var(--nav-h);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 html[lang=th] body{line-height:1.8}
 a{color:inherit;text-decoration:none}
