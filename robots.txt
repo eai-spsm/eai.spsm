@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eai-gamma.vercel.app/sitemap.xml
+Sitemap: https://eaispsm.vercel.app/sitemap.xml

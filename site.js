@@ -112,7 +112,7 @@
     bu.querySelectorAll('[data-k]').forEach(function(e){
       e.onmouseenter=function(){bu.classList.add('hov');bu.querySelectorAll('[data-k="'+e.dataset.k+'"]').forEach(function(x){x.classList.add('hl')})};
       e.onmouseleave=function(){bu.classList.remove('hov');bu.querySelectorAll('.hl').forEach(function(x){x.classList.remove('hl')})};
-      e.onclick=function(){var k=e.dataset.k.toLowerCase(),b=document.getElementById('rsearch');if(k==='others'||k==='none')return;if(!b){location.href='alumni.html?q='+encodeURIComponent(k);return}b.value=k;b.oninput();document.getElementById('roster').scrollIntoView({behavior:'smooth'})};
+      e.onclick=function(){var k=e.dataset.k.toLowerCase(),b=document.getElementById('rsearch');if(k==='others'||k==='none')return;if(!b){location.href='/alumni?q='+encodeURIComponent(k);return}b.value=k;b.oninput();document.getElementById('roster').scrollIntoView({behavior:'smooth'})};
     });
     var calm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
     bu.querySelectorAll('.sum b').forEach(function(b){
