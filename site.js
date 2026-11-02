@@ -6,6 +6,7 @@
     var m=h.style.getPropertyValue(window.matchMedia('(max-width:600px)').matches&&h.style.getPropertyValue('--bgs')?'--bgs':'--bg').match(/url\(['"]?([^'")]+)/);
     if(!m){h.classList.add('ld');return}
     var i=new Image();i.onload=function(){h.classList.add('ld')};i.src=m[1];
+    if(i.complete&&i.naturalWidth)h.classList.add('ld'); // already cached (preloaded): show it in the first frame, no black flash
   });
   // phone menu footer: two icon links (photo drive, Linktree) and the social icons (injected once so every page shares it)
   var mx=document.getElementById('menu');
