@@ -850,3 +850,5 @@ html.hero-mid a.dc:hover h3{color:var(--red)}
 .row.work .tn em{font-style:normal;color:var(--w5);margin-left:.6rem}
 .row.work .tn em::before{content:"· ";margin-right:.1rem}
 @media(max-width:600px){.hero-c.ph{background:linear-gradient(rgba(0,0,0,var(--ov,.78)),rgba(0,0,0,var(--ov,.78))),var(--bgs,var(--bg)) center var(--py,50%)/cover no-repeat var(--hc)}}
+.wide #photos .dgrid{grid-template-columns:repeat(2,minmax(0,420px))}
+@media(max-width:700px){.wide #photos .dgrid{grid-template-columns:1fr}}
