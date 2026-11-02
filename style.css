@@ -310,6 +310,11 @@ a.dc:hover{background:var(--w1)}
 .dc p{display:block;font-size:13px;color:var(--w5);margin-top:auto;padding-top:.3rem;overflow-wrap:anywhere}
 .dc p .ic{width:11px;height:11px;display:inline-block;margin-left:.35rem;vertical-align:-1px}
 .dc.soon{opacity:.6}
+/* skeleton: content hidden, card shimmers until site.js drops html.sk */
+.sk .dc{pointer-events:none;background:linear-gradient(100deg,var(--w1) 30%,var(--paper) 50%,var(--w1) 70%) 0 0/200% 100%;animation:sk 1.1s linear infinite}
+.sk .dc>*{visibility:hidden}
+@keyframes sk{to{background-position:-200% 0}}
+@media(prefers-reduced-motion:reduce){.sk .dc{animation:none}}
 .gh{font-size:13px;color:var(--w5);margin-top:1.6rem}
 .gh a{display:inline-flex;align-items:center;gap:.3rem;color:var(--ink);transition:var(--tr)}
 .gh a:hover{color:var(--red)}

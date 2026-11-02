@@ -1,6 +1,12 @@
 // ponytail: swaps innerHTML between data-th and the original English. Fine for a few static pages; move to one shared dictionary file once pages share strings.
 (function(){
   document.documentElement.classList.add('js');
+  // skeleton cards: shimmer placeholders until the page (card icons) has loaded, capped at 1.2s so a slow image never holds them
+  if(document.querySelector('.dc')){
+    var de=document.documentElement,sk=function(){de.classList.remove('sk')};
+    de.classList.add('sk');setTimeout(sk,1200);
+    if(document.readyState==='complete')sk();else addEventListener('load',sk);
+  }
   // photo hero: starts pitch black, fades the photo in once it has loaded (stays black if it fails)
   document.querySelectorAll('.hero-c.ph').forEach(function(h){
     var m=h.style.getPropertyValue(window.matchMedia('(max-width:600px)').matches&&h.style.getPropertyValue('--bgs')?'--bgs':'--bg').match(/url\(['"]?([^'")]+)/);
