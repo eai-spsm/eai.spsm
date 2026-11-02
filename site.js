@@ -73,6 +73,9 @@
     try{localStorage.setItem('eai-lang',l)}catch(e){}
   }
   document.getElementById('lang').onclick=function(){set(document.documentElement.lang==='th'?'en':'th')};
+  // restore the saved language right away (before anything later can throw) and reveal the page
+  try{if(localStorage.getItem('eai-lang')==='th')set('th')}catch(e){}
+  document.documentElement.classList.remove('th-wait');
   var nav=document.querySelector('.nav');
   function openMenu(o){menu.classList.toggle('open',o);nav.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);burger.firstChild.src='assets/bi/'+(o?'plus-lg':'list-ul')+'.svg';burger.firstChild.style.transform=o?'rotate(45deg)':'';document.body.style.overflow=o?'hidden':''}
   burger.onclick=function(){openMenu(!menu.classList.contains('open'))};
@@ -136,5 +139,4 @@
     el.d.textContent=Math.floor(s/86400);el.h.textContent=p(Math.floor(s%86400/3600));el.m.textContent=p(Math.floor(s%3600/60));el.s.textContent=p(s%60);
   }
   if(el.d){tick();setInterval(tick,1000)}
-  try{if(localStorage.getItem('eai-lang')==='th')set('th')}catch(e){}
 })();
