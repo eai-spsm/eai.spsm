@@ -1,6 +1,12 @@
 // ponytail: swaps innerHTML between data-th and the original English. Fine for a few static pages; move to one shared dictionary file once pages share strings.
 (function(){
   document.documentElement.classList.add('js');
+  // photo hero: starts pitch black, fades the photo in once it has loaded (stays black if it fails)
+  document.querySelectorAll('.hero-c.ph').forEach(function(h){
+    var m=h.style.getPropertyValue(window.matchMedia('(max-width:600px)').matches&&h.style.getPropertyValue('--bgs')?'--bgs':'--bg').match(/url\(['"]?([^'")]+)/);
+    if(!m){h.classList.add('ld');return}
+    var i=new Image();i.onload=function(){h.classList.add('ld')};i.src=m[1];
+  });
   // phone menu footer: two icon links (photo drive, Linktree) and the social icons (injected once so every page shares it)
   var mx=document.getElementById('menu');
   if(mx){
