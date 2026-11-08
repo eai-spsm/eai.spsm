@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EAI Open House Poster</title>
+<style>
+/* IG portrait 3:4 = 1080x1440. Navy field, hollow stepped cream card, coral accent. One font, one weight, no caps. */
+@font-face{font-family:"line_seed_sans_th";src:url(../assets/fonts/lineseedsansth_rg.woff2) format("woff2")}
+:root{--navy:#292d7a;--coral:#f5423d;--cream:#fbf8f1;--ink:#1a1a1a;--w5:#8a8782;--w7:#4a4842}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1440px;overflow:hidden}
+body{position:relative;font:20px/1.5 "line_seed_sans_th",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;
+  background-color:var(--navy);background-image:radial-gradient(rgba(255,255,255,.16) 2.5px,transparent 3px);background-size:36px 36px;background-position:18px 18px;
+  display:flex;align-items:center;justify-content:center}
+.px{position:absolute;width:var(--z);height:var(--z);background:var(--c)}
+b{font-weight:700}
+.card{flex:none;width:960px;height:1320px;background:var(--cream);padding:72px 0;display:flex;flex-direction:column;align-items:center;text-align:center;clip-path:polygon(0px 72px,24px 72px,24px 48px,48px 48px,48px 24px,72px 24px,72px 0px,300px 0px,300px 24px,372px 24px,372px 0px,612px 0px,612px 24px,708px 24px,708px 0px,888px 0px,888px 24px,912px 24px,912px 48px,936px 48px,936px 72px,960px 72px,960px 340px,936px 340px,936px 412px,960px 412px,960px 900px,936px 900px,936px 996px,960px 996px,960px 1248px,936px 1248px,936px 1272px,912px 1272px,912px 1296px,888px 1296px,888px 1320px,660px 1320px,660px 1296px,588px 1296px,588px 1320px,348px 1320px,348px 1296px,276px 1296px,276px 1320px,72px 1320px,72px 1296px,48px 1296px,48px 1272px,24px 1272px,24px 1248px,0px 1248px,0px 960px,24px 960px,24px 888px,0px 888px,0px 300px,24px 300px,24px 228px,0px 228px)}
+.in{width:700px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1}
+.brand{font-size:18px;color:var(--w7)}
+h1{margin-top:64px;font-weight:400;line-height:1.05}
+h1 b{display:block;color:var(--coral);font-size:84px;letter-spacing:-.01em}
+.sub{margin-top:26px;font-size:16px;color:var(--w7);max-width:480px;text-wrap:balance}
+.date{margin-top:22px;font-size:17px;color:var(--navy)}
+.acts{margin-top:64px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:0 44px;text-align:left}
+.act{display:flex;gap:16px;align-items:center;padding:16px 2px;border-top:1px solid #e3dfd4}
+.act .ico{flex:none;width:56px;height:56px;border-radius:8px;display:grid;place-items:center;background:#e8e9f5}
+.act:nth-child(4n+2) .ico,.act:nth-child(4n+3) .ico{background:#fde3e2}
+.act img{width:32px;height:32px;opacity:.9}
+.act b{display:block;font-weight:400;font-size:18px;line-height:1.25}
+.act small{display:block;margin-top:2px;font-size:13px;line-height:1.4;color:var(--w5)}
+.qr{margin-top:64px;width:264px;height:264px;padding:16px;background:#fff;border:2px solid var(--ink);border-radius:10px;box-shadow:3px 3px 0 var(--navy)}
+.qr svg{display:block;width:100%;height:100%}
+.cap{margin-top:24px;font-size:16px;color:var(--w7)}
+.cap small{display:block;font-size:13px;color:var(--w5)}
+.foot{margin-top:72px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;font-size:15px;color:var(--navy)}
+.foot span{display:flex;align-items:center;gap:8px}
+.foot img{width:24px;height:24px;opacity:.85}
+/* bold added where text was regular (font has no bold file, so browser faux bold) */
+.brand,.date,.act b,.cap,.foot{font-weight:700}
+.cap small,.act small{font-weight:400}
+</style>
+</head>
+<body>
+  <i class="px" style="--z:30px;left:14px;top:20px;--c:var(--coral)"></i><i class="px" style="--z:20px;left:44px;top:34px;--c:#4a4fb5"></i><i class="px" style="--z:26px;left:1000px;top:14px;--c:#4a4fb5"></i><i class="px" style="--z:16px;left:1034px;top:40px;--c:var(--coral)"></i><i class="px" style="--z:22px;left:18px;top:640px;--c:var(--coral)"></i><i class="px" style="--z:16px;left:1042px;top:700px;--c:#4a4fb5"></i><i class="px" style="--z:24px;left:26px;top:1390px;--c:#4a4fb5"></i><i class="px" style="--z:14px;left:60px;top:1410px;--c:var(--coral)"></i><i class="px" style="--z:28px;left:1010px;top:1392px;--c:var(--coral)"></i><i class="px" style="--z:16px;left:980px;top:1414px;--c:#4a4fb5"></i>
+  <div class="card">
+    <div class="in">
+      <div class="brand">AI Major | Satit Prasarnmit</div>
+      <h1><b>Open House</b></h1>
+      <p class="sub">Live demos and hands-on booths from the AI&nbsp;Engineering major at Satit Prasarnmit (Secondary). Students and families welcome.</p>
+      <div class="date">24 January 2027</div>
+      <div class="acts"><div class="act"><div class="ico"><img src="../assets/ph/chats.svg" alt=""></div><div><b>Talk to seniors</b><small>Ask students what the major is like</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/compass.svg" alt=""></div><div><b>Explore our work</b><small>See projects built by our students</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/hand-pointing.svg" alt=""></div><div><b>Play our activities</b><small>Try hands-on booths and demos</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/users-three.svg" alt=""></div><div><b>Know the atmosphere</b><small>Feel the classroom and community</small></div></div></div>
+      <div class="qr" role="img" aria-label="QR code for the EAI LINE Openchat"><svg viewBox="0 0 25 25" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" class="segno"><path class="qrline" stroke="#1a1a1a" d="M0 0.5h7m2 0h1m1 0h2m1 0h1m3 0h7m-25 1h1m5 0h1m1 0h2m4 0h2m2 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m4 0h1m2 0h3m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m3 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h2m2 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m2 0h1m3 0h1m1 0h2m1 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-15 1h1m1 0h3m-15 1h1m1 0h1m1 0h1m1 0h1m4 0h2m7 0h1m2 0h1m-20 1h2m1 0h1m1 0h1m3 0h1m3 0h2m5 0h1m-25 1h1m2 0h1m1 0h3m3 0h4m7 0h3m-24 1h1m1 0h2m3 0h1m2 0h1m1 0h2m1 0h1m2 0h1m3 0h1m-24 1h2m1 0h4m1 0h3m1 0h2m1 0h4m2 0h1m1 0h2m-24 1h4m2 0h6m1 0h1m3 0h1m2 0h1m2 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h1m2 0h3m2 0h3m-24 1h1m7 0h2m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m-24 1h1m2 0h2m1 0h2m1 0h1m1 0h1m3 0h7m-14 1h4m1 0h2m1 0h1m3 0h2m1 0h2m-25 1h7m3 0h1m2 0h1m1 0h2m1 0h1m1 0h2m1 0h2m-25 1h1m5 0h1m2 0h1m1 0h1m1 0h1m2 0h1m3 0h2m1 0h2m-25 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h6m1 0h2m-25 1h1m1 0h3m1 0h1m4 0h3m1 0h1m1 0h1m1 0h4m-23 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m4 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m2 0h2m1 0h2m1 0h1m1 0h2m1 0h1m-24 1h7m1 0h1m2 0h2m1 0h3m2 0h1m3 0h2"/></svg></div>
+      <p class="cap">Scan to join the LINE Openchat<small>for updates and questions</small></p>
+      <div class="foot"><span><img src="../assets/ph/instagram-logo.svg" alt="">@e.ai_official</span><span><img src="../assets/ph/tiktok-logo.svg" alt="">@e.ai_official</span><span><img src="../assets/ph/globe.svg" alt="">eaispsm.vercel.app</span></div>
+    </div>
+  </div>
+  <i class="px" style="--z:24px;left:60px;top:60px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:84px;top:60px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:60px;top:84px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:996px;top:60px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:972px;top:60px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:996px;top:84px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:60px;top:1356px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:84px;top:1356px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:60px;top:1332px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:996px;top:1356px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:972px;top:1356px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:996px;top:1332px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:396px;top:60px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:720px;top:60px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:996px;top:432px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:996px;top:1000px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:672px;top:1356px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:360px;top:1356px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:60px;top:324px;--c:var(--cream)"></i><i class="px" style="--z:24px;left:60px;top:984px;--c:var(--cream)"></i>
+</body>
+</html>

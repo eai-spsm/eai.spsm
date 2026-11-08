@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="โมเมนตัมและแรงดล | EAI">Momentum &amp; Impulse · Physics for Engineering | EAI</title>
+<meta name="description" content="Momentum as mass times velocity, impulse as the change in momentum, conservation of momentum, and what separates elastic from inelastic collisions.">
+<link rel="canonical" href="https://eaispsm.vercel.app/phy-momentum">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Momentum &amp; Impulse · Physics for Engineering | EAI">
+<meta property="og:description" content="Momentum as mass times velocity, impulse as the change in momentum, conservation of momentum, and what separates elastic from inelastic collisions.">
+<meta property="og:url" content="https://eaispsm.vercel.app/phy-momentum">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="โมเมนตัมและแรงดล">Momentum &amp; Impulse</h1><p class="sub">Physics for Engineering · M.4 · <span data-th="บทที่">Chapter</span> 7 / 7</p><p class="lead">Momentum as mass times velocity, impulse as the change in momentum, conservation of momentum, and what separates elastic from inelastic collisions.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#momentum">Linear momentum</a></li><li><a href="#impulse">Impulse</a></li><li><a href="#cons">Conservation of momentum</a></li><li><a href="#types">Types of collisions</a></li><li><a href="#worked">Worked examples</a></li></ol></nav>
+<h2 id="momentum">Linear momentum</h2>
+<p><strong>Momentum</strong> is mass times velocity: <em>p = mv</em>. It is a vector, pointing the way the velocity points. The unit is kg·m/s, which equals N·s. Heavier or faster objects carry more momentum, and mass and speed count equally.</p>
+<div class="table-wrap"><table><thead><tr><th>Object</th><th>Mass</th><th>Speed</th><th>Momentum</th></tr></thead><tbody><tr><td>Loaded truck</td><td>5000 kg</td><td>20 m/s</td><td>100 000 kg·m/s</td></tr><tr><td>Tennis ball</td><td>0.06 kg</td><td>60 m/s</td><td>3.6 kg·m/s</td></tr><tr><td>Bullet</td><td>0.01 kg</td><td>400 m/s</td><td>4 kg·m/s</td></tr></tbody></table></div>
+<p>Newton's second law is really <strong>ΣF = Δp/Δt</strong>: net force is the rate of change of momentum. This is more general than F = ma because it still works when mass changes, as for a rocket burning fuel. F = ma is the special case of constant mass.</p>
+
+<h2 id="impulse">Impulse</h2>
+<p><strong>Impulse</strong> is force times the time it acts: <em>J = FΔt</em>. The impulse–momentum theorem says it equals the change in momentum: <strong>J = Δp = m(v − u)</strong>. A big force for a short time and a small force for a long time can give the same change in momentum.</p>
+<div class="table-wrap"><table><thead><tr><th>Concept</th><th>Formula</th><th>Unit</th></tr></thead><tbody><tr><td>Impulse</td><td>J = FΔt</td><td>N·s = kg·m/s</td></tr><tr><td>Impulse–momentum theorem</td><td>J = Δp = mv − mu</td><td>—</td></tr><tr><td>Average force</td><td>F̄ = Δp/Δt</td><td>N</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-impulse" data-w="impulse"><figcaption><b>Fig. 1</b>Fix the change in momentum and vary the contact time: the rectangle's area (the impulse) never changes, only its height (the force).</figcaption></figure>
+<h3>Why it matters</h3>
+<p><strong>Airbags</strong> stretch the stopping time, cutting the peak force for the same Δp. A <strong>cricket follow-through</strong> lengthens contact with the ball, adding impulse and speed. <strong>Catching</strong> a ball with hands pulled back lengthens Δt and softens the blow. Double Δt in <a class="rf" href="#f-impulse">Fig. 1</a> and the average force halves.</p>
+
+<h2 id="cons">Conservation of momentum</h2>
+<p>In an <strong>isolated system</strong> (no net external force) total momentum is conserved: momentum before a collision equals momentum after.</p>
+<div class="fm">m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂<small>u = before, v = after, signs show direction</small></div>
+<h3>Where it comes from</h3>
+<p>Newton's third law gives F₁₂ = −F₂₁ for the same time Δt, so m₁Δv₁ = −m₂Δv₂, i.e. m₁(v₁ − u₁) = −m₂(v₂ − u₂), which rearranges to the equation above.</p>
+<div class="table-wrap"><table><thead><tr><th>Scenario</th><th>Equation</th></tr></thead><tbody><tr><td>General collision</td><td>m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</td></tr><tr><td>Object 2 at rest (u₂ = 0)</td><td>m₁u₁ = m₁v₁ + m₂v₂</td></tr><tr><td>Perfectly inelastic (stick)</td><td>m₁u₁ + m₂u₂ = (m₁ + m₂)v</td></tr><tr><td>Explosion (starts at rest)</td><td>0 = m₁v₁ + m₂v₂</td></tr></tbody></table></div>
+
+<h2 id="types">Types of collisions</h2>
+<p>Momentum is conserved in every isolated collision. Kinetic energy may or may not be. That is what sorts collisions into types.</p>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Momentum kept?</th><th>KE kept?</th><th>Example</th></tr></thead><tbody>
+<tr><td>Elastic</td><td>yes</td><td>yes</td><td>billiard balls</td></tr>
+<tr><td>Inelastic</td><td>yes</td><td>no</td><td>car crash, clay hitting a wall</td></tr>
+<tr><td>Perfectly inelastic</td><td>yes</td><td>no (most KE lost)</td><td>objects stick together</td></tr></tbody></table></div>
+<p>In <a class="rf" href="#f-collide">Fig. 2</a> the slider <em>e</em> runs from 0 (stick together) to 1 (elastic); in between is an ordinary inelastic collision. The KE-lost box shows what turned into heat, sound and deformation.</p>
+<figure class="fg wd" id="f-collide" data-w="collide"><figcaption><b>Fig. 2</b>Two masses colliding in one dimension: velocities before and after, with bars for momentum and kinetic energy.</figcaption></figure>
+<h3>Elastic collision, object 2 at rest</h3>
+<div class="fm">v₁ = (m₁ − m₂)/(m₁ + m₂) × u₁ &nbsp;&nbsp; v₂ = 2m₁/(m₁ + m₂) × u₁</div>
+<div class="table-wrap"><table><thead><tr><th>Masses</th><th>Result</th></tr></thead><tbody>
+<tr><td>m₁ = m₂</td><td>v₁ = 0, v₂ = u₁: full transfer of momentum and KE</td></tr>
+<tr><td>m₁ ≫ m₂</td><td>v₁ ≈ u₁, v₂ ≈ 2u₁: the heavy one barely slows, the light one flies off at double speed</td></tr>
+<tr><td>m₁ ≪ m₂</td><td>v₁ ≈ −u₁, v₂ ≈ 0: the light one bounces back, the heavy one hardly moves</td></tr></tbody></table></div>
+
+<h2 id="worked">Worked examples</h2>
+<h3>Gun recoil (an explosion)</h3>
+<p>A 0.5 kg gun fires a 0.01 kg bullet at 300 m/s. Starting at rest, total momentum is 0, so 0 = 0.01 × 300 + 0.5 × v<sub>gun</sub>, giving v<sub>gun</sub> = −3/0.5 = −6 m/s: the gun recoils at 6 m/s opposite the bullet.</p>
+<h3>Kinetic energy lost when objects stick</h3>
+<p>m₁ = 2 kg at 5 m/s hits m₂ = 3 kg at rest. KE before = ½(2)(25) = 25 J. v<sub>after</sub> = (2 × 5)/(2 + 3) = 2 m/s. KE after = ½(5)(4) = 10 J. KE lost = 15 J, turned into heat, sound and deformation.</p>
+<pre class="code-block"><code>def collision(m1, u1, m2, u2=0, elastic=True):
+    if elastic:
+        v1 = ((m1-m2)*u1 + 2*m2*u2) / (m1+m2)
+        v2 = ((m2-m1)*u2 + 2*m1*u1) / (m1+m2)
+    else:
+        v1 = v2 = (m1*u1 + m2*u2) / (m1+m2)
+    return v1, v2
+print(collision(6, 4, 2))                 # (2.0, 6.0)
+print(collision(4, 3, 2, elastic=False))  # (2.0, 2.0)</code></pre>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-impulse">Fix the change in momentum and vary the contact time: the rectangle's area (the impulse) never changes, only its height (the force).</a></li><li><b>Fig. 2</b><a href="#f-collide">Two masses colliding in one dimension: velocities before and after, with bars for momentum and kinetic energy.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="phy-equilibrium.html">&larr; Equilibrium &amp; Moments</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-phys.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

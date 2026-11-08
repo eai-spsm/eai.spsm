@@ -787,7 +787,7 @@ float rpm_unit = (1.0/(2.0*PI_VAL*wheelr)) * (60000.0/t);
         <p>From here, the natural directions are either going deeper into classic computer vision (motion tracking, lane detection, more advanced feature matching) or moving toward applied deep learning (training a custom classifier from scratch instead of fine-tuning, understanding what's actually happening inside a convolutional neural network rather than just fine-tuning one). Alongside project work, practicing algorithmic thinking on a site like <a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode</a> builds the general problem-solving skill that carries over into writing efficient image-processing code.</p>
 
         <h3>Beyond the Repo: Hand Tracking + Servo Control</h3>
-        <p>Untracked, in-progress work in the same folder (never committed) prototyped MediaPipe hand-landmark tracking with fingertip color-matching driving an SG90 servo over <code>RPi.GPIO</code> PWM - the same idea later built out properly as its own project. See the <a href="/report?id=raspi-vision">Raspberry Pi Vision &amp; GPIO Labs</a> report for the finished version.</p>
+        <p>Untracked, in-progress work in the same folder (never committed) prototyped MediaPipe hand-landmark tracking with fingertip color-matching driving an SG90 servo over <code>RPi.GPIO</code> PWM - the same idea later built out properly as its own project. See the <a href="report.html?id=raspi-vision">Raspberry Pi Vision &amp; GPIO Labs</a> report for the finished version.</p>
       `,
     },
     th: {
@@ -851,7 +851,7 @@ float rpm_unit = (1.0/(2.0*PI_VAL*wheelr)) * (60000.0/t);
         <p>จากจุดนี้ ทิศทางตามธรรมชาติคือลงลึกไปในทาง computer vision แบบดั้งเดิม (motion tracking, lane detection, feature matching ขั้นสูงกว่านี้) หรือมุ่งไปทาง applied deep learning (เทรน classifier เองตั้งแต่ศูนย์แทนที่จะ fine-tune, ทำความเข้าใจว่าเกิดอะไรขึ้นจริง ๆ ภายใน convolutional neural network แทนที่จะแค่ fine-tune มัน) นอกจากงานโปรเจกต์ การฝึกคิดเชิงอัลกอริทึมบนเว็บอย่าง <a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode</a> สร้างทักษะการแก้ปัญหาทั่วไปที่ส่งผลต่อการเขียนโค้ดประมวลผลภาพให้มีประสิทธิภาพด้วย</p>
 
         <h3>นอกเหนือจาก Repo: Hand Tracking + Servo Control</h3>
-        <p>งานที่ยังไม่เสร็จและไม่ได้ track อยู่ในโฟลเดอร์เดียวกัน (ไม่เคย commit) ทดลอง prototype การตรวจจับตำแหน่งมือด้วย MediaPipe โดยจับคู่สีที่ปลายนิ้วขับเซอร์โว SG90 ผ่าน PWM ของ <code>RPi.GPIO</code> - แนวคิดเดียวกันที่ภายหลังถูกสร้างขึ้นอย่างจริงจังเป็นโปรเจกต์ของตัวเอง ดูรายงาน <a href="/report?id=raspi-vision">Raspberry Pi Vision &amp; GPIO Labs</a> สำหรับเวอร์ชันที่เสร็จสมบูรณ์</p>
+        <p>งานที่ยังไม่เสร็จและไม่ได้ track อยู่ในโฟลเดอร์เดียวกัน (ไม่เคย commit) ทดลอง prototype การตรวจจับตำแหน่งมือด้วย MediaPipe โดยจับคู่สีที่ปลายนิ้วขับเซอร์โว SG90 ผ่าน PWM ของ <code>RPi.GPIO</code> - แนวคิดเดียวกันที่ภายหลังถูกสร้างขึ้นอย่างจริงจังเป็นโปรเจกต์ของตัวเอง ดูรายงาน <a href="report.html?id=raspi-vision">Raspberry Pi Vision &amp; GPIO Labs</a> สำหรับเวอร์ชันที่เสร็จสมบูรณ์</p>
       `,
     },
   },
@@ -1062,7 +1062,7 @@ void loop() {
         <p>I2C is a 2-wire protocol - instead of one pin per signal, many devices share just <strong>SDA</strong> (data) and <strong>SCL</strong> (clock). A 16x2 character LCD needs only 4 wires total (power, ground, SDA, SCL) despite having far more internal logic than a single LED, and multiple I2C devices can share the same two bus wires as long as no two share the same address.</p>
 
         <h3>Where to Go Next</h3>
-        <p>Combining several of these pieces into one project (a button that changes a servo's position, a sensor reading pushed to the LCD, PWM-controlled brightness reacting to a distance sensor) is the natural next step before moving into the more advanced kinematics-driven robotics work - see the <a href="/report?id=physics-robotics">Physics in Robotics</a> report for where this leads.</p>
+        <p>Combining several of these pieces into one project (a button that changes a servo's position, a sensor reading pushed to the LCD, PWM-controlled brightness reacting to a distance sensor) is the natural next step before moving into the more advanced kinematics-driven robotics work - see the <a href="report.html?id=physics-robotics">Physics in Robotics</a> report for where this leads.</p>
       `,
     },
     th: {
@@ -1268,7 +1268,7 @@ void loop() {
         <p>I2C เป็นโปรโตคอลสองสาย - แทนที่จะใช้หนึ่งขาต่อหนึ่งสัญญาณ อุปกรณ์หลายตัวใช้ <strong>SDA</strong> (ข้อมูล) และ <strong>SCL</strong> (สัญญาณนาฬิกา) ร่วมกัน จอ LCD ตัวอักษร 16x2 ต้องการแค่ 4 สายรวม (ไฟเลี้ยง, กราวด์, SDA, SCL) แม้จะมีวงจรภายในซับซ้อนกว่า LED ตัวเดียวมาก และอุปกรณ์ I2C หลายตัวสามารถใช้สายบัสสองเส้นเดียวกันได้ ตราบใดที่ไม่มีสองตัวใช้ address เดียวกัน</p>
 
         <h3>ก้าวต่อไป</h3>
-        <p>การรวมหลาย ๆ ส่วนนี้เข้าเป็นโปรเจกต์เดียว (ปุ่มที่เปลี่ยนตำแหน่งเซอร์โว, ค่าเซนเซอร์ที่ส่งไปแสดงบน LCD, ความสว่างที่ควบคุมด้วย PWM ตอบสนองต่อเซนเซอร์วัดระยะ) คือก้าวต่อไปตามธรรมชาติก่อนจะไปสู่งานหุ่นยนต์ที่ขับเคลื่อนด้วยจลนศาสตร์ที่ซับซ้อนกว่า - ดูรายงาน <a href="/report?id=physics-robotics">Physics in Robotics</a> สำหรับทิศทางที่ต่อยอดจากตรงนี้</p>
+        <p>การรวมหลาย ๆ ส่วนนี้เข้าเป็นโปรเจกต์เดียว (ปุ่มที่เปลี่ยนตำแหน่งเซอร์โว, ค่าเซนเซอร์ที่ส่งไปแสดงบน LCD, ความสว่างที่ควบคุมด้วย PWM ตอบสนองต่อเซนเซอร์วัดระยะ) คือก้าวต่อไปตามธรรมชาติก่อนจะไปสู่งานหุ่นยนต์ที่ขับเคลื่อนด้วยจลนศาสตร์ที่ซับซ้อนกว่า - ดูรายงาน <a href="report.html?id=physics-robotics">Physics in Robotics</a> สำหรับทิศทางที่ต่อยอดจากตรงนี้</p>
       `,
     },
   },
@@ -1643,7 +1643,7 @@ void loop() {
         <p><em>Example:</em> a model scores 98% accuracy on training but only 61% on test - that gap is overfitting, not underfitting. Fixes: get more training data, simplify the model, add regularization, use early stopping, or cross-validation. Underfitting instead calls for the opposite: a more complex model, better features, or more training time.</p>
 
         <h3>Where to Go Next</h3>
-        <p>From these fundamentals, the natural next step is actually building one of these architectures hands-on - training a small CNN on an image dataset, fine-tuning a pretrained model (transfer learning) rather than starting from scratch, or working through the math of backpropagation by hand on a tiny network to see gradient descent update real numbers. See the <a href="/report?id=opencv">Computer Vision with OpenCV</a> report for where the CNN/YOLO side of this leads in practice.</p>
+        <p>From these fundamentals, the natural next step is actually building one of these architectures hands-on - training a small CNN on an image dataset, fine-tuning a pretrained model (transfer learning) rather than starting from scratch, or working through the math of backpropagation by hand on a tiny network to see gradient descent update real numbers. See the <a href="report.html?id=opencv">Computer Vision with OpenCV</a> report for where the CNN/YOLO side of this leads in practice.</p>
       `,
     },
     th: {
@@ -1868,7 +1868,7 @@ void loop() {
         <p><em>ตัวอย่าง:</em> โมเดลได้ 98% accuracy ตอนเทรนแต่แค่ 61% ตอนทดสอบ - ช่องว่างนั้นคือ overfitting ไม่ใช่ underfitting วิธีแก้: หา training data เพิ่ม, ลดความซับซ้อนของโมเดล, เพิ่ม regularization, ใช้ early stopping หรือ cross-validation ส่วน underfitting ต้องแก้ตรงข้ามกัน: โมเดลที่ซับซ้อนขึ้น, feature ที่ดีขึ้น หรือเวลาเทรนมากขึ้น</p>
 
         <h3>ก้าวต่อไป</h3>
-        <p>จากพื้นฐานเหล่านี้ ก้าวต่อไปตามธรรมชาติคือการลงมือสร้างสถาปัตยกรรมเหล่านี้จริง ๆ - เทรน CNN เล็ก ๆ บน image dataset, fine-tune โมเดลที่เทรนไว้ล่วงหน้า (transfer learning) แทนการเริ่มจากศูนย์ หรือไล่คณิตศาสตร์ของ backpropagation ด้วยมือบนเครือข่ายเล็ก ๆ เพื่อดู gradient descent อัปเดตตัวเลขจริง ดูรายงาน <a href="/report?id=opencv">Computer Vision with OpenCV</a> สำหรับทิศทางที่ฝั่ง CNN/YOLO นำไปสู่ในทางปฏิบัติ</p>
+        <p>จากพื้นฐานเหล่านี้ ก้าวต่อไปตามธรรมชาติคือการลงมือสร้างสถาปัตยกรรมเหล่านี้จริง ๆ - เทรน CNN เล็ก ๆ บน image dataset, fine-tune โมเดลที่เทรนไว้ล่วงหน้า (transfer learning) แทนการเริ่มจากศูนย์ หรือไล่คณิตศาสตร์ของ backpropagation ด้วยมือบนเครือข่ายเล็ก ๆ เพื่อดู gradient descent อัปเดตตัวเลขจริง ดูรายงาน <a href="report.html?id=opencv">Computer Vision with OpenCV</a> สำหรับทิศทางที่ฝั่ง CNN/YOLO นำไปสู่ในทางปฏิบัติ</p>
       `,
     },
   },

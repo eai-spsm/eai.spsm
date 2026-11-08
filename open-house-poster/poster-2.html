@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EAI Open House Poster 2</title>
+<style>
+/* IG portrait 3:4 = 1080x1440. White page, photo hero on top, coral + navy accents. One font, one weight, no caps. */
+@font-face{font-family:"line_seed_sans_th";src:url(../assets/fonts/lineseedsansth_rg.woff2) format("woff2")}
+:root{--navy:#292d7a;--coral:#f5423d;--ink:#1a1a1a;--w2:#ececea;--w5:#8a8782;--w7:#4a4842}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1440px;overflow:hidden}
+body{position:relative;font:20px/1.5 "line_seed_sans_th",system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center}
+.px{position:absolute;width:var(--z);height:var(--z);background:var(--c)}
+b{font-weight:700}
+
+.hero{position:relative;width:100%;height:560px;flex:none;color:#fff;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:url("../assets/img/pic banner/about1.webp") center 45%/cover;--s:24px;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 2*var(--s)),calc(100% - var(--s)) calc(100% - 2*var(--s)),calc(100% - var(--s)) calc(100% - var(--s)),calc(100% - 2*var(--s)) calc(100% - var(--s)),calc(100% - 2*var(--s)) 100%,calc(2*var(--s)) 100%,calc(2*var(--s)) calc(100% - var(--s)),var(--s) calc(100% - var(--s)),var(--s) calc(100% - 2*var(--s)),0 calc(100% - 2*var(--s)))}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.65)}
+.hero>*{position:relative}
+.brand{display:flex;align-items:center;gap:10px;font-size:18px}
+.brand i{width:30px;height:30px;border-radius:50%;background:var(--coral);display:grid;place-items:center}
+.brand i img{width:18px;height:18px;filter:invert(1)}
+h1{font-weight:400;line-height:1.05}
+h1 b{display:block;color:#fff;font-size:92px;letter-spacing:-.01em}
+.date{margin-top:22px;font-size:20px}
+.school{margin-top:6px;font-size:16px;opacity:.85}
+
+.body{width:880px;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:50px;flex:1}
+.sub{font-size:16px;color:var(--w7);max-width:520px;text-wrap:balance}
+.acts{margin-top:40px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:0 44px;text-align:left}
+.act{display:flex;gap:18px;align-items:center;padding:16px 4px;border-top:1px solid var(--w2)}
+.act .ico{flex:none;width:58px;height:58px;border-radius:8px;display:grid;place-items:center;background:#e8e9f5}
+.act:nth-child(4n+2) .ico,.act:nth-child(4n+3) .ico{background:#fde3e2}
+.act img{width:34px;height:34px;opacity:.9}
+.act b{display:block;font-weight:400;font-size:19px;line-height:1.25}
+.act small{display:block;margin-top:2px;font-size:14px;line-height:1.4;color:var(--w5)}
+.qr{margin-top:40px;width:230px;height:230px;padding:16px;background:#fff;border:2px solid var(--ink);border-radius:10px;box-shadow:3px 3px 0 var(--navy)}
+.qr svg{display:block;width:100%;height:100%}
+.cap{margin-top:18px;font-size:16px;color:var(--w7)}
+.cap small{display:block;font-size:13px;color:var(--w5)}
+.foot{margin-top:auto;margin-bottom:56px;display:flex;gap:34px;font-size:17px;color:var(--navy)}
+.foot span{display:flex;align-items:center;gap:10px}
+.foot img{width:28px;height:28px;opacity:.85}
+</style>
+</head>
+<body>
+  <i class="px" style="--z:24px;left:28px;top:572px;--c:var(--coral)"></i><i class="px" style="--z:16px;left:64px;top:600px;--c:var(--navy)"></i><i class="px" style="--z:22px;left:1010px;top:576px;--c:var(--navy)"></i><i class="px" style="--z:14px;left:1046px;top:606px;--c:var(--coral)"></i><i class="px" style="--z:18px;left:30px;top:1010px;--c:#c9cbe8"></i><i class="px" style="--z:14px;left:52px;top:1050px;--c:var(--coral)"></i><i class="px" style="--z:24px;left:1010px;top:980px;--c:#c9cbe8"></i><i class="px" style="--z:16px;left:1040px;top:1030px;--c:var(--navy)"></i><i class="px" style="--z:20px;left:34px;top:1330px;--c:var(--navy)"></i><i class="px" style="--z:26px;left:1000px;top:1340px;--c:var(--coral)"></i><i class="px" style="--z:14px;left:1040px;top:1380px;--c:#c9cbe8"></i><i class="px" style="--z:16px;left:80px;top:1384px;--c:var(--coral)"></i>
+  <div class="hero">
+    <h1><b>AI Open House</b></h1>
+    <div class="date">24 January 2027</div>
+    <div class="school">Satit Prasarnmit Demonstration School (Secondary)</div>
+  </div>
+
+  <div class="body">
+    <p class="sub">Live demos and hands-on booths from the AI&nbsp;Engineering major. Students and families welcome.</p>
+    <div class="acts">
+      <div class="act"><div class="ico"><img src="../assets/ph/robot.svg" alt=""></div><div><b>Robot demos</b><small>Differential-drive and mecanum robots built and driven by students</small></div></div>
+      <div class="act"><div class="ico"><img src="../assets/ph/eye.svg" alt=""></div><div><b>Computer vision</b><small>Hand tracking and YOLOv8 object detection from class projects</small></div></div>
+      <div class="act"><div class="ico"><img src="../assets/ph/chat-circle-dots.svg" alt=""></div><div><b>Chatbots</b><small>A LINE chatbot built with Dialogflow and Sheets</small></div></div>
+      <div class="act"><div class="ico"><img src="../assets/ph/circuitry.svg" alt=""></div><div><b>Circuits and sensors</b><small>Arduino and ESP32 projects with servos and ultrasonic sensors</small></div></div>
+      <div class="act"><div class="ico"><img src="../assets/ph/users-three.svg" alt=""></div><div><b>Meet the team</b><small>Ask students and teachers what a week in the major looks like</small></div></div>
+      <div class="act"><div class="ico"><img src="../assets/ph/pencil-line.svg" alt=""></div><div><b>How to apply</b><small>No coding experience needed, we teach the basics from zero</small></div></div>
+    </div>
+    <div class="qr" role="img" aria-label="QR code for the EAI LINE Openchat"><svg viewBox="0 0 25 25" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" class="segno"><path class="qrline" stroke="#1a1a1a" d="M0 0.5h7m2 0h1m1 0h2m1 0h1m3 0h7m-25 1h1m5 0h1m1 0h2m4 0h2m2 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m4 0h1m2 0h3m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m3 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h2m2 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m2 0h1m3 0h1m1 0h2m1 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-15 1h1m1 0h3m-15 1h1m1 0h1m1 0h1m1 0h1m4 0h2m7 0h1m2 0h1m-20 1h2m1 0h1m1 0h1m3 0h1m3 0h2m5 0h1m-25 1h1m2 0h1m1 0h3m3 0h4m7 0h3m-24 1h1m1 0h2m3 0h1m2 0h1m1 0h2m1 0h1m2 0h1m3 0h1m-24 1h2m1 0h4m1 0h3m1 0h2m1 0h4m2 0h1m1 0h2m-24 1h4m2 0h6m1 0h1m3 0h1m2 0h1m2 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h1m2 0h3m2 0h3m-24 1h1m7 0h2m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m-24 1h1m2 0h2m1 0h2m1 0h1m1 0h1m3 0h7m-14 1h4m1 0h2m1 0h1m3 0h2m1 0h2m-25 1h7m3 0h1m2 0h1m1 0h2m1 0h1m1 0h2m1 0h2m-25 1h1m5 0h1m2 0h1m1 0h1m1 0h1m2 0h1m3 0h2m1 0h2m-25 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h6m1 0h2m-25 1h1m1 0h3m1 0h1m4 0h3m1 0h1m1 0h1m1 0h4m-23 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m4 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m2 0h2m1 0h2m1 0h1m1 0h2m1 0h1m-24 1h7m1 0h1m2 0h2m1 0h3m2 0h1m3 0h2"/></svg></div>
+    <p class="cap">Scan to join the LINE Openchat<small>for updates and questions</small></p>
+    <div class="foot"><span><img src="../assets/ph/instagram-logo.svg" alt="">@e.ai_official</span><span><img src="../assets/ph/chat-circle-dots.svg" alt="">LINE Openchat</span><span><img src="../assets/ph/globe.svg" alt="">eaispsm.vercel.app</span></div>
+  </div>
+</body>
+</html>

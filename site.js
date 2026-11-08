@@ -50,11 +50,11 @@
   // nav: transparent over the home hero, solid white once the page scrolls
   var navEl=document.querySelector('.nav');
   // solid white nav everywhere except while it sits over a dark photo section (home hero and career section); the wave edges count as white
-  var dc=document.documentElement.classList,darkSecs=dc.contains('home')?document.querySelectorAll('.statement,#after'):dc.contains('hero-page')?document.querySelectorAll('.hero-c'):[];
+  var dc=document.documentElement.classList,darkSecs=dc.contains('home')?document.querySelectorAll('.statement,#after,.hl-wn,footer.hf'):dc.contains('hero-page')?document.querySelectorAll('.hero-c'):[];
   function navSolid(){
     if(!navEl)return;
     var y=navEl.offsetHeight/2,over=false;
-    darkSecs.forEach(function(s){var r=s.getBoundingClientRect(),top=s.id==='after'?80:0,bot=s.classList.contains('hero-c')?0:80;if(r.top+top<=y&&r.bottom-bot>=y)over=true});
+    var cdr=document.querySelector('.hl-cdrun');darkSecs.forEach(function(s){if(s.classList.contains('hl-hero')&&cdr&&cdr.getBoundingClientRect().top<=y)return;var r=s.getBoundingClientRect(),top=s.id==='after'||s.classList.contains('hl-wn')?(s.classList.contains('hl-ar')||s.classList.contains('hl-wn')?innerHeight:80):s.classList.contains('hl-ai')?innerHeight:0,bot=s.classList.contains('hero-c')||s.tagName==='FOOTER'?0:80;if(r.top+top<=y&&r.bottom-bot>=y)over=true});
     navEl.classList.toggle('solid',!over);
   }
   window.addEventListener('scroll',navSolid,{passive:true});window.addEventListener('resize',navSolid);window.addEventListener('load',navSolid);navSolid();
@@ -98,6 +98,7 @@
   $('.q').forEach(function(b){b.onclick=function(){var o=b.parentNode.classList.toggle('open');b.setAttribute('aria-expanded',o)}});
   // rotators ("After this major, I am ..." and "Where our alumni go"): every [data-i] layer in a .iam shares one index; auto-advances, pauses on hover or click
   $('.iam').forEach(function(box){
+    if(box.hasAttribute('data-scroll'))return;   // driven by scroll in home.js
     var cur=0,tm,rs,n=box.querySelectorAll('.pick').length;
     function go(i){cur=i;box.querySelectorAll('[data-i]').forEach(function(e){e.classList.toggle('on',+e.dataset.i===i)})}
     function start(){clearInterval(tm);if(!window.matchMedia('(prefers-reduced-motion:reduce)').matches)tm=setInterval(function(){go((cur+1)%n)},1600)}
@@ -128,7 +129,7 @@
     bu.querySelectorAll('[data-k]').forEach(function(e){
       e.onmouseenter=function(){bu.classList.add('hov');bu.querySelectorAll('[data-k="'+e.dataset.k+'"]').forEach(function(x){x.classList.add('hl')})};
       e.onmouseleave=function(){bu.classList.remove('hov');bu.querySelectorAll('.hl').forEach(function(x){x.classList.remove('hl')})};
-      e.onclick=function(){var k=e.dataset.k.toLowerCase(),b=document.getElementById('rsearch');if(k==='others'||k==='none')return;if(!b){location.href='/alumni?q='+encodeURIComponent(k);return}b.value=k;b.oninput();document.getElementById('roster').scrollIntoView({behavior:'smooth'})};
+      e.onclick=function(){var k=e.dataset.k.toLowerCase(),b=document.getElementById('rsearch');if(k==='others'||k==='none')return;if(!b){location.href='alumni.html?q='+encodeURIComponent(k);return}b.value=k;b.oninput();document.getElementById('roster').scrollIntoView({behavior:'smooth'})};
     });
     var calm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
     bu.querySelectorAll('.sum b').forEach(function(b){

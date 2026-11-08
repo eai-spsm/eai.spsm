@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="โพรเจกไทล์และการเคลื่อนที่แบบวงกลม | EAI">Projectile &amp; Circular Motion · Physics for Engineering | EAI</title>
+<meta name="description" content="Two-dimensional motion: split a projectile into independent horizontal and vertical parts, then study uniform circular motion and the centripetal force.">
+<link rel="canonical" href="https://eaispsm.vercel.app/phy-projectile-circular">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Projectile &amp; Circular Motion · Physics for Engineering | EAI">
+<meta property="og:description" content="Two-dimensional motion: split a projectile into independent horizontal and vertical parts, then study uniform circular motion and the centripetal force.">
+<meta property="og:url" content="https://eaispsm.vercel.app/phy-projectile-circular">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="โพรเจกไทล์และการเคลื่อนที่แบบวงกลม">Projectile &amp; Circular Motion</h1><p class="sub">Physics for Engineering · M.4 · <span data-th="บทที่">Chapter</span> 4 / 7</p><p class="lead">Two-dimensional motion: split a projectile into independent horizontal and vertical parts, then study uniform circular motion and the centripetal force.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#basics">Projectile motion basics</a></li><li><a href="#eq">Equations of projectile motion</a></li><li><a href="#range">Range and maximum height</a></li><li><a href="#worked">Worked example: projectile</a></li><li><a href="#circular">Uniform circular motion</a></li></ol></nav>
+<h2 id="basics">Projectile motion basics</h2>
+<p>A <strong>projectile</strong> is anything launched into the air and moving under gravity alone: no engine and no thrust. The idea that makes it solvable is that <em>horizontal and vertical motion are completely independent</em>. Treat each direction separately and combine at the end through the shared time t.</p>
+<div class="table-wrap"><table><thead><tr><th>Direction</th><th>Force</th><th>Acceleration</th><th>Velocity</th></tr></thead><tbody>
+<tr><td>Horizontal</td><td>none (ignoring air)</td><td>0</td><td>constant: vₓ = v₀cos θ</td></tr>
+<tr><td>Vertical</td><td>gravity, downward</td><td>g = 10 m/s² down</td><td>changing: v<sub>y</sub> = v₀sin θ − gt</td></tr></tbody></table></div>
+<p>The path is a parabola. Open <a class="rf" href="#f-proj">Fig. 1</a>, change the launch speed and angle, and press play. The two arrows on the ball are vₓ (never changes) and v<sub>y</sub> (shrinks, passes zero at the top, then grows downward).</p>
+<figure class="fg wd" id="f-proj" data-w="projectile"><figcaption><b>Fig. 1</b>A projectile launched from a chosen height, with optional comparison to the complementary angle 90° − θ.</figcaption></figure>
+
+<h2 id="eq">Equations of projectile motion</h2>
+<div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Horizontal (x)</th><th>Vertical (y)</th></tr></thead><tbody>
+<tr><td>Velocity</td><td>vₓ = v₀cos θ (constant)</td><td>v<sub>y</sub> = v₀sin θ − gt</td></tr>
+<tr><td>Position</td><td>x = v₀cos θ · t</td><td>y = v₀sin θ · t − ½gt²</td></tr>
+<tr><td>Speed at time t</td><td colspan="2">v = √(vₓ² + v<sub>y</sub>²)</td></tr></tbody></table></div>
+<p>At the top the vertical velocity is zero: v<sub>y</sub> = 0, so t<sub>peak</sub> = v₀sin θ / g. For a symmetric launch (landing at the launch height) the total time is twice that: <strong>T = 2v₀sin θ / g</strong>. Check the panel in <a class="rf" href="#f-proj">Fig. 1</a>: with v₀ = 20 and θ = 30° the time of flight is 2 s.</p>
+
+<h2 id="range">Range and maximum height</h2>
+<p>Substitute the peak time to get H directly, and use T to get the range R, so you need not solve for time each time.</p>
+<div class="fm">H = v₀² sin²θ / (2g)<small>maximum height, from y at t = v₀sinθ / g</small></div>
+<div class="fm">R = v₀cosθ · (2v₀sinθ / g) = v₀² sin 2θ / g<small>uses 2 sinθ cosθ = sin 2θ</small></div>
+<div class="table-wrap"><table><thead><tr><th>Parameter</th><th>Formula</th></tr></thead><tbody><tr><td>Maximum height H</td><td>v₀² sin²θ / (2g)</td></tr><tr><td>Flight time T</td><td>2v₀ sin θ / g</td></tr><tr><td>Range R</td><td>v₀² sin 2θ / g</td></tr><tr><td>Angle for maximum range</td><td>θ = 45° (sin 2θ = 1)</td></tr><tr><td>Angle for maximum height</td><td>θ = 90°</td></tr></tbody></table></div>
+<p><strong>Complementary angles.</strong> θ and 90° − θ give the same range because sin 2θ = sin(180° − 2θ). In the diagram switch "Compare with 90° − θ" on: with h₀ = 0 the two paths land together; with h₀ &gt; 0 they no longer do.</p>
+
+<h2 id="worked">Worked example: projectile</h2>
+<p>A ball is launched at 20 m/s at 30° from level ground. Find the time of flight, the maximum height and the range.</p>
+<div class="table-wrap"><table><thead><tr><th>Step</th><th>Working</th></tr></thead><tbody>
+<tr><td>1 Resolve the velocity</td><td>vₓ = 20 cos 30° ≈ 17.3 m/s; v<sub>y0</sub> = 20 sin 30° = 10 m/s</td></tr>
+<tr><td>2 Time of flight</td><td>T = 2v<sub>y0</sub>/g = 2 × 10/10 = 2 s</td></tr>
+<tr><td>3 Maximum height</td><td>H = v<sub>y0</sub>²/(2g) = 100/20 = 5 m</td></tr>
+<tr><td>4 Range</td><td>R = vₓT = 17.3 × 2 ≈ 34.6 m (check: 400 × sin 60°/10 = 34.6 ✓)</td></tr></tbody></table></div>
+<pre class="code-block"><code>import math
+def projectile(v0, theta_deg, g=10):
+    th = math.radians(theta_deg)
+    vx, vy0 = v0*math.cos(th), v0*math.sin(th)
+    T = 2*vy0/g
+    return T, vy0**2/(2*g), vx*T
+print(projectile(20, 30))   # (2.0, 5.0, 34.64)</code></pre>
+
+<h2 id="circular">Uniform circular motion</h2>
+<p>An object moving round a circle at constant speed is <strong>still accelerating</strong>, because velocity is a vector and its direction keeps changing. That acceleration, the <em>centripetal acceleration</em> (centre-seeking), always points to the centre. By Newton's second law there must be a net force in that direction too: the <strong>centripetal force</strong>. It is not a new kind of force but whatever real force (tension, friction, gravity, normal force) points inward.</p>
+<div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Symbol</th><th>Formula</th><th>Unit</th></tr></thead><tbody>
+<tr><td>Period (time per turn)</td><td>T</td><td>—</td><td>s</td></tr>
+<tr><td>Frequency</td><td>f</td><td>f = 1/T</td><td>Hz</td></tr>
+<tr><td>Angular velocity</td><td>ω</td><td>ω = 2πf = 2π/T</td><td>rad/s</td></tr>
+<tr><td>Speed</td><td>v</td><td>v = ωr = 2πr/T</td><td>m/s</td></tr>
+<tr><td>Centripetal acceleration</td><td>a<sub>c</sub></td><td>a<sub>c</sub> = v²/r = ω²r</td><td>m/s²</td></tr>
+<tr><td>Centripetal force</td><td>F<sub>c</sub></td><td>F<sub>c</sub> = m a<sub>c</sub> = mv²/r</td><td>N</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-circ" data-w="circ"><figcaption><b>Fig. 2</b>A mass on a circle. The black arrow is the velocity (tangent), the grey arrow is the centripetal force (inward).</figcaption></figure>
+<p>Play with <a class="rf" href="#f-circ">Fig. 2</a>: halving the period doubles ω and v but quadruples a<sub>c</sub> and F<sub>c</sub>; doubling the radius at the same period doubles v and a<sub>c</sub>.</p>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-proj">A projectile launched from a chosen height, with optional comparison to the complementary angle 90° − θ.</a></li><li><b>Fig. 2</b><a href="#f-circ">A mass on a circle. The black arrow is the velocity (tangent), the grey arrow is the centripetal force (inward).</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="phy-incline.html">&larr; Inclined Plane</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="phy-energy.html">Work &amp; Energy &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-phys.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

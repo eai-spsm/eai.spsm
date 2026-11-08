@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="ระบบจำนวนจริง | EAI">Real Number System · Additional Math | EAI</title>
+<meta name="description" content="Number sets and their properties, absolute value, interval notation, surds and rationalisation: the toolkit behind every algebra step you will take.">
+<link rel="canonical" href="https://eaispsm.vercel.app/math-real-numbers">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Real Number System · Additional Math | EAI">
+<meta property="og:description" content="Number sets and their properties, absolute value, interval notation, surds and rationalisation: the toolkit behind every algebra step you will take.">
+<meta property="og:url" content="https://eaispsm.vercel.app/math-real-numbers">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="ระบบจำนวนจริง">Real Number System</h1><p class="sub">Additional Math · M.4 · <span data-th="บทที่">Chapter</span> 2 / 5</p><p class="lead">Number sets and their properties, absolute value, interval notation, surds and rationalisation: the toolkit behind every algebra step you will take.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#sets">Number sets (ระบบจำนวนจริง)</a></li><li><a href="#props">Properties of real numbers</a></li><li><a href="#abs">Absolute value</a></li><li><a href="#interval">Interval notation</a></li><li><a href="#surds">Surds and rationalisation</a></li><li><a href="#eq">Solving equations: radicals, absolute values and every combination</a></li><li><a href="#python">Real numbers on a computer</a></li></ol></nav>
+<h2 id="sets">Number sets (ระบบจำนวนจริง)</h2>
+<p>The real numbers are built by nesting larger and larger sets. Each set was invented to hold numbers the previous one could not express: subtraction needed negatives, division needed fractions, and measuring a diagonal needed roots. Knowing which set a number lives in tells you which operations are always allowed on it.</p>
+<div class="table-wrap"><table><thead><tr><th>Symbol</th><th>Name</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>ℕ</td><td>Natural numbers</td><td>counting numbers from 0 (or 1 in some books); no negatives, no fractions</td><td>0, 1, 2, 3, …</td></tr>
+<tr><td>ℤ</td><td>Integers</td><td>all whole numbers, positive, negative and zero</td><td>…, −2, −1, 0, 1, 2, …</td></tr>
+<tr><td>ℚ</td><td>Rational numbers</td><td>p/q with p, q ∈ ℤ and q ≠ 0; decimals stop or repeat</td><td>1/2, −3/4, 0.333…, 7</td></tr>
+<tr><td>𝕀</td><td>Irrational numbers</td><td>cannot be written as p/q; decimals go on forever without repeating</td><td>√2, π, e, √3</td></tr>
+<tr><td>ℝ</td><td>Real numbers</td><td>every point on the number line; ℝ = ℚ ∪ 𝕀</td><td>all of the above</td></tr></tbody></table></div>
+<p>The chain is strict: <strong>ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ</strong>. The irrationals sit beside ℚ inside ℝ, and the two never overlap: ℚ ∩ 𝕀 = ∅. Pick different numbers in <a class="rf" href="#f-classify">Fig. 1</a> to see where each one lands, including one that is not real at all.</p>
+<figure class="fg wd" id="f-classify" data-w="classify"><figcaption><b>Fig. 1</b>Nested number sets. The grey dot marks the innermost set a number belongs to.</figcaption></figure>
+<div class="co red"><b>Watch out</b>A repeating decimal such as 0.333… is rational because it equals 1/3. Only decimals that never repeat are irrational. √9 = 3 is rational even though it has a root sign.</div>
+
+<h2 id="props">Properties of real numbers</h2>
+<p>For all a, b, c ∈ ℝ these axioms hold. They are the reason every algebra step is legal, and in a proof you cite them by name.</p>
+<div class="table-wrap"><table><thead><tr><th>Property</th><th>Addition</th><th>Multiplication</th></tr></thead><tbody>
+<tr><td>Closure</td><td>a + b ∈ ℝ</td><td>a · b ∈ ℝ</td></tr>
+<tr><td>Commutative</td><td>a + b = b + a</td><td>a · b = b · a</td></tr>
+<tr><td>Associative</td><td>(a + b) + c = a + (b + c)</td><td>(a · b) · c = a · (b · c)</td></tr>
+<tr><td>Distributive</td><td colspan="2">a · (b + c) = a · b + a · c (links the two operations)</td></tr>
+<tr><td>Identity</td><td>a + 0 = a (0 is the additive identity)</td><td>a · 1 = a (1 is the multiplicative identity)</td></tr>
+<tr><td>Inverse</td><td>a + (−a) = 0</td><td>a · (1/a) = 1, for a ≠ 0</td></tr></tbody></table></div>
+<h3>Ordering</h3>
+<p>ℝ is an <strong>ordered field</strong>. For any a, b exactly one of a &lt; b, a = b, a &gt; b is true (trichotomy), and the order is compatible with addition and with multiplication by positive numbers, which keeps inequalities stable.</p>
+
+<h2 id="abs">Absolute value</h2>
+<p><strong>Definition.</strong> |x| is the distance from x to 0 on the number line, so it is never negative. |x| = x when x ≥ 0 and |x| = −x when x &lt; 0.</p>
+<p>So |5| = 5, |−5| = −(−5) = 5 and |0| = 0. The minus in the second case does not make the answer negative: x is already negative, so −x is positive.</p>
+<div class="table-wrap"><table><thead><tr><th>Property</th><th>Statement</th><th>Note</th></tr></thead><tbody>
+<tr><td>Non-negative</td><td>|x| ≥ 0</td><td>|x| = 0 only when x = 0</td></tr>
+<tr><td>Symmetry</td><td>|−x| = |x|</td><td>sign is ignored</td></tr>
+<tr><td>Product</td><td>|xy| = |x||y|</td><td></td></tr>
+<tr><td>Quotient</td><td>|x/y| = |x|/|y|</td><td>y ≠ 0</td></tr>
+<tr><td>Triangle inequality</td><td>|x + y| ≤ |x| + |y|</td><td>equal when x and y have the same sign</td></tr>
+<tr><td>Equation rule</td><td>|x| = a (a ≥ 0) ⟹ x = a or x = −a</td><td>no solution if a &lt; 0</td></tr></tbody></table></div>
+<h3>Equations and inequalities</h3>
+<p>To solve |expression| = k with k ≥ 0, split into <em>expression = k</em> and <em>expression = −k</em>, solve both and check. For inequalities the same split gives a single interval for "&lt;" and two outer pieces for "&gt;". Change the relation in <a class="rf" href="#f-abs">Fig. 2</a> and watch where the V-shape is below or above the grey line.</p>
+<figure class="fg wd" id="f-abs" data-w="abs"><figcaption><b>Fig. 2</b>Graph of y = |ax + b| against the line y = k. Grey segments on the x-axis mark the solution set.</figcaption></figure>
+
+<h2 id="interval">Interval notation</h2>
+<p>Interval notation describes a continuous run of real numbers. A <strong>round bracket</strong> ( ) excludes the endpoint (open); a <strong>square bracket</strong> [ ] includes it (closed). ∞ and −∞ always get round brackets because infinity is not a number you can reach.</p>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Notation</th><th>Inequality</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Open</td><td>(a, b)</td><td>a &lt; x &lt; b</td><td>both endpoints excluded</td></tr>
+<tr><td>Closed</td><td>[a, b]</td><td>a ≤ x ≤ b</td><td>both endpoints included</td></tr>
+<tr><td>Half-open</td><td>[a, b)</td><td>a ≤ x &lt; b</td><td>left included, right excluded</td></tr>
+<tr><td>Half-open</td><td>(a, b]</td><td>a &lt; x ≤ b</td><td>left excluded, right included</td></tr>
+<tr><td>Unbounded</td><td>(a, ∞)</td><td>x &gt; a</td><td>everything above a</td></tr>
+<tr><td>Unbounded</td><td>[a, ∞)</td><td>x ≥ a</td><td>a and everything above</td></tr>
+<tr><td>Unbounded</td><td>(−∞, b]</td><td>x ≤ b</td><td>b and everything below</td></tr>
+<tr><td>Whole line</td><td>(−∞, ∞)</td><td>x ∈ ℝ</td><td>no restriction</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-interval" data-w="numline"><figcaption><b>Fig. 3</b>Choose each end as open, closed or infinite and read off the notation.</figcaption></figure>
+<p>Intervals combine with union ∪ and intersection ∩. The solution of |x| &gt; 2 is (−∞, −2) ∪ (2, ∞), two separate pieces joined by ∪, while |x| ≤ 2 is the single interval [−2, 2]. Try the same thing in <a class="rf" href="#f-abs">Fig. 2</a>.</p>
+
+<h2 id="surds">Surds and rationalisation</h2>
+<p>A <strong>surd</strong> is an irrational root: √n where n is a positive integer that is not a perfect square. √2, √3, √5 are surds; √4 = 2 and √9 = 3 are not, because they are rational. Surds appear whenever you solve a quadratic or use Pythagoras with non-integer sides.</p>
+<div class="table-wrap"><table><thead><tr><th>Rule</th><th>Formula</th><th>Example</th></tr></thead><tbody>
+<tr><td>Product</td><td>√(ab) = √a · √b (a, b ≥ 0)</td><td>√12 = √4 · √3 = 2√3</td></tr>
+<tr><td>Quotient</td><td>√(a/b) = √a / √b (b &gt; 0)</td><td>√(9/4) = 3/2</td></tr>
+<tr><td>Square</td><td>(√a)² = a, √a · √a = a</td><td>(√5)² = 5</td></tr>
+<tr><td>Simplify</td><td>√(a²b) = a√b (a ≥ 0)</td><td>√50 = √(25·2) = 5√2</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-surd" data-w="surd"><figcaption><b>Fig. 4</b>Simplify √n by pulling out the largest perfect-square factor.</figcaption></figure>
+<h3>Rationalising the denominator</h3>
+<p>A fraction with a surd in the denominator is not in simplest form. Multiply top and bottom by the <strong>conjugate</strong> of the denominator. The conjugate of (a + √b) is (a − √b), and (a + √b)(a − √b) = a² − b is free of roots by the difference of squares. Example: 1/(1 + √2) × (1 − √2)/(1 − √2) = (1 − √2)/(1 − 2) = √2 − 1.</p>
+<figure class="fg wd" id="f-ratz" data-w="ratz"><figcaption><b>Fig. 5</b>Rationalise a / (p ± √q). The check rows prove the new fraction equals the original.</figcaption></figure>
+
+<h2 id="eq">Solving equations: radicals, absolute values and every combination</h2>
+<p>Once you know the properties of ℝ, the next skill is solving equations. They come in a few families, and the trick is always the same: <strong>peel the outermost layer first</strong>, split into cases wherever a sign could be lost, and <strong>check every candidate at the end</strong>, because squaring or splitting can create answers that do not belong.</p>
+<h3>Without radicals or bars</h3>
+<p>Linear: collect x on one side. Quadratic: factor, complete the square or use x = (−b ± √(b² − 4ac)) / 2a. The simplest quadratic is x² = k, which gives x = ±√k (two answers if k &gt; 0, one if k = 0, none if k &lt; 0). The "±" is where two cases come from, and it returns in every family below. The number of solutions of a quadratic is explored in <a href="math-functions.html#sat">the SAT section of Relations &amp; Functions</a>.</p>
+<h3>Radical equations</h3>
+<div class="table-wrap"><table><thead><tr><th>Step</th><th>What to do</th><th>Why</th></tr></thead><tbody>
+<tr><td>1 · Isolate</td><td>Get the radical alone on one side.</td><td>so that squaring removes it cleanly</td></tr>
+<tr><td>2 · Square</td><td>Square both sides: (√A)² = A and (x + r)² = x² + 2rx + r².</td><td>removes the root, but also allows A = (−B)²</td></tr>
+<tr><td>3 · Solve</td><td>Solve the resulting polynomial equation.</td><td>gives candidates, not yet answers</td></tr>
+<tr><td>4 · Check</td><td>Put every candidate back in the <em>original</em> equation. Require the radicand ≥ 0, and the other side ≥ 0 (a square root is never negative).</td><td>discards <strong>extraneous roots</strong></td></tr></tbody></table></div>
+<p>Example: √(x + 7) − 1 = x. Isolate: √(x + 7) = x + 1. Square: x + 7 = x² + 2x + 1, so x² + x − 6 = 0, giving x = 2 or x = −3. Check x = 2: √9 = 3 = 2 + 1 ✓. Check x = −3: √4 = 2 but x + 1 = −2 ✗, so −3 is extraneous. The only solution is x = 2. Try it in <a class="rf" href="#f-rad">Fig. 6</a>: set p = 1, q = 7, r = 1, and watch the hollow dot appear where the root has no match.</p>
+<figure class="fg wd" id="f-rad" data-w="rad"><figcaption><b>Fig. 6</b>√(px + q) = x + r. Solid dots are real solutions, hollow dots are extraneous roots created by squaring.</figcaption></figure>
+<p>Two radicals: √(x + 5) = √(2x − 1) → square both sides → x + 5 = 2x − 1 → x = 6, and both radicands (11 and 11) are non-negative ✓. When a radical equation has two roots on one side, isolate one, square, then isolate the other and square again.</p>
+<h3>Absolute value equations</h3>
+<p>The bars measure distance from zero, so |A| = k asks "which numbers are exactly k away?". The number of cases depends on what is on the right-hand side.</p>
+<div class="table-wrap"><table><thead><tr><th>Form</th><th>Split into</th><th>Check</th></tr></thead><tbody>
+<tr><td>|A| = k, with k a number</td><td>A = k or A = −k</td><td>k &lt; 0 gives no solution</td></tr>
+<tr><td>|A| = |B|</td><td>A = B or A = −B</td><td>nothing: both cases are valid</td></tr>
+<tr><td>|A| = B, with B an expression</td><td>A = B or A = −B</td><td>keep only answers where B ≥ 0</td></tr>
+<tr><td>| |A| − b | = c  (bars inside bars)</td><td>|A| = b + c or |A| = b − c, then each splits again</td><td>b − c must be ≥ 0 for the second</td></tr></tbody></table></div>
+<p>Example with an expression on the right: |2x − 3| = x + 2. Case 1: 2x − 3 = x + 2 gives x = 5, and x + 2 = 7 ≥ 0 ✓. Case 2: 2x − 3 = −(x + 2) gives 3x = 1, x = 1/3, and x + 2 = 7/3 ≥ 0 ✓. Both work. Change d in <a class="rf" href="#f-abseq">Fig. 7</a> to −4 and both candidates are rejected (the right side becomes negative), so the equation has no solution.</p>
+<figure class="fg wd" id="f-abseq" data-w="abseq"><figcaption><b>Fig. 7</b>|ax + b| = cx + d. Each case is solved, then checked against the sign of cx + d.</figcaption></figure>
+<h3>Absolute value inside absolute value</h3>
+<p>Peel the outer bars first. For | |x − 1| − 3 | = 2 the outer bars give |x − 1| − 3 = 2 or |x − 1| − 3 = −2, so |x − 1| = 5 or |x − 1| = 1. Each of those splits again: x − 1 = ±5 gives x = 6 or −4, and x − 1 = ±1 gives x = 2 or 0. That is <strong>four</strong> solutions. Use <a class="rf" href="#f-abs2">Fig. 8</a> to see how many appear as c changes: when c = b the second inner equation has the single answer x = a, and when c &gt; b it is impossible.</p>
+<figure class="fg wd" id="f-abs2" data-w="abs2"><figcaption><b>Fig. 8</b>||x − a| − b| = c. Up to four crossings with the horizontal line y = c.</figcaption></figure>
+<h3>Every combination at a glance</h3>
+<div class="table-wrap"><table><thead><tr><th>Combination</th><th>Idea</th><th>Example</th><th>Solutions</th></tr></thead><tbody>
+<tr><td>x² = k</td><td>take ±</td><td>x² = 9</td><td>x = ±3</td></tr>
+<tr><td>√A = k</td><td>A = k², need k ≥ 0</td><td>√(x − 1) = 3</td><td>x = 10</td></tr>
+<tr><td>√A = B</td><td>square, then check B ≥ 0</td><td>√(x + 2) = x</td><td>x = 2 (−1 rejected)</td></tr>
+<tr><td>√A = √B</td><td>A = B, check both ≥ 0</td><td>√(x + 5) = √(2x − 1)</td><td>x = 6</td></tr>
+<tr><td>|A| = k</td><td>A = ±k</td><td>|x − 5| = 3</td><td>x = 2 or 8</td></tr>
+<tr><td>|A| = B</td><td>A = ±B, check B ≥ 0</td><td>|2x − 3| = x + 2</td><td>x = 5 or 1/3</td></tr>
+<tr><td>|A| = |B|</td><td>A = B or A = −B</td><td>|x + 1| = |2x − 4|</td><td>x = 5 or 1</td></tr>
+<tr><td>| |A| − b | = c</td><td>peel two layers</td><td>| |x| − 3 | = 1</td><td>x = ±4, ±2</td></tr>
+<tr><td>|√A − b| = c</td><td>√A = b ± c, need ≥ 0, then square</td><td>|√x − 2| = 1</td><td>√x = 3 or 1, so x = 9 or 1</td></tr>
+<tr><td>√|A| = k</td><td>|A| = k², then split</td><td>√|x| = 2</td><td>|x| = 4, so x = ±4</td></tr>
+<tr><td>|quadratic| = k</td><td>quadratic = ±k</td><td>|x² − 4| = 3</td><td>x² = 7 or 1, so x = ±√7, ±1</td></tr></tbody></table></div>
+<div class="co red"><b>Watch out</b>Squaring and splitting can both add fake answers, so always test candidates in the original equation. For |A| = |B| no check is needed because squaring never hid a sign condition.</div>
+<h3>Inequalities with the same ideas</h3>
+<div class="table-wrap"><table><thead><tr><th>Form</th><th>Becomes</th><th>Shape of the answer</th></tr></thead><tbody>
+<tr><td>|A| &lt; k  (k &gt; 0)</td><td>−k &lt; A &lt; k</td><td>one interval, between</td></tr>
+<tr><td>|A| &gt; k</td><td>A &lt; −k or A &gt; k</td><td>two outer pieces joined by ∪</td></tr>
+<tr><td>√A &lt; k</td><td>0 ≤ A &lt; k²</td><td>domain first, then square</td></tr></tbody></table></div>
+<div class="co"><b>SAT corner.</b> Read |x − 5| = 3 as "x is 3 units from 5", so x = 2 or 8. Word problems about tolerance, error or temperature range are absolute value inequalities: |measured − target| ≤ tolerance. Extraneous solutions are the classic trap when the right-hand side contains x.</div>
+
+<h2 id="python">Real numbers on a computer</h2>
+<p>Python has <code>abs()</code> for absolute value and <code>math.sqrt()</code> for roots, but a computer works with binary floating point, which can only store rational approximations. ℝ has infinite precision; <code>float</code> does not.</p>
+<pre class="code-block"><code>import math
+print(abs(-7))                 # 7        |−7| = 7
+print(math.sqrt(2))            # 1.4142135623730951
+print(math.sqrt(2) ** 2)       # 2.0000000000000004  (not exactly 2)
+print(math.sqrt(2) ** 2 == 2)  # False</code></pre>
+<p>This is not a Python bug. It is how IEEE 754 floating point works in almost every language, and it is why 𝕀 exists only in pure mathematics: every computer lives in ℚ.</p>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-classify">Nested number sets. The grey dot marks the innermost set a number belongs to.</a></li><li><b>Fig. 2</b><a href="#f-abs">Graph of y = |ax + b| against the line y = k. Grey segments on the x-axis mark the solution set.</a></li><li><b>Fig. 3</b><a href="#f-interval">Choose each end as open, closed or infinite and read off the notation.</a></li><li><b>Fig. 4</b><a href="#f-surd">Simplify √n by pulling out the largest perfect-square factor.</a></li><li><b>Fig. 5</b><a href="#f-ratz">Rationalise a / (p ± √q). The check rows prove the new fraction equals the original.</a></li><li><b>Fig. 6</b><a href="#f-rad">√(px + q) = x + r. Solid dots are real solutions, hollow dots are extraneous roots created by squaring.</a></li><li><b>Fig. 7</b><a href="#f-abseq">|ax + b| = cx + d. Each case is solved, then checked against the sign of cx + d.</a></li><li><b>Fig. 8</b><a href="#f-abs2">||x − a| − b| = c. Up to four crossings with the horizontal line y = c.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="math-sets-logic.html">&larr; Sets &amp; Mathematical Logic</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="math-analytic-geometry.html">Analytic Geometry &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-math.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

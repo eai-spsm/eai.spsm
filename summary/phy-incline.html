@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="พื้นเอียง | EAI">Inclined Plane · Physics for Engineering | EAI</title>
+<meta name="description" content="Splitting gravity into a component along the slope and a component into it, which unlocks friction, acceleration and the angle at which a block starts to slide.">
+<link rel="canonical" href="https://eaispsm.vercel.app/phy-incline">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Inclined Plane · Physics for Engineering | EAI">
+<meta property="og:description" content="Splitting gravity into a component along the slope and a component into it, which unlocks friction, acceleration and the angle at which a block starts to slide.">
+<meta property="og:url" content="https://eaispsm.vercel.app/phy-incline">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="พื้นเอียง">Inclined Plane</h1><p class="sub">Physics for Engineering · M.4 · <span data-th="บทที่">Chapter</span> 3 / 7</p><p class="lead">Splitting gravity into a component along the slope and a component into it, which unlocks friction, acceleration and the angle at which a block starts to slide.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#comp">Force components on an incline</a></li><li><a href="#normal">Normal force</a></li><li><a href="#friction">Friction on an incline</a></li><li><a href="#accel">Acceleration down the slope</a></li><li><a href="#worked">Worked example</a></li></ol></nav>
+<h2 id="comp">Force components on an incline</h2>
+<p>A block on a slope at angle θ has weight mg pointing straight down. Working in global horizontal and vertical directions is awkward, so resolve mg along the slope's own two axes:</p>
+<div class="vs"><div><b>Parallel to the slope: mg sin θ</b>acts down the slope. It is the force trying to make the block slide, and grows as the slope gets steeper.</div><div><b>Perpendicular to the slope: mg cos θ</b>presses the block into the surface and is balanced by the normal force N when there is no acceleration across the slope.</div></div>
+<p>As θ goes from 0° to 90°, mg sin θ rises from 0 to mg and mg cos θ falls from mg to 0. On a flat surface (θ = 0°) nothing drives a slide. On a vertical wall (θ = 90°) the whole weight drives it and there is no normal force at all. Drag the angle in <a class="rf" href="#f-incline">Fig. 1</a> and watch the dashed grey components change.</p>
+<figure class="fg wd" id="f-incline" data-w="incline"><figcaption><b>Fig. 1</b>Block on a slope: weight, its two components (grey dashed), normal force and friction.</figcaption></figure>
+
+<h2 id="normal">Normal force</h2>
+<p>N is always perpendicular to the surface. A frequent error is to say N = mg always. That is only true on a flat horizontal surface; on a slope N balances the component pressing into it.</p>
+<div class="table-wrap"><table><thead><tr><th>Surface</th><th>Normal force</th><th>Condition</th></tr></thead><tbody>
+<tr><td>Flat horizontal</td><td>N = mg</td><td>full weight presses down</td></tr>
+<tr><td>Incline at θ</td><td>N = mg cos θ</td><td>no acceleration across the slope</td></tr>
+<tr><td>Incline, extra push-down F</td><td>N = mg cos θ + F sin θ</td><td>extra load into the surface</td></tr>
+<tr><td>Incline, extra pull-up F</td><td>N = mg cos θ − F sin θ</td><td>lift reduces contact force</td></tr></tbody></table></div>
+<p>If N = 0 the block has lifted off the surface.</p>
+
+<h2 id="friction">Friction on an incline</h2>
+<p>Friction acts along the surface and opposes motion or the tendency to slide. Since N is mg cos θ, friction is also smaller than on flat ground: f = μN = μmg cos θ.</p>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Condition</th><th>Formula</th><th>Note</th></tr></thead><tbody>
+<tr><td>Static f<sub>s</sub></td><td>block not moving</td><td>f<sub>s</sub> ≤ μ<sub>s</sub>N</td><td>adjusts up to a maximum μ<sub>s</sub>N</td></tr>
+<tr><td>Kinetic f<sub>k</sub></td><td>block sliding</td><td>f<sub>k</sub> = μ<sub>k</sub>N</td><td>constant once sliding; μ<sub>k</sub> &lt; μ<sub>s</sub></td></tr></tbody></table></div>
+<p><strong>Critical angle.</strong> The block is just about to slide when the driving component equals maximum static friction: mg sin θ<sub>c</sub> = μ<sub>s</sub> mg cos θ<sub>c</sub>, so <strong>tan θ<sub>c</sub> = μ<sub>s</sub></strong> and θ<sub>c</sub> = arctan μ<sub>s</sub>. Tilting a surface until an object slips is a simple way to measure μ<sub>s</sub>.</p>
+<p>In the diagram the panel shows the critical angle for the chosen μ. Move θ above it and the state flips from "stays put" to "sliding".</p>
+
+<h2 id="accel">Acceleration down the slope</h2>
+<p>Take down the slope as positive. Net force = driving component − friction: F<sub>net</sub> = mg sin θ − μ<sub>k</sub> mg cos θ. Divide by m:</p>
+<div class="fm">a = g ( sin θ − μ<sub>k</sub> cos θ )</div>
+<p>If μ cos θ ≥ sin θ the formula would go negative: friction is strong enough to prevent sliding, so the block stays at rest under static friction and a = 0.</p>
+<div class="table-wrap"><table><thead><tr><th>Case</th><th>Acceleration</th></tr></thead><tbody>
+<tr><td>No friction (μ = 0)</td><td>a = g sin θ</td></tr>
+<tr><td>Sliding down with friction</td><td>a = g(sin θ − μ<sub>k</sub> cos θ)</td></tr>
+<tr><td>Pushed up the slope, then slowing</td><td>a = g(sin θ + μ<sub>k</sub> cos θ) directed down the slope: gravity and friction both act downhill</td></tr></tbody></table></div>
+
+<h2 id="worked">Worked example</h2>
+<p>A 10 kg block on a 30° slope with μ<sub>k</sub> = 0.25 slides freely from rest, starting 5 m up the slope. Find the acceleration and the time to reach the bottom.</p>
+<div class="table-wrap"><table><thead><tr><th>Step</th><th>Working</th></tr></thead><tbody>
+<tr><td>1 Normal force</td><td>N = mg cos 30° = 10 × 10 × (√3/2) ≈ 86.6 N</td></tr>
+<tr><td>2 Kinetic friction</td><td>f<sub>k</sub> = 0.25 × 86.6 ≈ 21.7 N</td></tr>
+<tr><td>3 Net force along slope</td><td>mg sin 30° − f<sub>k</sub> = 50 − 21.7 = 28.3 N</td></tr>
+<tr><td>4 Acceleration</td><td>a = 28.3/10 = 2.83 m/s²</td></tr>
+<tr><td>5 Time to the bottom</td><td>s = ½at²: 5 = ½(2.83)t² → t² ≈ 3.53 → t ≈ 1.88 s</td></tr></tbody></table></div>
+<p>Set θ = 30, m = 10, μ = 0.25 in <a class="rf" href="#f-incline">Fig. 1</a>: the panel shows N = 86.6 N, friction 21.65 N and a = 2.83 m/s², matching the steps.</p>
+<pre class="code-block"><code>import math
+def incline(m, theta_deg, mu_k=0, g=10):
+    th = math.radians(theta_deg)
+    N = m*g*math.cos(th)
+    f = mu_k*N
+    a = g*(math.sin(th) - mu_k*math.cos(th))
+    return N, f, a
+print(incline(10, 30, 0.25))   # (86.6, 21.65, 2.83)</code></pre>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-incline">Block on a slope: weight, its two components (grey dashed), normal force and friction.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="phy-newton.html">&larr; Newton&#x27;s Laws &amp; Free Body Diagrams</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="phy-projectile-circular.html">Projectile &amp; Circular Motion &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-phys.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

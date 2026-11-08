@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="ความสัมพันธ์และฟังก์ชัน | EAI">Relations &amp; Functions · Additional Math | EAI</title>
+<meta name="description" content="Ordered pairs, relations, functions and their types, function operations and composition, and inverse functions, with graphs you can test line by line.">
+<link rel="canonical" href="https://eaispsm.vercel.app/math-functions">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Relations &amp; Functions · Additional Math | EAI">
+<meta property="og:description" content="Ordered pairs, relations, functions and their types, function operations and composition, and inverse functions, with graphs you can test line by line.">
+<meta property="og:url" content="https://eaispsm.vercel.app/math-functions">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="ความสัมพันธ์และฟังก์ชัน">Relations &amp; Functions</h1><p class="sub">Additional Math · M.4 · <span data-th="บทที่">Chapter</span> 5 / 5</p><p class="lead">Ordered pairs, relations, functions and their types, function operations and composition, and inverse functions, with graphs you can test line by line.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#pairs">Ordered pairs and the Cartesian product</a></li><li><a href="#relation">Relations (ความสัมพันธ์)</a></li><li><a href="#function">Functions (ฟังก์ชัน)</a></li><li><a href="#types">Types of functions</a></li><li><a href="#ops">Function operations and composition</a></li><li><a href="#inverse">Inverse functions (ฟังก์ชันผกผัน)</a></li><li><a href="#sat">SAT: how many solutions?</a></li><li><a href="#terms">Key terms</a></li></ol></nav>
+<h2 id="pairs">Ordered pairs and the Cartesian product</h2>
+<p>An <strong>ordered pair</strong> (a, b) has a first element a and a second element b, and <em>the order matters</em>: (a, b) = (c, d) only if a = c and b = d. That is the difference from a set, where {2, 5} = {5, 2} but (2, 5) ≠ (5, 2).</p>
+<p>The <strong>Cartesian product</strong> A × B is the set of all ordered pairs (a, b) with a ∈ A and b ∈ B, and n(A × B) = n(A) · n(B).</p>
+<div class="table-wrap"><table><thead><tr><th>Given</th><th>A × B</th><th>n(A × B)</th></tr></thead><tbody>
+<tr><td>A = {1, 2}, B = {x, y}</td><td>{(1,x), (1,y), (2,x), (2,y)}</td><td>2 × 2 = 4</td></tr>
+<tr><td>A = {a}, B = {1, 2, 3}</td><td>{(a,1), (a,2), (a,3)}</td><td>1 × 3 = 3</td></tr>
+<tr><td>A = ∅, B = {1, 2}</td><td>∅</td><td>0 × 2 = 0</td></tr></tbody></table></div>
+<p>A × B ≠ B × A in general, because (a, b) and (b, a) differ when a ≠ b. The product is equal both ways only when A = B or one set is empty.</p>
+
+<h2 id="relation">Relations (ความสัมพันธ์)</h2>
+<p><strong>Definition.</strong> A <strong>relation</strong> R from A to B is any subset of A × B, so R ⊆ A × B. It pairs some elements of A with some of B, with no limit on how many outputs an input may have.</p>
+<div class="table-wrap"><table><thead><tr><th>Term</th><th>Definition</th><th>For R = {(1,x), (2,y)}, B = {x, y, z}</th></tr></thead><tbody>
+<tr><td>Domain</td><td>all first elements actually used</td><td>{1, 2}</td></tr>
+<tr><td>Range</td><td>all second elements actually used</td><td>{x, y}</td></tr>
+<tr><td>Co-domain</td><td>the whole set B, used or not (range ⊆ co-domain)</td><td>{x, y, z}; z is unused</td></tr></tbody></table></div>
+<p>A relation can be shown as a set of pairs, a table, an arrow diagram or a graph. Every subset of A × B counts, even ∅ and A × B itself.</p>
+
+<h2 id="function">Functions (ฟังก์ชัน)</h2>
+<p><strong>Definition.</strong> A <strong>function</strong> f : A → B is a relation where every element of A is paired with <em>exactly one</em> element of B. Two conditions: (1) every element of A appears as a first element, and (2) no element of A has two different outputs.</p>
+<h3>Vertical line test</h3>
+<p>A curve is the graph of a function exactly when every vertical line meets it at most once. If a vertical line crosses twice, one x has two y-values. Slide the grey vertical line in <a class="rf" href="#f-fn">Fig. 2</a> and read how many times it meets the graph.</p>
+<div class="table-wrap"><table><thead><tr><th>Property</th><th>Relation</th><th>Function</th></tr></thead><tbody>
+<tr><td>Each input maps to</td><td>one or more outputs</td><td>exactly one output</td></tr>
+<tr><td>Domain coverage</td><td>some inputs may be unused</td><td>all of A is used</td></tr>
+<tr><td>Vertical line test</td><td>may fail</td><td>always passes</td></tr>
+<tr><td>Notation</td><td>R ⊆ A × B</td><td>f : A → B</td></tr></tbody></table></div>
+<h3>Python functions are mathematical functions</h3>
+<p>A <code>def</code> block takes one input and returns one output. Composition becomes nested calls, and f(g(x)) differs from g(f(x)).</p>
+<pre class="code-block"><code>def f(x): return 2*x + 1
+def g(x): return x**2
+fog = lambda x: f(g(x))     # (f∘g)(x)
+gof = lambda x: g(f(x))     # (g∘f)(x)
+print(fog(3), gof(3), fog(3) == gof(3))   # 19 49 False</code></pre>
+
+<h2 id="types">Types of functions</h2>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Definition</th><th>Arrow diagram</th><th>Example</th></tr></thead><tbody>
+<tr><td>One-to-one (injective)</td><td>different inputs give different outputs: f(a) = f(b) ⟹ a = b</td><td>no two arrows meet</td><td>f(x) = 2x</td></tr>
+<tr><td>Onto (surjective)</td><td>every element of B is an output; range = co-domain</td><td>every B point is hit</td><td>f : ℤ → ℤ, f(x) = x − 1</td></tr>
+<tr><td>Bijective</td><td>both one-to-one and onto</td><td>one arrow in, one out, everywhere</td><td>f(x) = x + 3 on ℝ</td></tr>
+<tr><td>Many-to-one</td><td>different inputs can share an output; not one-to-one</td><td>arrows converge</td><td>f(x) = x²</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-types" data-w="types"><figcaption><b>Fig. 1</b>Four mappings from A to B and the properties of each.</figcaption></figure>
+<div class="table-wrap"><table><thead><tr><th>Test</th><th>One-to-one</th><th>Onto</th></tr></thead><tbody><tr><td>Algebraic</td><td>assume f(a) = f(b), show a = b</td><td>given y ∈ B, find x ∈ A with f(x) = y</td></tr><tr><td>Graph (ℝ → ℝ)</td><td>horizontal line test: every horizontal line meets the graph at most once</td><td>every horizontal line meets the graph at least once</td></tr></tbody></table></div>
+<p>Explore the horizontal line test in <a class="rf" href="#f-fn">Fig. 2</a>: a parabola fails it, a cubic or a reciprocal passes.</p>
+<figure class="fg wd" id="f-fn" data-w="fn"><figcaption><b>Fig. 2</b>Six function families with a movable vertical line (function test) and horizontal line (one-to-one test).</figcaption></figure>
+
+<h2 id="ops">Function operations and composition</h2>
+<div class="table-wrap"><table><thead><tr><th>Operation</th><th>Notation</th><th>Formula</th><th>Domain</th></tr></thead><tbody>
+<tr><td>Sum</td><td>(f + g)(x)</td><td>f(x) + g(x)</td><td>D<sub>f</sub> ∩ D<sub>g</sub></td></tr>
+<tr><td>Difference</td><td>(f − g)(x)</td><td>f(x) − g(x)</td><td>D<sub>f</sub> ∩ D<sub>g</sub></td></tr>
+<tr><td>Product</td><td>(f · g)(x)</td><td>f(x) · g(x)</td><td>D<sub>f</sub> ∩ D<sub>g</sub></td></tr>
+<tr><td>Quotient</td><td>(f / g)(x)</td><td>f(x) / g(x)</td><td>D<sub>f</sub> ∩ D<sub>g</sub>, with g(x) ≠ 0</td></tr>
+<tr><td>Composition</td><td>(f ∘ g)(x)</td><td>f(g(x))</td><td>{x ∈ D<sub>g</sub> : g(x) ∈ D<sub>f</sub>}</td></tr></tbody></table></div>
+<p><strong>Composition</strong> (f ∘ g)(x) = f(g(x)) applies g first, then feeds the result to f: read it "f after g". And f ∘ g ≠ g ∘ f in general. Pick any f and g in <a class="rf" href="#f-compose">Fig. 3</a> and compare the two lanes.</p>
+<figure class="fg wd" id="f-compose" data-w="compose"><figcaption><b>Fig. 3</b>Two function machines in opposite order. The grey outputs usually differ.</figcaption></figure>
+<p>Example with f(x) = 2x + 1 and g(x) = x²: (f ∘ g)(x) = f(x²) = 2x² + 1, but (g ∘ f)(x) = (2x + 1)² = 4x² + 4x + 1, so the order matters.</p>
+
+<h2 id="inverse">Inverse functions (ฟังก์ชันผกผัน)</h2>
+<p>The inverse f⁻¹ exists <strong>if and only if f is bijective</strong>. It reverses the mapping: if f(a) = b then f⁻¹(b) = a. To find it: (1) write y = f(x), (2) swap x and y, (3) solve for y, (4) rename y as f⁻¹(x).</p>
+<div class="table-wrap"><table><thead><tr><th>Property</th><th>Statement</th></tr></thead><tbody>
+<tr><td>Domain and range swap</td><td>domain of f⁻¹ = range of f; range of f⁻¹ = domain of f</td></tr>
+<tr><td>Cancelling</td><td>(f ∘ f⁻¹)(x) = x and (f⁻¹ ∘ f)(x) = x</td></tr>
+<tr><td>Graph</td><td>f and f⁻¹ are mirror images across the line y = x</td></tr>
+<tr><td>Notation</td><td>f⁻¹(x) is the inverse, <em>not</em> 1 / f(x)</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-inverse" data-w="inverse"><figcaption><b>Fig. 4</b>A function (black), its inverse (grey) and the mirror line y = x. A point and its reflection are marked.</figcaption></figure>
+<p>Worked example f(x) = 3x − 2: y = 3x − 2; swap: x = 3y − 2; solve: y = (x + 2)/3; so f⁻¹(x) = (x + 2)/3. Check: f(f⁻¹(x)) = 3·(x + 2)/3 − 2 = x ✓. For x² to have an inverse it must be restricted to x ≥ 0, then f⁻¹ = √x (choose it in <a class="rf" href="#f-inverse">Fig. 4</a>).</p>
+
+<h2 id="sat">SAT: how many solutions?</h2>
+<p>A favourite SAT question asks <em>how many</em> solutions an equation has, or what value of a constant gives exactly one, none or infinitely many. Every case is a question about <strong>where two graphs meet</strong>, so the counts are limited by what the graph can do.</p>
+<div class="table-wrap"><table><thead><tr><th>Equation type</th><th>Possible numbers of solutions</th><th>What decides it</th></tr></thead><tbody>
+<tr><td>Linear: ax + b = cx + d</td><td>0, 1 or infinitely many</td><td>slopes a and c, then the intercepts</td></tr>
+<tr><td>Quadratic: ax² + bx + c = 0</td><td>0, 1 or 2</td><td>the discriminant b² − 4ac</td></tr>
+<tr><td>Line and parabola</td><td>0, 1 or 2</td><td>set equal and use the discriminant; tangent means 1</td></tr>
+<tr><td>Exponential: a·bˣ = k</td><td>0 or 1 (never 2)</td><td>sign of k/a, and b ≠ 1</td></tr>
+<tr><td>Absolute value: |ax + b| = k</td><td>0, 1 or 2</td><td>sign of k (k = 0 gives one)</td></tr>
+<tr><td>Radical: √(px + q) = x + r</td><td>0, 1 or 2</td><td>squaring, then checking each root</td></tr></tbody></table></div>
+<h3>Linear: one, none or infinite</h3>
+<p>Solve ax + b = cx + d by collecting x: (a − c)x = d − b. If a ≠ c there is exactly one solution. If a = c the x terms cancel: then b = d gives a statement that is always true (<strong>infinitely many</strong>) and b ≠ d gives one that is never true (<strong>no solution</strong>). Geometrically these are two lines: different slopes cross once, equal slopes with different intercepts are parallel, and equal slopes with equal intercepts are the same line. That is exactly the parallel and coincident rows of <a href="math-analytic-geometry.html#par">Parallel and perpendicular lines</a> in Analytic Geometry. Make a equal to c in <a class="rf" href="#f-linsol">Fig. 5</a> and then make b equal to d.</p>
+<figure class="fg wd" id="f-linsol" data-w="linsol"><figcaption><b>Fig. 5</b>Both sides of ax + b = cx + d drawn as lines. Where they meet is the solution.</figcaption></figure>
+<p>SAT shortcut: "For what value of k does 3x + 5 = kx + 5 have infinitely many solutions?" Matching slopes and intercepts gives k = 3. "…no solution?" would need k = 3 but a different constant on one side.</p>
+<h3>Quadratic: the discriminant</h3>
+<p>For ax² + bx + c = 0, the discriminant D = b² − 4ac, the expression under the root in the quadratic formula, counts the real solutions. D &gt; 0: two. D = 0: one repeated root, and the vertex sits on the x-axis. D &lt; 0: none, the parabola misses the axis. Useful extras: the roots add to −b/a and multiply to c/a, and the vertex is at x = −b/(2a).</p>
+<figure class="fg wd" id="f-quadroots" data-w="quadroots"><figcaption><b>Fig. 6</b>A parabola and its x-intercepts. Watch the discriminant change sign as b or c moves.</figcaption></figure>
+<p>A line meeting a parabola works the same way: set the two expressions equal to get a quadratic, then read its discriminant. D &gt; 0 means the line cuts twice, D = 0 means it is tangent, and D &lt; 0 means it misses.</p>
+<div class="table-wrap"><table><thead><tr><th>Quadratic form</th><th>Looks like</th><th>Shows you directly</th></tr></thead><tbody>
+<tr><td>Standard</td><td>y = ax² + bx + c</td><td>the y-intercept c and the direction (sign of a)</td></tr>
+<tr><td>Factored</td><td>y = a(x − r₁)(x − r₂)</td><td>the zeros r₁ and r₂</td></tr>
+<tr><td>Vertex</td><td>y = a(x − h)² + k</td><td>the vertex (h, k), and the minimum or maximum</td></tr></tbody></table></div>
+<h3>Exponential: at most one</h3>
+<p>The graph of y = a·bˣ (with a &gt; 0, b &gt; 0, b ≠ 1) is always above the x-axis and always rising (b &gt; 1, growth) or always falling (0 &lt; b &lt; 1, decay), so a horizontal line y = k can meet it only once. If k/a &gt; 0 the single answer is x = log<sub>b</sub>(k/a); if k ≤ 0 there is no solution, because the x-axis is an asymptote that is never reached. Compare this with the quadratic: a parabola turns around, an exponential never does. The SAT model for growth is y = a(1 + r)ᵗ and for decay y = a(1 − r)ᵗ.</p>
+<figure class="fg wd" id="f-expsol" data-w="expsol"><figcaption><b>Fig. 7</b>An exponential curve and a horizontal line. Try a negative k to see the "no solution" case.</figcaption></figure>
+<h3>Where a and b come from: percent change</h3>
+<p>Write an exponential as y = a·bˣ (the SAT often writes y = a(1 + r)ˣ). Here <strong>a is the initial amount</strong>, the value when x = 0 and the point where the curve crosses the y-axis. <strong>b is the growth factor</strong>, the number you multiply by at every step. If a quantity rises by r percent each step then b = 1 + r, so +5% means b = 1.05. If it falls by r percent then b = 1 − r, so −20% means b = 0.8. Example: $200 growing 5% a year is y = 200(1.05)ˣ, and after 3 years it is 200 × 1.05³ ≈ 231.5. Change b in <a class="rf" href="#f-expsol">Fig. 7</a> and read off the "change per step".</p>
+<p>The SAT likes to test this against a fixed top-up, where the same amount is added each time instead of the same percentage:</p>
+<div class="table-wrap"><table><thead><tr><th></th><th>Linear (top-up)</th><th>Exponential (percent change)</th></tr></thead><tbody>
+<tr><td>Each step</td><td>add the same amount d</td><td>multiply by the same factor b</td></tr>
+<tr><td>Formula</td><td>y = a + dx</td><td>y = a·bˣ</td></tr>
+<tr><td>Example</td><td>$200 plus a $10 top-up every month: 200 + 10x</td><td>$200 growing 5% every month: 200(1.05)ˣ</td></tr>
+<tr><td>After 12 steps</td><td>$320</td><td>about $359</td></tr>
+<tr><td>Graph</td><td>straight line</td><td>curve that bends upward (b &gt; 1) or flattens toward 0 (0 &lt; b &lt; 1)</td></tr>
+<tr><td>Wording clue</td><td>"increases by 10 each year"</td><td>"increases by 5% each year"</td></tr></tbody></table></div>
+<h3>Quick SAT toolkit</h3>
+<div class="table-wrap"><table><thead><tr><th>Change to the formula</th><th>Effect on the graph</th></tr></thead><tbody>
+<tr><td>f(x) + k</td><td>shift up k (down if k is negative)</td></tr>
+<tr><td>f(x − h)</td><td>shift right h (left if h is negative)</td></tr>
+<tr><td>−f(x)</td><td>flip upside down across the x-axis</td></tr>
+<tr><td>f(−x)</td><td>flip left to right across the y-axis</td></tr>
+<tr><td>a·f(x)</td><td>stretch vertically by a (a &gt; 1) or squash (0 &lt; a &lt; 1)</td></tr></tbody></table></div>
+<p>Zeros are the x-intercepts (solve f(x) = 0), the y-intercept is f(0), and "f(3)" just means put 3 in for x. For absolute value and radical versions of these questions, see <a href="math-real-numbers.html#eq">Solving equations</a> in Real Numbers.</p>
+
+<h2 id="terms">Key terms</h2>
+<div class="table-wrap"><table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Ordered pair (a, b)</td><td>position matters; (a, b) = (c, d) iff a = c and b = d</td></tr>
+<tr><td>Cartesian product A × B</td><td>all pairs (a, b); n(A × B) = n(A)·n(B)</td></tr>
+<tr><td>Relation</td><td>any subset of A × B</td></tr>
+<tr><td>Function</td><td>relation with exactly one output per input</td></tr>
+<tr><td>Injective / surjective / bijective</td><td>one-to-one / onto / both</td></tr>
+<tr><td>Composition f ∘ g</td><td>apply g, then f; not commutative</td></tr>
+<tr><td>Inverse f⁻¹</td><td>exists only for bijections; reflection of f in y = x</td></tr></tbody></table></div>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-types">Four mappings from A to B and the properties of each.</a></li><li><b>Fig. 2</b><a href="#f-fn">Six function families with a movable vertical line (function test) and horizontal line (one-to-one test).</a></li><li><b>Fig. 3</b><a href="#f-compose">Two function machines in opposite order. The grey outputs usually differ.</a></li><li><b>Fig. 4</b><a href="#f-inverse">A function (black), its inverse (grey) and the mirror line y = x. A point and its reflection are marked.</a></li><li><b>Fig. 5</b><a href="#f-linsol">Both sides of ax + b = cx + d drawn as lines. Where they meet is the solution.</a></li><li><b>Fig. 6</b><a href="#f-quadroots">A parabola and its x-intercepts. Watch the discriminant change sign as b or c moves.</a></li><li><b>Fig. 7</b><a href="#f-expsol">An exponential curve and a horizontal line. Try a negative k to see the "no solution" case.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="math-conic-sections.html">&larr; Conic Sections</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-math.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

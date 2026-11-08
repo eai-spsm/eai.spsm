@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EAI Open House Poster Bold</title>
+<style>
+/* IG portrait 3:4 = 1080x1440. Navy field, hollow stepped cream card, coral accent. One font, one weight, no caps. */
+@font-face{font-family:"line_seed_sans_th";src:url(../assets/fonts/lineseedsansth_rg.woff2) format("woff2")}
+:root{--navy:#292d7a;--coral:#f5423d;--cream:#fbf8f1;--ink:#1a1a1a;--w5:#8a8782;--w7:#4a4842}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1440px;overflow:hidden}
+body{position:relative;font:20px/1.5 "line_seed_sans_th",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;
+  background-color:var(--navy);background-image:radial-gradient(rgba(255,255,255,.16) 2.5px,transparent 3px);background-size:36px 36px;background-position:18px 18px;
+  display:flex;align-items:center;justify-content:center}
+.px{position:absolute;width:var(--z);height:var(--z);background:var(--c)}
+b{font-weight:700}
+.card{flex:none;width:860px;height:1320px;background:var(--cream);padding:72px 0;display:flex;flex-direction:column;align-items:center;text-align:center;clip-path:polygon(0px 72px,24px 72px,24px 48px,48px 48px,48px 24px,72px 24px,72px 0px,144px 0px,144px 24px,240px 24px,240px 0px,336px 0px,336px 24px,384px 24px,384px 0px,432px 0px,432px 48px,552px 48px,552px 0px,600px 0px,600px 24px,720px 24px,720px 0px,788px 0px,788px 24px,812px 24px,812px 48px,836px 48px,836px 72px,860px 72px,860px 96px,812px 96px,812px 144px,860px 144px,860px 192px,836px 192px,836px 288px,860px 288px,860px 480px,812px 480px,812px 528px,860px 528px,860px 936px,836px 936px,836px 1032px,860px 1032px,860px 1080px,836px 1080px,836px 1128px,860px 1128px,860px 1248px,836px 1248px,836px 1272px,812px 1272px,812px 1296px,788px 1296px,788px 1320px,744px 1320px,744px 1296px,624px 1296px,624px 1320px,360px 1320px,360px 1272px,288px 1272px,288px 1320px,192px 1320px,192px 1296px,120px 1296px,120px 1320px,72px 1320px,72px 1296px,48px 1296px,48px 1272px,24px 1272px,24px 1248px,0px 1248px,0px 816px,24px 816px,24px 720px,0px 720px,0px 648px,24px 648px,24px 552px,0px 552px,0px 504px,24px 504px,24px 456px,0px 456px,0px 216px,24px 216px,24px 168px,0px 168px)}
+.in{width:700px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1}
+.brand{font-size:18px;color:var(--w7)}
+h1{margin-top:64px;font-weight:400;line-height:1.05}
+h1 b{display:block;color:var(--coral);font-size:84px;letter-spacing:-.01em}
+.sub{margin-top:26px;font-size:16px;color:var(--w7);max-width:480px;text-wrap:balance}
+.date{margin-top:22px;font-size:17px;color:var(--navy)}
+.acts{margin-top:64px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:0 44px;text-align:left}
+.act{display:flex;gap:16px;align-items:center;padding:16px 2px;border-top:1px solid #e3dfd4}
+.act .ico{flex:none;width:56px;height:56px;border-radius:8px;display:grid;place-items:center;background:#e8e9f5}
+.act:nth-child(4n+2) .ico,.act:nth-child(4n+3) .ico{background:#fde3e2}
+.act img{width:32px;height:32px;opacity:.9}
+.act b{display:block;font-weight:400;font-size:18px;line-height:1.25}
+.act small{display:block;margin-top:2px;font-size:13px;line-height:1.4;color:var(--w5)}
+.qr{margin-top:64px;width:264px;height:264px;padding:16px;background:#fff;border:2px solid var(--ink);border-radius:10px;box-shadow:3px 3px 0 var(--navy)}
+.qr svg{display:block;width:100%;height:100%}
+.cap{margin-top:24px;font-size:16px;color:var(--w7)}
+.cap small{display:block;font-size:13px;color:var(--w5)}
+.foot{margin-top:72px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;font-size:15px;color:var(--navy)}
+.foot span{display:flex;align-items:center;gap:8px}
+.foot img{width:24px;height:24px;opacity:.85}
+
+/* same design, bold added where text was regular (font has no bold file, so this is browser faux bold) */
+.brand,.date,.act b,.cap,.foot{font-weight:700}
+.cap small,.act small{font-weight:400}
+/* depth on the icon tiles: ink outline, hard offset shadow, light top edge */
+.act .ico{border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink),inset 0 3px 0 rgba(255,255,255,.7);margin-right:3px}
+.act img{opacity:1}
+/* same depth as the icon tiles on the QR frame */
+.qr{border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink),inset 0 4px 0 rgba(255,255,255,.7);margin-right:5px}
+/* answer-sheet look: grid on the field and the card, bits drawn as OMR bubbles (filled = 1, empty = 0) */
+body{background-color:var(--navy);background-image:linear-gradient(rgba(255,255,255,.11) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.11) 2px,transparent 2px);background-size:60px 60px;background-position:0 0}
+.card{background:var(--cream)}
+.b{position:absolute;width:24px;height:24px;border-radius:50%;border:3px solid rgba(255,255,255,.6)}
+.b.on{background:var(--coral);border-color:var(--coral)}
+/* redone field: graph paper (30px cells, strong line every 5th), OMR timing bars on the edges, a few marked cells */
+body{background-color:var(--navy);
+  background-image:
+   linear-gradient(rgba(255,255,255,.2) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.2) 2px,transparent 2px),
+   linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:150px 150px,150px 150px,30px 30px,30px 30px;background-position:0 0}
+.tm{position:absolute;background:#0f1244}
+.cell{position:absolute;width:30px;height:30px;background:rgba(255,255,255,.1)}
+/* full white page; bigger description and date under the title */
+body{background:#fff}
+.card{background:#fff;clip-path:none}
+.sub{font-size:21px;line-height:1.5;color:var(--ink);max-width:620px;font-weight:700}
+.date{font-size:24px}
+/* code gimmick: GitHub light theme code block, regular weight */
+.code{font:400 18px/1.5 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;color:#24292f;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:10px 18px;margin-bottom:26px}
+.code .f{color:#0550ae}
+.code .s{color:#0a3069}
+.code .p{color:#24292f}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="in">
+      <div class="code"><span class="f">print</span><span class="p">(</span><span class="s">"Hello, future engineers!"</span><span class="p">)</span></div>
+      <div class="brand">AI Major | Satit Prasarnmit</div>
+      <h1><b>Open House</b></h1>
+      <p class="sub">Live demos and hands-on booths from the AI&nbsp;Engineering major. Students and families welcome.</p>
+      <div class="date">24 January 2027</div>
+      <div class="acts"><div class="act"><div class="ico"><img src="../assets/ph/chats.svg" alt=""></div><div><b>Talk to seniors</b><small>Ask students what the major is like</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/compass.svg" alt=""></div><div><b>Explore our work</b><small>See projects built by our students</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/hand-pointing.svg" alt=""></div><div><b>Play our activities</b><small>Try hands-on booths and demos</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/users-three.svg" alt=""></div><div><b>Know the atmosphere</b><small>Feel the classroom and community</small></div></div></div>
+      <div class="qr" role="img" aria-label="QR code for the EAI LINE Openchat"><svg viewBox="0 0 25 25" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" class="segno"><path class="qrline" stroke="#1a1a1a" d="M0 0.5h7m2 0h1m1 0h2m1 0h1m3 0h7m-25 1h1m5 0h1m1 0h2m4 0h2m2 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m4 0h1m2 0h3m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m3 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h2m2 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m2 0h1m3 0h1m1 0h2m1 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-15 1h1m1 0h3m-15 1h1m1 0h1m1 0h1m1 0h1m4 0h2m7 0h1m2 0h1m-20 1h2m1 0h1m1 0h1m3 0h1m3 0h2m5 0h1m-25 1h1m2 0h1m1 0h3m3 0h4m7 0h3m-24 1h1m1 0h2m3 0h1m2 0h1m1 0h2m1 0h1m2 0h1m3 0h1m-24 1h2m1 0h4m1 0h3m1 0h2m1 0h4m2 0h1m1 0h2m-24 1h4m2 0h6m1 0h1m3 0h1m2 0h1m2 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h1m2 0h3m2 0h3m-24 1h1m7 0h2m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m-24 1h1m2 0h2m1 0h2m1 0h1m1 0h1m3 0h7m-14 1h4m1 0h2m1 0h1m3 0h2m1 0h2m-25 1h7m3 0h1m2 0h1m1 0h2m1 0h1m1 0h2m1 0h2m-25 1h1m5 0h1m2 0h1m1 0h1m1 0h1m2 0h1m3 0h2m1 0h2m-25 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h6m1 0h2m-25 1h1m1 0h3m1 0h1m4 0h3m1 0h1m1 0h1m1 0h4m-23 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m4 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m2 0h2m1 0h2m1 0h1m1 0h2m1 0h1m-24 1h7m1 0h1m2 0h2m1 0h3m2 0h1m3 0h2"/></svg></div>
+      <p class="cap">Scan to join the LINE Openchat<small>for updates and questions</small></p>
+      <div class="foot"><span><img src="../assets/ph/instagram-logo.svg" alt="">@e.ai_official</span><span><img src="../assets/ph/tiktok-logo.svg" alt="">@e.ai_official</span><span><img src="../assets/ph/globe.svg" alt="">eaispsm.vercel.app</span></div>
+    </div>
+  </div>
+</body>
+</html>

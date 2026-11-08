@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="เซตและตรรกศาสตร์ | EAI">Sets &amp; Mathematical Logic · Additional Math | EAI</title>
+<meta name="description" content="The foundation of modern mathematics: collections of objects, the operations between them, and the rules of logical reasoning (propositions, truth tables, equivalences, quantifiers and inference).">
+<link rel="canonical" href="https://eaispsm.vercel.app/math-sets-logic">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Sets &amp; Mathematical Logic · Additional Math | EAI">
+<meta property="og:description" content="The foundation of modern mathematics: collections of objects, the operations between them, and the rules of logical reasoning (propositions, truth tables, equivalences, quantifiers and inference).">
+<meta property="og:url" content="https://eaispsm.vercel.app/math-sets-logic">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="เซตและตรรกศาสตร์">Sets &amp; Mathematical Logic</h1><p class="sub">Additional Math · M.4 · <span data-th="บทที่">Chapter</span> 1 / 5</p><p class="lead">The foundation of modern mathematics: collections of objects, the operations between them, and the rules of logical reasoning (propositions, truth tables, equivalences, quantifiers and inference).</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#set">What is a set?</a></li><li><a href="#types">Types of sets</a></li><li><a href="#subset">Subsets and proper subsets</a></li><li><a href="#power">Power set 𝒫(A)</a></li><li><a href="#ops">Set operations</a></li><li><a href="#incl">Inclusion–exclusion principle</a></li><li><a href="#prop">Propositions (ประพจน์)</a></li><li><a href="#conn">Logical connectives</a></li><li><a href="#table">Truth tables</a></li><li><a href="#related">Converse, inverse and contrapositive</a></li><li><a href="#taut">Tautology, contradiction, contingency</a></li><li><a href="#laws">The 15 logical equivalence laws</a></li><li><a href="#prove">Proving tautologies: three methods</a></li><li><a href="#quant">Quantifiers and their negation</a></li><li><a href="#infer">Rules of inference</a></li><li><a href="#terms">Key terms</a></li></ol></nav>
+<h2 id="set">What is a set?</h2>
+<p><strong>Definition.</strong> A <strong>set</strong> is a well-defined collection of distinct objects called <strong>elements</strong>. Sets are named with capital letters. <em>x ∈ A</em> means x belongs to A; <em>x ∉ A</em> means it does not. The number of elements is <strong>n(A)</strong>.</p>
+<p>Two sets are <strong>equal</strong> when they contain exactly the same elements, whatever the order or repetition, so {1, 2, 3} = {3, 1, 2}. There are two ways to write a set:</p>
+<div class="table-wrap"><table><thead><tr><th>Notation</th><th>Example</th><th>Best when</th></tr></thead><tbody>
+<tr><td>Roster: list every element inside braces</td><td>{2, 4, 6, 8, 10}</td><td>the set is small or finite</td></tr>
+<tr><td>Set-builder: state the membership rule after the bar |</td><td>{ x | x is even, 1 ≤ x ≤ 10 }</td><td>the set is large or infinite</td></tr></tbody></table></div>
+<p>For example A = {1, 2, 3, 4, 5} has n(A) = 5, and C = { x ∈ ℝ | x² = 4 } = {−2, 2} has n(C) = 2.</p>
+
+<h2 id="types">Types of sets</h2>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Meaning</th><th>Example</th></tr></thead><tbody>
+<tr><td>Finite set</td><td>has a countable number of elements</td><td>{1, 2, 3}, n = 3</td></tr>
+<tr><td>Infinite set</td><td>the elements never end</td><td>ℕ = {0, 1, 2, 3, …}</td></tr>
+<tr><td>Empty set ∅</td><td>has no elements at all</td><td>∅ or { }, n(∅) = 0</td></tr>
+<tr><td>Universal set U</td><td>contains every element relevant to the problem</td><td>decided for each question</td></tr>
+<tr><td>Equal sets</td><td>exactly the same elements</td><td>{1,2,3} = {3,1,2}</td></tr></tbody></table></div>
+
+<h2 id="subset">Subsets and proper subsets</h2>
+<div class="vs"><div><b>Subset A ⊆ B</b>every element of A is also in B. This includes A = B, so A ⊆ A is always true.</div><div><b>Proper subset A ⊂ B</b>A ⊆ B and A ≠ B, so B has at least one element A lacks. A is never a proper subset of itself.</div></div>
+<p>If n(A) = n, the number of subsets follows a power-of-two rule:</p>
+<div class="table-wrap"><table><thead><tr><th>Count</th><th>Formula</th><th>Example n = 3</th></tr></thead><tbody><tr><td>All subsets (∅ and A included)</td><td>2ⁿ</td><td>2³ = 8</td></tr><tr><td>Proper subsets (A excluded)</td><td>2ⁿ − 1</td><td>2³ − 1 = 7</td></tr></tbody></table></div>
+<p>Two edge cases catch many students. ∅ ⊆ A is always true, because the empty set has no element that could fail to be in A. And {∅} ≠ ∅: {∅} contains one member (the empty set), so n({∅}) = 1.</p>
+
+<h2 id="power">Power set 𝒫(A)</h2>
+<p>The <strong>power set</strong> 𝒫(A) is the set of all subsets of A, including ∅ and A. It is also written P(A) or 2<sup>A</sup>, and n(𝒫(A)) = 2<sup>n(A)</sup>. Special case: 𝒫(∅) = {∅}, with n = 2⁰ = 1. Build one yourself in <a class="rf" href="#f-power">Fig. 1</a>: raise n(A) and watch the count double each time.</p>
+<figure class="fg wd" id="f-power" data-w="powerset"><figcaption><b>Fig. 1</b>Every subset of A, for n(A) from 0 to 6.</figcaption></figure>
+<p>For A = {1, 2}: 𝒫(A) = {∅, {1}, {2}, {1,2}}, so 4 elements. For B = {a, b, c}: 8 elements, namely ∅, {a}, {b}, {c}, {a,b}, {a,c}, {b,c}, {a,b,c}.</p>
+
+<h2 id="ops">Set operations</h2>
+<div class="table-wrap"><table><thead><tr><th>Operation</th><th>Definition</th><th>Size</th></tr></thead><tbody>
+<tr><td>A ∪ B (union)</td><td>{x | x ∈ A or x ∈ B}</td><td>n(A) + n(B) − n(A ∩ B)</td></tr>
+<tr><td>A ∩ B (intersection)</td><td>{x | x ∈ A and x ∈ B}</td><td>—</td></tr>
+<tr><td>A′ (complement)</td><td>{x ∈ U | x ∉ A}</td><td>n(U) − n(A)</td></tr>
+<tr><td>A − B (difference)</td><td>{x | x ∈ A and x ∉ B} = A ∩ B′</td><td>—</td></tr>
+<tr><td>A × B (Cartesian product)</td><td>{(a, b) | a ∈ A, b ∈ B}, ordered pairs</td><td>n(A) · n(B)</td></tr></tbody></table></div>
+<p>In <a class="rf" href="#f-venn2">Fig. 2</a> set the sizes and see every region. The overlap n(A ∩ B) is subtracted once in the union formula because adding n(A) and n(B) counts it twice.</p>
+<figure class="fg wd" id="f-venn2" data-w="venn2"><figcaption><b>Fig. 2</b>Two sets inside a universal set U. The numbers in each region are element counts.</figcaption></figure>
+<p>Worked example with A = {1,2,3,4}, B = {3,4,5,6}, U = {1,…,7}: A ∪ B = {1,2,3,4,5,6}; A ∩ B = {3,4}; A′ = {5,6,7}; A − B = {1,2}; n(A × B) = 4 × 4 = 16 ordered pairs.</p>
+
+<h2 id="incl">Inclusion–exclusion principle</h2>
+<p>The formulas below count a union without counting any overlap twice. For three sets the triple overlap is added back because it was added three times, then subtracted three times with the pairs, so it vanished completely. Use <a class="rf" href="#f-venn3">Fig. 3</a> to see this; the defaults are the class example below.</p>
+<div class="fm">n(A ∪ B) = n(A) + n(B) − n(A ∩ B)<small>two sets: the shared part is counted twice, so subtract it once</small></div>
+<div class="fm">n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A∩B) − n(B∩C) − n(A∩C) + n(A∩B∩C)<small>three sets: subtract the pairs, then add the triple back</small></div>
+<figure class="fg wd" id="f-venn3" data-w="venn3"><figcaption><b>Fig. 3</b>Three overlapping sets. A negative number means the inputs are impossible.</figcaption></figure>
+
+<h2 id="prop">Propositions (ประพจน์)</h2>
+<p><strong>Definition.</strong> A <strong>proposition</strong> is a declarative statement that is definitely either true (T) or false (F), never both and never neither.</p>
+<p>"2 + 2 = 4" (T) and "Bangkok is in China" (F) are propositions. These are <strong>not</strong>: commands ("Close the door!"), open sentences with an unknown ("x &gt; 3"), and opinions ("He is very tall"), because their truth value cannot be decided as written.</p>
+
+<h2 id="conn">Logical connectives</h2>
+<div class="table-wrap"><table><thead><tr><th>Symbol</th><th>Name</th><th>Read as</th><th>True when…</th></tr></thead><tbody>
+<tr><td>¬p</td><td>Negation (NOT)</td><td>not p</td><td>p is false</td></tr>
+<tr><td>p ∧ q</td><td>Conjunction (AND)</td><td>p and q</td><td>both are true</td></tr>
+<tr><td>p ∨ q</td><td>Disjunction (OR)</td><td>p or q</td><td>at least one is true</td></tr>
+<tr><td>p → q</td><td>Implication</td><td>if p then q</td><td>p is false, or q is true</td></tr>
+<tr><td>p ↔ q</td><td>Biconditional</td><td>p if and only if q</td><td>p and q have the same truth value</td></tr></tbody></table></div>
+<h3>Logic inside Python</h3>
+<p>Python's <code>and</code>, <code>or</code>, <code>not</code> are ∧, ∨, ¬. Implication is <code>not p or q</code>, and ↔ is <code>p == q</code>. Every <code>if</code> statement evaluates a proposition to True or False.</p>
+<pre class="code-block"><code>p = True; q = False
+print(p and q)      # p ∧ q  -> False
+print(p or q)       # p ∨ q  -> True
+print(not p or q)   # p → q  -> False   (≡ ¬p ∨ q)
+print(p == q)       # p ↔ q  -> False</code></pre>
+
+<h2 id="table">Truth tables</h2>
+<p>A truth table lists every combination of T/F for the variables (2ⁿ rows for n variables) and the result of the expression in each row. Pick any expression in <a class="rf" href="#f-truth">Fig. 4</a> to build its table and see whether it is a tautology.</p>
+<figure class="fg wd" id="f-truth" data-w="truth"><figcaption><b>Fig. 4</b>Truth table builder. Grey F cells are the false rows.</figcaption></figure>
+<div class="table-wrap"><table><thead><tr><th>p</th><th>q</th><th>¬p</th><th>p ∧ q</th><th>p ∨ q</th><th>p → q</th><th>p ↔ q</th></tr></thead><tbody>
+<tr><td>T</td><td>T</td><td>F</td><td>T</td><td>T</td><td>T</td><td>T</td></tr><tr><td>T</td><td>F</td><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td></tr><tr><td>F</td><td>T</td><td>T</td><td>F</td><td>T</td><td>T</td><td>F</td></tr><tr><td>F</td><td>F</td><td>T</td><td>F</td><td>F</td><td>T</td><td>T</td></tr></tbody></table></div>
+<div class="co red"><b>Key takeaway</b>p → q is false in only one row: p = T and q = F. When p is false the implication is true "vacuously".</div>
+
+<h2 id="related">Converse, inverse and contrapositive</h2>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Form</th><th>Equivalent to</th></tr></thead><tbody>
+<tr><td>Converse (บทกลับ)</td><td>q → p</td><td>the inverse</td></tr><tr><td>Inverse (บทนิเสธ)</td><td>¬p → ¬q</td><td>the converse</td></tr><tr><td>Contrapositive</td><td>¬q → ¬p</td><td>p → q itself ✓</td></tr></tbody></table></div>
+<p>The key rule is p → q ≡ ¬q → ¬p. When a direct proof is hard, prove the contrapositive instead. The converse is <em>not</em> equivalent: "if it rains, the road is wet" does not mean "if the road is wet, it rained".</p>
+
+<h2 id="taut">Tautology, contradiction, contingency</h2>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Truth value</th><th>Example</th><th>Why</th></tr></thead><tbody>
+<tr><td>Tautology</td><td>always T</td><td>p ∨ ¬p</td><td>either p or ¬p is true; no third case</td></tr><tr><td>Contradiction</td><td>always F</td><td>p ∧ ¬p</td><td>p and ¬p are never true together</td></tr><tr><td>Contingency</td><td>T in some rows, F in others</td><td>p ∧ q</td><td>depends on the variables; most real statements</td></tr></tbody></table></div>
+
+<h2 id="laws">The 15 logical equivalence laws</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Law</th><th>Formula</th></tr></thead><tbody>
+<tr><td>1</td><td>Double negation</td><td>¬(¬p) ≡ p</td></tr><tr><td>2</td><td>Identity (AND)</td><td>p ∧ T ≡ p · p ∧ F ≡ F</td></tr><tr><td>3</td><td>Identity (OR)</td><td>p ∨ F ≡ p · p ∨ T ≡ T</td></tr><tr><td>4</td><td>Idempotent</td><td>p ∧ p ≡ p · p ∨ p ≡ p</td></tr><tr><td>5</td><td>Commutative</td><td>p ∧ q ≡ q ∧ p · p ∨ q ≡ q ∨ p</td></tr><tr><td>6</td><td>Associative</td><td>(p ∧ q) ∧ r ≡ p ∧ (q ∧ r) · same for ∨</td></tr><tr><td>7</td><td>Distributive</td><td>p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r) · p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)</td></tr><tr><td>8</td><td>De Morgan (AND)</td><td>¬(p ∧ q) ≡ ¬p ∨ ¬q</td></tr><tr><td>9</td><td>De Morgan (OR)</td><td>¬(p ∨ q) ≡ ¬p ∧ ¬q</td></tr><tr><td>10</td><td>Absorption</td><td>p ∧ (p ∨ q) ≡ p · p ∨ (p ∧ q) ≡ p</td></tr><tr><td>11</td><td>Negation</td><td>p ∧ ¬p ≡ F · p ∨ ¬p ≡ T</td></tr><tr><td>12</td><td>Implication</td><td>p → q ≡ ¬p ∨ q</td></tr><tr><td>13</td><td>Contrapositive</td><td>p → q ≡ ¬q → ¬p</td></tr><tr><td>14</td><td>Biconditional</td><td>p ↔ q ≡ (p → q) ∧ (q → p)</td></tr><tr><td>15</td><td>Exportation</td><td>(p ∧ q) → r ≡ p → (q → r)</td></tr></tbody></table></div>
+<p>De Morgan's rule in words: to negate, flip AND ↔ OR and negate each part. You can confirm it in the builder with the expression "¬(p ∧ q) ↔ (¬p ∨ ¬q)" (<a class="rf" href="#f-truth">Fig. 4</a>).</p>
+
+<h2 id="prove">Proving tautologies: three methods</h2>
+<div class="table-wrap"><table><thead><tr><th>Method</th><th>How it works</th><th>Note</th></tr></thead><tbody>
+<tr><td>1 · Truth table</td><td>List all 2ⁿ rows; if every row is T it is a tautology.</td><td>Exhaustive but grows fast: 3 variables = 8 rows, 4 = 16.</td></tr>
+<tr><td>2 · Substitution</td><td>Apply the 15 laws step by step until the expression becomes T. Name the law at every step.</td><td>¬(p → q) ≡ ¬(¬p ∨ q) [12] ≡ p ∧ ¬q [9, 1]</td></tr>
+<tr><td>3 · Indirect proof</td><td>Assume the negation is true and derive a contradiction.</td><td>Also called proof by contradiction.</td></tr></tbody></table></div>
+
+<h2 id="quant">Quantifiers and their negation</h2>
+<div class="table-wrap"><table><thead><tr><th>Symbol</th><th>Name</th><th>Meaning</th><th>Negation</th></tr></thead><tbody>
+<tr><td>∀x P(x)</td><td>Universal</td><td>P(x) holds for every x in the domain</td><td>∃x ¬P(x)</td></tr><tr><td>∃x P(x)</td><td>Existential</td><td>P(x) holds for at least one x</td><td>∀x ¬P(x)</td></tr></tbody></table></div>
+<p>To disprove a universal claim you need only one <strong>counterexample</strong>. To disprove an existential claim you must show that no element works.</p>
+
+<h2 id="infer">Rules of inference</h2>
+<div class="table-wrap"><table><thead><tr><th>Rule</th><th>Abbr.</th><th>Premises</th><th>Conclusion</th></tr></thead><tbody>
+<tr><td>Modus Ponens</td><td>MP</td><td>p → q, p</td><td>∴ q</td></tr><tr><td>Modus Tollens</td><td>MT</td><td>p → q, ¬q</td><td>∴ ¬p</td></tr><tr><td>Hypothetical Syllogism</td><td>HS</td><td>p → q, q → r</td><td>∴ p → r</td></tr><tr><td>Disjunctive Syllogism</td><td>DS</td><td>p ∨ q, ¬p</td><td>∴ q</td></tr><tr><td>Conjunction</td><td>CONJ</td><td>p, q</td><td>∴ p ∧ q</td></tr><tr><td>Simplification</td><td>SIMP</td><td>p ∧ q</td><td>∴ p</td></tr><tr><td>Addition</td><td>ADD</td><td>p</td><td>∴ p ∨ q</td></tr><tr><td>Constructive Dilemma</td><td>CD</td><td>p → q, r → s, p ∨ r</td><td>∴ q ∨ s</td></tr></tbody></table></div>
+
+<h2 id="terms">Key terms</h2>
+<div class="table-wrap"><table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Power set 𝒫(A)</td><td>set of all subsets of A, size 2ⁿ</td></tr><tr><td>Proper subset A ⊂ B</td><td>A ⊆ B and A ≠ B</td></tr><tr><td>Tautology</td><td>true in every case, e.g. p ∨ ¬p</td></tr><tr><td>Contrapositive</td><td>¬q → ¬p, equivalent to p → q</td></tr><tr><td>Modus Tollens</td><td>from p → q and ¬q, conclude ¬p</td></tr><tr><td>Inclusion–exclusion</td><td>n(A∪B) = n(A) + n(B) − n(A∩B)</td></tr><tr><td>De Morgan's laws</td><td>negate by flipping AND ↔ OR</td></tr></tbody></table></div>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-power">Every subset of A, for n(A) from 0 to 6.</a></li><li><b>Fig. 2</b><a href="#f-venn2">Two sets inside a universal set U. The numbers in each region are element counts.</a></li><li><b>Fig. 3</b><a href="#f-venn3">Three overlapping sets. A negative number means the inputs are impossible.</a></li><li><b>Fig. 4</b><a href="#f-truth">Truth table builder. Grey F cells are the false rows.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="สารบัญ">Contents</small><a class="btn grey" href="summaries.html">&larr; Summaries</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="math-real-numbers.html">Real Number System &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-math.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

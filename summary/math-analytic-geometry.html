@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="เรขาคณิตวิเคราะห์ | EAI">Analytic Geometry · Additional Math | EAI</title>
+<meta name="description" content="Geometry on a coordinate grid: quadrants, distance, midpoint, slope, the three forms of a line, parallel and perpendicular lines, and the distance from a point to a line.">
+<link rel="canonical" href="https://eaispsm.vercel.app/math-analytic-geometry">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Analytic Geometry · Additional Math | EAI">
+<meta property="og:description" content="Geometry on a coordinate grid: quadrants, distance, midpoint, slope, the three forms of a line, parallel and perpendicular lines, and the distance from a point to a line.">
+<meta property="og:url" content="https://eaispsm.vercel.app/math-analytic-geometry">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="เรขาคณิตวิเคราะห์">Analytic Geometry</h1><p class="sub">Additional Math · M.4 · <span data-th="บทที่">Chapter</span> 3 / 5</p><p class="lead">Geometry on a coordinate grid: quadrants, distance, midpoint, slope, the three forms of a line, parallel and perpendicular lines, and the distance from a point to a line.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#plane">The Cartesian coordinate system</a></li><li><a href="#dist">Distance formula</a></li><li><a href="#mid">Midpoint formula</a></li><li><a href="#slope">Slope (gradient)</a></li><li><a href="#eqline">Equations of a line</a></li><li><a href="#par">Parallel and perpendicular lines</a></li><li><a href="#system">Systems of two lines: how many solutions?</a></li><li><a href="#pdist">Distance from a point to a line</a></li></ol></nav>
+<h2 id="plane">The Cartesian coordinate system</h2>
+<p>Analytic geometry puts shapes on a numbered grid so that algebra can describe them. Two perpendicular number lines, the horizontal <strong>x-axis</strong> and the vertical <strong>y-axis</strong>, cross at the <strong>origin (0, 0)</strong>. Every point is an ordered pair (x, y): x is the horizontal distance from the origin and y the vertical distance.</p>
+<p>The axes cut the plane into four <strong>quadrants</strong>, numbered I to IV anticlockwise from the upper right. The signs of the coordinates tell you the quadrant. Move the point in <a class="rf" href="#f-quad">Fig. 1</a> across the axes.</p>
+<figure class="fg wd" id="f-quad" data-w="quad"><figcaption><b>Fig. 1</b>The four quadrants and the signs of x and y.</figcaption></figure>
+<div class="table-wrap"><table><thead><tr><th>Quadrant</th><th>x</th><th>y</th><th>Example</th></tr></thead><tbody><tr><td>I</td><td>+</td><td>+</td><td>(3, 5)</td></tr><tr><td>II</td><td>−</td><td>+</td><td>(−2, 6)</td></tr><tr><td>III</td><td>−</td><td>−</td><td>(−4, −1)</td></tr><tr><td>IV</td><td>+</td><td>−</td><td>(7, −3)</td></tr></tbody></table></div>
+<p>A point exactly on an axis belongs to no quadrant: (5, 0) is on the x-axis and (0, −3) on the y-axis.</p>
+
+<h2 id="dist">Distance formula</h2>
+<p>Draw a right triangle whose hypotenuse is the segment AB. The legs are |x₂ − x₁| and |y₂ − y₁|, so Pythagoras gives the distance.</p>
+<div class="fm">d = √[ (x₂ − x₁)² + (y₂ − y₁)² ]<small>always non-negative; squaring removes any worry about subtraction order</small></div>
+<p>Worked example: A(1, 2) to B(4, 6): d = √(3² + 4²) = √25 = 5, the classic 3-4-5 triangle. Use <a class="rf" href="#f-plane2">Fig. 2</a> with the defaults to see it.</p>
+<figure class="fg wd" id="f-plane2" data-w="plane2"><figcaption><b>Fig. 2</b>Two points, their distance, midpoint, slope and line. The dashed legs form the right triangle.</figcaption></figure>
+
+<h2 id="mid">Midpoint formula</h2>
+<p>The midpoint splits both the horizontal and the vertical distance in half, so its coordinates are just the averages.</p>
+<div class="fm">M = ( (x₁ + x₂)/2 , (y₁ + y₂)/2 )<small>add the x's and halve; add the y's and halve</small></div>
+<p>Example: A(2, −4) and B(8, 2) give M = (10/2, −2/2) = (5, −1). The grey dot M in <a class="rf" href="#f-plane2">Fig. 2</a> updates as you drag the sliders.</p>
+
+<h2 id="slope">Slope (gradient)</h2>
+<p>Slope measures steepness and direction: rise over run between any two points on the line. It is the same for every pair of points, so it belongs to the line itself.</p>
+<div class="fm">m = (y₂ − y₁) / (x₂ − x₁)<small>the absolute value makes the distance positive on either side of the line</small></div>
+<div class="table-wrap"><table><thead><tr><th>Case</th><th>Slope</th><th>Meaning</th></tr></thead><tbody><tr><td>Rising</td><td>m &gt; 0</td><td>goes up from left to right</td></tr><tr><td>Falling</td><td>m &lt; 0</td><td>goes down from left to right</td></tr><tr><td>Horizontal</td><td>m = 0</td><td>y is constant</td></tr><tr><td>Vertical</td><td>undefined</td><td>x is constant, the denominator is 0</td></tr></tbody></table></div>
+<p>Set x₁ = x₂ in <a class="rf" href="#f-plane2">Fig. 2</a> to make a vertical line and see "undefined", then set y₁ = y₂ for a horizontal one.</p>
+
+<h2 id="eqline">Equations of a line</h2>
+<p>There are three standard forms. Each is best for a different situation, and you should be able to convert between all three.</p>
+<div class="table-wrap"><table><thead><tr><th>Form</th><th>Equation</th><th>Use it when</th></tr></thead><tbody>
+<tr><td>Slope-intercept</td><td>y = mx + b</td><td>you know the slope m and the y-intercept b; easiest to graph</td></tr>
+<tr><td>Point-slope</td><td>y − y₁ = m(x − x₁)</td><td>you know the slope and one point (x₁, y₁)</td></tr>
+<tr><td>Standard</td><td>Ax + By + C = 0</td><td>exam form; needed for the point-to-line distance</td></tr></tbody></table></div>
+<h3>Worked conversion</h3>
+<p>Line through (1, 3) with slope 2. Point-slope: y − 3 = 2(x − 1). Slope-intercept: y = 2x + 1. Standard: 2x − y + 1 = 0.</p>
+<pre class="code-block"><code>import numpy as np, matplotlib.pyplot as plt
+m, b = 2, -1                    # y = 2x - 1
+x = np.linspace(-3, 3, 100)
+plt.plot(x, m*x + b)
+plt.grid(True, alpha=.3); plt.show()</code></pre>
+<p>Changing m and b redraws the line at once, which is a quick way to build intuition for tilt and position. Do the same with sliders in <a class="rf" href="#f-lines">Fig. 3</a>.</p>
+
+<h2 id="par">Parallel and perpendicular lines</h2>
+<p>Slopes tell you the relationship instantly. Parallel lines have the <em>same slope</em> and different intercepts. Perpendicular lines have slopes that are <em>negative reciprocals</em>, so m₁ × m₂ = −1.</p>
+<div class="table-wrap"><table><thead><tr><th>Relationship</th><th>Condition</th><th>Example</th></tr></thead><tbody>
+<tr><td>Parallel</td><td>m₁ = m₂ and b₁ ≠ b₂</td><td>y = 2x + 1 and y = 2x − 3</td></tr>
+<tr><td>Perpendicular</td><td>m₁ × m₂ = −1</td><td>y = 3x and y = −x/3</td></tr>
+<tr><td>Coincident</td><td>m₁ = m₂ and b₁ = b₂</td><td>identical equations</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-lines" data-w="lines"><figcaption><b>Fig. 3</b>Two lines with adjustable slope and intercept. The panel names their relationship.</figcaption></figure>
+<p>A horizontal line (m = 0) is perpendicular to a vertical line (undefined slope) even though the product rule cannot be applied to it.</p>
+
+<h2 id="system">Systems of two lines: how many solutions?</h2>
+<p>A pair of linear equations is two lines, and a solution is a point on both. Compare the slopes and intercepts you already know: <strong>different slopes</strong> mean the lines cross at exactly one point; <strong>equal slopes with different intercepts</strong> are parallel, so there is no solution; <strong>equal slopes and equal intercepts</strong> are the same line, so every point on it is a solution (infinitely many). Check this in <a class="rf" href="#f-lines">Fig. 3</a> by setting m₁ = m₂, then b₁ = b₂.</p>
+<p>On the SAT the same idea is asked in algebra form, such as "for what k does the system have no solution?". The answer is the value that makes the slopes equal while the intercepts differ. More on counting solutions, with quadratics and exponentials too, is in <a href="math-functions.html#sat">SAT: how many solutions?</a> in Relations &amp; Functions.</p>
+
+<h2 id="pdist">Distance from a point to a line</h2>
+<p>The shortest distance from a point to a line is along the perpendicular. For the line Ax + By + C = 0 and the point (x₀, y₀):</p>
+<div class="fm">d = |Ax₀ + By₀ + C| / √(A² + B²)</div>
+<p>The denominator is the length of the normal vector (A, B). Steps: write the line in standard form, read A, B, C, substitute, and keep the exact (surd) value unless told to round.</p>
+<figure class="fg wd" id="f-ptline" data-w="ptline"><figcaption><b>Fig. 4</b>Distance from P to the line, with the foot of the perpendicular in grey.</figcaption></figure>
+<p>Worked example: point (3, 4), line 3x + 4y − 10 = 0: d = |9 + 16 − 10| / √25 = 15/5 = 3. These are the diagram defaults, and √(9 + 16) = 5 is another 3-4-5 triple.</p>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-quad">The four quadrants and the signs of x and y.</a></li><li><b>Fig. 2</b><a href="#f-plane2">Two points, their distance, midpoint, slope and line. The dashed legs form the right triangle.</a></li><li><b>Fig. 3</b><a href="#f-lines">Two lines with adjustable slope and intercept. The panel names their relationship.</a></li><li><b>Fig. 4</b><a href="#f-ptline">Distance from P to the line, with the foot of the perpendicular in grey.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="math-real-numbers.html">&larr; Real Number System</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="math-conic-sections.html">Conic Sections &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-math.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

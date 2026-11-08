@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="กฎของนิวตันและแผนภาพวัตถุอิสระ | EAI">Newton&#x27;s Laws &amp; Free Body Diagrams · Physics for Engineering | EAI</title>
+<meta name="description" content="The three laws that connect force to motion, and the free body diagram: the drawing habit that makes every force problem solvable.">
+<link rel="canonical" href="https://eaispsm.vercel.app/phy-newton">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Newton&#x27;s Laws &amp; Free Body Diagrams · Physics for Engineering | EAI">
+<meta property="og:description" content="The three laws that connect force to motion, and the free body diagram: the drawing habit that makes every force problem solvable.">
+<meta property="og:url" content="https://eaispsm.vercel.app/phy-newton">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="กฎของนิวตันและแผนภาพวัตถุอิสระ">Newton&#x27;s Laws &amp; Free Body Diagrams</h1><p class="sub">Physics for Engineering · M.4 · <span data-th="บทที่">Chapter</span> 2 / 7</p><p class="lead">The three laws that connect force to motion, and the free body diagram: the drawing habit that makes every force problem solvable.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#first">First law: inertia</a></li><li><a href="#second">Second law: F = ma</a></li><li><a href="#third">Third law: action and reaction</a></li><li><a href="#fbd">Free body diagrams</a></li><li><a href="#atwood">Worked example: the Atwood machine</a></li></ol></nav>
+<h2 id="first">First law: inertia</h2>
+<p><strong>Newton's first law.</strong> An object at rest stays at rest, and an object in motion continues at constant velocity, unless acted on by a net external force. When ΣF = 0 the object is in <strong>equilibrium</strong>.</p>
+<div class="table-wrap"><table><thead><tr><th>Scenario</th><th>State</th><th>Net force</th></tr></thead><tbody>
+<tr><td>Book on a table</td><td>at rest</td><td>zero: weight balanced by normal force</td></tr>
+<tr><td>Car at constant speed on a straight road</td><td>moving, not accelerating</td><td>zero: engine force equals resistance</td></tr>
+<tr><td>Hockey puck on frictionless ice</td><td>constant velocity</td><td>zero</td></tr></tbody></table></div>
+<p>It is <em>not</em> natural for things to stop. The natural state of any object is constant velocity, and zero is just one such velocity. Friction is the everyday force that brings things to rest and hides this law.</p>
+
+<h2 id="second">Second law: F = ma</h2>
+<div class="fm">ΣF = m a<small>net force (N = kg·m/s²) = mass (kg) × acceleration (m/s²)</small></div>
+<p>The acceleration points the same way as the <em>net</em> force. Double the net force and the acceleration doubles; double the mass and it halves. The resistance of a mass to changes in its motion is <strong>inertia</strong>. Try it in <a class="rf" href="#f-fma">Fig. 1</a>: push with F, add mass, then add friction.</p>
+<figure class="fg wd" id="f-fma" data-w="fma"><figcaption><b>Fig. 1</b>A block pushed along a floor, drawn as a free body diagram. Arrow lengths are drawn to scale.</figcaption></figure>
+<p>Notice the two stages. While F is smaller than the maximum friction μN, static friction exactly matches F and the block does not move. Once F exceeds μN the block accelerates with a = (F − μN)/m.</p>
+
+<h2 id="third">Third law: action and reaction</h2>
+<p><strong>Newton's third law.</strong> If object A pushes on B with force F, then B pushes on A with an equal and opposite force: F<sub>A→B</sub> = −F<sub>B→A</sub>. The two forces act on <strong>different objects</strong>.</p>
+<div class="table-wrap"><table><thead><tr><th>Action</th><th>Reaction</th></tr></thead><tbody>
+<tr><td>Earth pulls you down (gravity)</td><td>you pull the Earth up, equally</td></tr>
+<tr><td>You push a wall to the right</td><td>the wall pushes you to the left</td></tr>
+<tr><td>A rocket expels gas downward</td><td>the gas pushes the rocket up (thrust)</td></tr>
+<tr><td>Your foot pushes the ground back</td><td>the ground pushes your foot forward (walking)</td></tr></tbody></table></div>
+<div class="co red"><b>Common misconception</b>Action and reaction do <em>not</em> cancel, because they act on different objects. For ΣF = 0 on one object you need forces on that same object to cancel, and an action–reaction pair never does that.</div>
+
+<h2 id="fbd">Free body diagrams</h2>
+<p>A <strong>free body diagram (FBD)</strong> isolates one object and shows every force <em>on</em> it as an arrow starting at its centre. It makes hidden forces visible and prevents sign errors; do it before any equation.</p>
+<div class="table-wrap"><table><thead><tr><th>Step</th><th>Action</th></tr></thead><tbody>
+<tr><td>1 Isolate</td><td>draw the object alone, as a box or a dot</td></tr>
+<tr><td>2 Identify</td><td>list the forces on it: weight (down), normal (perpendicular to the surface), tension (along the rope), friction (opposing motion), applied force, air resistance</td></tr>
+<tr><td>3 Draw</td><td>one arrow per force, length proportional to size</td></tr>
+<tr><td>4 Label</td><td>symbol and value beside each arrow</td></tr>
+<tr><td>5 Sum</td><td>apply ΣFx = ma<sub>x</sub> and ΣFy = ma<sub>y</sub> separately</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>Force</th><th>Direction</th><th>Formula</th></tr></thead><tbody>
+<tr><td>Weight W</td><td>always down</td><td>W = mg</td></tr>
+<tr><td>Normal N</td><td>perpendicular to the surface</td><td>N = mg on level ground; N = mg cos θ on an incline</td></tr>
+<tr><td>Tension T</td><td>along the string, toward the anchor</td><td>given, or from ΣF</td></tr>
+<tr><td>Static friction f<sub>s</sub></td><td>opposes the tendency to slide</td><td>f<sub>s</sub> ≤ μ<sub>s</sub>N</td></tr>
+<tr><td>Kinetic friction f<sub>k</sub></td><td>opposes the motion</td><td>f<sub>k</sub> = μ<sub>k</sub>N</td></tr></tbody></table></div>
+<p>The diagram in <a class="rf" href="#f-fma">Fig. 1</a> follows these steps: black arrows are W and N, the grey arrow is the push, and the friction arrow flips between static and kinetic.</p>
+
+<h2 id="atwood">Worked example: the Atwood machine</h2>
+<p>Two masses hang over a light, frictionless pulley on a light, inextensible string, so both share the same acceleration size and the same tension T. Take m₁ = 3 kg, m₂ = 5 kg, g = 10 m/s².</p>
+<div class="table-wrap"><table><thead><tr><th>Object</th><th>FBD equation</th><th>Result</th></tr></thead><tbody>
+<tr><td>m₂ = 5 kg (heavier, falls)</td><td>m₂g − T = m₂a → 50 − T = 5a</td><td>equation ①</td></tr>
+<tr><td>m₁ = 3 kg (lighter, rises)</td><td>T − m₁g = m₁a → T − 30 = 3a</td><td>equation ②</td></tr>
+<tr><td>① + ②</td><td>20 = 8a</td><td>a = 2.5 m/s²</td></tr>
+<tr><td>Tension</td><td>T = 30 + 3(2.5)</td><td>T = 37.5 N</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-atwood" data-w="atwood"><figcaption><b>Fig. 2</b>Atwood machine. Change the masses and press play to let it run.</figcaption></figure>
+<p>General results: a = (m₂ − m₁)g/(m₁ + m₂) and T = 2m₁m₂g/(m₁ + m₂). Equal masses give a = 0, and a huge m₂ gives a → g (free fall).</p>
+<pre class="code-block"><code>def atwood(m1, m2, g=10):
+    a = (m2 - m1) * g / (m1 + m2)
+    T = m1 * (g + a)
+    return a, T
+print(atwood(3, 5))   # (2.5, 37.5)</code></pre>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-fma">A block pushed along a floor, drawn as a free body diagram. Arrow lengths are drawn to scale.</a></li><li><b>Fig. 2</b><a href="#f-atwood">Atwood machine. Change the masses and press play to let it run.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="phy-kinematics.html">&larr; Kinematics &amp; SUVAT</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="phy-incline.html">Inclined Plane &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-phys.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="สมดุลและโมเมนต์ | EAI">Equilibrium &amp; Moments · Physics for Engineering | EAI</title>
+<meta name="description" content="When does a body stay perfectly still? Force balance, Lami&#x27;s theorem for three forces, the moment of a force and the principle of moments.">
+<link rel="canonical" href="https://eaispsm.vercel.app/phy-equilibrium">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Equilibrium &amp; Moments · Physics for Engineering | EAI">
+<meta property="og:description" content="When does a body stay perfectly still? Force balance, Lami&#x27;s theorem for three forces, the moment of a force and the principle of moments.">
+<meta property="og:url" content="https://eaispsm.vercel.app/phy-equilibrium">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="สมดุลและโมเมนต์">Equilibrium &amp; Moments</h1><p class="sub">Physics for Engineering · M.4 · <span data-th="บทที่">Chapter</span> 6 / 7</p><p class="lead">When does a body stay perfectly still? Force balance, Lami's theorem for three forces, the moment of a force and the principle of moments.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#cond">Conditions for equilibrium</a></li><li><a href="#lami">Lami's theorem</a></li><li><a href="#moment">Moment of a force</a></li><li><a href="#pom">Principle of moments</a></li><li><a href="#sign">Worked example: the hanging sign</a></li></ol></nav>
+<h2 id="cond">Conditions for equilibrium</h2>
+<p>A body is in <strong>static equilibrium</strong> when it neither accelerates nor rotates. Two independent conditions must hold together:</p>
+<div class="vs"><div><b>1 · Translational</b>ΣFx = 0 and ΣFy = 0. No net force in any direction, so no linear acceleration.</div><div><b>2 · Rotational</b>ΣM = 0 about any point. No net turning effect, so no angular acceleration.</div></div>
+<h3>Kinds of equilibrium</h3>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>When disturbed…</th><th>Example</th></tr></thead><tbody>
+<tr><td>Stable</td><td>returns to its original position</td><td>cone resting on its base</td></tr>
+<tr><td>Unstable</td><td>moves further away</td><td>cone balanced on its tip</td></tr>
+<tr><td>Neutral</td><td>stays in the new position</td><td>ball on a flat table</td></tr></tbody></table></div>
+
+<h2 id="lami">Lami's theorem</h2>
+<p>For <strong>three concurrent coplanar forces</strong> in equilibrium, each force divided by the sine of the angle between the <em>other two</em> is the same number:</p>
+<div class="fm">F₁ / sin α₁ = F₂ / sin α₂ = F₃ / sin α₃<small>α₁ is opposite F₁ (between F₂ and F₃); α₁ + α₂ + α₃ = 360°</small></div>
+<p>It follows from the sine rule on the closed force triangle that three balanced forces form. It works for exactly three forces, and cannot be extended directly to four or more. Change the angles in <a class="rf" href="#f-lami">Fig. 1</a> and watch the force triangle close.</p>
+<figure class="fg wd" id="f-lami" data-w="lami"><figcaption><b>Fig. 1</b>Three forces meeting at a point (left) and the closed triangle they form head-to-tail (right).</figcaption></figure>
+
+<h2 id="moment">Moment of a force</h2>
+<p>The <strong>moment</strong> (torque) of a force about a pivot is its turning effect:</p>
+<div class="fm">M = F × d<small>d = perpendicular distance from the pivot to the line of action of F; unit N·m</small></div>
+<p>By convention anticlockwise moments are positive and clockwise negative. If the force is not perpendicular to the arm, use its perpendicular component: M = F sin θ · l. A force whose line of action passes through the pivot has zero moment.</p>
+<div class="table-wrap"><table><thead><tr><th>Form</th><th>When</th><th>Example</th></tr></thead><tbody><tr><td>M = Fd</td><td>force perpendicular to the arm</td><td>spanner on a bolt</td></tr><tr><td>M = F sin θ · l</td><td>force at angle θ to an arm of length l</td><td>door pushed at an angle</td></tr><tr><td>M = 0</td><td>force through the pivot</td><td>pushing straight at a hinge</td></tr></tbody></table></div>
+
+<h2 id="pom">Principle of moments</h2>
+<p>For rotational equilibrium, the sum of the moments that turn one way about any pivot equals the sum that turn the other way about the same pivot: <strong>Σ(clockwise) = Σ(anticlockwise)</strong>. It holds for any pivot you choose, which is a powerful trick: put the pivot where an unknown force acts so its moment disappears.</p>
+<figure class="fg wd" id="f-moments" data-w="moments"><figcaption><b>Fig. 2</b>A see-saw pivoted in the middle. Change the loads and distances; the plank tips toward the larger moment.</figcaption></figure>
+<p>Worked example: F₁ = 40 N at d₁ = 0.9 m on one side, F₂ at d₂ = 0.6 m on the other. Balance means 40 × 0.9 = F₂ × 0.6, so F₂ = 60 N. Set the sliders in <a class="rf" href="#f-moments">Fig. 2</a> to these values and the plank balances.</p>
+
+<h2 id="sign">Worked example: the hanging sign</h2>
+<p>A 200 N sign hangs from the midpoint of a horizontal bar 1.5 m long. The bar is pinned to a wall at one end and held by a cable at 40° to the bar at the other end. Find the cable tension T and the wall reaction R.</p>
+<div class="table-wrap"><table><thead><tr><th>Step</th><th>Working</th></tr></thead><tbody>
+<tr><td>1 Moments about the wall pin</td><td>Choose the pin as the pivot so the unknown wall force drops out: T sin 40° × 1.5 − 200 × 0.75 = 0, so T ≈ 155.6 N.</td></tr>
+<tr><td>2 Horizontal balance</td><td>The cable pulls the bar toward the wall with T cos 40° ≈ 119.2 N, so the wall pushes out with R<sub>x</sub> ≈ 119.2 N.</td></tr>
+<tr><td>3 Vertical balance</td><td>R<sub>y</sub> + T sin 40° = 200, so R<sub>y</sub> ≈ 200 − 100 = 100 N upward.</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-sign" data-w="sign"><figcaption><b>Fig. 3</b>Bar, cable and sign. The grey arrow is the cable tension; black arrows are the weight and the wall reaction components.</figcaption></figure>
+<p>The defaults in <a class="rf" href="#f-sign">Fig. 3</a> reproduce these numbers. In general T = W·(fraction of L)/sin φ, so a flatter cable (small φ) needs a much larger tension.</p>
+<pre class="code-block"><code>import math
+def check_equilibrium(forces):            # forces: list of (Fx, Fy)
+    return sum(f[0] for f in forces), sum(f[1] for f in forces)
+T = 155.6
+forces = [(T*math.cos(math.radians(40)), T*math.sin(math.radians(40))),
+          (0, -200), (-119.2, -100)]
+print(check_equilibrium(forces))          # ≈ (0.0, 0.0)</code></pre>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-lami">Three forces meeting at a point (left) and the closed triangle they form head-to-tail (right).</a></li><li><b>Fig. 2</b><a href="#f-moments">A see-saw pivoted in the middle. Change the loads and distances; the plank tips toward the larger moment.</a></li><li><b>Fig. 3</b><a href="#f-sign">Bar, cable and sign. The grey arrow is the cable tension; black arrows are the weight and the wall reaction components.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="phy-energy.html">&larr; Work &amp; Energy</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="phy-momentum.html">Momentum &amp; Impulse &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-phys.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

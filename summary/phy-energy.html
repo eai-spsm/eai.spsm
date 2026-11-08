@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="งานและพลังงาน | EAI">Work &amp; Energy · Physics for Engineering | EAI</title>
+<meta name="description" content="How forces transfer energy: work, kinetic and potential energy, conservation of mechanical energy and power as the rate of doing work.">
+<link rel="canonical" href="https://eaispsm.vercel.app/phy-energy">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Work &amp; Energy · Physics for Engineering | EAI">
+<meta property="og:description" content="How forces transfer energy: work, kinetic and potential energy, conservation of mechanical energy and power as the rate of doing work.">
+<meta property="og:url" content="https://eaispsm.vercel.app/phy-energy">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="งานและพลังงาน">Work &amp; Energy</h1><p class="sub">Physics for Engineering · M.4 · <span data-th="บทที่">Chapter</span> 5 / 7</p><p class="lead">How forces transfer energy: work, kinetic and potential energy, conservation of mechanical energy and power as the rate of doing work.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#work">Work</a></li><li><a href="#ke">Kinetic energy</a></li><li><a href="#pe">Potential energy</a></li><li><a href="#cons">Conservation of mechanical energy</a></li><li><a href="#power">Power</a></li></ol></nav>
+<h2 id="work">Work</h2>
+<p><strong>Work</strong> is done when a force produces displacement along the force. W = F s cos θ, where θ is the angle between the force and the displacement. The unit is the joule (J = N·m) and work is a <em>scalar</em>.</p>
+<div class="table-wrap"><table><thead><tr><th>Case</th><th>θ</th><th>cos θ</th><th>Work</th></tr></thead><tbody>
+<tr><td>Force along the motion</td><td>0°</td><td>1</td><td>W = Fs, the maximum</td></tr>
+<tr><td>Force at an angle</td><td>θ</td><td>cos θ</td><td>W = Fs cos θ</td></tr>
+<tr><td>Force across the motion</td><td>90°</td><td>0</td><td>W = 0 (carrying a bag horizontally)</td></tr>
+<tr><td>Force against the motion</td><td>180°</td><td>−1</td><td>W = −Fs (friction, braking)</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-work" data-w="work"><figcaption><b>Fig. 1</b>Only the part of F along the displacement (dashed) does work. Change θ from 0° to 180° and watch W change sign.</figcaption></figure>
+<p>Negative work removes energy from an object. Friction does negative work, so it always takes kinetic energy away.</p>
+
+<h2 id="ke">Kinetic energy</h2>
+<p><strong>Kinetic energy</strong> is the energy of motion: KE = ½mv², always positive or zero. It comes straight from Newton's second law and kinematics.</p>
+<h3>The work–energy theorem</h3>
+<p>Start with W = Fs = mas and v² = u² + 2as, so as = (v² − u²)/2. Then W = m(v² − u²)/2 = ½mv² − ½mu². In words: <strong>W<sub>net</sub> = ΔKE</strong>, the net work done on an object equals its change in kinetic energy.</p>
+<div class="table-wrap"><table><thead><tr><th>Object</th><th>Mass</th><th>Speed</th><th>KE</th></tr></thead><tbody>
+<tr><td>Bicycle</td><td>15 kg</td><td>6 m/s</td><td>½ × 15 × 36 = 270 J</td></tr>
+<tr><td>Car</td><td>1000 kg</td><td>20 m/s</td><td>½ × 1000 × 400 = 200 000 J</td></tr>
+<tr><td>Bullet</td><td>0.01 kg</td><td>400 m/s</td><td>½ × 0.01 × 160 000 = 800 J</td></tr></tbody></table></div>
+<p>Because KE depends on v², doubling the speed quadruples the energy. That is why stopping distance grows so fast at high speed.</p>
+
+<h2 id="pe">Potential energy</h2>
+<p><strong>Potential energy</strong> is stored energy from position or shape. Gravitational PE = mgh, measured from a chosen reference level. Elastic PE of a spring = ½kx², with k the spring constant and x the stretch or compression.</p>
+<div class="table-wrap"><table><thead><tr><th>Type</th><th>Formula</th><th>Depends on</th></tr></thead><tbody><tr><td>Gravitational</td><td>mgh</td><td>mass and height above the reference level</td></tr><tr><td>Elastic (spring)</td><td>½kx²</td><td>stiffness k and extension x</td></tr><tr><td>Chemical</td><td>—</td><td>energy stored in molecular bonds</td></tr></tbody></table></div>
+<p>PE and KE convert into each other. Rising raises PE and lowers KE; falling does the opposite. Without friction the total stays constant. The reference level for h is your choice, and only <em>changes</em> in PE matter.</p>
+
+<h2 id="cons">Conservation of mechanical energy</h2>
+<p>If only conservative forces act (no friction or air drag) the total mechanical energy stays constant:</p>
+<div class="fm">E = ½mv² + mgh = constant<small>between any two points: ½mv₁² + mgh₁ = ½mv₂² + mgh₂</small></div>
+<p>Friction is non-conservative: it turns mechanical energy into heat. Then E<sub>final</sub> = E<sub>initial</sub> − W<sub>friction</sub>, with W<sub>friction</sub> = f·d for sliding distance d. The track in <a class="rf" href="#f-energy">Fig. 2</a> shows all of it: the bars give PE, KE, heat and the constant total.</p>
+<figure class="fg wd" id="f-energy" data-w="energy"><figcaption><b>Fig. 2</b>A ball on a hilly track. With no friction the grey KE bar and black PE bar always sum to E₀. Add friction and a grey heat bar appears.</figcaption></figure>
+<pre class="code-block"><code>def energy(m, v, h, g=10):
+    KE, PE = 0.5*m*v**2, m*g*h
+    return KE, PE, KE + PE
+print(energy(2, 3, 5))          # (9.0, 100, 109.0)
+v_ground = (2*109/2) ** 0.5
+print(energy(2, v_ground, 0))   # (109.0, 0, 109.0)</code></pre>
+
+<h2 id="power">Power</h2>
+<p><strong>Power</strong> is the rate of doing work or transferring energy: P = W/t = ΔE/t. For a constant force along the velocity, P = Fv. The unit is the watt (W = J/s) and power is a scalar.</p>
+<div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Formula</th><th>Unit</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Power</td><td>P = W/t</td><td>W</td><td>scalar</td></tr>
+<tr><td>Power with velocity</td><td>P = Fv</td><td>W</td><td>constant force parallel to v</td></tr>
+<tr><td>Efficiency</td><td>η = P<sub>useful</sub> / P<sub>input</sub> × 100%</td><td>%</td><td>real machines have η &lt; 100%</td></tr></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>Device</th><th>Typical power</th></tr></thead><tbody><tr><td>LED bulb</td><td>10 W</td></tr><tr><td>Person cycling</td><td>100–300 W</td></tr><tr><td>Car engine</td><td>50–150 kW</td></tr><tr><td>Jet engine</td><td>10–50 MW</td></tr></tbody></table></div>
+<figure class="fg wd" id="f-power" data-w="power"><figcaption><b>Fig. 3</b>Power needed to lift a load. Lower the efficiency and the input power grows.</figcaption></figure>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-work">Only the part of F along the displacement (dashed) does work. Change θ from 0° to 180° and watch W change sign.</a></li><li><b>Fig. 2</b><a href="#f-energy">A ball on a hilly track. With no friction the grey KE bar and black PE bar always sum to E₀. Add friction and a grey heat bar appears.</a></li><li><b>Fig. 3</b><a href="#f-power">Power needed to lift a load. Lower the efficiency and the input power grows.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="ก่อนหน้า">Previous</small><a class="btn grey" href="phy-projectile-circular.html">&larr; Projectile &amp; Circular Motion</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="phy-equilibrium.html">Equilibrium &amp; Moments &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-phys.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

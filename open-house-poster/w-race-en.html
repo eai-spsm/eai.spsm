@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>EAI poster race-en</title>
+<style>
+/* IG portrait 3:4 = 1080x1440. Navy field, hollow stepped cream card, coral accent. One font, one weight, no caps. */
+@font-face{font-family:"line_seed_sans_th";src:url(../assets/fonts/lineseedsansth_rg.woff2) format("woff2")}
+:root{--navy:#292d7a;--coral:#f5423d;--cream:#fff;--ink:#1a1a1a;--w5:#8a8782;--w7:#4a4842}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1440px;overflow:hidden}
+body{position:relative;font:20px/1.5 "line_seed_sans_th",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;
+  background:#fff;
+  display:flex;align-items:center;justify-content:center}
+.px{position:absolute;width:var(--z);height:var(--z);background:var(--c)}
+b{font-weight:700}
+.card{flex:none;width:960px;height:1320px;background:var(--cream);padding:72px 0;display:flex;flex-direction:column;align-items:center;text-align:center;clip-path:polygon(0px 72px,24px 72px,24px 48px,48px 48px,48px 24px,72px 24px,72px 0px,300px 0px,300px 24px,372px 24px,372px 0px,612px 0px,612px 24px,708px 24px,708px 0px,888px 0px,888px 24px,912px 24px,912px 48px,936px 48px,936px 72px,960px 72px,960px 340px,936px 340px,936px 412px,960px 412px,960px 900px,936px 900px,936px 996px,960px 996px,960px 1248px,936px 1248px,936px 1272px,912px 1272px,912px 1296px,888px 1296px,888px 1320px,660px 1320px,660px 1296px,588px 1296px,588px 1320px,348px 1320px,348px 1296px,276px 1296px,276px 1320px,72px 1320px,72px 1296px,48px 1296px,48px 1272px,24px 1272px,24px 1248px,0px 1248px,0px 960px,24px 960px,24px 888px,0px 888px,0px 300px,24px 300px,24px 228px,0px 228px)}
+.in{width:700px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1}
+.brand{font-size:18px;color:var(--w7)}
+h1{margin-top:64px;font-weight:400;line-height:1.05}
+h1 b{display:block;color:var(--coral);font-size:76px;white-space:nowrap;letter-spacing:-.01em}
+.sub{margin-top:26px;font-size:16px;color:var(--w7);max-width:480px;text-wrap:balance}
+.date{margin-top:22px;font-size:17px;color:var(--navy)}
+.acts{margin-top:64px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:0 44px;text-align:left}
+.act{display:flex;gap:16px;align-items:center;padding:16px 2px;border-top:1px solid #ececea}
+.act .ico{flex:none;width:56px;height:56px;border-radius:8px;display:grid;place-items:center;background:#e8e9f5}
+.act:nth-child(4n+2) .ico,.act:nth-child(4n+3) .ico{background:#fde3e2}
+.act img{width:32px;height:32px;opacity:.9}
+.act b{display:block;font-weight:400;font-size:18px;line-height:1.25}
+.act small{display:block;margin-top:2px;font-size:13px;line-height:1.4;color:var(--w5)}
+.qr{margin-top:64px;width:264px;height:264px;padding:16px;background:#fff;border:2px solid var(--ink);border-radius:10px;box-shadow:3px 3px 0 var(--navy)}
+.qr svg{display:block;width:100%;height:100%}
+.cap{margin-top:24px;font-size:16px;color:var(--w7)}
+.cap small{display:block;font-size:13px;color:var(--w5)}
+.foot{margin-top:72px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;font-size:15px;color:var(--navy)}
+.foot span{display:flex;align-items:center;gap:8px}
+.foot img{width:24px;height:24px;opacity:.85}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="in">
+      <div class="brand">AI Major | Satit Prasarnmit</div>
+      <h1><b>Car Race Challenge</b></h1>
+      <p class="sub">Walk the track, measure the distance, then key in your commands. The car follows your program, and the first to the destination wins.</p>
+      <div class="date">Date and venue to be announced</div>
+      <div class="acts"><div class="act"><div class="ico"><img src="../assets/ph/ruler.svg" alt=""></div><div><b>Measure the track</b><small>Work out distances and turns</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/path.svg" alt=""></div><div><b>Key in commands</b><small>Type the distance and moves</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/flag-checkered.svg" alt=""></div><div><b>Race the clock</b><small>Fastest car to the finish wins</small></div></div><div class="act"><div class="ico"><img src="../assets/ph/target.svg" alt=""></div><div><b>Learn control</b><small>Calibration, speed and accuracy</small></div></div></div>
+      <div class="qr" role="img" aria-label="QR code for the EAI LINE Openchat"><svg viewBox="0 0 25 25" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" class="segno"><path class="qrline" stroke="#1a1a1a" d="M0 0.5h7m2 0h1m1 0h2m1 0h1m3 0h7m-25 1h1m5 0h1m1 0h2m4 0h2m2 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m4 0h1m2 0h3m1 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m3 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h2m2 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m2 0h1m3 0h1m1 0h2m1 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-15 1h1m1 0h3m-15 1h1m1 0h1m1 0h1m1 0h1m4 0h2m7 0h1m2 0h1m-20 1h2m1 0h1m1 0h1m3 0h1m3 0h2m5 0h1m-25 1h1m2 0h1m1 0h3m3 0h4m7 0h3m-24 1h1m1 0h2m3 0h1m2 0h1m1 0h2m1 0h1m2 0h1m3 0h1m-24 1h2m1 0h4m1 0h3m1 0h2m1 0h4m2 0h1m1 0h2m-24 1h4m2 0h6m1 0h1m3 0h1m2 0h1m2 0h1m-25 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h1m2 0h3m2 0h3m-24 1h1m7 0h2m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m-24 1h1m2 0h2m1 0h2m1 0h1m1 0h1m3 0h7m-14 1h4m1 0h2m1 0h1m3 0h2m1 0h2m-25 1h7m3 0h1m2 0h1m1 0h2m1 0h1m1 0h2m1 0h2m-25 1h1m5 0h1m2 0h1m1 0h1m1 0h1m2 0h1m3 0h2m1 0h2m-25 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h6m1 0h2m-25 1h1m1 0h3m1 0h1m4 0h3m1 0h1m1 0h1m1 0h4m-23 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m4 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m2 0h2m1 0h2m1 0h1m1 0h2m1 0h1m-24 1h7m1 0h1m2 0h2m1 0h3m2 0h1m3 0h2"/></svg></div>
+      <p class="cap">Scan to join the LINE Openchat<small>for updates and questions</small></p>
+      <div class="foot"><span><img src="../assets/ph/instagram-logo.svg" alt="">@e.ai_official</span><span><img src="../assets/ph/tiktok-logo.svg" alt="">@e.ai_official</span><span><img src="../assets/ph/globe.svg" alt="">eaispsm.vercel.app</span></div>
+    </div>
+  </div>
+  </body>
+</html>

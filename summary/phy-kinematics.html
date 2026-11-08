@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-th="จลนศาสตร์และสมการ SUVAT | EAI">Kinematics &amp; SUVAT · Physics for Engineering | EAI</title>
+<meta name="description" content="Describing motion with position, velocity and acceleration, no forces needed: scalars versus vectors, the four SUVAT equations, motion graphs and free fall.">
+<link rel="canonical" href="https://eaispsm.vercel.app/phy-kinematics">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EAI">
+<meta property="og:title" content="Kinematics &amp; SUVAT · Physics for Engineering | EAI">
+<meta property="og:description" content="Describing motion with position, velocity and acceleration, no forces needed: scalars versus vectors, the four SUVAT equations, motion graphs and free fall.">
+<meta property="og:url" content="https://eaispsm.vercel.app/phy-kinematics">
+<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#C41616">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <nav class="menu" id="menu" aria-label="Main">
+      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
+          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        </div></div>
+      </div>
+      <div class="dd">
+        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+        </div></div>
+      </div>
+    </nav>
+    <div class="right">
+      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
+      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
+      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
+      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+    </div>
+  </div>
+</header>
+
+<main class="doc"><section class="page-h"><a class="back" href="summaries.html"><img class="ic bk" src="assets/ph/arrow-up-right.svg" alt=""><span data-th="กลับไปสรุปบทเรียน">Back to Summaries</span></a><h1 data-th="จลนศาสตร์และสมการ SUVAT">Kinematics &amp; SUVAT</h1><p class="sub">Physics for Engineering · M.4 · <span data-th="บทที่">Chapter</span> 1 / 7</p><p class="lead">Describing motion with position, velocity and acceleration, no forces needed: scalars versus vectors, the four SUVAT equations, motion graphs and free fall.</p></section><article class="report-article"><nav class="toc" aria-label="On this page"><b data-th="ในหน้านี้">On this page</b><ol><li><a href="#what">What is kinematics?</a></li><li><a href="#dva">Displacement, velocity and acceleration</a></li><li><a href="#suvat">The SUVAT equations</a></li><li><a href="#graphs">Motion graphs</a></li><li><a href="#fall">Free fall</a></li></ol></nav>
+<h2 id="what">What is kinematics?</h2>
+<p><strong>Kinematics</strong> describes <em>how</em> things move, not <em>why</em>. The why belongs to dynamics and Newton's laws. We treat motion purely as position, velocity and acceleration changing with time: no forces and no masses, just the geometry of motion.</p>
+<div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Meaning</th><th>Type</th></tr></thead><tbody>
+<tr><td>Position x</td><td>location on a number line (needs a reference point)</td><td>vector</td></tr>
+<tr><td>Displacement Δx</td><td>change in position, x<sub>f</sub> − x<sub>i</sub></td><td>vector</td></tr>
+<tr><td>Distance</td><td>total path length travelled, always positive</td><td>scalar</td></tr>
+<tr><td>Speed</td><td>magnitude of velocity: how fast, not which way</td><td>scalar</td></tr>
+<tr><td>Velocity v</td><td>rate of change of displacement; sign gives direction</td><td>vector</td></tr>
+<tr><td>Acceleration a</td><td>rate of change of velocity; positive = speeding up (in the + direction)</td><td>vector</td></tr></tbody></table></div>
+<div class="vs"><div><b>Scalar</b>magnitude only. One number and a unit is enough: distance 15 m, speed 30 m/s.</div><div><b>Vector</b>magnitude and direction: displacement 15 m to the right, velocity 30 m/s north. In one dimension direction is just a + or − sign.</div></div>
+<div class="co red"><b>Common slip</b>Run once round a 400 m track and back to the start: distance = 400 m but displacement = 0, so the average velocity is also 0 while the average speed is not.</div>
+
+<h2 id="dva">Displacement, velocity and acceleration</h2>
+<div class="table-wrap"><table><thead><tr><th>Quantity</th><th>Formula</th><th>Unit</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Displacement</td><td>Δx = x<sub>f</sub> − x<sub>i</sub></td><td>m</td><td>negative if motion is in the − direction</td></tr>
+<tr><td>Average velocity</td><td>v̄ = Δx / Δt</td><td>m/s</td><td>total displacement over total time</td></tr>
+<tr><td>Instantaneous velocity</td><td>v = dx/dt</td><td>m/s</td><td>slope of the x–t graph at one point</td></tr>
+<tr><td>Average acceleration</td><td>ā = Δv / Δt</td><td>m/s²</td><td>change in velocity over the interval</td></tr>
+<tr><td>Instantaneous acceleration</td><td>a = dv/dt</td><td>m/s²</td><td>slope of the v–t graph at one point</td></tr></tbody></table></div>
+<p>The slope of an x–t graph is velocity. The slope of a v–t graph is acceleration, and the <em>area</em> under a v–t graph is displacement. These graph facts are the most useful tools in the chapter; see them in action in <a class="rf" href="#f-suvat">Fig. 1</a>.</p>
+
+<h2 id="suvat">The SUVAT equations</h2>
+<p>When acceleration is <strong>constant</strong>, five variables are linked: <em>s</em> displacement, <em>u</em> initial velocity, <em>v</em> final velocity, <em>a</em> acceleration and <em>t</em> time. Know any three and you can find the other two. Each equation leaves one variable out, which tells you which to pick.</p>
+<div class="table-wrap"><table><thead><tr><th>Equation</th><th>Missing variable</th><th>Use when</th></tr></thead><tbody>
+<tr><td>v = u + at</td><td>s</td><td>displacement is unknown and not needed</td></tr>
+<tr><td>s = ut + ½at²</td><td>v</td><td>final velocity is unknown and not needed</td></tr>
+<tr><td>v² = u² + 2as</td><td>t</td><td>time is unknown and not needed</td></tr>
+<tr><td>s = ½(u + v)t</td><td>a</td><td>acceleration is unknown and not needed</td></tr></tbody></table></div>
+<p><strong>Method.</strong> 1) Write the five letters. 2) Fill in what is given (decide + direction first, so a falling object has a = +10 if down is positive). 3) Circle what you want. 4) Pick the equation that omits the letter you neither have nor want.</p>
+<figure class="fg wd" id="f-suvat" data-w="suvat"><figcaption><b>Fig. 1</b>Constant acceleration: the v–t line, the shaded area equal to s, and the matching x–t parabola. Press play to run time.</figcaption></figure>
+<p>Check the numbers: the panel shows v = u + at, s = ut + ½at², and two cross-checks (s = ½(u + v)t and v² = u² + 2as) that always agree.</p>
+
+<h2 id="graphs">Motion graphs</h2>
+<div class="table-wrap"><table><thead><tr><th>Graph</th><th>Axes</th><th>Slope means</th><th>Area means</th></tr></thead><tbody>
+<tr><td>Position–time (x–t)</td><td>t, x</td><td>velocity</td><td>—</td></tr>
+<tr><td>Velocity–time (v–t)</td><td>t, v</td><td>acceleration</td><td>displacement</td></tr>
+<tr><td>Acceleration–time (a–t)</td><td>t, a</td><td>—</td><td>change in velocity</td></tr></tbody></table></div>
+<div class="vs"><div><b>Constant velocity</b>horizontal line on v–t, a straight sloped line on x–t.</div><div><b>Constant acceleration</b>sloped straight line on v–t, a parabola on x–t.</div><div><b>At rest</b>horizontal line on x–t at the object's position, v = 0.</div></div>
+<p>A steeper slope means a larger value of the derived quantity. Drag <em>a</em> in <a class="rf" href="#f-suvat">Fig. 1</a> from positive to negative and watch the v–t line tilt and the x–t curve bend the other way.</p>
+
+<h2 id="fall">Free fall</h2>
+<p>Near the Earth's surface every object accelerates downward at <strong>g = 10 m/s²</strong> in class (9.8 m/s² more precisely), with air resistance ignored. Take downward as positive and a = +10. A dropped object has u = 0; a thrown object has u ≠ 0, and a stone thrown <em>up</em> at 20 m/s has a = −10 if up is positive.</p>
+<figure class="fg wd" id="f-fall" data-w="freefall"><figcaption><b>Fig. 2</b>A ball thrown upward from a chosen height. Dots mark each half second; the graph shows height against time.</figcaption></figure>
+<h3>Worked example: dropped from rest</h3>
+<p>Given u = 0, a = 10 m/s², t = 3 s. Velocity: v = 0 + 10 × 3 = 30 m/s. Displacement: s = ½ × 10 × 3² = 45 m.</p>
+<h3>Thrown upward</h3>
+<p>At the top v = 0, so t<sub>peak</sub> = u/g and H = u²/(2g). The way up and down are symmetric: it returns to its starting height with the same speed u, after 2u/g. Set u = 20, h₀ = 0 in <a class="rf" href="#f-fall">Fig. 2</a>: time to top 2 s, maximum height 20 m, landing after 4 s.</p>
+<pre class="code-block"><code>u, a, t_end = 0, 10, 3
+for t in range(t_end + 1):
+    v = u + a*t
+    s = u*t + 0.5*a*t**2
+    print(f"t={t}s: v={v} m/s, s={s} m")
+# t=0s: v=0 m/s, s=0.0 m ... t=3s: v=30 m/s, s=45.0 m</code></pre>
+
+<section class="refs"><h2 data-th="รูปในบทนี้">Figures in this chapter</h2><ol><li><b>Fig. 1</b><a href="#f-suvat">Constant acceleration: the v–t line, the shaded area equal to s, and the matching x–t parabola. Press play to run time.</a></li><li><b>Fig. 2</b><a href="#f-fall">A ball thrown upward from a chosen height. Dots mark each half second; the graph shows height against time.</a></li></ol></section>
+<nav class="pn" aria-label="Chapters"><div class="col"><small data-th="สารบัญ">Contents</small><a class="btn grey" href="summaries.html">&larr; Summaries</a></div><div class="col nx"><small data-th="ถัดไป">Next</small><a class="btn" href="phy-newton.html">Newton&#x27;s Laws &amp; Free Body Diagrams &rarr;</a></div></nav></article></main>
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <b data-th="วิชาเอก EAI">EAI Major</b>
+        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
+        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      </div>
+      <div>
+        <h4 data-th="สำรวจ">Explore</h4>
+        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
+        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
+        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
+        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
+        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
+        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+      </div>
+      <div>
+        <h4 data-th="เพิ่มเติม">More</h4>
+        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
+          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
+        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
+        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
+        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
+      </div>
+      <div>
+        <h4 data-th="ติดต่อเรา">Contact</h4>
+        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
+        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
+        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
+        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
+      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="summary.js?v=27"></script><script src="w-phys.js?v=27"></script>
+<script src="site.js"></script>
+
+</body>
+</html>

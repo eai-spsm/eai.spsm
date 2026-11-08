@@ -2,8 +2,8 @@
   var id = new URLSearchParams(location.search).get("id");
   var report = id && typeof REPORTS !== "undefined" ? REPORTS[id] : null;
   var t = document.getElementById("rTitle"), dt = document.getElementById("rDate"), mt = document.getElementById("rMeta"), body = document.getElementById("rBody"), back = document.getElementById("backLink");
-  if (!report) { t.textContent = "Not found"; body.innerHTML = '<p>That report does not exist. <a href="/classwork">Back to Classwork Report</a>.</p>'; return; }
-  if (report.backAnchor) back.href = "/classwork#" + report.backAnchor;
+  if (!report) { t.textContent = "Not found"; body.innerHTML = '<p>That report does not exist. <a href="classwork.html">Back to Major Class</a>.</p>'; return; }
+  if (report.backAnchor) back.href = "classwork.html#" + report.backAnchor;
   function render() {
     var c = report[document.documentElement.lang === "th" ? "th" : "en"] || report.en;
     document.title = c.title + " | EAI";
