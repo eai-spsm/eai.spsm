@@ -1668,7 +1668,7 @@ html.home{scroll-snap-type:none}
 .hl-bg{position:fixed;inset:0;z-index:0;pointer-events:none;visibility:hidden}
 .hl-bg i{position:absolute;inset:-30px;background-size:cover;background-position:center;will-change:opacity,filter}
 .hl-bg .b1{background-image:url("assets/img/pic banner/work.webp")}
-.hl-bg .b2{background-image:url("assets/img/footer-bg.webp");opacity:0}
+.hl-bg .b2{background-image:url("assets/img/footer-bg.webp?v=2");opacity:0}
 .hl-bg::after{content:"";position:absolute;inset:0;background:rgba(8,8,8,.72)}
 .home #wins.hl-wn,.home footer.hf{background:none!important}
 .home footer.hf{position:relative;z-index:1}
