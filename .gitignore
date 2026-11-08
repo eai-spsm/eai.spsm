@@ -5,3 +5,48 @@ _s.html
 Thumbs.db
 .DS_Store
 assets/img/lightroom-download-*/
+
+# not used by the site (originals, drafts, backups, tests)
+index-backup.html
+index1.html
+summary/summary.test.js
+assets/img/pic banner/other/
+assets/img/learn/01.webp
+assets/img/learn/01b.webp
+assets/img/learn/01p.webp
+assets/img/learn/02.webp
+assets/img/learn/03.webp
+assets/img/learn/05.webp
+assets/img/learn/05c.webp
+assets/img/learn/05d.webp
+assets/img/learn/06.webp
+assets/img/learn/07.webp
+assets/img/learn/07c.webp
+assets/img/learn/07d.webp
+assets/img/learn/08.webp
+assets/img/learn/s4a.webp
+assets/img/learn/s4b.webp
+assets/img/learn/s5a.webp
+assets/img/learn/s5b.webp
+assets/img/learn/s7a.webp
+assets/img/learn/s7b.webp
+assets/img/learn/s8a.webp
+assets/img/learn/s8b.webp
+assets/img/pic banner/IMG_7452.jpg
+assets/img/pic banner/IMG_7453.jpg
+assets/img/pic banner/chatbot.jpg
+assets/img/pic banner/com vision.jpg
+assets/img/pic banner/curcuit.jpg
+assets/img/pic banner/deeplearn.png
+assets/img/pic banner/footer.jpg
+assets/img/pic banner/home.jpg
+assets/img/pic banner/img processing.jpg
+assets/img/pic banner/microcontroller AI.jpg
+assets/img/pic banner/microcontroller.jpg
+assets/img/pic banner/phy robotic.jpg
+assets/img/pic banner/python.jpg
+assets/img/pic banner/research.jpg
+assets/logo/arduino.svg
+assets/logo/espressif.svg
+assets/logo/python.svg
+assets/logo/raspberrypi.svg
