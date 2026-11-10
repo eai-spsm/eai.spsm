@@ -1110,7 +1110,7 @@ html.home{scroll-snap-type:none}
 .hl-cdrun{position:relative;height:230vh;height:230svh}
 .hl-cdrun .cd{position:sticky;top:0;height:100vh;height:100svh;min-height:0}
 .cd .pol,.cd .wrap{will-change:transform,opacity}
-@media(max-width:860px),(prefers-reduced-motion:reduce){.hl-cdrun{height:auto}.hl-cdrun .cd{position:relative;height:auto;min-height:100vh;min-height:100svh}}
+@media(prefers-reduced-motion:reduce){.hl-cdrun{height:auto}.hl-cdrun .cd{position:relative;height:auto;min-height:100vh;min-height:100svh}}
 .hl-t{font-weight:700}
 .hl-c.art{background:#0e1014}
 .hl-c.art>img{object-fit:contain;object-position:center top}
@@ -1351,15 +1351,16 @@ html.home{scroll-snap-type:none}
 /* countdown holds still for a beat (first ~45% of its pinned scroll) before the polaroids leave */
 .hl-cdrun{height:215vh;height:215svh}
 .hl-learn{margin-top:-52vh;margin-top:-52svh}
-@media(max-width:860px),(prefers-reduced-motion:reduce){.hl-cdrun{height:auto}}
+@media(prefers-reduced-motion:reduce){.hl-cdrun{height:auto}}
 /* phone: nothing overlaps. Learn no longer pulled up, polaroids only in a top and bottom band, text clear of them */
 @media(max-width:860px){
   .hl-learn{margin-top:0}
-  .home .cd{padding-top:calc(var(--nav-h) + 10rem);padding-bottom:8rem}
+  .home .cd{padding-top:calc(var(--nav-h) + 1.5rem);padding-bottom:8rem}
   .home .cd .pol{width:76px;margin-top:calc(var(--nav-h) + 4px)}
   .home .cd .p3,.home .cd .p4,.home .cd .p5,.home .cd .p9,.home .cd .p10,.home .cd .p11{display:none}
-  .home .cd .p1{left:6%;top:1%}.home .cd .p2{left:32%;top:6%}.home .cd .p7{right:6%;top:1%}.home .cd .p8{right:32%;top:6%}
-  .home .cd .p6{left:8%;top:auto;bottom:2%;margin-top:0}.home .cd .p12{right:8%;top:auto;bottom:2%;margin-top:0}
+  .home .cd .p1{left:-6%;top:-4%}.home .cd .p7{right:-6%;top:-4%}
+  .home .cd .p2{left:24%;top:2%}.home .cd .p8{right:24%;top:2%}
+  .home .cd .p6{left:-6%;top:auto;bottom:2%;margin-top:0}.home .cd .p12{right:-6%;top:auto;bottom:2%;margin-top:0}
   .hl-h{margin-bottom:2rem}
 }
 @media(max-width:860px){.home .cd .p2{left:22%}.home .cd .p8{right:22%}}
@@ -1587,6 +1588,33 @@ html.home{scroll-snap-type:none}
   .hl-ar-run{height:auto}
   .hl-ar-st{position:static;height:auto}
 }
+/* phone: subject card is just pic + name + one short line, no detail list */
+@media(max-width:860px){
+  .hl-rw{display:none}
+  .hl-st{display:block}
+  .hl-deck{display:flex;flex-direction:column;gap:1rem;width:100%}
+  .hl-c,.hl-c.art,.hl-c.line{flex-direction:column;width:100%;height:auto;flex-basis:auto;gap:0;border:0;background:none;overflow:visible}
+  .hl-bn{flex:0 0 auto;flex-basis:auto;width:100%;height:260px;border-radius:20px}
+  .hl-bd{overflow:visible;height:auto;padding:1.2rem .2rem 1.6rem;gap:.4rem;border:0;border-radius:0;background:none}
+  .hl-br{display:block;white-space:normal;overflow:visible;text-overflow:clip;font-weight:700}
+  .hl-ti .ic{display:none}
+  .hl-deck{gap:1rem}
+}
+/* phone: countdown bigger, polaroids tucked into the bottom corners only */
+@media(max-width:600px){
+  .home .cd h2{font-size:32px;line-height:1.15}
+  .home .cd .cd-s{font-size:16px}
+  .home .cd .cd-t{font-size:13px}
+  .home .cd .clock{width:min(100%,380px);gap:.5rem}
+  .home .cd .clock div{padding:.9rem .2rem .7rem;border-radius:14px}
+  .home .cd .clock b{font-size:30px}
+  .home .cd .clock span{font-size:12.5px}
+  .home .cd .btn{font-size:13.5px;padding:.6rem 1.2rem;margin-top:.6rem}
+  .home .cd .p1,.home .cd .p6,.home .cd .p7,.home .cd .p12{width:150px}
+  .home .cd .p2,.home .cd .p8{width:90px}
+  .home .cd .p6{bottom:4%}
+  .home .cd .p12{bottom:4%}
+}
 .hl-ar-run{width:100%;flex:1 1 100%}
 /* index-backup-2: competitions on the work photo, slides up under the shrinking learn panel */
 .home .hl-wn{position:relative;z-index:1;margin-top:-100vh;margin-top:-100svh;padding:calc(100vh + 6rem) 0 6rem;padding:calc(100svh + 6rem) 0 6rem;min-height:200vh;min-height:200svh;color:#fff;background:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.84)),url("assets/img/pic banner/work.webp") center/cover no-repeat;display:block}
@@ -1674,7 +1702,7 @@ html.home{scroll-snap-type:none}
 .home footer.hf{position:relative;z-index:1}
 .home .hl-wn{z-index:1}
 /* competitions button: glass instead of white */
-.home .hl-wn .btn{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.home .hl-wn .btn{background:rgba(255,255,255,.14);color:#fff;border:0;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .home .hl-wn .btn .ic{filter:invert(1)}
 .home .hl-wn .btn:hover{background:rgba(255,255,255,.28);color:#fff}
 .home .hl-wn .btn:hover .ic{filter:invert(1)}

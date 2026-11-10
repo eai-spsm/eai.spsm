@@ -16,7 +16,7 @@
       HOLD=.45,smooth=function(t){return t*t*(3-2*t)},iv={a:0,b:0,l:1},it={a:0,b:0,l:1},iraf=0;
   function introTarget(){
     if(!cd)return;
-    var on=pinned()&&!matchMedia('(prefers-reduced-motion:reduce)').matches,p=on?clamp((-cdr.getBoundingClientRect().top/Math.max(1,cdr.offsetHeight-cd.offsetHeight)-HOLD)/(1-HOLD)):0;
+    var on=!matchMedia('(prefers-reduced-motion:reduce)').matches,p=on?clamp((-cdr.getBoundingClientRect().top/Math.max(1,cdr.offsetHeight-cd.offsetHeight)-HOLD)/(1-HOLD)):0;
     it.a=ease(clamp(p/.6));it.b=smooth(clamp((p-.25)/.65));it.l=on?smooth(clamp((p-.45)/.45)):1;
     if(!iraf)iraf=requestAnimationFrame(introRender)}
   function introRender(){
