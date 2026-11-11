@@ -448,32 +448,34 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .f-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1rem;margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid #262626;color:#fff;font-size:13px;line-height:1.55}
 @media(max-width:700px){.f-bot{flex-direction:column}}
 
-/* tablet and phone: menu collapses */
-/* phone menu extras (injected by site.js) */
-.menu-extra{display:none}
-@media(max-width:1100px){
-  .menu-extra{display:block;margin-top:1.6rem;padding-top:1.6rem;border-top:1px solid #333}
-  .mx-cap{font-size:13px;color:#8a8782;margin-bottom:.8rem}
-  .mx-links{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:1.8rem}
-  .mx-links a{display:flex;flex-direction:column;gap:.35rem;min-height:250px;padding:1rem;border-radius:12px;background:#2b2b2b;color:#fff;transition:var(--tr)}
-  .mx-links a:hover{background:#3a3a3a}
-  .mx-links .mm{font-size:13px;color:#8a8782}
-  .mx-links .mb{width:76px;height:76px;margin:1.1rem auto 1.1rem;filter:invert(1)}
-  .mx-links b{font-size:16px;line-height:1.3}
-  .mx-links .ml{display:flex;align-items:center;gap:.35rem;margin-top:auto;font-size:13px;color:#a9a6a0}
-  .mx-links .ml img{width:11px;height:11px;filter:invert(1);opacity:.7}
-  .mx-soc{display:flex;flex-wrap:wrap;gap:.6rem}
-  .mx-soc a{width:54px;height:54px;border-radius:999px;background:#2b2b2b;display:grid;place-items:center;transition:var(--tr)}
-  .mx-soc a:hover{background:#3a3a3a}
-  .mx-soc img{width:26px;height:26px;filter:invert(1)}
-}
+/* menu extras (injected by site.js): SharePoint/Linktree cards + socials, now shown at every width */
+.menu-extra{display:block;margin-top:1.6rem;padding-top:1.6rem;border-top:1px solid #333}
+.mx-cap{font-size:13px;color:#8a8782;margin-bottom:.8rem}
+.mx-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.7rem;margin-bottom:1.8rem}
+.mx-links a{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:.35rem;min-height:250px;padding:1rem;border-radius:12px;background:#2b2b2b;color:#fff;transition:var(--tr)}
+.mx-links a::before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;opacity:.3;transition:opacity .25s}
+.mx-links a:nth-child(1)::before{background-image:url("assets/img/pic banner/doc-sm.webp")}
+.mx-links a:nth-child(2)::before{background-image:url("assets/img/pic banner/life-sm.webp")}
+.mx-links a:hover{background:#3a3a3a}
+.mx-links a:hover::before{opacity:.45}
+.mx-links .mm,.mx-links b,.mx-links .ml,.mx-links .mb{position:relative;z-index:1}
+.mx-links .mm{font-size:13px;color:#8a8782}
+.mx-links .mb{width:76px;height:76px;margin:1.1rem auto 1.1rem;filter:invert(1)}
+.mx-links b{font-size:16px;line-height:1.3}
+.mx-links .ml{display:flex;align-items:center;gap:.35rem;margin-top:auto;font-size:13px;color:#a9a6a0}
+.mx-links .ml img{width:11px;height:11px;filter:invert(1);opacity:.7}
+.mx-soc{display:flex;flex-wrap:wrap;gap:.6rem}
+.mx-soc a{width:54px;height:54px;border-radius:999px;background:#2b2b2b;display:grid;place-items:center;transition:var(--tr)}
+.mx-soc a:hover{background:#3a3a3a}
+.mx-soc img{width:26px;height:26px;filter:invert(1)}
 
 /* nav: brand left, full-page overlay menu at every width (like the Anthropic phone menu), triggered by the burger on the right */
 .nav .wrap{display:flex;justify-content:space-between}
 .right{margin-left:auto}
 .menu-btn{display:inline-flex}
 .menu-btn .ic{transition:var(--tr)}
-.menu{display:none;position:fixed;inset:var(--nav-h) 0 0 0;overflow-y:auto;flex-direction:column;align-items:stretch;gap:.2rem;background:var(--ink);padding:1.5rem 1.25rem 3rem}
+.menu{display:none;position:fixed;inset:var(--nav-h) 0 0 0;overflow-y:auto;flex-direction:column;align-items:stretch;gap:.2rem;background:var(--ink);padding:1.5rem 0 3rem}
+.menu>*{width:min(80%,1400px);margin-left:auto;margin-right:auto}
 .menu.open{display:flex}
 .nav.open{background:var(--ink);backdrop-filter:none}
 .nav.open .right .pill{background:#2b2b2b;color:#fff}
@@ -496,7 +498,7 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .dd-menu a:hover{background:none;color:#fff}
 .dd-menu a .ic{display:none}
 .menu .pill>.ic:not(.chev){display:none}
-@media(min-width:1101px){.menu{padding:3rem clamp(1.25rem,6vw,5rem) 3rem}.menu .pill{font-size:clamp(28px,4.2vw,46px)}}
+@media(min-width:1101px){.menu{padding:3rem 0}.menu .pill{font-size:clamp(28px,4.2vw,46px)}}
 @media(max-width:900px){
   .wrap{width:100%;padding:0 1.1rem}
   .f-grid{grid-template-columns:1fr 1fr}
