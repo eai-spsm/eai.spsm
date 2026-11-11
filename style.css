@@ -514,7 +514,10 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
   .dd-menu{position:static;display:block;grid-template-rows:none;padding:.7rem 0 0;opacity:1;visibility:visible;pointer-events:auto;transform:none}
   .dd-menu>div{display:flex;flex-direction:column;gap:.35rem}
   .dd-menu a{font-size:14px;color:#a9a6a0}
+  .menu-disc{display:block;position:absolute;right:1.75rem;bottom:1rem;max-width:280px;font-size:10.5px;line-height:1.5;color:#6b6862;text-align:right}
+  .menu-disc b{color:#8a8782}
 }
+.menu-disc{display:none}
 @media(max-width:900px){
   .wrap{width:100%;padding:0 1.1rem}
   .f-grid{grid-template-columns:1fr 1fr}

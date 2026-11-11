@@ -36,6 +36,10 @@
     var navWrap=document.createElement('div');navWrap.className='menu-nav';
     [].slice.call(mx.children).forEach(function(c){if(c!==x)navWrap.appendChild(c)});
     mx.insertBefore(navWrap,mx.firstChild);
+    // desktop only: small unofficial-site disclaimer, bottom-right of the menu card
+    var disc=document.createElement('p');disc.className='menu-disc';
+    disc.innerHTML='<b data-th="ไม่เป็นทางการ">Unofficial.</b> <span data-th="ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก">A student creation, not an official website of the school or the major.</span>';
+    mx.appendChild(disc);
   }
   // inner pages: red announcement bar above the nav, dismissible, hides on scroll down and reappears back at the top
   if(document.documentElement.classList.contains('hero-page')){
