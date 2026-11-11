@@ -155,7 +155,7 @@ html.home{scroll-snap-type:y proximity;scroll-padding-top:var(--nav-h)}
 
 /* home: competitions we attend, scattered names */
 .home #wins{display:flex;align-items:center;padding-bottom:3rem}
-.wins-lead{max-width:40em;margin:-.6rem auto 2rem;text-align:center}
+.wins-lead{max-width:40em;margin:-.6rem auto 2rem;text-align:center;font-weight:700}
 .home #wins .wrap{text-align:center}
 .home #wins .btn{margin:0 auto}
 .cloud{--k:1;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1.1rem 2.4rem;padding:1.5rem 0 2.5rem;text-align:center}
@@ -186,6 +186,7 @@ html.home{scroll-snap-type:y proximity;scroll-padding-top:var(--nav-h)}
 .lead{font-size:14px;color:var(--w5);margin-bottom:2.4rem}
 .rows{display:grid;gap:1.1rem}
 .h-row+.rows{margin-top:1rem}
+.h-row+.faq{margin-top:1.1rem}
 .row{display:flex;gap:1rem;align-items:flex-start}
 .row:hover .ico{background:var(--w2)}
 .row h3{font-size:15px;line-height:1.35}
@@ -1617,7 +1618,7 @@ html.home{scroll-snap-type:none}
 }
 .hl-ar-run{width:100%;flex:1 1 100%}
 /* index-backup-2: competitions on the work photo, slides up under the shrinking learn panel */
-.home .hl-wn{position:relative;z-index:1;margin-top:-100vh;margin-top:-100svh;padding:calc(100vh + 6rem) 0 6rem;padding:calc(100svh + 6rem) 0 6rem;min-height:200vh;min-height:200svh;color:#fff;background:linear-gradient(rgba(8,8,8,.72),rgba(8,8,8,.84)),url("assets/img/pic banner/work.webp") center/cover no-repeat;display:block}
+.home .hl-wn{position:relative;z-index:1;margin-top:-100vh;margin-top:-100svh;padding:calc(100vh + 6rem) 0 6rem;padding:calc(100svh + 6rem) 0 6rem;min-height:200vh;min-height:200svh;color:#fff;background:linear-gradient(rgba(8,8,8,.85),rgba(8,8,8,.92)),url("assets/img/pic banner/work.webp") center/cover no-repeat;display:block}
 .home .hl-wn .wrap{display:flex;flex-direction:column;align-items:center;text-align:center;position:sticky;top:calc(var(--nav-h) + 2rem)}
 .home .hl-wn .sec-head h2,.home .hl-wn .sec-sub{color:#fff}
 .home .hl-wn .sec-sub{opacity:.85}
@@ -1697,7 +1698,7 @@ html.home{scroll-snap-type:none}
 .hl-bg i{position:absolute;inset:-30px;background-size:cover;background-position:center;will-change:opacity,filter}
 .hl-bg .b1{background-image:url("assets/img/pic banner/work.webp")}
 .hl-bg .b2{background-image:url("assets/img/footer-bg.webp?v=2");opacity:0}
-.hl-bg::after{content:"";position:absolute;inset:0;background:rgba(8,8,8,.72)}
+.hl-bg::after{content:"";position:absolute;inset:0;background:rgba(8,8,8,.85)}
 .home #wins.hl-wn,.home footer.hf{background:none!important}
 .home footer.hf{position:relative;z-index:1}
 .home .hl-wn{z-index:1}
@@ -1715,3 +1716,19 @@ html.home{scroll-snap-type:none}
 .hf-ad{margin:1.6rem 0 0!important;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.2);width:100%}
 .hf-un{margin-top:.8rem}
 @media(max-width:860px){.hf-ad{white-space:normal}}
+/* home: a plain white breather with one big quote before the footer */
+/* home: the quote rides up as a narrow rounded card, squares off to full-bleed, then holds pinned a beat before releasing */
+.qt-run{position:relative;z-index:1;height:260vh;height:260svh}
+.qt-st{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.quote-sec{position:relative;width:calc(92% + var(--qi,0)*8%);height:100%;margin:0 auto;border-radius:calc(32px - var(--qi,0)*32px);background:#fff;color:var(--ink);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.qtxt{max-width:980px;margin:0 auto;font-size:clamp(22px,3.4vw,40px);line-height:1.45;font-weight:600;text-align:left}
+.qtxt mark{background:#ffe066;color:var(--ink);font-weight:700;padding:.05em .15em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.qtxt .q-em{font-weight:800;text-decoration:underline;text-underline-offset:.12em}
+.qnote{max-width:980px;margin:1.6rem auto 0;font-size:14px;color:var(--w5)}
+.qnote u{color:var(--ink);text-decoration-thickness:2px;text-underline-offset:3px}
+.js .qtxt,.js .qnote{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}
+.js .quote-sec.in .qtxt,.js .quote-sec.in .qnote{opacity:1;transform:none}
+.js .quote-sec.in .qnote{transition-delay:.1s}
+@media(prefers-reduced-motion:reduce){.qt-run{height:auto}.qt-st{position:relative;height:auto;min-height:100vh;min-height:100svh}.quote-sec{width:100%;border-radius:0}.qtxt,.qnote{opacity:1;transform:none;transition:none}}
+@media(max-width:860px){.qt-run{height:auto}.qt-st{position:relative;height:auto;min-height:100vh;min-height:100svh}.quote-sec{width:100%;border-radius:0}}
+@media(max-width:600px){.quote-sec{padding:4.5rem 0}.qtxt{font-size:19px;line-height:1.5}}
