@@ -454,8 +454,8 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 /* menu extras (injected by site.js): SharePoint/Linktree cards + socials, now shown at every width */
 .menu-extra{display:block;margin-top:1.6rem;padding-top:1.6rem;border-top:1px solid #333}
 .mx-cap{font-size:13px;color:#8a8782;margin-bottom:.8rem}
-.mx-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.7rem;margin-bottom:1.8rem}
-.mx-links a{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:.35rem;min-height:250px;padding:1rem;border-radius:12px;background:#2b2b2b;color:#fff;transition:var(--tr)}
+.mx-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,260px));gap:.7rem;margin-bottom:1.8rem}
+.mx-links a{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:.35rem;min-height:220px;padding:1rem;border-radius:12px;background:#2b2b2b;color:#fff;transition:var(--tr)}
 .mx-links a::before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;opacity:.3;transition:opacity .25s}
 .mx-links a:nth-child(1)::before{background-image:url("assets/img/pic banner/doc-sm.webp")}
 .mx-links a:nth-child(2)::before{background-image:url("assets/img/pic banner/life-sm.webp")}
@@ -477,11 +477,11 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .right{margin-left:auto}
 .menu-btn{display:inline-flex}
 .menu-btn .ic{transition:var(--tr)}
-.menu{display:none;position:fixed;inset:var(--nav-h) 0 0 0;overflow-y:auto;flex-direction:column;align-items:stretch;background:var(--ink);padding:1.5rem 0 3rem}
-.menu>*{width:min(80%,1400px);margin-left:auto;margin-right:auto}
+/* menu: its own floating rounded card below the nav pill, same width, with a real gap (not fused to the nav) */
+.menu{display:none;position:fixed;top:calc(var(--nav-h) + 1.6rem);left:50%;transform:translateX(-50%);width:min(80%,1400px);max-height:calc(100vh - var(--nav-h) - 2.4rem);max-height:calc(100svh - var(--nav-h) - 2.4rem);overflow-y:auto;flex-direction:column;align-items:stretch;background:var(--ink);border-radius:24px;padding:1.75rem 1.75rem 2.25rem}
 .menu.open{display:flex}
 .menu-nav{display:flex;flex-direction:column;gap:.2rem}
-.nav.open .wrap{background:var(--ink);backdrop-filter:none;border-radius:0;margin-top:0;height:var(--nav-h)}
+.nav.open .wrap{background:var(--ink);backdrop-filter:none}
 .nav.open .right .pill,.nav.open .quick .pill{background:#2b2b2b;color:#fff}
 .nav.open .right .pill:hover,.nav.open .quick .pill:hover{background:#3a3a3a}
 .nav.open .quick .ic{filter:invert(1);opacity:1}
@@ -503,18 +503,16 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .dd-menu a:hover{background:none;color:#fff}
 .dd-menu a .ic{display:none}
 .menu .pill>.ic:not(.chev){display:none}
-@media(min-width:1101px){
-  .menu{padding:3rem 0}
-  .menu .pill{font-size:clamp(28px,4.2vw,46px)}
-  /* wide screens: pics stack down the left, nav links stack down the right, like the reference.
-     padding (not width) insets the grid, so .menu's own background still covers edge to edge */
-  .menu{padding-left:max(10%,calc((100% - 1400px)/2));padding-right:max(10%,calc((100% - 1400px)/2));grid-template-columns:minmax(260px,1fr) minmax(260px,1fr);column-gap:3.5rem;align-items:start}
-  .menu>*{width:auto;margin:0}
-  .menu.open{display:grid}
-  .menu-nav{grid-column:2;grid-row:1}
-  .menu-extra{grid-column:1;grid-row:1;margin-top:0;padding-top:0;border-top:0}
-  .menu-extra .mx-links{grid-template-columns:1fr}
-  .mx-links a{max-width:420px}
+@media(min-width:861px){
+  /* wide screens: every page link visible at once, grouped into horizontal columns
+     (no click-to-expand); picture cards + contact row sit below, same order as narrow */
+  .menu .pill{font-size:22px}
+  .menu-nav{flex-direction:row;flex-wrap:wrap;align-items:flex-start;gap:2rem 2.8rem}
+  .menu-nav>.pill,.menu-nav>.dd{width:auto;flex:1 1 170px}
+  .dd .chev{display:none}
+  .dd-menu{position:static;display:block;grid-template-rows:none;padding:.7rem 0 0;opacity:1;visibility:visible;pointer-events:auto;transform:none}
+  .dd-menu>div{display:flex;flex-direction:column;gap:.35rem}
+  .dd-menu a{font-size:14px;color:#a9a6a0}
 }
 @media(max-width:900px){
   .wrap{width:100%;padding:0 1.1rem}
