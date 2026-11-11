@@ -7,12 +7,13 @@
      position:fixed (not overflow:hidden) because that's the technique that actually
      stops touch-scroll reliably on real mobile WebKit/Blink. */
   var lockT=0,lockY=0,locked=false;
-  function lockScroll(){
-    if(locked){clearTimeout(lockT);lockT=setTimeout(unlockScroll,1400);return}
+  function lockScroll(ms){
+    ms=ms||1400;
+    if(locked){clearTimeout(lockT);lockT=setTimeout(unlockScroll,ms);return}
     locked=true;lockY=window.scrollY;
     document.body.style.position='fixed';document.body.style.top='-'+lockY+'px';
     document.body.style.left='0';document.body.style.right='0';
-    lockT=setTimeout(unlockScroll,1400)}
+    lockT=setTimeout(unlockScroll,ms)}
   function unlockScroll(){
     if(!locked)return;locked=false;
     document.body.style.position='';document.body.style.top='';document.body.style.left='';document.body.style.right='';
@@ -142,7 +143,7 @@
     window.addEventListener('scroll',qask,{passive:true});window.addEventListener('resize',qask);qask();
     if('IntersectionObserver' in window){
       new IntersectionObserver(function(es){es.forEach(function(e){if(!qPhone.matches)return;
-        if(e.isIntersecting&&!qsec.classList.contains('in'))lockScroll();
+        if(e.isIntersecting&&!qsec.classList.contains('in'))lockScroll(2400);
         qsec.classList.toggle('in',e.isIntersecting)})},{threshold:.3}).observe(qsec);
     }
   }else if(qsec)qsec.classList.add('in');
