@@ -1822,7 +1822,7 @@ html.hero-page .hero-c{margin-bottom:0}
 /* inner pages: red announcement bar pinned above the nav, slides away on scroll down */
 html.hero-page{--ann-h:0px}
 html.hero-page .nav{top:var(--ann-h);transition:top .35s cubic-bezier(.4,0,.2,1),background .3s,border-color .3s}
-html.hero-page body{padding-top:calc(var(--nav-h) + var(--ann-h));transition:padding-top .35s cubic-bezier(.4,0,.2,1)}
+html.hero-page body{padding-top:var(--ann-h);transition:padding-top .35s cubic-bezier(.4,0,.2,1)}
 .ann-bar{position:fixed;top:0;left:0;right:0;z-index:1001;background:var(--red);color:#fff;transition:transform .35s cubic-bezier(.4,0,.2,1)}
 .ann-bar .wrap{position:relative;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.55rem 2.4rem;font-size:13px;font-weight:600;text-align:center}
 .ann-bar b{font-weight:800}
