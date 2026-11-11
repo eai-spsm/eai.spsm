@@ -502,13 +502,15 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 @media(min-width:1101px){
   .menu{padding:3rem 0}
   .menu .pill{font-size:clamp(28px,4.2vw,46px)}
-  /* wide screens: pics stack down the left, nav links stack down the right, like the reference */
-  .menu{width:min(80%,1400px);margin:0 auto;grid-template-columns:minmax(260px,1fr) minmax(260px,1fr);column-gap:3.5rem;align-items:start}
+  /* wide screens: pics stack down the left, nav links stack down the right, like the reference.
+     padding (not width) insets the grid, so .menu's own background still covers edge to edge */
+  .menu{padding-left:max(10%,calc((100% - 1400px)/2));padding-right:max(10%,calc((100% - 1400px)/2));grid-template-columns:minmax(260px,1fr) minmax(260px,1fr);column-gap:3.5rem;align-items:start}
   .menu>*{width:auto;margin:0}
   .menu.open{display:grid}
   .menu-nav{grid-column:2;grid-row:1}
   .menu-extra{grid-column:1;grid-row:1;margin-top:0;padding-top:0;border-top:0}
   .menu-extra .mx-links{grid-template-columns:1fr}
+  .mx-links a{max-width:420px}
 }
 @media(max-width:900px){
   .wrap{width:100%;padding:0 1.1rem}
