@@ -1603,14 +1603,14 @@ html.home{scroll-snap-type:none}
 }
 /* phone: countdown bigger, polaroids tucked into the bottom corners only */
 @media(max-width:600px){
-  .home .cd h2{font-size:32px;line-height:1.15}
-  .home .cd .cd-s{font-size:16px}
-  .home .cd .cd-t{font-size:13px}
-  .home .cd .clock{width:min(100%,380px);gap:.5rem}
-  .home .cd .clock div{padding:.9rem .2rem .7rem;border-radius:14px}
-  .home .cd .clock b{font-size:30px}
-  .home .cd .clock span{font-size:12.5px}
-  .home .cd .btn{font-size:13.5px;padding:.6rem 1.2rem;margin-top:.6rem}
+  .home .cd h2{font-size:26px;line-height:1.15}
+  .home .cd .cd-s{font-size:14px}
+  .home .cd .cd-t{font-size:12px}
+  .home .cd .clock{width:min(100%,300px);gap:.4rem}
+  .home .cd .clock div{padding:.6rem .2rem .5rem;border-radius:11px}
+  .home .cd .clock b{font-size:23px}
+  .home .cd .clock span{font-size:10.5px}
+  .home .cd .btn{font-size:12.5px;padding:.5rem 1rem;margin-top:.5rem}
   .home .cd .p1,.home .cd .p6,.home .cd .p7,.home .cd .p12{width:150px}
   .home .cd .p2,.home .cd .p8{width:90px}
   .home .cd .p6{bottom:4%}
