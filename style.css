@@ -492,9 +492,9 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .nav.open .brand{color:#fff}
 .nav.open .brand .ic{filter:invert(1)}
 
-.menu .pill{font-size:clamp(26px,8vw,36px);font-weight:700;line-height:1.2;padding:.45rem 0;border-radius:0;background:none;color:#8a8782;width:100%;gap:.7rem}
+.menu .pill{font-size:clamp(26px,8vw,36px);font-weight:700;line-height:1.2;padding:.45rem 0;border-radius:0;background:none;color:#8a8782;width:100%;gap:.7rem;transition:none}
 .menu .pill:hover,.menu .pill.on,.dd.open>.pill{background:none;color:#fff}
-.menu .pill .ic{width:22px;height:22px;filter:invert(1);opacity:.5}
+.menu .pill .ic{width:22px;height:22px;filter:invert(1);opacity:.5;transition:none}
 .menu .pill.on .ic,.dd.open>.pill .ic,.menu .pill:hover .ic{opacity:1}
 .menu .pill .chev{width:16px;height:16px;margin-left:.2rem}
 .wrap>.quick .pill,.wrap>.right .pill{height:34px;padding-top:0;padding-bottom:0;box-sizing:border-box}
