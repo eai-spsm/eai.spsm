@@ -3,6 +3,20 @@
 (function(){
   var run=document.querySelector('.hl-run');if(!run)return;
   var clamp=function(x){return Math.min(1,Math.max(0,x))},ease=function(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2};
+  /* phone only: hold scroll for a beat while a section blurs fully into view (comp + quote).
+     position:fixed (not overflow:hidden) because that's the technique that actually
+     stops touch-scroll reliably on real mobile WebKit/Blink. */
+  var lockT=0,lockY=0,locked=false;
+  function lockScroll(){
+    if(locked){clearTimeout(lockT);lockT=setTimeout(unlockScroll,1400);return}
+    locked=true;lockY=window.scrollY;
+    document.body.style.position='fixed';document.body.style.top='-'+lockY+'px';
+    document.body.style.left='0';document.body.style.right='0';
+    lockT=setTimeout(unlockScroll,1400)}
+  function unlockScroll(){
+    if(!locked)return;locked=false;
+    document.body.style.position='';document.body.style.top='';document.body.style.left='';document.body.style.right='';
+    window.scrollTo(0,lockY)}
   var st=run.querySelector('.hl-st'),tabs=[].slice.call(run.querySelectorAll('.hl-t')),cards=[].slice.call(run.querySelectorAll('.hl-c')),pps=[].slice.call(run.querySelectorAll('.hl-pp')),stg=run.querySelector('.hl-stage'),TINT=['#f6f7f8'],n=tabs.length,cur=0,raf=0;
   var mq=window.matchMedia('(min-width:861px)');
   function pinned(){return mq.matches}
@@ -98,6 +112,7 @@
     var wwrap=wn.querySelector('.wrap'),mqm=window.matchMedia('(max-width:860px)');
     if(wwrap&&'IntersectionObserver' in window){
       new IntersectionObserver(function(es){es.forEach(function(e){
+        if(mqm.matches&&e.isIntersecting&&!wwrap.classList.contains('vis'))lockScroll();
         wwrap.classList.toggle('vis',!mqm.matches||e.isIntersecting)})},{threshold:.2}).observe(wwrap);
     }
   }
@@ -127,6 +142,7 @@
     window.addEventListener('scroll',qask,{passive:true});window.addEventListener('resize',qask);qask();
     if('IntersectionObserver' in window){
       new IntersectionObserver(function(es){es.forEach(function(e){if(!qPhone.matches)return;
+        if(e.isIntersecting&&!qsec.classList.contains('in'))lockScroll();
         qsec.classList.toggle('in',e.isIntersecting)})},{threshold:.3}).observe(qsec);
     }
   }else if(qsec)qsec.classList.add('in');
