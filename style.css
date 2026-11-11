@@ -495,7 +495,7 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .menu .pill.on .ic,.dd.open>.pill .ic,.menu .pill:hover .ic{opacity:1}
 .menu .pill .chev{width:16px;height:16px;margin-left:.2rem}
 .right .pill{width:auto;padding:.5rem .85rem;font-size:14px}
-.right .pill.icon{padding:.5rem .65rem}
+.right .pill.icon{width:34px;height:34px;padding:0;display:inline-grid;place-items:center}
 .dd-menu{position:static;display:grid;grid-template-rows:0fr;padding:0 0 0 .1rem;min-width:0;opacity:1;transform:none;pointer-events:auto;visibility:hidden;transition:grid-template-rows .32s cubic-bezier(.4,0,.2,1),padding .32s cubic-bezier(.4,0,.2,1),visibility 0s linear .32s}
 .dd.open .dd-menu{grid-template-rows:1fr;padding:.3rem 0 .8rem .1rem;visibility:visible;transition-delay:0s}
 .dd-menu>div{background:none;padding:0;gap:.1rem;min-height:0;overflow:hidden}
@@ -543,7 +543,7 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
   :root{--nav-h:54px}
   .pill{font-size:13px}
   .right .pill{padding:.4rem .7rem;font-size:13px}
-  .right .pill.icon{padding:.4rem .55rem}
+  .right .pill.icon{width:30px;height:30px}
   .pill .ic{width:15px;height:15px}
   .menu .pill{font-size:clamp(22px,7vw,28px)}
   .menu .pill .chev{width:13px;height:13px}
