@@ -636,7 +636,7 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .home{--hero-pad:calc(var(--nav-h) + 1.6rem)}
 .home body{padding-top:0}
 .home .statement{min-height:100vh;min-height:100svh;padding-top:var(--hero-pad)}
-.nav .wrap{transition:background .3s,border-color .3s,border-radius .3s,margin-top .3s}
+.nav .wrap{transition:background .3s,border-color .3s}
 .home .nav:not(.solid):not(.open) .wrap{background:transparent;backdrop-filter:none;border-bottom-color:transparent}
 .home .nav:not(.solid):not(.open) .pill{background:rgba(255,255,255,.16);color:#fff;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .home .nav:not(.solid):not(.open) .pill:hover{background:rgba(255,255,255,.3)}
