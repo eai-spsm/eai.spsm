@@ -56,6 +56,8 @@ a:hover>.ic,button:hover>.ic{opacity:1}
 .brand .ic{width:19px;height:19px;opacity:1}
 .brand:hover .ic{opacity:.65}
 .quick{display:none;gap:.4rem;margin-left:1.2rem;margin-right:auto;z-index:1}
+.quick .pill{width:34px;padding:0;display:inline-grid;place-items:center;gap:0}
+.quick .pill span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(min-width:861px){.quick{display:flex}}
 .right{display:flex;gap:.4rem;justify-content:flex-end;z-index:1}
 .pill.icon{padding:.4rem .6rem}
@@ -518,6 +520,10 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
   .menu-disc b{color:#8a8782}
 }
 .menu-disc{display:none}
+@media(max-width:860px){
+  /* phone: full-screen menu, not the floating card used from 861px up */
+  .menu{top:calc(var(--nav-h) + var(--ann-h, 0px));left:0;transform:none;width:100%;max-height:none;height:calc(100vh - var(--nav-h) - var(--ann-h, 0px));height:calc(100svh - var(--nav-h) - var(--ann-h, 0px));border-radius:0;padding:1.5rem 1.25rem 3rem}
+}
 @media(max-width:900px){
   .wrap{width:100%;padding:0 1.1rem}
   .f-grid{grid-template-columns:1fr 1fr}
