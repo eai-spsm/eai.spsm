@@ -3,14 +3,6 @@
 (function(){
   var run=document.querySelector('.hl-run');if(!run)return;
   var clamp=function(x){return Math.min(1,Math.max(0,x))},ease=function(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2};
-  /* phone only: hold scroll for 2s while a section blurs fully into view (comp + quote) */
-  var lockT=0,lockBlock=function(e){e.preventDefault()};
-  function lockScroll(){
-    document.documentElement.classList.add('scroll-lock');
-    window.addEventListener('touchmove',lockBlock,{passive:false});window.addEventListener('wheel',lockBlock,{passive:false});
-    clearTimeout(lockT);lockT=setTimeout(function(){
-      document.documentElement.classList.remove('scroll-lock');
-      window.removeEventListener('touchmove',lockBlock);window.removeEventListener('wheel',lockBlock)},1000)}
   var st=run.querySelector('.hl-st'),tabs=[].slice.call(run.querySelectorAll('.hl-t')),cards=[].slice.call(run.querySelectorAll('.hl-c')),pps=[].slice.call(run.querySelectorAll('.hl-pp')),stg=run.querySelector('.hl-stage'),TINT=['#f6f7f8'],n=tabs.length,cur=0,raf=0;
   var mq=window.matchMedia('(min-width:861px)');
   function pinned(){return mq.matches}
@@ -106,7 +98,6 @@
     var wwrap=wn.querySelector('.wrap'),mqm=window.matchMedia('(max-width:860px)');
     if(wwrap&&'IntersectionObserver' in window){
       new IntersectionObserver(function(es){es.forEach(function(e){
-        if(mqm.matches&&e.isIntersecting&&!wwrap.classList.contains('vis'))lockScroll();
         wwrap.classList.toggle('vis',!mqm.matches||e.isIntersecting)})},{threshold:.2}).observe(wwrap);
     }
   }
@@ -136,7 +127,6 @@
     window.addEventListener('scroll',qask,{passive:true});window.addEventListener('resize',qask);qask();
     if('IntersectionObserver' in window){
       new IntersectionObserver(function(es){es.forEach(function(e){if(!qPhone.matches)return;
-        if(e.isIntersecting&&!qsec.classList.contains('in'))lockScroll();
         qsec.classList.toggle('in',e.isIntersecting)})},{threshold:.3}).observe(qsec);
     }
   }else if(qsec)qsec.classList.add('in');

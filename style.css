@@ -1768,7 +1768,6 @@ html.home{scroll-snap-type:none}
   .hl-hrun .hl-cdrun .cd{border-radius:0}
 }
 /* phone only: comp + quote blur in/out as they cross the screen (desktop has its own pinned reveal) */
-html.scroll-lock{overflow:hidden;touch-action:none}
 @media(max-width:860px){
   .home .hl-wn{min-height:100vh;min-height:100svh;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
   .home .hl-wn .wrap{transition:opacity .5s ease,filter .5s ease;width:100%}
