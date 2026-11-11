@@ -1729,6 +1729,6 @@ html.home{scroll-snap-type:none}
 .js .qtxt,.js .qnote{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}
 .js .quote-sec.in .qtxt,.js .quote-sec.in .qnote{opacity:1;transform:none}
 .js .quote-sec.in .qnote{transition-delay:.1s}
-@media(prefers-reduced-motion:reduce){.qt-run{height:auto}.qt-st{position:relative;height:auto;min-height:100vh;min-height:100svh}.quote-sec{width:100%;border-radius:0}.qtxt,.qnote{opacity:1;transform:none;transition:none}}
-@media(max-width:860px){.qt-run{height:auto}.qt-st{position:relative;height:auto;min-height:100vh;min-height:100svh}.quote-sec{width:100%;border-radius:0}}
-@media(max-width:600px){.quote-sec{padding:4.5rem 0}.qtxt{font-size:19px;line-height:1.5}}
+@media(prefers-reduced-motion:reduce){.qt-run{height:auto}.qt-st{position:relative;height:auto;min-height:100vh;min-height:100svh}.quote-sec{width:100%;height:auto;border-radius:0;padding:4.5rem 0;overflow:visible}.qtxt,.qnote{opacity:1;transform:none;transition:none}}
+@media(max-width:600px){.qtxt{font-size:19px;line-height:1.5}}
+@media(max-width:860px){.quote-sec{height:calc(22% + var(--qi,0)*78%)}}

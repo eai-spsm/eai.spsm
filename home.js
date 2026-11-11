@@ -110,9 +110,9 @@
   }
   /* quote: rides up as a narrow card, squares off to full-bleed over the first third of its pinned scroll, then holds before releasing */
   var qtr=document.querySelector('.qt-run'),qst=qtr&&qtr.querySelector('.qt-st'),qsec=qtr&&qtr.querySelector('.quote-sec'),qraf=0;
-  if(qtr&&qst&&qsec&&window.matchMedia('(min-width:861px)').matches){
+  if(qtr&&qst&&qsec&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
     function qframe(){qraf=0;
-      var on=!matchMedia('(prefers-reduced-motion:reduce)').matches,p=on?clamp(-qtr.getBoundingClientRect().top/Math.max(1,qtr.offsetHeight-qst.offsetHeight)):0,
+      var p=clamp(-qtr.getBoundingClientRect().top/Math.max(1,qtr.offsetHeight-qst.offsetHeight)),
           qi=p<=.3?ease(clamp(p/.3)):p>=.7?ease(clamp((1-p)/.3)):1;
       qsec.style.setProperty('--qi',qi.toFixed(3));qsec.classList.toggle('in',qi>.5&&p<.98)}
     function qask(){if(!qraf)qraf=requestAnimationFrame(qframe)}

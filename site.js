@@ -54,7 +54,13 @@
   function navSolid(){
     if(!navEl)return;
     var y=navEl.offsetHeight/2,over=false;
-    var cdr=document.querySelector('.hl-cdrun');darkSecs.forEach(function(s){if(s.classList.contains('hl-hero')&&cdr&&cdr.getBoundingClientRect().top<=y)return;var r=s.getBoundingClientRect(),top=s.id==='after'||s.classList.contains('hl-wn')?(s.classList.contains('hl-ar')||s.classList.contains('hl-wn')?innerHeight:80):s.classList.contains('hl-ai')?innerHeight:0,bot=s.classList.contains('hero-c')||s.tagName==='FOOTER'?0:80;if(r.top+top<=y&&r.bottom-bot>=y)over=true});
+    var wide=matchMedia('(min-width:861px)').matches;
+    var cdr=document.querySelector('.hl-cdrun');darkSecs.forEach(function(s){
+      if(s.classList.contains('hl-hero')&&cdr&&cdr.getBoundingClientRect().top<=y)return;
+      var r=s.getBoundingClientRect();
+      if(s.tagName==='FOOTER'){if(r.top<innerHeight&&r.bottom>0)over=true;return}
+      var top=s.id==='after'||s.classList.contains('hl-wn')?((s.classList.contains('hl-ar')||s.classList.contains('hl-wn'))&&wide?innerHeight:80):s.classList.contains('hl-ai')?innerHeight:0,bot=s.classList.contains('hero-c')?0:80;
+      if(r.top+top<=y&&r.bottom-bot>=y)over=true});
     navEl.classList.toggle('solid',!over);
   }
   window.addEventListener('scroll',navSolid,{passive:true});window.addEventListener('resize',navSolid);window.addEventListener('load',navSolid);navSolid();
