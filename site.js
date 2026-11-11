@@ -32,6 +32,19 @@
       +'</div>';
     mx.appendChild(x);
   }
+  // inner pages: flat breadcrumb bar (Home > page title) under the banner, instead of the wave curve
+  if(document.documentElement.classList.contains('hero-page')){
+    var heroC=document.querySelector('.hero-c'),h1=heroC&&heroC.querySelector('h1');
+    if(heroC&&h1){
+      var bc=document.createElement('nav');bc.className='bc-bar';
+      bc.innerHTML='<div class="wrap"><a href="index.html"><span data-th="หน้าแรก">Home</span></a><span class="sep">›</span></div>';
+      var cur=document.createElement('span');cur.className='cur';
+      if(h1.hasAttribute('data-th'))cur.setAttribute('data-th',h1.getAttribute('data-th'));
+      cur.textContent=h1.textContent.trim();
+      bc.querySelector('.wrap').appendChild(cur);
+      heroC.insertAdjacentElement('afterend',bc);
+    }
+  }
   // unofficial-site notice: once per browser session, on every page
   var seen=false;try{seen=sessionStorage.getItem('eai-notice')}catch(e){}
   if(!seen){

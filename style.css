@@ -1783,3 +1783,13 @@ html.home{scroll-snap-type:none}
   .home .hl-wn .wrap:not(.vis){opacity:1;filter:none}
   .js .qtxt,.js .qnote,.js .quote-sec:not(.in) .qtxt,.js .quote-sec:not(.in) .qnote{filter:none}
 }
+
+/* inner pages: flat banner bottom with a breadcrumb bar instead of the wave curve */
+html.hero-page .hero-c .wave{display:none}
+html.hero-page .hero-c .hero-c-in{padding-bottom:2.4rem!important}
+.bc-bar{background:#fff;border-bottom:1px solid var(--w2)}
+.bc-bar .wrap{display:flex;align-items:center;gap:.5rem;padding:.9rem 0;font-size:13px}
+.bc-bar a{color:var(--red);font-weight:600}
+.bc-bar a:hover{text-decoration:underline}
+.bc-bar .sep{color:var(--w5)}
+.bc-bar .cur{color:var(--ink);font-weight:600}
