@@ -31,6 +31,11 @@
       +'<a href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/ph/github-logo.svg" alt=""></a>'
       +'</div>';
     mx.appendChild(x);
+    // group the original nav links into their own wrapper, so wide screens can lay out
+    // extras (pics) on the left and nav links on the right, each stacking independently
+    var navWrap=document.createElement('div');navWrap.className='menu-nav';
+    [].slice.call(mx.children).forEach(function(c){if(c!==x)navWrap.appendChild(c)});
+    mx.insertBefore(navWrap,mx.firstChild);
   }
   // inner pages: red announcement bar above the nav, dismissible, hides on scroll down and reappears back at the top
   if(document.documentElement.classList.contains('hero-page')){

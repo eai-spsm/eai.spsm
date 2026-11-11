@@ -474,9 +474,10 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .right{margin-left:auto}
 .menu-btn{display:inline-flex}
 .menu-btn .ic{transition:var(--tr)}
-.menu{display:none;position:fixed;inset:var(--nav-h) 0 0 0;overflow-y:auto;flex-direction:column;align-items:stretch;gap:.2rem;background:var(--ink);padding:1.5rem 0 3rem}
+.menu{display:none;position:fixed;inset:var(--nav-h) 0 0 0;overflow-y:auto;flex-direction:column;align-items:stretch;background:var(--ink);padding:1.5rem 0 3rem}
 .menu>*{width:min(80%,1400px);margin-left:auto;margin-right:auto}
 .menu.open{display:flex}
+.menu-nav{display:flex;flex-direction:column;gap:.2rem}
 .nav.open{background:var(--ink);backdrop-filter:none}
 .nav.open .right .pill{background:#2b2b2b;color:#fff}
 .nav.open .right .pill:hover{background:#3a3a3a}
@@ -498,7 +499,17 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 .dd-menu a:hover{background:none;color:#fff}
 .dd-menu a .ic{display:none}
 .menu .pill>.ic:not(.chev){display:none}
-@media(min-width:1101px){.menu{padding:3rem 0}.menu .pill{font-size:clamp(28px,4.2vw,46px)}}
+@media(min-width:1101px){
+  .menu{padding:3rem 0}
+  .menu .pill{font-size:clamp(28px,4.2vw,46px)}
+  /* wide screens: pics stack down the left, nav links stack down the right, like the reference */
+  .menu{width:min(80%,1400px);margin:0 auto;grid-template-columns:minmax(260px,1fr) minmax(260px,1fr);column-gap:3.5rem;align-items:start}
+  .menu>*{width:auto;margin:0}
+  .menu.open{display:grid}
+  .menu-nav{grid-column:2;grid-row:1}
+  .menu-extra{grid-column:1;grid-row:1;margin-top:0;padding-top:0;border-top:0}
+  .menu-extra .mx-links{grid-template-columns:1fr}
+}
 @media(max-width:900px){
   .wrap{width:100%;padding:0 1.1rem}
   .f-grid{grid-template-columns:1fr 1fr}
