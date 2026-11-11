@@ -34,7 +34,8 @@ a:hover>.ic,button:hover>.ic{opacity:1}
 
 /* navbar */
 /* nav floats as a pill matching the page content width, not pinned edge to edge */
-.nav{position:fixed;inset:0 0 auto;height:calc(var(--nav-h) + .8rem);z-index:1000;display:flex;justify-content:center;pointer-events:none}
+.nav{position:fixed;inset:0 0 auto;height:calc(var(--nav-h) + .8rem);z-index:1000;display:flex;justify-content:center;pointer-events:none;-webkit-user-select:none;user-select:none}
+.menu{-webkit-user-select:none;user-select:none}
 .nav .wrap{pointer-events:auto;margin-top:.8rem;height:var(--nav-h);display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:0 1.4rem;border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .pill{display:inline-flex;align-items:center;gap:.45rem;font-size:13px;white-space:nowrap;background:var(--w1);padding:.4rem .85rem;border-radius:999px;transition:var(--tr)}
 .pill:hover{background:var(--w2)}
