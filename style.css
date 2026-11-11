@@ -424,7 +424,7 @@ a.cr:hover{background:var(--w1)}
 
 /* material page: coloured hero that runs up behind the nav, same left-aligned header as other pages */
 html.hero-page body{padding-top:0}
-.hero-page .nav:not(.solid):not(.open){background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hero-page .nav:not(.solid):not(.open){background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
 .hero-c{position:relative;overflow:hidden;background:var(--hc);margin-bottom:1.6rem;min-height:340px;min-height:max(46svh,340px);display:flex;flex-direction:column;justify-content:flex-end}
 .hero-c-in{position:relative;z-index:1;width:min(92%,680px);margin:0 auto;padding:calc(var(--nav-h) + .6rem) 0 calc(92px + 1.2rem);width:min(92%,680px)}
 .hero-c .back{margin-bottom:.4rem}
