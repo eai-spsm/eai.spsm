@@ -36,8 +36,8 @@ a:hover>.ic,button:hover>.ic{opacity:1}
 /* nav floats as a pill matching the page content width, not pinned edge to edge */
 .nav{position:fixed;inset:0 0 auto;height:calc(var(--nav-h) + .8rem);z-index:1000;display:flex;justify-content:center;pointer-events:none;-webkit-user-select:none;user-select:none}
 .menu{-webkit-user-select:none;user-select:none}
-.nav .wrap{pointer-events:auto;margin-top:.8rem;height:var(--nav-h);display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:0 1.4rem;border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-.pill{display:inline-flex;align-items:center;gap:.45rem;font-size:13px;white-space:nowrap;background:var(--w1);padding:.4rem .85rem;border-radius:999px;transition:var(--tr)}
+.nav .wrap{pointer-events:auto;margin-top:.8rem;height:var(--nav-h);display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:0 1.4rem;border-radius:999px;color:#fff;background:rgba(10,10,10,.55);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.pill{display:inline-flex;align-items:center;gap:.45rem;font-size:13px;white-space:nowrap;color:var(--ink);background:var(--w1);padding:.4rem .85rem;border-radius:999px;transition:var(--tr)}
 .pill:hover{background:var(--w2)}
 .pill.on{background:var(--ink);color:#fff}
 .pill.on .ic{filter:invert(1);opacity:1}
@@ -54,7 +54,7 @@ a:hover>.ic,button:hover>.ic{opacity:1}
 .logo:hover i{background:var(--red)}
 .logo i img{width:15px;filter:invert(1)}
 .brand{display:flex;align-items:center;gap:.5rem;font-size:15px;font-weight:700;letter-spacing:.01em;z-index:1}
-.brand .ic{width:19px;height:19px;opacity:1}
+.brand .ic{width:19px;height:19px;opacity:1;filter:invert(1)}
 .brand:hover .ic{opacity:.65}
 .quick{display:none;gap:.4rem;margin-left:1.2rem;margin-right:auto;z-index:1}
 @media(min-width:861px){.quick{display:flex}}
