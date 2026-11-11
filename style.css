@@ -521,6 +521,8 @@ footer{background:#0b0b0b;color:#fff;padding:3.2rem 0 1.6rem}
 }
 .menu-disc{display:none}
 @media(max-width:860px){
+  /* phone: brand icon only, text name not needed at this width */
+  .brand{gap:0;font-size:0}
   /* phone: full-screen menu, not the floating card used from 861px up */
   .menu{top:calc(var(--nav-h) + var(--ann-h, 0px));left:0;transform:none;width:100%;max-height:none;height:calc(100vh - var(--nav-h) - var(--ann-h, 0px));height:calc(100svh - var(--nav-h) - var(--ann-h, 0px));border-radius:0;padding:1.5rem 1.25rem 3rem}
   /* nav joins the menu flush, one continuous full-screen block, when open */
