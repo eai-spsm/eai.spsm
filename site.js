@@ -32,6 +32,28 @@
       +'</div>';
     mx.appendChild(x);
   }
+  // inner pages: red announcement bar above the nav, dismissible, hides on scroll down and reappears back at the top
+  if(document.documentElement.classList.contains('hero-page')){
+    var seenAnn=false;try{seenAnn=sessionStorage.getItem('eai-ann')}catch(e){}
+    if(!seenAnn){
+      var ab=document.createElement('div');ab.className='ann-bar';
+      ab.innerHTML='<div class="wrap"><span data-th="Open House ใกล้มาถึงแล้ว · <b>24 ม.ค. 2570</b>">Open House coming soon · <b>24 Jan 2027</b></span>'
+        +'<a href="index.html#openhouse" data-th="ดูรายละเอียด">See details</a>'
+        +'<button class="x" type="button" aria-label="Dismiss">×</button></div>';
+      document.body.prepend(ab);
+      var annShow=function(){document.documentElement.style.setProperty('--ann-h',ab.offsetHeight+'px');ab.style.transform=''};
+      var annHide=function(){document.documentElement.style.setProperty('--ann-h','0px');ab.style.transform='translateY(-100%)'};
+      annShow();window.addEventListener('resize',annShow);
+      ab.querySelector('.x').addEventListener('click',function(){
+        annHide();try{sessionStorage.setItem('eai-ann','1')}catch(e){}
+        setTimeout(function(){ab.remove()},400)});
+      var annY=0;
+      window.addEventListener('scroll',function(){
+        var y=window.scrollY;
+        if(y<=4)annShow();else if(y>annY)annHide();
+        annY=y},{passive:true});
+    }
+  }
   // inner pages: flat breadcrumb bar (Home > page title) under the banner, instead of the wave curve
   if(document.documentElement.classList.contains('hero-page')){
     var heroC=document.querySelector('.hero-c'),h1=heroC&&heroC.querySelector('h1');
