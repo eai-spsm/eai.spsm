@@ -3,6 +3,14 @@
 (function(){
   var run=document.querySelector('.hl-run');if(!run)return;
   var clamp=function(x){return Math.min(1,Math.max(0,x))},ease=function(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2};
+  /* phone only: hold scroll for 2s while a section blurs fully into view (comp + quote) */
+  var lockT=0,lockBlock=function(e){e.preventDefault()};
+  function lockScroll(){
+    document.documentElement.classList.add('scroll-lock');
+    window.addEventListener('touchmove',lockBlock,{passive:false});window.addEventListener('wheel',lockBlock,{passive:false});
+    clearTimeout(lockT);lockT=setTimeout(function(){
+      document.documentElement.classList.remove('scroll-lock');
+      window.removeEventListener('touchmove',lockBlock);window.removeEventListener('wheel',lockBlock)},1000)}
   var st=run.querySelector('.hl-st'),tabs=[].slice.call(run.querySelectorAll('.hl-t')),cards=[].slice.call(run.querySelectorAll('.hl-c')),pps=[].slice.call(run.querySelectorAll('.hl-pp')),stg=run.querySelector('.hl-stage'),TINT=['#f6f7f8'],n=tabs.length,cur=0,raf=0;
   var mq=window.matchMedia('(min-width:861px)');
   function pinned(){return mq.matches}
@@ -94,6 +102,13 @@
       if(wbtn)wbtn.classList.toggle('in',k>=cws.length)}
     function wask(){if(!wraf)wraf=requestAnimationFrame(wframe)}
     window.addEventListener('scroll',wask,{passive:true});window.addEventListener('resize',function(){wc=-2;wask()});wask();
+    /* phone only: blur the whole panel in/out as it crosses the screen (desktop uses the pinned reveal above) */
+    var wwrap=wn.querySelector('.wrap'),mqm=window.matchMedia('(max-width:860px)');
+    if(wwrap&&'IntersectionObserver' in window){
+      new IntersectionObserver(function(es){es.forEach(function(e){
+        if(mqm.matches&&e.isIntersecting&&!wwrap.classList.contains('vis'))lockScroll();
+        wwrap.classList.toggle('vis',!mqm.matches||e.isIntersecting)})},{threshold:.2}).observe(wwrap);
+    }
   }
   /* one fixed photo layer behind competitions + footer: shows the work photo, then blurs across to the footer photo */
   var bg=document.querySelector('.hl-bg'),bwn=document.querySelector('.hl-wn'),bft=document.querySelector('footer.hf'),braf=0;
@@ -110,12 +125,19 @@
   }
   /* quote: rides up as a narrow card, squares off to full-bleed over the first third of its pinned scroll, then holds before releasing */
   var qtr=document.querySelector('.qt-run'),qst=qtr&&qtr.querySelector('.qt-st'),qsec=qtr&&qtr.querySelector('.quote-sec'),qraf=0;
-  if(qtr&&qst&&qsec&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
-    function qframe(){qraf=0;
+  var qReduce=matchMedia('(prefers-reduced-motion:reduce)').matches,qPhone=window.matchMedia('(max-width:860px)');
+  if(qtr&&qst&&qsec&&!qReduce){
+    /* width is checked live every frame/intersection, not just once at load, so resizing mid-session (devtools) still picks the right mode */
+    function qframe(){qraf=0;if(qPhone.matches)return;
       var p=clamp(-qtr.getBoundingClientRect().top/Math.max(1,qtr.offsetHeight-qst.offsetHeight)),
           qi=p<=.3?ease(clamp(p/.3)):p>=.7?ease(clamp((1-p)/.3)):1;
       qsec.style.setProperty('--qi',qi.toFixed(3));qsec.classList.toggle('in',qi>.5&&p<.98)}
     function qask(){if(!qraf)qraf=requestAnimationFrame(qframe)}
     window.addEventListener('scroll',qask,{passive:true});window.addEventListener('resize',qask);qask();
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){es.forEach(function(e){if(!qPhone.matches)return;
+        if(e.isIntersecting&&!qsec.classList.contains('in'))lockScroll();
+        qsec.classList.toggle('in',e.isIntersecting)})},{threshold:.3}).observe(qsec);
+    }
   }else if(qsec)qsec.classList.add('in');
 })();

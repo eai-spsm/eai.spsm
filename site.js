@@ -56,6 +56,7 @@
     var y=navEl.offsetHeight/2,over=false;
     var wide=matchMedia('(min-width:861px)').matches;
     var cdr=document.querySelector('.hl-cdrun');darkSecs.forEach(function(s){
+      if(!wide&&(s.classList.contains('hl-wn')||s.tagName==='FOOTER'))return;
       if(s.classList.contains('hl-hero')&&cdr&&cdr.getBoundingClientRect().top<=y)return;
       var r=s.getBoundingClientRect();
       if(s.tagName==='FOOTER'){if(r.top<innerHeight&&r.bottom>0)over=true;return}
