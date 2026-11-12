@@ -1,148 +1,109 @@
 <!doctype html>
-<html lang="en" class="hero-page hero-dark">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title data-th="กิจกรรม | EAI">Events | EAI</title>
-<meta name="description" content="EAI events: camps, workshops and field trips from the AI Engineering major.">
-<link rel="canonical" href="https://eaispsm.vercel.app/events">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="EAI">
-<meta property="og:title" content="Events | EAI">
-<meta property="og:description" content="EAI events: camps, workshops and field trips from the AI Engineering major.">
-<meta property="og:url" content="https://eaispsm.vercel.app/events">
-<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#C41616">
+<title>Events | EAI</title>
+<meta name="description" content="Camps, workshops and field trips from the AI Engineering major.">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/pic banner/event-sm.webp" media="(max-width:600px)" fetchpriority="high">
-<link rel="preload" as="image" href="assets/img/pic banner/event.webp" media="(min-width:601px)" fetchpriority="high">
-<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css" media="(min-width:601px)">
+<link rel="stylesheet" href="index-m.css" media="(max-width:600px)">
 </head>
-<body>
+<body class="sub">
 
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
-    <div class="quick"><a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a><a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a><a class="pill" href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a></div>
-    <nav class="menu" id="menu" aria-label="Main">
-      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
-          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-        </div></div>
-      </div>
-    </nav>
     <div class="right">
-      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
-      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
-      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false" aria-label="Contact"><img class="ic" src="assets/ph/chat-circle-dots.svg" alt=""><span class="lbl" data-th="ติดต่อ">Contact</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span>LINE Openchat</span></a>
+          <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""><span>Instagram</span></a>
+          <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt=""><span>Facebook</span></a>
+          <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt=""><span>TikTok</span></a>
+          <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt=""><span>GitHub</span></a>
+        </div></div>
+      </div>
       <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
-      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+      <button class="pill on" id="menuBtn" type="button" aria-expanded="false" aria-controls="menufull" aria-label="Menu"><img class="ic mi" src="assets/ph/list.svg" alt=""><span class="lbl" data-th="เมนู">Menu</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
     </div>
   </div>
 </header>
 
-<section class="hero-c hv dk ph" style="--py:62%;--bg:url('assets/img/pic banner/event.webp');--bgs:url('assets/img/pic banner/event-sm.webp');--hc:#b8dcff;--wh:104px;--hx:#fff;--hs:rgba(255,255,255,.92)">
-  <div class="hero-c-in">
-    <img class="hero-ico" src="assets/ph/calendar-dots.svg" alt="">
-    <h1 data-th="กิจกรรม">Events</h1>
-    <p class="sub"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="ค่าย เวิร์กช็อป และทัศนศึกษาของวิชาเอกวิศวกรรมปัญญาประดิษฐ์">Camps, workshops and field trips from the AI Engineering major.</span></p>
-</div>
-  <div class="hero-c-i" aria-hidden="true"><img class="ic hi hn n1" src="assets/ph/calendar-dots.svg" alt="" style="left:9%;top:20%;--r:5deg"><img class="ic hi hn n2" src="assets/ph/tent.svg" alt="" style="left:2%;top:44%;--r:-8deg"><img class="ic hi hn n3" src="assets/ph/camera.svg" alt="" style="left:15%;top:48%;--r:10deg"><img class="ic hi hn n4" src="assets/ph/map-trifold.svg" alt="" style="left:6%;top:62%;--r:-4deg"><img class="ic hi hn n5" src="assets/ph/bus.svg" alt="" style="right:10%;top:22%;--r:-6deg"><img class="ic hi hn n6" src="assets/ph/flag-banner.svg" alt="" style="right:2%;top:36%;--r:8deg"><img class="ic hi hn n7" src="assets/ph/campfire.svg" alt="" style="right:15%;top:50%;--r:-10deg"><img class="ic hi hn n8" src="assets/ph/backpack.svg" alt="" style="right:7%;top:62%;--r:7deg"></div>
-  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="height:104px"><path d="M0,84 C300,72 500,8 800,30 S1200,20 1440,6 L1440,90 L0,90 Z" fill="#fff"/></svg>
-</section>
+<div class="menufull" id="menufull"><div class="mf-in">
+  <p class="qline"><span data-th="โปรดติดตาม Open House 2027">Stay tuned for Open House 2027</span><i aria-hidden="true">|</i><span class="soft" data-th="พร้อมหรือยัง EAI 09?">Are you ready, EAI 09?</span></p>
+  <div class="grp"><p data-th="หลัก">Main</p>
+    <a href="index.html"><span class="ib"><img class="ic" src="assets/ph/house.svg" alt=""></span><span data-th="หน้าแรก">Home</span></a>
+    <a href="apply.html"><span class="ib"><img class="ic" src="assets/ph/door-open.svg" alt=""></span><span data-th="สมัครเรียน">Apply</span></a>
+  </div>
+  <div class="grp"><p data-th="เกี่ยวกับ">About</p>
+    <a href="about.html"><span class="ib"><img class="ic" src="assets/ph/info.svg" alt=""></span><span data-th="เกี่ยวกับวิชาเอก">About the major</span></a>
+    <a href="curriculum.html"><span class="ib"><img class="ic" src="assets/ph/list-checks.svg" alt=""></span><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+    <a href="universities.html"><span class="ib"><img class="ic" src="assets/ph/chart-bar.svg" alt=""></span><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+    <a href="alumni.html"><span class="ib"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""></span><span data-th="ศิษย์เก่า">Alumni</span></a>
+    <a href="works.html"><span class="ib"><img class="ic" src="assets/ph/folder-open.svg" alt=""></span><span data-th="ผลงาน">Accomplishment</span></a>
+    <a href="faq.html"><span class="ib"><img class="ic" src="assets/ph/question.svg" alt=""></span><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+  </div>
+  <div class="grp"><p data-th="ช่วงเวลา">Moment</p>
+    <a href="life.html"><span class="ib"><img class="ic" src="assets/ph/camera.svg" alt=""></span><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+    <a href="events.html"><span class="ib"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""></span><span data-th="กิจกรรม">Events</span></a>
+    <a href="gallery.html"><span class="ib"><img class="ic" src="assets/ph/images.svg" alt=""></span><span data-th="แกลเลอรี">Gallery</span></a>
+  </div>
+  <div class="grp"><p data-th="เอกสาร">Document</p>
+    <a href="docs.html"><span class="ib"><img class="ic" src="assets/ph/notebook.svg" alt=""></span><span data-th="เอกสารประกอบ">Material</span></a>
+    <a href="tools.html"><span class="ib"><img class="ic" src="assets/ph/wrench.svg" alt=""></span><span data-th="เครื่องมือ">Tools</span></a>
+  </div>
+</div></div>
 
-<main class="narrow">
+<nav class="dots" id="dots" aria-label="Sections"></nav>
 
-  <section class="blk" id="events">
-    <div class="h-row"><h2 data-th="7 กิจกรรม">7 activities</h2></div>
-    <p class="lead" data-th="ค่าย เวิร์กช็อป และทัศนศึกษา เรียงจากใหม่ไปเก่า แต่ละรายการมีลิงก์ไปยังโพสต์ต้นฉบับ">Camps, workshops and field trips, newest first. Each one links to the original post.</p>
-    <div class="evg">
-        <article class="ev"><img class="evi" src="assets/img/moments/majorcamp.webp" alt="Major Camp (3 Days, 2 Nights)" loading="lazy"><div class="evb"><span class="evd" data-th="มี.ค. 2569">Mar 2026</span><h3 data-th="ค่ายวิชาเอก (3 วัน 2 คืน)">Major Camp (3 Days, 2 Nights)</h3><p data-th="ค่ายประจำปีที่รวมนักเรียน ม.4 ถึง ม.6 มาทำกิจกรรมเป็นทีม และส่งรุ่นพี่ที่กำลังจะจบ">An annual retreat bringing M.4 through M.6 students together for team activities and a farewell to graduating seniors.</p><p class="ev-l"><a href="https://www.facebook.com/share/r/1CH4vP17Ec/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></p></div></article>
-        <article class="ev"><img class="evi" src="assets/img/moments/openhouse.webp" alt="Open House SPSM" loading="lazy"><div class="evb"><span class="evd" data-th="ม.ค. 2569">Jan 2026</span><h3 data-th="Open House SPSM">Open House SPSM</h3><p data-th="การสาธิตและกิจกรรมบูธแนะนำวิชาเอกวิศวกรรมปัญญาประดิษฐ์แก่นักเรียนที่สนใจและครอบครัว">Live demonstrations and booth activities introducing the AI Engineering major to prospective students and their families.</p><p class="ev-l"><a href="https://www.facebook.com/share/p/1EcyQykhr3/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></p></div></article>
-        <article class="ev"><img class="evi" src="assets/img/moments/srt.webp" alt="Field Trip - SRT Red Line Maintenance Facility" loading="lazy"><div class="evb"><span class="evd" data-th="พ.ย. 2568">Nov 2025</span><h3 data-th="ทัศนศึกษา - ศูนย์ซ่อมบำรุงรถไฟสายสีแดง">Field Trip - SRT Red Line Maintenance Facility</h3><p data-th="ไปดูงานศูนย์ซ่อมบำรุงรถไฟสายสีแดงที่บางซื่อ ศึกษาขบวนรถ ระบบอาณัติสัญญาณ และระบบไฟฟ้าของเครือข่ายรถไฟกรุงเทพฯ">A site visit to the SRT Red Line Maintenance Facility at Bang Sue, studying the rolling stock, signaling, and power systems behind Bangkok's rail network.</p></div></article>
-        <article class="ev"><img class="evi" src="assets/img/moments/fieldtrip.webp" alt="Field Trip - Innovation in Motion" loading="lazy"><div class="evb"><span class="evd" data-th="พ.ย. 2568">Nov 2025</span><h3 data-th="ทัศนศึกษา - Innovation in Motion">Field Trip - Innovation in Motion</h3><p data-th="ทริปข้ามวิชาเอกที่จับคู่นักเรียน AI และ EV ออกแบบระบบยานยนต์ไฟฟ้าและขับเคลื่อนอัตโนมัติแบบบูรณาการ">A cross-major field trip pairing AI Engineering and EV Engineering students to design integrated electric and autonomous vehicle systems.</p><p class="ev-l"><a href="https://www.facebook.com/share/p/1HocvBncbT/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></p></div></article>
-        <article class="ev"><img class="evi" src="assets/img/moments/eec.webp" alt="Field Trip - EEC Automation Park &amp; Analog Devices" loading="lazy"><div class="evb"><span class="evd" data-th="ต.ค. 2568">Oct 2025</span><h3 data-th="ทัศนศึกษา - EEC Automation Park และ Analog Devices">Field Trip - EEC Automation Park &amp; Analog Devices</h3><p data-th="ทริปข้ามวิชาเอกไประเบียงเศรษฐกิจพิเศษภาคตะวันออกที่ชลบุรี เยี่ยมชมศูนย์ระบบอัตโนมัติอุตสาหกรรมและโรงงานผลิตเซมิคอนดักเตอร์">A cross-major visit to the Eastern Economic Corridor in Chonburi, touring an industrial automation park and a semiconductor manufacturing facility.</p><p class="ev-l"><a href="https://www.facebook.com/share/p/1M2nU2i7Kk/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></p></div></article>
-        <article class="ev"><img class="evi" src="assets/img/moments/ciracore.webp" alt="AI Programming Workshop - CiRA CORE" loading="lazy"><div class="evb"><span class="evd" data-th="ต.ค. 2568">Oct 2025</span><h3 data-th="เวิร์กช็อปการเขียนโปรแกรม AI - CiRA CORE">AI Programming Workshop - CiRA CORE</h3><p data-th="เวิร์กช็อปเข้มข้นสำหรับ ม.4 โดยอาจารย์จากสถาบันเทคโนโลยีพันธมิตร ครอบคลุมการเตรียมชุดข้อมูล การเทรนโมเดล และการเชื่อมต่อฮาร์ดแวร์">An intensive AI programming workshop for M.4 students led by instructors from a partner technology institute, covering dataset preparation, model training, and hardware integration.</p><p class="ev-l"><a href="https://www.facebook.com/share/p/193ohYFACK/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></p></div></article>
-        <article class="ev"><img class="evi" src="assets/img/moments/senior.webp" alt="Freshmen Welcoming - Code Family Reveal" loading="lazy"><div class="evb"><span class="evd" data-th="ก.ค. 2568">Jul 2025</span><h3 data-th="รับน้อง">Freshmen Welcoming - Code Family Reveal</h3><p data-th="กิจกรรมพี่เลี้ยงที่รุ่นพี่เปิดเผยตัวตนให้น้อง ม.4 ใหม่ เกิดเครือข่ายช่วยเหลือกันที่อยู่ตลอดวิชาเอก">A mentorship activity in which upperclassmen reveal their identities to incoming M.4 students, forming the peer-support network that carries through the major.</p><p class="ev-l"><a href="https://www.facebook.com/share/p/19Xn2A9uJM/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></p></div></article>
+<main class="track" id="track">
+
+  <section class="sec c-navy on" id="s1">
+    <div class="wrap two flip">
+      <div class="copy">
+        <h2 class="big" data-th="กิจกรรม">Events</h2>
+        <p class="lead" data-th="ค่าย เวิร์กช็อป และทัศนศึกษาของวิชาเอกวิศวกรรมปัญญาประดิษฐ์">Camps, workshops and field trips from the AI Engineering major.</p>
+        
+      </div>
+      <div class="fig"><div class="stage" data-fig="calendar"></div><span class="read" aria-hidden="true"></span></div>
     </div>
+    <div class="foot"><span class="hint"><img class="ic" src="assets/ph/caret-down.svg" alt=""><span data-th="เลื่อนลงเพื่อไปต่อ">Scroll to continue</span></span><a class="pill solid" href="gallery.html"><span data-th="แกลเลอรี">Gallery</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+  </section>
+
+  <section class="sec c-red" id="s2">
+    <div class="wrap col">
+      <div class="lhead"><h2 data-th="7 กิจกรรม">7 activities</h2><p class="lead" data-th="ค่าย เวิร์กชอป และทัศนศึกษา ใหม่สุดก่อน แต่ละรายการลิงก์ไปที่โพสต์ต้นฉบับ">Camps, workshops and field trips, newest first. Each one links to the original post.</p></div>
+      <div class="evg sbox">
+        <article class="evc"><img src="assets/img/moments/majorcamp.webp" alt="Major Camp (3 Days, 2 Nights)" loading="lazy"><div><span class="evd"><span data-th="มี.ค. 2569">Mar 2026</span></span><h3><span data-th="ค่ายวิชาเอก (3 วัน 2 คืน)">Major Camp (3 Days, 2 Nights)</span></h3><p><span data-th="ค่ายประจำปีที่รวมนักเรียน ม.4 ถึง ม.6 มาทำกิจกรรมเป็นทีม และส่งรุ่นพี่ที่กำลังจะจบ">An annual retreat bringing M.4 through M.6 students together for team activities and a farewell to graduating seniors.</span></p><a class="pill" href="https://www.facebook.com/share/r/1CH4vP17Ec/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div></article>
+        <article class="evc"><img src="assets/img/moments/openhouse.webp" alt="Open House SPSM" loading="lazy"><div><span class="evd"><span data-th="ม.ค. 2569">Jan 2026</span></span><h3><span data-th="Open House SPSM">Open House SPSM</span></h3><p><span data-th="การสาธิตและกิจกรรมบูธแนะนำวิชาเอกวิศวกรรมปัญญาประดิษฐ์แก่นักเรียนที่สนใจและครอบครัว">Live demonstrations and booth activities introducing the AI Engineering major to prospective students and their families.</span></p><a class="pill" href="https://www.facebook.com/share/p/1EcyQykhr3/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div></article>
+        <article class="evc"><img src="assets/img/moments/srt.webp" alt="Field Trip - SRT Red Line Maintenance Facility" loading="lazy"><div><span class="evd"><span data-th="พ.ย. 2568">Nov 2025</span></span><h3><span data-th="ทัศนศึกษา - ศูนย์ซ่อมบำรุงรถไฟสายสีแดง">Field Trip - SRT Red Line Maintenance Facility</span></h3><p><span data-th="ไปดูงานศูนย์ซ่อมบำรุงรถไฟสายสีแดงที่บางซื่อ ศึกษาขบวนรถ ระบบอาณัติสัญญาณ และระบบไฟฟ้าของเครือข่ายรถไฟกรุงเทพฯ">A site visit to the SRT Red Line Maintenance Facility at Bang Sue, studying the rolling stock, signaling, and power systems behind Bangkok's rail network.</span></p></div></article>
+        <article class="evc"><img src="assets/img/moments/fieldtrip.webp" alt="Field Trip - Innovation in Motion" loading="lazy"><div><span class="evd"><span data-th="พ.ย. 2568">Nov 2025</span></span><h3><span data-th="ทัศนศึกษา - Innovation in Motion">Field Trip - Innovation in Motion</span></h3><p><span data-th="ทริปข้ามวิชาเอกที่จับคู่นักเรียน AI และ EV ออกแบบระบบยานยนต์ไฟฟ้าและขับเคลื่อนอัตโนมัติแบบบูรณาการ">A cross-major field trip pairing AI Engineering and EV Engineering students to design integrated electric and autonomous vehicle systems.</span></p><a class="pill" href="https://www.facebook.com/share/p/1HocvBncbT/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div></article>
+        <article class="evc"><img src="assets/img/moments/eec.webp" alt="Field Trip - EEC Automation Park &amp;amp; Analog Devices" loading="lazy"><div><span class="evd"><span data-th="ต.ค. 2568">Oct 2025</span></span><h3><span data-th="ทัศนศึกษา - EEC Automation Park และ Analog Devices">Field Trip - EEC Automation Park &amp; Analog Devices</span></h3><p><span data-th="ทริปข้ามวิชาเอกไประเบียงเศรษฐกิจพิเศษภาคตะวันออกที่ชลบุรี เยี่ยมชมศูนย์ระบบอัตโนมัติอุตสาหกรรมและโรงงานผลิตเซมิคอนดักเตอร์">A cross-major visit to the Eastern Economic Corridor in Chonburi, touring an industrial automation park and a semiconductor manufacturing facility.</span></p><a class="pill" href="https://www.facebook.com/share/p/1M2nU2i7Kk/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div></article>
+        <article class="evc"><img src="assets/img/moments/ciracore.webp" alt="AI Programming Workshop - CiRA CORE" loading="lazy"><div><span class="evd"><span data-th="ต.ค. 2568">Oct 2025</span></span><h3><span data-th="เวิร์กช็อปการเขียนโปรแกรม AI - CiRA CORE">AI Programming Workshop - CiRA CORE</span></h3><p><span data-th="เวิร์กช็อปเข้มข้นสำหรับ ม.4 โดยอาจารย์จากสถาบันเทคโนโลยีพันธมิตร ครอบคลุมการเตรียมชุดข้อมูล การเทรนโมเดล และการเชื่อมต่อฮาร์ดแวร์">An intensive AI programming workshop for M.4 students led by instructors from a partner technology institute, covering dataset preparation, model training, and hardware integration.</span></p><a class="pill" href="https://www.facebook.com/share/p/193ohYFACK/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div></article>
+        <article class="evc"><img src="assets/img/moments/senior.webp" alt="Freshmen Welcoming - Code Family Reveal" loading="lazy"><div><span class="evd"><span data-th="ก.ค. 2568">Jul 2025</span></span><h3><span data-th="รับน้อง">Freshmen Welcoming - Code Family Reveal</span></h3><p><span data-th="กิจกรรมพี่เลี้ยงที่รุ่นพี่เปิดเผยตัวตนให้น้อง ม.4 ใหม่ เกิดเครือข่ายช่วยเหลือกันที่อยู่ตลอดวิชาเอก">A mentorship activity in which upperclassmen reveal their identities to incoming M.4 students, forming the peer-support network that carries through the major.</span></p><a class="pill" href="https://www.facebook.com/share/p/19Xn2A9uJM/" target="_blank" rel="noopener"><span data-th="ดูบน Facebook">View on Facebook</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec c-navy" id="s3">
+    <div class="wrap mid">
+      <h2 class="big" data-th="ไปดูภาพถ่ายต่อ">More from the camera.</h2>
+      <p class="lead" data-th="ภาพจากค่าย ทัศนศึกษา และชีวิตในห้องเรียน">Pictures from camps, trips and the classroom.</p>
+      <div class="cta"><a class="pill solid" href="gallery.html"><span data-th="แกลเลอรี">Gallery</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a><a class="pill" href="life.html"><span data-th="ชีวิตที่ EAI">Life at EAI</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a><a class="pill" href="apply.html"><span data-th="วิธีสมัคร">How to apply</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+    </div>
+    <p class="unof" data-th="&lt;b&gt;ไม่เป็นทางการ&lt;/b&gt; ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</p>
   </section>
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="f-grid">
-      <div class="f-brand">
-        <b data-th="วิชาเอก EAI">EAI Major</b>
-        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
-        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
-      </div>
-      <div>
-        <h4 data-th="สำรวจ">Explore</h4>
-        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
-        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-      </div>
-      <div>
-        <h4 data-th="เพิ่มเติม">More</h4>
-        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-      </div>
-      <div>
-        <h4 data-th="ติดต่อเรา">Contact</h4>
-        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
-        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
-        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
-        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
-        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
-      </div>
-    </div>
-    <div class="f-bot">
-      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
-      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="site.js"></script>
-
+<script src="hl-kernel.js"></script>
+<script>window.FIGS={};window.hairline=function(f){FIGS[f.name]=f}</script>
+<script src="hl-kit.js"></script>
+<script src="hl-more.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

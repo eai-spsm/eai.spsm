@@ -1,147 +1,113 @@
 <!doctype html>
-<html lang="en" class="hero-page hero-dark">
+<html lang="en" class="flow">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title data-th="สถิติมหาวิทยาลัย | EAI">Universities Stats | EAI</title>
-<meta name="description" content="Where EAI alumni enrolled: placements counted by university with faculty breakdown. สถิติมหาวิทยาลัยที่ศิษย์เก่า EAI เข้าศึกษา">
-<link rel="canonical" href="https://eaispsm.vercel.app/universities">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="EAI">
-<meta property="og:title" content="Universities Stats | EAI">
-<meta property="og:description" content="Where EAI alumni enrolled: placements counted by university with faculty breakdown. สถิติมหาวิทยาลัยที่ศิษย์เก่า EAI เข้าศึกษา">
-<meta property="og:url" content="https://eaispsm.vercel.app/universities">
-<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#C41616">
+<title>Universities stats | EAI</title>
+<meta name="description" content="Where EAI alumni went to university.">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/pic banner/uni stat-sm.webp" media="(max-width:600px)" fetchpriority="high">
-<link rel="preload" as="image" href="assets/img/pic banner/uni stat.webp" media="(min-width:601px)" fetchpriority="high">
-<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css" media="(min-width:601px)">
+<link rel="stylesheet" href="index-m.css" media="(max-width:600px)">
 </head>
-<body>
+<body class="sub flow">
 
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
-    <div class="quick"><a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a><a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a><a class="pill" href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a></div>
-    <nav class="menu" id="menu" aria-label="Main">
-      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-      <div class="dd">
-        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
-          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-        </div></div>
-      </div>
-    </nav>
     <div class="right">
-      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
-      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
-      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false" aria-label="Contact"><img class="ic" src="assets/ph/chat-circle-dots.svg" alt=""><span class="lbl" data-th="ติดต่อ">Contact</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span>LINE Openchat</span></a>
+          <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""><span>Instagram</span></a>
+          <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt=""><span>Facebook</span></a>
+          <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt=""><span>TikTok</span></a>
+          <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt=""><span>GitHub</span></a>
+        </div></div>
+      </div>
       <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
-      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+      <button class="pill on" id="menuBtn" type="button" aria-expanded="false" aria-controls="menufull" aria-label="Menu"><img class="ic mi" src="assets/ph/list.svg" alt=""><span class="lbl" data-th="เมนู">Menu</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
     </div>
   </div>
 </header>
 
-<section class="hero-c hv dk ph" style="--bg:url('assets/img/pic banner/uni stat.webp');--bgs:url('assets/img/pic banner/uni stat-sm.webp');--hc:#043299;--wh:84px;--hx:#fff;--hs:rgba(255,255,255,.75)">
-  <div class="hero-c-in">
-    <img class="hero-ico" src="assets/ph/graduation-cap.svg" alt="">
-    <h1 data-th="สถิติมหาวิทยาลัย">Universities Stats</h1>
-    <p class="sub"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่าเข้าศึกษาที่ไหน นับตามมหาวิทยาลัย">Where our alumni enrolled, counted by university.</span></p>
-</div>
-  <div class="hero-c-i" aria-hidden="true"><img class="ic hi hn n1" src="assets/ph/graduation-cap.svg" alt="" style="left:3%;top:26%;--r:-6deg"><img class="ic hi hn n2" src="assets/ph/buildings.svg" alt="" style="left:12%;top:40%;--r:9deg"><img class="ic hi hn n3" src="assets/ph/map-pin-line.svg" alt="" style="left:5%;top:60%;--r:-9deg"><img class="ic hi hn n4" src="assets/ph/chart-bar.svg" alt="" style="left:16%;top:22%;--r:4deg"><img class="ic hi hn n5" src="assets/ph/bank.svg" alt="" style="right:4%;top:28%;--r:7deg"><img class="ic hi hn n6" src="assets/ph/student.svg" alt="" style="right:12%;top:36%;--r:-8deg"><img class="ic hi hn n7" src="assets/ph/globe-hemisphere-west.svg" alt="" style="right:6%;top:58%;--r:10deg"><img class="ic hi hn n8" src="assets/ph/chart-pie.svg" alt="" style="right:16%;top:60%;--r:-5deg"></div>
-  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="height:84px"><path d="M0,46 Q60,10 120,46 T240,46 T360,46 T480,46 T600,46 T720,46 T840,46 T960,46 T1080,46 T1200,46 T1320,46 T1440,46 L1440,90 L0,90 Z" fill="#fff"/></svg>
-</section>
+<div class="menufull" id="menufull"><div class="mf-in">
+  <p class="qline"><span data-th="โปรดติดตาม Open House 2027">Stay tuned for Open House 2027</span><i aria-hidden="true">|</i><span class="soft" data-th="พร้อมหรือยัง EAI 09?">Are you ready, EAI 09?</span></p>
+  <div class="grp"><p data-th="หลัก">Main</p>
+    <a href="index.html"><span class="ib"><img class="ic" src="assets/ph/house.svg" alt=""></span><span data-th="หน้าแรก">Home</span></a>
+    <a href="apply.html"><span class="ib"><img class="ic" src="assets/ph/door-open.svg" alt=""></span><span data-th="สมัครเรียน">Apply</span></a>
+  </div>
+  <div class="grp"><p data-th="เกี่ยวกับ">About</p>
+    <a href="about.html"><span class="ib"><img class="ic" src="assets/ph/info.svg" alt=""></span><span data-th="เกี่ยวกับวิชาเอก">About the major</span></a>
+    <a href="curriculum.html"><span class="ib"><img class="ic" src="assets/ph/list-checks.svg" alt=""></span><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+    <a href="universities.html"><span class="ib"><img class="ic" src="assets/ph/chart-bar.svg" alt=""></span><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+    <a href="alumni.html"><span class="ib"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""></span><span data-th="ศิษย์เก่า">Alumni</span></a>
+    <a href="works.html"><span class="ib"><img class="ic" src="assets/ph/folder-open.svg" alt=""></span><span data-th="ผลงาน">Accomplishment</span></a>
+    <a href="faq.html"><span class="ib"><img class="ic" src="assets/ph/question.svg" alt=""></span><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+  </div>
+  <div class="grp"><p data-th="ช่วงเวลา">Moment</p>
+    <a href="life.html"><span class="ib"><img class="ic" src="assets/ph/camera.svg" alt=""></span><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+    <a href="events.html"><span class="ib"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""></span><span data-th="กิจกรรม">Events</span></a>
+    <a href="gallery.html"><span class="ib"><img class="ic" src="assets/ph/images.svg" alt=""></span><span data-th="แกลเลอรี">Gallery</span></a>
+  </div>
+  <div class="grp"><p data-th="เอกสาร">Document</p>
+    <a href="docs.html"><span class="ib"><img class="ic" src="assets/ph/notebook.svg" alt=""></span><span data-th="เอกสารประกอบ">Material</span></a>
+    <a href="tools.html"><span class="ib"><img class="ic" src="assets/ph/wrench.svg" alt=""></span><span data-th="เครื่องมือ">Tools</span></a>
+  </div>
+</div></div>
 
-<main class="narrow">
+<nav class="dots" id="dots" aria-label="Sections"></nav>
 
-  <section class="blk" id="by-uni">
-    <div class="h-row"><h2 data-th="แยกตามมหาวิทยาลัย">By university</h2></div>
-    <p class="lead" data-th="ศิษย์เก่า 119 คนที่มีที่เรียนแล้ว กว่า 72% เข้าผ่าน TCAS รอบ 1 ส่วนที่เหลือจาก 122 คนยังไม่ประกาศ">119 alumni with a placement. Over 72% got in through TCAS Round 1. The rest of the 122 have not announced yet.</p>
-    <div class="byuni rv">
-      <div class="sum"><div><b>119</b><span data-th="คนที่มีที่เรียนแล้ว จากศิษย์เก่า 122 คน">placed, out of 122 alumni</span></div><div><b>71%</b><span data-th="ไปเพียงสามสถาบัน: สจล. จุฬาฯ และ มจธ.">went to just three schools: KMITL, CU and KMUTT</span></div><div><b>72%+</b><span data-th="เข้าผ่าน TCAS รอบ 1">got in through TCAS Round 1</span></div></div>
-      <div class="cg" role="img" aria-label="One square per alumnus, coloured by university"><div class="gb" style="--n:5"><div class="gq"><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:0ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:7ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:14ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:21ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:28ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:35ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:42ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:49ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:56ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:63ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:70ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:77ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:84ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:91ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:98ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:105ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:112ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:119ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:126ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:133ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:140ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:147ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:154ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:161ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:168ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:175ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:182ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:189ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:196ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:203ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:210ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:217ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:224ms"></i><i class="cl" data-k="KMITL" style="--c:#1a1a1a;--d:231ms"></i></div><span class="gl" data-k="KMITL"><b>KMITL</b><em>34</em></span></div><div class="gb" style="--n:5"><div class="gq"><i class="cl" data-k="CU" style="--c:#4a4842;--d:238ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:245ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:252ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:259ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:266ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:273ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:280ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:287ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:294ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:301ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:308ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:315ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:322ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:329ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:336ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:343ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:350ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:357ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:364ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:371ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:378ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:385ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:392ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:399ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:406ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:413ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:420ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:427ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:434ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:441ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:448ms"></i><i class="cl" data-k="CU" style="--c:#4a4842;--d:455ms"></i></div><span class="gl" data-k="CU"><b>CU</b><em>32</em></span></div><div class="gb" style="--n:3"><div class="gq"><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:462ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:469ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:476ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:483ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:490ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:497ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:504ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:511ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:518ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:525ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:532ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:539ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:546ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:553ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:560ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:567ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:574ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:581ms"></i><i class="cl" data-k="KMUTT" style="--c:#8a8782;--d:588ms"></i></div><span class="gl" data-k="KMUTT"><b>KMUTT</b><em>19</em></span></div><div class="gb" style="--n:2"><div class="gq"><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:595ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:602ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:609ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:616ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:623ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:630ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:637ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:644ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:651ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:658ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:665ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:672ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:679ms"></i><i class="cl" data-k="TU" style="--c:#b8b5ae;--d:686ms"></i></div><span class="gl" data-k="TU"><b>TU</b><em>14</em></span></div><div class="gb" style="--n:1"><div class="gq"><i class="cl" data-k="KU" style="--c:#d8d6d1;--d:693ms"></i><i class="cl" data-k="KU" style="--c:#d8d6d1;--d:700ms"></i><i class="cl" data-k="KU" style="--c:#d8d6d1;--d:707ms"></i><i class="cl" data-k="KU" style="--c:#d8d6d1;--d:714ms"></i><i class="cl" data-k="KU" style="--c:#d8d6d1;--d:721ms"></i><i class="cl" data-k="KU" style="--c:#d8d6d1;--d:728ms"></i></div><span class="gl" data-k="KU"><em>6</em></span></div><div class="gb" style="--n:2"><div class="gq"><i class="cl" data-k="Others" style="--c:#ececea;--d:735ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:742ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:749ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:756ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:763ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:770ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:777ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:784ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:791ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:798ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:805ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:812ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:819ms"></i><i class="cl" data-k="Others" style="--c:#ececea;--d:826ms"></i></div><span class="gl" data-k="Others"><b>Others</b><em>14</em></span></div><div class="gb" style="--n:1"><div class="gq"><i class="cl none" data-k="none" style="--d:833ms"></i><i class="cl none" data-k="none" style="--d:840ms"></i><i class="cl none" data-k="none" style="--d:847ms"></i></div><span class="gl" data-k="none"><em>3</em></span></div></div>
-      <p class="scale" data-th="หนึ่งช่องคือศิษย์เก่าหนึ่งคน ตัวเลขใต้ช่องคือจำนวนคน">Each square is one alumnus. The number under each block is how many students.</p>
-      <div class="legend"><div class="lg" data-k="KMITL"><i class="sw" style="--c:#1a1a1a"></i><div><b>KMITL</b> <span data-th="34 คน · 28%">34 students · 28%</span><p data-th="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง">King Mongkut's Institute of Technology Ladkrabang</p><ul class="fx"><li><span data-th="วิศวกรรมหุ่นยนต์และปัญญาประดิษฐ์">Robotics &amp; AI</span><em>20</em></li><li><span data-th="คอมพิวเตอร์ ซอฟต์แวร์ และไซเบอร์">Computer, software &amp; cyber</span><em>3</em></li><li><span data-th="วิศวกรรมการบิน">Aviation</span><em>2</em></li><li><span data-th="วิศวกรรมการเงิน">Financial engineering</span><em>2</em></li><li><span data-th="วิศวกรรมเครื่องกล">Mechanical</span><em>2</em></li><li><span data-th="วิศวกรรมระบบการผลิต">Manufacturing systems</span><em>2</em></li><li><span data-th="หลักสูตรอื่น">Other programs</span><em>3</em></li></ul></div></div><div class="lg" data-k="CU"><i class="sw" style="--c:#4a4842"></i><div><b>CU</b> <span data-th="32 คน · 27%">32 students · 27%</span><p data-th="จุฬาลงกรณ์มหาวิทยาลัย">Chulalongkorn University</p><ul class="fx"><li><span data-th="หุ่นยนต์และ AI (ISE)">Robotics &amp; AI (ISE)</span><em>9</em></li><li><span data-th="คอมพิวเตอร์และเทคโนโลยีดิจิทัล">Computer &amp; digital tech</span><em>4</em></li><li><span data-th="วิศวกรรมศาสตร์">Engineering</span><em>4</em></li><li><span data-th="วิทยาศาสตร์">Science</span><em>3</em></li><li><span data-th="วิศวกรรมอากาศยาน">Aerospace</span><em>2</em></li><li><span data-th="ยานยนต์">Automotive</span><em>2</em></li><li><span data-th="พาณิชยศาสตร์และการบัญชี">Commerce &amp; accountancy</span><em>2</em></li><li><span data-th="หลักสูตรอื่น">Other programs</span><em>6</em></li></ul></div></div><div class="lg" data-k="KMUTT"><i class="sw" style="--c:#8a8782"></i><div><b>KMUTT</b> <span data-th="19 คน · 16%">19 students · 16%</span><p data-th="มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี">King Mongkut's University of Technology Thonburi</p><ul class="fx"><li><span data-th="FIBO สถาบันวิทยาการหุ่นยนต์ภาคสนาม">FIBO, field robotics</span><em>11</em></li><li><span data-th="วิศวกรรมคอมพิวเตอร์">Computer engineering</span><em>3</em></li><li><span data-th="วิทยาศาสตร์">Science</span><em>2</em></li><li><span data-th="หลักสูตรอื่น">Other programs</span><em>3</em></li></ul></div></div><div class="lg" data-k="TU"><i class="sw" style="--c:#b8b5ae"></i><div><b>TU</b> <span data-th="14 คน · 12%">14 students · 12%</span><p data-th="มหาวิทยาลัยธรรมศาสตร์">Thammasat University</p><ul class="fx"><li><span data-th="คอมพิวเตอร์ ซอฟต์แวร์ และดิจิทัล">Computer, software &amp; digital</span><em>5</em></li><li><span data-th="วิศวกรรมเครื่องกล">Mechanical</span><em>4</em></li><li><span data-th="บริหารธุรกิจ">Business</span><em>2</em></li><li><span data-th="วิศวกรรมอื่น">Other engineering</span><em>3</em></li></ul></div></div><div class="lg" data-k="KU"><i class="sw" style="--c:#d8d6d1"></i><div><b>KU</b> <span data-th="6 คน · 5%">6 students · 5%</span><p data-th="มหาวิทยาลัยเกษตรศาสตร์">Kasetsart University</p><ul class="fx"><li><span data-th="วิศวกรรมซอฟต์แวร์และความรู้">Software &amp; knowledge engineering</span><em>3</em></li><li><span data-th="อุตสาหกรรมและการผลิตดิจิทัล">Industrial &amp; digital manufacturing</span><em>2</em></li><li><span data-th="คอมพิวเตอร์และสารสนเทศ">Computer &amp; informatics</span><em>1</em></li></ul></div></div><div class="lg" data-k="Others"><i class="sw" style="--c:#ececea"></i><div><b>Others</b> <span data-th="14 คน · 12%">14 students · 12%</span><p data-th="12 สถาบันอื่น รายชื่อด้านล่าง">12 other schools, listed below</p></div></div><div class="lg" data-k="none"><i class="sw none"></i><div><b data-th="ยังไม่ประกาศ">Not announced</b> <span data-th="3 คน">3 students</span><p data-th="ศิษย์เก่าที่ยังไม่มีผล">Alumni without a result yet</p></div></div></div>
+<main class="track" id="track">
+
+  <section class="sec ux-hero c-navy on" id="s1">
+    <div class="wrap ux">
+      <div class="ux-top">
+        <b class="ux-big" data-count="119">119</b>
+        <div class="ux-tx"><h2 data-th="แยกตามมหาวิทยาลัย">By university</h2><p class="lead" data-th="คนที่มีที่เรียนแล้ว จากศิษย์เก่า 122 คน">placed, out of 122 alumni</p></div>
+      </div>
+      <div class="ux-chart"><div class="ux-grid"><div class="ux-g" data-i="0" style="--c:#292d7a"><div class="ux-q"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i><i style="--i:16"></i><i style="--i:17"></i><i style="--i:18"></i><i style="--i:19"></i><i style="--i:20"></i><i style="--i:21"></i><i style="--i:22"></i><i style="--i:23"></i><i style="--i:24"></i><i style="--i:25"></i><i style="--i:26"></i><i style="--i:27"></i><i style="--i:28"></i><i style="--i:29"></i><i style="--i:30"></i><i style="--i:31"></i><i style="--i:32"></i><i style="--i:33"></i></div><span class="ux-l"><b>KMITL</b><em data-count="34">34</em></span><span class="ux-info"><b>KMITL</b> <span data-th="34 คน · 28%">34 students · 28%</span> &middot; <span data-th="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง">King Mongkut's Institute of Technology Ladkrabang</span></span></div><div class="ux-g" data-i="1" style="--c:#3d43a0"><div class="ux-q"><i style="--i:34"></i><i style="--i:35"></i><i style="--i:36"></i><i style="--i:37"></i><i style="--i:38"></i><i style="--i:39"></i><i style="--i:40"></i><i style="--i:41"></i><i style="--i:42"></i><i style="--i:43"></i><i style="--i:44"></i><i style="--i:45"></i><i style="--i:46"></i><i style="--i:47"></i><i style="--i:48"></i><i style="--i:49"></i><i style="--i:50"></i><i style="--i:51"></i><i style="--i:52"></i><i style="--i:53"></i><i style="--i:54"></i><i style="--i:55"></i><i style="--i:56"></i><i style="--i:57"></i><i style="--i:58"></i><i style="--i:59"></i><i style="--i:60"></i><i style="--i:61"></i><i style="--i:62"></i><i style="--i:63"></i><i style="--i:64"></i><i style="--i:65"></i></div><span class="ux-l"><b>CU</b><em data-count="32">32</em></span><span class="ux-info"><b>CU</b> <span data-th="32 คน · 27%">32 students · 27%</span> &middot; <span data-th="จุฬาลงกรณ์มหาวิทยาลัย">Chulalongkorn University</span></span></div><div class="ux-g" data-i="2" style="--c:#5b61bd"><div class="ux-q"><i style="--i:66"></i><i style="--i:67"></i><i style="--i:68"></i><i style="--i:69"></i><i style="--i:70"></i><i style="--i:71"></i><i style="--i:72"></i><i style="--i:73"></i><i style="--i:74"></i><i style="--i:75"></i><i style="--i:76"></i><i style="--i:77"></i><i style="--i:78"></i><i style="--i:79"></i><i style="--i:80"></i><i style="--i:81"></i><i style="--i:82"></i><i style="--i:83"></i><i style="--i:84"></i></div><span class="ux-l"><b>KMUTT</b><em data-count="19">19</em></span><span class="ux-info"><b>KMUTT</b> <span data-th="19 คน · 16%">19 students · 16%</span> &middot; <span data-th="มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี">King Mongkut's University of Technology Thonburi</span></span></div><div class="ux-g" data-i="3" style="--c:#8186d1"><div class="ux-q"><i style="--i:85"></i><i style="--i:86"></i><i style="--i:87"></i><i style="--i:88"></i><i style="--i:89"></i><i style="--i:90"></i><i style="--i:91"></i><i style="--i:92"></i><i style="--i:93"></i><i style="--i:94"></i><i style="--i:95"></i><i style="--i:96"></i><i style="--i:97"></i><i style="--i:98"></i></div><span class="ux-l"><b>TU</b><em data-count="14">14</em></span><span class="ux-info"><b>TU</b> <span data-th="14 คน · 12%">14 students · 12%</span> &middot; <span data-th="มหาวิทยาลัยธรรมศาสตร์">Thammasat University</span></span></div><div class="ux-g" data-i="4" style="--c:#a9acdf"><div class="ux-q"><i style="--i:99"></i><i style="--i:100"></i><i style="--i:101"></i><i style="--i:102"></i><i style="--i:103"></i><i style="--i:104"></i></div><span class="ux-l"><b>KU</b><em data-count="6">6</em></span><span class="ux-info"><b>KU</b> <span data-th="6 คน · 5%">6 students · 5%</span> &middot; <span data-th="มหาวิทยาลัยเกษตรศาสตร์">Kasetsart University</span></span></div><div class="ux-g" data-i="5" style="--c:#cfd1ee"><div class="ux-q"><i style="--i:105"></i><i style="--i:106"></i><i style="--i:107"></i><i style="--i:108"></i><i style="--i:109"></i><i style="--i:110"></i><i style="--i:111"></i><i style="--i:112"></i><i style="--i:113"></i><i style="--i:114"></i><i style="--i:115"></i><i style="--i:116"></i><i style="--i:117"></i><i style="--i:118"></i></div><span class="ux-l"><b>Others</b><em data-count="14">14</em></span><span class="ux-info"><b>Others</b> <span data-th="14 คน · 12%">14 students · 12%</span> &middot; <span data-th="12 สถาบันอื่น รายชื่อด้านล่าง">12 other schools, listed below</span></span></div><div class="ux-g none"><div class="ux-q"><i style="--i:119"></i><i style="--i:120"></i><i style="--i:121"></i></div><span class="ux-l"><b><span data-th="ยังไม่ประกาศ">Not announced</span></b><em data-count="3">3</em></span></div></div><p class="ux-cap"><span class="ux-d" data-th="หนึ่งช่องคือศิษย์เก่าหนึ่งคน ตัวเลขใต้ช่องคือจำนวนคน">Each square is one alumnus. The number under each block is how many students.</span><span class="ux-v"></span></p></div>
     </div>
-    <p class="oth" data-th="มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (2), มหาวิทยาลัยศิลปากร (2), มหาวิทยาลัยหอการค้าไทย, มหาวิทยาลัยเทคโนโลยีสวินเบิร์น, มหาวิทยาลัย CMKL, มหาวิทยาลัยมหิดล, มหาวิทยาลัยแห่งชาติไต้หวัน, สถาบันการบินพลเรือน, มหาวิทยาลัยเทคโนโลยีเจ้อเจียง, มหาวิทยาลัยเชฟฟิลด์, มหาวิทยาลัยคิวชู, มหาวิทยาลัยแห่งชาติสิงคโปร์">King Mongkut's University of Technology North Bangkok (2), Silpakorn University (2), University of the Thai Chamber of Commerce, Swinburne University of Technology, CMKL University, Mahidol University, National Taiwan University, Civil Aviation Training Center, Zhejiang University of Technology, University of Sheffield, Kyushu University, National University of Singapore</p>
-    <p class="note" data-th="ข้อมูลอาจไม่ถูกต้องทั้งหมด และเราอัปเดตเมื่อมีผลใหม่">Heads up: this data may not be fully accurate, and we keep updating it as results come in.</p>
+    <div class="foot"><span class="hint"><img class="ic" src="assets/ph/caret-down.svg" alt=""><span data-th="เลื่อนลงเพื่อไปต่อ">Scroll to continue</span></span></div>
+  </section>
+
+  <section class="sec ux-sec c-navy" id="s3">
+    <div class="wrap ux-w">
+      <div class="ux-schools"><article class="ux-s rv" style="--c:#292d7a"><h3><span class="ux-sw"></span>KMITL<small><span data-th="34 คน · 28%">34 students · 28%</span></small></h3><p><span data-th="สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง">King Mongkut's Institute of Technology Ladkrabang</span></p><ul><li><span><span data-th="วิศวกรรมหุ่นยนต์และปัญญาประดิษฐ์">Robotics &amp; AI</span></span><b>20</b></li><li><span><span data-th="คอมพิวเตอร์ ซอฟต์แวร์ และไซเบอร์">Computer, software &amp; cyber</span></span><b>3</b></li><li><span><span data-th="วิศวกรรมการบิน">Aviation</span></span><b>2</b></li><li><span><span data-th="วิศวกรรมการเงิน">Financial engineering</span></span><b>2</b></li><li><span><span data-th="วิศวกรรมเครื่องกล">Mechanical</span></span><b>2</b></li><li><span><span data-th="วิศวกรรมระบบการผลิต">Manufacturing systems</span></span><b>2</b></li><li><span><span data-th="หลักสูตรอื่น">Other programs</span></span><b>3</b></li></ul></article><article class="ux-s rv" style="--c:#3d43a0"><h3><span class="ux-sw"></span>CU<small><span data-th="32 คน · 27%">32 students · 27%</span></small></h3><p><span data-th="จุฬาลงกรณ์มหาวิทยาลัย">Chulalongkorn University</span></p><ul><li><span><span data-th="หุ่นยนต์และ AI (ISE)">Robotics &amp; AI (ISE)</span></span><b>9</b></li><li><span><span data-th="คอมพิวเตอร์และเทคโนโลยีดิจิทัล">Computer &amp; digital tech</span></span><b>4</b></li><li><span><span data-th="วิศวกรรมศาสตร์">Engineering</span></span><b>4</b></li><li><span><span data-th="วิทยาศาสตร์">Science</span></span><b>3</b></li><li><span><span data-th="วิศวกรรมอากาศยาน">Aerospace</span></span><b>2</b></li><li><span><span data-th="ยานยนต์">Automotive</span></span><b>2</b></li><li><span><span data-th="พาณิชยศาสตร์และการบัญชี">Commerce &amp; accountancy</span></span><b>2</b></li><li><span><span data-th="หลักสูตรอื่น">Other programs</span></span><b>6</b></li></ul></article><article class="ux-s rv" style="--c:#5b61bd"><h3><span class="ux-sw"></span>KMUTT<small><span data-th="19 คน · 16%">19 students · 16%</span></small></h3><p><span data-th="มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี">King Mongkut's University of Technology Thonburi</span></p><ul><li><span><span data-th="FIBO สถาบันวิทยาการหุ่นยนต์ภาคสนาม">FIBO, field robotics</span></span><b>11</b></li><li><span><span data-th="วิศวกรรมคอมพิวเตอร์">Computer engineering</span></span><b>3</b></li><li><span><span data-th="วิทยาศาสตร์">Science</span></span><b>2</b></li><li><span><span data-th="หลักสูตรอื่น">Other programs</span></span><b>3</b></li></ul></article><article class="ux-s rv" style="--c:#8186d1"><h3><span class="ux-sw"></span>TU<small><span data-th="14 คน · 12%">14 students · 12%</span></small></h3><p><span data-th="มหาวิทยาลัยธรรมศาสตร์">Thammasat University</span></p><ul><li><span><span data-th="คอมพิวเตอร์ ซอฟต์แวร์ และดิจิทัล">Computer, software &amp; digital</span></span><b>5</b></li><li><span><span data-th="วิศวกรรมเครื่องกล">Mechanical</span></span><b>4</b></li><li><span><span data-th="บริหารธุรกิจ">Business</span></span><b>2</b></li><li><span><span data-th="วิศวกรรมอื่น">Other engineering</span></span><b>3</b></li></ul></article><article class="ux-s rv" style="--c:#a9acdf"><h3><span class="ux-sw"></span>KU<small><span data-th="6 คน · 5%">6 students · 5%</span></small></h3><p><span data-th="มหาวิทยาลัยเกษตรศาสตร์">Kasetsart University</span></p><ul><li><span><span data-th="วิศวกรรมซอฟต์แวร์และความรู้">Software &amp; knowledge engineering</span></span><b>3</b></li><li><span><span data-th="อุตสาหกรรมและการผลิตดิจิทัล">Industrial &amp; digital manufacturing</span></span><b>2</b></li><li><span><span data-th="คอมพิวเตอร์และสารสนเทศ">Computer &amp; informatics</span></span><b>1</b></li></ul></article><article class="ux-s ux-o rv" style="--c:#cfd1ee"><h3><span class="ux-sw"></span>Others<small><span data-th="14 คน · 12%">14 students · 12%</span></small></h3><p><span data-th="12 สถาบันอื่น รายชื่อด้านล่าง">12 other schools, listed below</span></p><p class="ux-oth"><span data-th="มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (2), มหาวิทยาลัยศิลปากร (2), มหาวิทยาลัยหอการค้าไทย, มหาวิทยาลัยเทคโนโลยีสวินเบิร์น, มหาวิทยาลัย CMKL, มหาวิทยาลัยมหิดล, มหาวิทยาลัยแห่งชาติไต้หวัน, สถาบันการบินพลเรือน, มหาวิทยาลัยเทคโนโลยีเจ้อเจียง, มหาวิทยาลัยเชฟฟิลด์, มหาวิทยาลัยคิวชู, มหาวิทยาลัยแห่งชาติสิงคโปร์">King Mongkut's University of Technology North Bangkok (2), Silpakorn University (2), University of the Thai Chamber of Commerce, Swinburne University of Technology, CMKL University, Mahidol University, National Taiwan University, Civil Aviation Training Center, Zhejiang University of Technology, University of Sheffield, Kyushu University, National University of Singapore</span></p><p class="ux-none"><b><span data-th="ยังไม่ประกาศ">Not announced</span></b> <span data-th="3 คน">3 students</span></p></article></div>
+      <p class="ux-note rv"><span data-th="ข้อมูลอาจไม่ถูกต้องทั้งหมด และเราอัปเดตเมื่อมีผลใหม่">Heads up: this data may not be fully accurate, and we keep updating it as results come in.</span></p>
+    </div>
+  </section>
+
+  <section class="sec c-navy" id="s4">
+    <div class="wrap mid">
+      <h2 class="big" data-th="72%+ ใน TCAS รอบ 1">72%+ in TCAS Round 1.</h2>
+      <p class="lead" data-th="ดูรายชื่อศิษย์เก่าทุกรุ่น">See every alumnus, generation by generation.</p>
+      <div class="cta"><a class="pill solid" href="alumni.html"><span data-th="ศิษย์เก่า">Alumni</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a><a class="pill" href="apply.html"><span data-th="วิธีสมัคร">How to apply</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a><a class="pill" href="about.html"><span data-th="เกี่ยวกับ">About the major</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+    </div>
+  </section>
+
+<section class="sec fbody rfoot" id="s5">
+    <div class="wrap sfoot">
+      <div class="sfb">
+        <a class="sfl" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
+        <p data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์&lt;br&gt;สาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Artificial Intelligence Engineering<br>Satit Prasarnmit (Secondary)</p>
+      </div>
+      <div class="sfc"><h3 data-th="วิชาเอก">The major</h3><a href="about.html"><span data-th="เกี่ยวกับ">About</span></a><a href="curriculum.html"><span data-th="หลักสูตร">Curriculum</span></a><a href="universities.html"><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a><a href="alumni.html"><span data-th="ศิษย์เก่า">Alumni</span></a><a href="faq.html"><span data-th="คำถามที่พบบ่อย">FAQ</span></a></div>
+      <div class="sfc"><h3 data-th="สำรวจ">Explore</h3><a href="works.html"><span data-th="ผลงาน">Accomplishment</span></a><a href="events.html"><span data-th="กิจกรรม">Events</span></a><a href="gallery.html"><span data-th="แกลเลอรี">Gallery</span></a><a href="docs.html"><span data-th="เอกสารประกอบ">Material</span></a><a href="apply.html"><span data-th="สมัครเรียน">Apply</span></a></div>
+      <div class="sfc"><h3 data-th="ติดต่อ">Contact</h3><a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><span data-th="LINE Openchat">LINE Openchat</span></a><a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><span data-th="Instagram">Instagram</span></a><a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><span data-th="Facebook">Facebook</span></a><a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><span data-th="TikTok">TikTok</span></a><a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><span data-th="GitHub">GitHub</span></a></div>
+    <div class="sfc"><h3 data-th="ผู้พัฒนาเว็บไซต์">Site developer</h3><a href="mailto:raphee.rattanamanoonporn@gmail.com"><span data-th="อีเมล">Email</span></a><a href="https://github.com/Ray0737" target="_blank" rel="noopener"><span>GitHub</span></a></div>
+    </div>
+  <p class="unof" data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</p>
   </section>
 
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="f-grid">
-      <div class="f-brand">
-        <b data-th="วิชาเอก EAI">EAI Major</b>
-        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
-        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
-      </div>
-      <div>
-        <h4 data-th="สำรวจ">Explore</h4>
-        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
-        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-      </div>
-      <div>
-        <h4 data-th="เพิ่มเติม">More</h4>
-        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-      </div>
-      <div>
-        <h4 data-th="ติดต่อเรา">Contact</h4>
-        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
-        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
-        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
-        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
-        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
-      </div>
-    </div>
-    <div class="f-bot">
-      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
-      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="site.js"></script>
-
+<script src="hl-kernel.js"></script>
+<script>window.FIGS={};window.hairline=function(f){FIGS[f.name]=f}</script>
+<script src="hl-kit.js"></script>
+<script src="hl-more.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

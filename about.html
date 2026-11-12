@@ -1,179 +1,137 @@
 <!doctype html>
-<html lang="en" class="hero-page hero-dark">
+<html lang="en" class="flow">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title data-th="เกี่ยวกับ | EAI">About | EAI</title>
-<meta name="description" content="About the EAI major: what it teaches, the three-year plan, curriculum and graduation requirements.">
-<link rel="canonical" href="https://eaispsm.vercel.app/about">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="EAI">
-<meta property="og:title" content="About | EAI">
-<meta property="og:description" content="About the EAI major: what it teaches, the three-year plan, curriculum and graduation requirements.">
-<meta property="og:url" content="https://eaispsm.vercel.app/about">
-<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#C41616">
+<title>About | EAI</title>
+<meta name="description" content="About the EAI major: what it teaches, the three-year plan, careers and graduation requirements.">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/pic banner/about1-sm.webp" media="(max-width:600px)" fetchpriority="high">
-<link rel="preload" as="image" href="assets/img/pic banner/about1.webp" media="(min-width:601px)" fetchpriority="high">
-<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css" media="(min-width:601px)">
+<link rel="stylesheet" href="index-m.css" media="(max-width:600px)">
 </head>
-<body>
+<body class="sub flow">
 
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
-    <div class="quick"><a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a><a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a><a class="pill" href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a></div>
-    <nav class="menu" id="menu" aria-label="Main">
-      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-      <div class="dd">
-        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
-          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-        </div></div>
-      </div>
-    </nav>
     <div class="right">
-      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
-      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
-      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false" aria-label="Contact"><img class="ic" src="assets/ph/chat-circle-dots.svg" alt=""><span class="lbl" data-th="ติดต่อ">Contact</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span>LINE Openchat</span></a>
+          <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""><span>Instagram</span></a>
+          <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt=""><span>Facebook</span></a>
+          <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt=""><span>TikTok</span></a>
+          <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt=""><span>GitHub</span></a>
+        </div></div>
+      </div>
       <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
-      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+      <button class="pill on" id="menuBtn" type="button" aria-expanded="false" aria-controls="menufull" aria-label="Menu"><img class="ic mi" src="assets/ph/list.svg" alt=""><span class="lbl" data-th="เมนู">Menu</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
     </div>
   </div>
 </header>
 
-<section class="hero-c hv dk ph" style="--py:25%;--bg:url('assets/img/pic banner/about1.webp');--bgs:url('assets/img/pic banner/about1-sm.webp');--hc:#f5423d;--wh:96px;--hx:#fff;--hs:rgba(255,255,255,.92)">
-  <div class="hero-c-in">
-    <img class="hero-ico" src="assets/ph/info.svg" alt="">
-    <h1 data-th="เกี่ยวกับเรา">About us</h1>
-    <p class="sub"><img class="ic" src="assets/ph/file-text.svg" alt=""><span data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์ เรียนอะไร และสามปีวางแผนอย่างไร">The AI Engineering major: what it teaches and how the three years are laid out.</span></p>
-</div>
-  <div class="hero-c-i" aria-hidden="true"><img class="ic hi hn n1" src="assets/ph/info.svg" alt="" style="left:6%;top:24%;--r:-12deg"><img class="ic hi hn n2" src="assets/ph/atom.svg" alt="" style="left:16%;top:33%;--r:7deg"><img class="ic hi hn n3" src="assets/ph/brain.svg" alt="" style="left:10%;top:56%;--r:-5deg"><img class="ic hi hn n4" src="assets/ph/robot.svg" alt="" style="left:2%;top:50%;--r:9deg"><img class="ic hi hn n5" src="assets/ph/rocket-launch.svg" alt="" style="right:5%;top:23%;--r:10deg"><img class="ic hi hn n6" src="assets/ph/compass.svg" alt="" style="right:16%;top:31%;--r:-7deg"><img class="ic hi hn n7" src="assets/ph/cpu.svg" alt="" style="right:12%;top:58%;--r:-9deg"><img class="ic hi hn n8" src="assets/ph/target.svg" alt="" style="right:2%;top:50%;--r:6deg"></div>
-  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="height:96px"><path d="M0,50 C360,-10 1080,100 1440,30 L1440,90 L0,90 Z" fill="#fff"/></svg>
-</section>
+<div class="menufull" id="menufull"><div class="mf-in">
+  <p class="qline"><span data-th="โปรดติดตาม Open House 2027">Stay tuned for Open House 2027</span><i aria-hidden="true">|</i><span class="soft" data-th="พร้อมหรือยัง EAI 09?">Are you ready, EAI 09?</span></p>
+  <div class="grp"><p data-th="หลัก">Main</p>
+    <a href="index.html"><span class="ib"><img class="ic" src="assets/ph/house.svg" alt=""></span><span data-th="หน้าแรก">Home</span></a>
+    <a href="apply.html"><span class="ib"><img class="ic" src="assets/ph/door-open.svg" alt=""></span><span data-th="สมัครเรียน">Apply</span></a>
+  </div>
+  <div class="grp"><p data-th="เกี่ยวกับ">About</p>
+    <a href="about.html"><span class="ib"><img class="ic" src="assets/ph/info.svg" alt=""></span><span data-th="เกี่ยวกับวิชาเอก">About the major</span></a>
+    <a href="curriculum.html"><span class="ib"><img class="ic" src="assets/ph/list-checks.svg" alt=""></span><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+    <a href="universities.html"><span class="ib"><img class="ic" src="assets/ph/chart-bar.svg" alt=""></span><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+    <a href="alumni.html"><span class="ib"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""></span><span data-th="ศิษย์เก่า">Alumni</span></a>
+    <a href="works.html"><span class="ib"><img class="ic" src="assets/ph/folder-open.svg" alt=""></span><span data-th="ผลงาน">Accomplishment</span></a>
+    <a href="faq.html"><span class="ib"><img class="ic" src="assets/ph/question.svg" alt=""></span><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+  </div>
+  <div class="grp"><p data-th="ช่วงเวลา">Moment</p>
+    <a href="life.html"><span class="ib"><img class="ic" src="assets/ph/camera.svg" alt=""></span><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+    <a href="events.html"><span class="ib"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""></span><span data-th="กิจกรรม">Events</span></a>
+    <a href="gallery.html"><span class="ib"><img class="ic" src="assets/ph/images.svg" alt=""></span><span data-th="แกลเลอรี">Gallery</span></a>
+  </div>
+  <div class="grp"><p data-th="เอกสาร">Document</p>
+    <a href="docs.html"><span class="ib"><img class="ic" src="assets/ph/notebook.svg" alt=""></span><span data-th="เอกสารประกอบ">Material</span></a>
+    <a href="tools.html"><span class="ib"><img class="ic" src="assets/ph/wrench.svg" alt=""></span><span data-th="เครื่องมือ">Tools</span></a>
+  </div>
+</div></div>
 
-<main class="narrow">
+<nav class="dots" id="dots" aria-label="Sections"></nav>
 
-  <section class="blk" id="major">
-    <div class="h-row"><h2 data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</h2></div>
-    <p class="lead" data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary Division)</p>
-    <p class="body" data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์พัฒนาความรู้ การให้เหตุผล และความสามารถทางเทคนิคของนักเรียนด้านคอมพิวเตอร์ ระบบอัตโนมัติ หุ่นยนต์ และปัญญาประดิษฐ์ หลักสูตรผสานคณิตศาสตร์และวิทยาศาสตร์เข้ากับการออกแบบและพัฒนาระบบ AI และซอฟต์แวร์ที่แก้ปัญหาจริงได้ รวมการเรียนทฤษฎีกับการปฏิบัติเพื่อเตรียมพร้อมสู่การศึกษาต่อ">The Artificial Intelligence Engineering major develops students&rsquo; knowledge, reasoning, and technical ability across computing, automation, robotics, and artificial intelligence. The curriculum integrates mathematics and science with the design and development of AI systems and software capable of addressing real-world problems, combining theoretical study with applied practice in preparation for higher education.</p>
-    <div class="rows">
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/users.svg" alt=""></span><div><h3 data-th="ม.4 – ม.6 (ชั้นมัธยมศึกษาปีที่ 4 – 6)">Mathayom 4 – 6 (Grades 10 – 12)</h3><p data-th="เปิดรับ">Open for</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/map-pin.svg" alt=""></span><div><h3 data-th="สุขุมวิท 23 วัฒนา กรุงเทพฯ">Sukhumvit 23, Watthana, Bangkok</h3><p data-th="สถานที่">Location</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/users.svg" alt=""></span><div><h3 data-th="25 คนต่อรุ่น">25 students per generation</h3><p data-th="ที่นั่งราว 10 สำหรับนักเรียนประสานมิตร และ 15 สำหรับผู้สมัครภายนอก">About 10 seats for Prasarnmit students, 15 for outside applicants.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/bus.svg" alt=""></span><div><h3 data-th="ทัศนศึกษา 3–5 ครั้งต่อปี">3–5 field trips a year</h3><p data-th="ดูงานภาคอุตสาหกรรม เช่น EEC Automation Park">Industry visits, like the EEC Automation Park.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/tent.svg" alt=""></span><div><h3 data-th="ค่ายวิชาเอก 3 วัน 2 คืน">Major camp, 3 days 2 nights</h3><p data-th="ค่ายประจำปีของ ม.4 ถึง ม.6 พร้อมส่งรุ่นพี่ที่กำลังจะจบ">A yearly retreat for M.4 to M.6, with a farewell to seniors.</p></div></div>
+<main class="track" id="track">
+
+  <!-- the major in one line, then where to go next -->
+  <section class="sec fbody abh" id="s1">
+    <div class="wrap ah">
+      <h1 class="ah1" data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</h1>
+      <p class="ahs" data-th="โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
+      <div class="ahb"><a class="pill solid" href="apply.html"><span data-th="ดูเกณฑ์การสมัคร">Application criteria</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a><a class="pill" href="curriculum.html"><span data-th="ดูโครงสร้างหลักสูตร">View the curriculum</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
     </div>
   </section>
 
-  <img src="assets/img/pic banner/about2.webp" alt="" loading="lazy" style="display:block;width:100%;height:280px;object-fit:cover;border-radius:12px;margin:0 0 24px">
-
-  <section class="blk" id="careers">
-    <div class="h-row"><h2 data-th="เส้นทางอาชีพที่เป็นไปได้">Possible career paths</h2></div>
-    <p class="lead" data-th="อาชีพที่เป็นไปได้หลังจบวิชาเอก">Where the major can take you.</p>
-    <div class="rows">
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/brain.svg" alt=""></span><div><h3 data-th="วิศวกร AI / ML">AI / ML engineer</h3><p data-th="เทรนและส่งมอบโมเดลที่แก้ปัญหาจริง">Train and ship models that solve real problems.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/eye.svg" alt=""></span><div><h3 data-th="วิศวกรคอมพิวเตอร์วิทัศน์">Computer vision engineer</h3><p data-th="สอนให้กล้องมองเห็น ตั้งแต่แล็บ YOLO ถึงผลิตภัณฑ์จริง">Teach cameras to see, from YOLO labs to real products.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/gear-six.svg" alt=""></span><div><h3 data-th="วิศวกรหุ่นยนต์">Robotics engineer</h3><p data-th="ออกแบบและควบคุมเครื่องจักร เส้นทางแบบ FIBO และ RAI">Design and control machines, the FIBO and RAI path.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/circuitry.svg" alt=""></span><div><h3 data-th="วิศวกรระบบฝังตัว">Embedded engineer</h3><p data-th="ไมโครคอนโทรลเลอร์ เซนเซอร์ และ AI บนอุปกรณ์เล็ก">Microcontrollers, sensors and AI on small devices.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/chart-line-up.svg" alt=""></span><div><h3 data-th="นักวิทยาศาสตร์ข้อมูล">Data scientist</h3><p data-th="หาสัญญาณจากข้อมูลและอธิบายให้ชัด">Find the signal in data and explain it clearly.</p></div></div>
+  <!-- the full description, plain -->
+  <section class="sec fbody" id="s2">
+    <div class="wrap abw">
+      <p class="abp" data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์พัฒนาความรู้ การให้เหตุผล และความสามารถทางเทคนิคของนักเรียนด้านคอมพิวเตอร์ ระบบอัตโนมัติ หุ่นยนต์ และปัญญาประดิษฐ์ หลักสูตรผสานคณิตศาสตร์และวิทยาศาสตร์เข้ากับการออกแบบและพัฒนาระบบ AI และซอฟต์แวร์ที่แก้ปัญหาจริงได้ รวมการเรียนทฤษฎีกับการปฏิบัติเพื่อเตรียมพร้อมสู่การศึกษาต่อ">The major builds students&rsquo; knowledge, reasoning, and technical skill in computing, automation, robotics, and AI. It blends mathematics and science with the design of AI systems and software that solve real-world problems, pairing theory with applied practice to prepare students for university.</p>
+      <div class="aby"><span class="abav"><img src="assets/logo/eai-mark.svg" alt=""></span><div><b data-th="วัตถุประสงค์หลัก">Core objective</b><span data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์ โรงเรียนสาธิต มศว ประสานมิตร">AI Engineering Major, Satit Prasarnmit</span></div></div>
     </div>
   </section>
 
-  <a class="cta-big" href="curriculum.html">
-    <img class="ic" src="assets/ph/list-checks.svg" alt="">
-    <span><b data-th="ดูโครงสร้างหลักสูตรทั้งหมด">View the full curriculum</b><small data-th="รายวิชา หน่วยกิต และคาบต่อสัปดาห์ ครบทั้ง 6 ภาคเรียน ม.4 ถึง ม.6">Subjects, credits and periods per week for all six semesters, M.4 to M.6.</small></span>
-    <span class="btn"><span data-th="ไปที่หน้า">Redirect</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></span>
-  </a>
-
-  <section class="blk" id="graduation">
-    <div class="h-row"><h2 data-th="เกณฑ์จบวิชาเอก">Major graduation requirements</h2></div>
-    <p class="lead" data-th="นักเรียนทุกคนต้องผ่านครบทั้ง 6 ข้อภายในภาคเรียนที่ 1 ของ ม.6">Every student must complete all six requirements by the first semester of M.6.</p>
-    <div class="rows">
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/tent.svg" alt=""></span><div><h3 data-th="ค่ายวิชาเอก">Major camp</h3><p data-th="เข้าร่วมอย่างน้อย 1 ครั้งตลอด 3 ปีการศึกษา และร่วมจัดงานวิชาการแนะนำวิชาเอก">Join at least once across the three years, and help run the major's open-house presentation.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/rocket-launch.svg" alt=""></span><div><h3 data-th="กิจกรรมพัฒนาทักษะ">Skill-development activities</h3><p data-th="เข้าร่วมอย่างน้อย 2 รายการ พร้อมหลักฐานการเข้าร่วม">Take part in at least 2, with proof of attendance.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/trophy.svg" alt=""></span><div><h3 data-th="ประกวดหรือแข่งขัน">Contest or competition</h3><p data-th="ส่งผลงานนวัตกรรมหรือสิ่งประดิษฐ์ด้านวิศวกรรม คอมพิวเตอร์ หรือเทคโนโลยี หรือลงแข่งขันในด้านเดียวกัน อย่างใดอย่างหนึ่ง">Enter an engineering, computing or technology innovation contest, or compete in one of the same fields.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/buildings.svg" alt=""></span><div><h3 data-th="ศึกษาดูงาน">Site visit</h3><p data-th="ร่วมกิจกรรมศึกษาดูงานที่โรงเรียนจัดให้ ณ หน่วยงานรัฐหรือเอกชนที่เกี่ยวข้องกับวิศวกรรม คอมพิวเตอร์ หรือเทคโนโลยี">Join a school-arranged visit to a public or private organization in engineering, computing or technology.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/lightbulb.svg" alt=""></span><div><h3 data-th="โครงงานและนิทรรศการ">Project and exhibition</h3><p data-th="พัฒนาโครงงานตามความสนใจของตนเอง แล้วนำเสนอในนิทรรศการภายในหรือภายนอกโรงเรียน">Build a project around your own interest, then present it at an exhibition in or outside school.</p></div></div>
-        <div class="row"><span class="ico"><img class="ic" src="assets/ph/translate.svg" alt=""></span><div><h3 data-th="ผลสอบภาษาอังกฤษ">English proficiency</h3><p data-th="ยื่นผลสอบมาตรฐานอย่างน้อย 1 รายการ เช่น IELTS, TOEIC, CU-TEP, TU-GET ต่ออาจารย์ประจำวิชาเอกภายใน ม.6 เทอม 1 โดยไม่กำหนดคะแนนขั้นต่ำ">Submit at least one standard test result, such as IELTS, TOEIC, CU-TEP or TU-GET, to the major's faculty by M.6 semester 1. No minimum score.</p></div></div>
+  <section class="sec fbody" id="s3">
+    <div class="wrap abw">
+      <div class="apn">
+        <div class="cg3"><article class="cgc"><div class="cvis"><img src="assets/img/new/learnwhere.webp" alt="" loading="lazy"></div></article><article class="cgc"><div class="cvis"><img src="assets/img/new/small-gen.webp" alt="" loading="lazy"></div></article><article class="cgc"><div class="cvis"><img src="assets/img/new/outside.webp" alt="" loading="lazy"></div></article></div>
+      </div>
     </div>
   </section>
+
+  <section class="sec fbody" id="s4">
+    <div class="wrap abw gpw">
+      <div class="gp">
+        <span class="gpl" data-th="ข้อมูลพื้นฐาน">Basic information</span>
+        <h2 data-th="รู้จักวิชาเอก">Know the major</h2>
+        <p class="gps" data-th="ข้อมูลสำคัญไว้ในที่เดียว">The key facts in one place.</p>
+        <ul class="gpc"><li><i>1</i><div><b data-th="เปิดรับ">Open to</b><span data-th="ม.4 – ม.6 (ชั้นมัธยมศึกษาปีที่ 4 – 6)">Mathayom 4 – 6 (Grades 10 – 12).</span></div></li><li><i>2</i><div><b data-th="ที่ตั้ง">Where</b><span data-th="โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร (ฝ่ายมัธยม) สุขุมวิท 23 วัฒนา กรุงเทพฯ">Satit Prasarnmit Demonstration School (Secondary Division), Sukhumvit 23, Watthana, Bangkok.</span></div></li><li><i>3</i><div><b data-th="ขนาดรุ่น">Class size</b><span data-th="รับ 25 คนต่อรุ่น ราว 10 คนจากประสานมิตรและ 15 คนจากภายนอก">25 students per generation, about 10 from Prasarnmit and 15 outside.</span></div></li><li><i>4</i><div><b data-th="จำนวนรุ่น">Generations</b><span data-th="ตอนนี้มี 8 รุ่นแล้ว">8 generations so far.</span></div></li><li><i>5</i><div><b data-th="ทัศนศึกษา">Field trips</b><span data-th="3–5 ครั้งต่อปี เช่น EEC Automation Park">3–5 a year, like the EEC Automation Park.</span></div></li><li><i>6</i><div><b data-th="ค่ายวิชาเอก">Major camp</b><span data-th="3 วัน 2 คืนทุกปี สำหรับ ม.4 ถึง ม.6 พร้อมส่งรุ่นพี่ที่กำลังจะจบ">3 days 2 nights every year for M.4 to M.6, with a farewell to seniors.</span></div></li></ul>
+        <a class="pill solid" href="apply.html"><span data-th="ดูเกณฑ์การสมัคร">Application criteria</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
+      </div>
+      <div class="gp gpm">
+        <span class="gpl" data-th="สำหรับอนาคต">For your future</span>
+        <h2 data-th="หนึ่งในที่ที่คุณจะไปถึงได้">One of the places you can be</h2>
+        <p class="gps" data-th="เส้นทางที่วิชาเอกนี้พาไปได้">Where the major can take you.</p>
+        <ul class="gpc gpcr"><li><i>1</i><div><b data-th="วิศวกร AI / ML">AI / ML engineer</b><span data-th="เทรนและส่งมอบโมเดลที่แก้ปัญหาจริง">Train and ship models that solve real problems.</span></div></li><li><i>2</i><div><b data-th="วิศวกรคอมพิวเตอร์วิทัศน์">Computer vision engineer</b><span data-th="สอนให้กล้องมองเห็น ตั้งแต่แล็บ YOLO ถึงผลิตภัณฑ์จริง">Teach cameras to see, from YOLO labs to real products.</span></div></li><li><i>3</i><div><b data-th="วิศวกรหุ่นยนต์">Robotics engineer</b><span data-th="ออกแบบและควบคุมเครื่องจักร เส้นทางแบบ FIBO และ RAI">Design and control machines, the FIBO and RAI path.</span></div></li><li><i>4</i><div><b data-th="วิศวกรระบบฝังตัว">Embedded engineer</b><span data-th="ไมโครคอนโทรลเลอร์ เซนเซอร์ และ AI บนอุปกรณ์เล็ก">Microcontrollers, sensors and AI on small devices.</span></div></li><li><i>5</i><div><b data-th="นักวิทยาศาสตร์ข้อมูล">Data scientist</b><span data-th="หาสัญญาณจากข้อมูลและอธิบายให้ชัด">Find the signal in data and explain it clearly.</span></div></li></ul>
+        <a class="pill solid" href="alumni.html"><span data-th="ดูรายชื่อศิษย์เก่าทั้งหมด">See the full alumni list</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
+      </div>
+      <div class="gp">
+        <span class="gpl" data-th="สำหรับการจบ">For graduating</span>
+        <h2 data-th="จบวิชาเอก">Finish the major</h2>
+        <p class="gps" data-th="ครบทั้ง 6 ข้อภายในภาคเรียนที่ 1 ของ ม.6">All six by the first semester of M.6.</p>
+        <ul class="gpc"><li><i>1</i><div><b data-th="ค่ายวิชาเอก">Major camp</b><span data-th="เข้าร่วมอย่างน้อย 1 ครั้งตลอด 3 ปีการศึกษา และร่วมจัดงานวิชาการแนะนำวิชาเอก">Join at least once across the three years, and help run the major's open-house presentation.</span></div></li><li><i>2</i><div><b data-th="กิจกรรมพัฒนาทักษะ">Skill-development activities</b><span data-th="เข้าร่วมอย่างน้อย 2 รายการ พร้อมหลักฐานการเข้าร่วม">Take part in at least 2, with proof of attendance.</span></div></li><li><i>3</i><div><b data-th="ประกวดหรือแข่งขัน">Contest or competition</b><span data-th="ส่งผลงานนวัตกรรมหรือสิ่งประดิษฐ์ด้านวิศวกรรม คอมพิวเตอร์ หรือเทคโนโลยี หรือลงแข่งขันในด้านเดียวกัน อย่างใดอย่างหนึ่ง">Enter an engineering, computing or technology innovation contest, or compete in one of the same fields.</span></div></li><li><i>4</i><div><b data-th="ศึกษาดูงาน">Site visit</b><span data-th="ร่วมกิจกรรมศึกษาดูงานที่โรงเรียนจัดให้ ณ หน่วยงานรัฐหรือเอกชนที่เกี่ยวข้องกับวิศวกรรม คอมพิวเตอร์ หรือเทคโนโลยี">Join a school-arranged visit to a public or private organization in engineering, computing or technology.</span></div></li><li><i>5</i><div><b data-th="โครงงานและนิทรรศการ">Project and exhibition</b><span data-th="พัฒนาโครงงานตามความสนใจของตนเอง แล้วนำเสนอในนิทรรศการภายในหรือภายนอกโรงเรียน">Build a project around your own interest, then present it at an exhibition in or outside school.</span></div></li><li><i>6</i><div><b data-th="ผลสอบภาษาอังกฤษ">English proficiency</b><span data-th="ยื่นผลสอบมาตรฐานอย่างน้อย 1 รายการ เช่น IELTS, TOEIC, CU-TEP, TU-GET ต่ออาจารย์ประจำวิชาเอกภายใน ม.6 เทอม 1 โดยไม่กำหนดคะแนนขั้นต่ำ">Submit at least one standard test result, such as IELTS, TOEIC, CU-TEP or TU-GET, to the major's faculty by M.6 semester 1. No minimum score.</span></div></li></ul>
+        <a class="pill solid" href="curriculum.html"><span data-th="ดูโครงสร้างหลักสูตร">View the curriculum</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sec fbody rfoot" id="s6">
+    <div class="wrap sfoot">
+      <div class="sfb">
+        <a class="sfl" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
+        <p data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์&lt;br&gt;สาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Artificial Intelligence Engineering<br>Satit Prasarnmit (Secondary)</p>
+      </div>
+      <div class="sfc"><h3 data-th="วิชาเอก">The major</h3><a href="about.html"><span data-th="เกี่ยวกับ">About</span></a><a href="curriculum.html"><span data-th="หลักสูตร">Curriculum</span></a><a href="universities.html"><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a><a href="alumni.html"><span data-th="ศิษย์เก่า">Alumni</span></a><a href="faq.html"><span data-th="คำถามที่พบบ่อย">FAQ</span></a></div>
+      <div class="sfc"><h3 data-th="สำรวจ">Explore</h3><a href="works.html"><span data-th="ผลงาน">Accomplishment</span></a><a href="events.html"><span data-th="กิจกรรม">Events</span></a><a href="gallery.html"><span data-th="แกลเลอรี">Gallery</span></a><a href="docs.html"><span data-th="เอกสารประกอบ">Material</span></a><a href="apply.html"><span data-th="สมัครเรียน">Apply</span></a></div>
+      <div class="sfc"><h3 data-th="ติดต่อ">Contact</h3><a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><span data-th="LINE Openchat">LINE Openchat</span></a><a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><span data-th="Instagram">Instagram</span></a><a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><span data-th="Facebook">Facebook</span></a><a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><span data-th="TikTok">TikTok</span></a><a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><span data-th="GitHub">GitHub</span></a></div>
+    <div class="sfc"><h3 data-th="ผู้พัฒนาเว็บไซต์">Site developer</h3><a href="mailto:raphee.rattanamanoonporn@gmail.com"><span data-th="อีเมล">Email</span></a><a href="https://github.com/Ray0737" target="_blank" rel="noopener"><span>GitHub</span></a></div>
+    </div>
+    <p class="unof" data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</p>
+  </section>
+
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="f-grid">
-      <div class="f-brand">
-        <b data-th="วิชาเอก EAI">EAI Major</b>
-        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
-        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
-      </div>
-      <div>
-        <h4 data-th="สำรวจ">Explore</h4>
-        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
-        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-      </div>
-      <div>
-        <h4 data-th="เพิ่มเติม">More</h4>
-        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-      </div>
-      <div>
-        <h4 data-th="ติดต่อเรา">Contact</h4>
-        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
-        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
-        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
-        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
-        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
-      </div>
-    </div>
-    <div class="f-bot">
-      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
-      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="site.js"></script>
-
+<script src="hl-kernel.js"></script>
+<script>window.FIGS={};window.hairline=function(f){FIGS[f.name]=f}</script>
+<script src="index.js"></script>
 </body>
 </html>

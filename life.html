@@ -1,182 +1,129 @@
 <!doctype html>
-<html lang="en" class="hero-page hero-dark hero-mid">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title data-th="ชีวิตที่ EAI | EAI">Life at EAI | EAI</title>
-<meta name="description" content="Life at EAI: a day at school, getting around Asok, and photos from the major.">
-<link rel="canonical" href="https://eaispsm.vercel.app/life">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="EAI">
-<meta property="og:title" content="Life at EAI | EAI">
-<meta property="og:description" content="Life at EAI: a day at school, getting around Asok, and photos from the major.">
-<meta property="og:url" content="https://eaispsm.vercel.app/life">
-<meta property="og:image" content="https://eaispsm.vercel.app/assets/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#C41616">
+<title>Life at EAI | EAI</title>
+<meta name="description" content="Getting around Asok, and everyday life in the AI Engineering major.">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/pic banner/life-sm.webp" media="(max-width:600px)" fetchpriority="high">
-<link rel="preload" as="image" href="assets/img/pic banner/life.webp" media="(min-width:601px)" fetchpriority="high">
-<script>try{if(localStorage.getItem('eai-lang')==='th'){document.documentElement.classList.add('th-wait');setTimeout(function(){document.documentElement.classList.remove('th-wait')},2500)}}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css" media="(min-width:601px)">
+<link rel="stylesheet" href="index-m.css" media="(max-width:600px)">
 </head>
-<body>
+<body class="sub">
 
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
-    <div class="quick"><a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a><a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a><a class="pill" href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a></div>
-    <nav class="menu" id="menu" aria-label="Main">
-      <a class="pill" href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-      <a class="pill" href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับวิชาเอก">About</span></a>
-          <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-          <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-          <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-          <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-          <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill on" type="button" aria-expanded="false"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="ช่วงเวลา">Moment</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        </div></div>
-      </div>
-      <div class="dd">
-        <button class="pill" type="button" aria-expanded="false"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสาร">Document</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
-        <div class="dd-menu"><div>
-          <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-          <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-          <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-        </div></div>
-      </div>
-    </nav>
     <div class="right">
-      <a class="pill icon" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener" aria-label="LINE Openchat"><img class="ic" src="assets/bi/line.svg" alt=""></a>
-      <a class="pill icon" href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""></a>
-      <a class="pill icon" href="https://github.com/eai-spsm" target="_blank" rel="noopener" aria-label="GitHub organisation"><img class="ic" src="assets/ph/github-logo.svg" alt=""></a>
+      <div class="dd">
+        <button class="pill" type="button" aria-expanded="false" aria-label="Contact"><img class="ic" src="assets/ph/chat-circle-dots.svg" alt=""><span class="lbl" data-th="ติดต่อ">Contact</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
+        <div class="dd-menu"><div>
+          <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span>LINE Openchat</span></a>
+          <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt=""><span>Instagram</span></a>
+          <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt=""><span>Facebook</span></a>
+          <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt=""><span>TikTok</span></a>
+          <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt=""><span>GitHub</span></a>
+        </div></div>
+      </div>
       <button class="pill" id="lang" type="button" aria-label="Switch language"><img class="ic" src="assets/ph/translate.svg" alt=""><span id="lang-t">TH</span></button>
-      <button class="pill menu-btn" id="burger" type="button" aria-label="Menu" aria-expanded="false"><img class="ic" src="assets/ph/list.svg" alt=""></button>
+      <button class="pill on" id="menuBtn" type="button" aria-expanded="false" aria-controls="menufull" aria-label="Menu"><img class="ic mi" src="assets/ph/list.svg" alt=""><span class="lbl" data-th="เมนู">Menu</span><img class="ic chev" src="assets/ph/caret-down.svg" alt=""></button>
     </div>
   </div>
 </header>
 
-<section class="hero-c hv dk ph" style="--bg:url('assets/img/pic banner/life.webp');--bgs:url('assets/img/pic banner/life-sm.webp');--hc:#2f82ff;--wh:96px;--hx:#fff;--hs:rgba(255,255,255,.92)">
-  <div class="hero-c-in" style="width:min(92%,680px);max-width:none">
-    <img class="hero-ico" src="assets/ph/camera.svg" alt="">
-    <h1 data-th="ชีวิตที่ EAI">Life at EAI</h1>
-    <p class="sub"><span data-th="การเดินทางรอบอโศก และชีวิตประจำวันในวิชาเอกวิศวกรรมปัญญาประดิษฐ์">Getting around Asok, and everyday life in the AI Engineering major.</span></p>
-</div>
-  <div class="hero-c-i" aria-hidden="true"><img class="ic hi hn n1" src="assets/ph/sun-horizon.svg" alt="" style="left:3%;top:24%;--r:-10deg"><img class="ic hi hn n2" src="assets/ph/train.svg" alt="" style="left:8%;top:56%;--r:8deg"><img class="ic hi hn n3" src="assets/ph/fork-knife.svg" alt="" style="left:14%;top:28%;--r:-6deg"><img class="ic hi hn n4" src="assets/ph/coffee.svg" alt="" style="left:17%;top:52%;--r:10deg"><img class="ic hi hn n5" src="assets/ph/clock.svg" alt="" style="right:5%;top:30%;--r:-8deg"><img class="ic hi hn n6" src="assets/ph/desktop.svg" alt="" style="right:14%;top:54%;--r:6deg"><img class="ic hi hn n7" src="assets/ph/bicycle.svg" alt="" style="right:24%;top:26%;--r:-9deg"><img class="ic hi hn n8" src="assets/ph/cloud-sun.svg" alt="" style="right:33%;top:52%;--r:7deg"></div>
-  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="height:96px"><path d="M0,60 C200,0 400,0 600,50 S1000,100 1440,40 L1440,90 L0,90 Z" fill="#fff"/></svg>
-</section>
+<div class="menufull" id="menufull"><div class="mf-in">
+  <p class="qline"><span data-th="โปรดติดตาม Open House 2027">Stay tuned for Open House 2027</span><i aria-hidden="true">|</i><span class="soft" data-th="พร้อมหรือยัง EAI 09?">Are you ready, EAI 09?</span></p>
+  <div class="grp"><p data-th="หลัก">Main</p>
+    <a href="index.html"><span class="ib"><img class="ic" src="assets/ph/house.svg" alt=""></span><span data-th="หน้าแรก">Home</span></a>
+    <a href="apply.html"><span class="ib"><img class="ic" src="assets/ph/door-open.svg" alt=""></span><span data-th="สมัครเรียน">Apply</span></a>
+  </div>
+  <div class="grp"><p data-th="เกี่ยวกับ">About</p>
+    <a href="about.html"><span class="ib"><img class="ic" src="assets/ph/info.svg" alt=""></span><span data-th="เกี่ยวกับวิชาเอก">About the major</span></a>
+    <a href="curriculum.html"><span class="ib"><img class="ic" src="assets/ph/list-checks.svg" alt=""></span><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
+    <a href="universities.html"><span class="ib"><img class="ic" src="assets/ph/chart-bar.svg" alt=""></span><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
+    <a href="alumni.html"><span class="ib"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""></span><span data-th="ศิษย์เก่า">Alumni</span></a>
+    <a href="works.html"><span class="ib"><img class="ic" src="assets/ph/folder-open.svg" alt=""></span><span data-th="ผลงาน">Accomplishment</span></a>
+    <a href="faq.html"><span class="ib"><img class="ic" src="assets/ph/question.svg" alt=""></span><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
+  </div>
+  <div class="grp"><p data-th="ช่วงเวลา">Moment</p>
+    <a href="life.html"><span class="ib"><img class="ic" src="assets/ph/camera.svg" alt=""></span><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
+    <a href="events.html"><span class="ib"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""></span><span data-th="กิจกรรม">Events</span></a>
+    <a href="gallery.html"><span class="ib"><img class="ic" src="assets/ph/images.svg" alt=""></span><span data-th="แกลเลอรี">Gallery</span></a>
+  </div>
+  <div class="grp"><p data-th="เอกสาร">Document</p>
+    <a href="docs.html"><span class="ib"><img class="ic" src="assets/ph/notebook.svg" alt=""></span><span data-th="เอกสารประกอบ">Material</span></a>
+    <a href="tools.html"><span class="ib"><img class="ic" src="assets/ph/wrench.svg" alt=""></span><span data-th="เครื่องมือ">Tools</span></a>
+  </div>
+</div></div>
 
-<main class="narrow">
+<nav class="dots" id="dots" aria-label="Sections"></nav>
 
-  <section class="blk" id="times">
-    <div class="h-row"><h2 data-th="หนึ่งวันที่นี่">A day here</h2></div>
-    <p class="lead" data-th="เวลา ห้อง และสิ่งที่ควรรู้ สำหรับหนึ่งวันที่โรงเรียน">The times, the rooms and what to know for a day at school.</p>
-    <div class="sg"><span class="ico s"><img class="ic" src="assets/ph/clock.svg" alt=""></span><h3 data-th="เวลา">Time</h3></div>
-    <div class="cg3">
-        <div class="dc"><span class="m" data-th="07:45">07:45</span><span class="big"><img class="ic" src="assets/ph/clock.svg" alt=""></span><h3 data-th="โฮมรูม">Homeroom</h3><p data-th="สายกว่านี้ถือว่าสาย">Later than this is late.</p></div>
-        <div class="dc"><span class="m" data-th="11:20–12:55">11:20–12:55</span><span class="big"><img class="ic" src="assets/ph/fork-knife.svg" alt=""></span><h3 data-th="พักเที่ยง">Lunch</h3><p data-th="ไปก่อนเวลา คิวยาวตั้งแต่ 11:20">Go early. The lines are packed by 11:20.</p></div>
-        <div class="dc"><span class="m" data-th="18:00–19:00">18:00–19:00</span><span class="big"><img class="ic" src="assets/ph/clock-afternoon.svg" alt=""></span><h3 data-th="วันที่อยู่ดึก">Late days</h3><p data-th="โปรเจกต์ฮาร์ดแวร์อาจอยู่ดึก โปรดแจ้งผู้ปกครอง การเดินทางจะแออัด">Hardware projects can run late. Tell your parents; transport is crammed.</p></div>
-        <div class="dc"><span class="m" data-th="ทุกภาคเรียน">Every term</span><span class="big"><img class="ic" src="assets/ph/calendar-check.svg" alt=""></span><h3 data-th="40 คาบต่อสัปดาห์">40 periods a week</h3><p data-th="ภาระเท่ากันทุกภาคเรียน หน่วยกิต 14.0 ถึง 15.5 ต่อภาคเรียน">The same load every term, with credits from 14.0 to 15.5 a semester.</p></div>
+<main class="track" id="track">
+
+  <section class="sec ban dark c-navy on" id="s1" style="--bg:url('assets/img/pic banner/life.webp');--bgs:url('assets/img/pic banner/life-sm.webp')">
+    <div class="wrap bn">
+      <h2 class="big" data-th="ชีวิตที่ EAI">Life at EAI</h2>
+      <p class="lead" data-th="การเดินทางรอบอโศก และชีวิตประจำวันในวิชาเอกวิศวกรรมปัญญาประดิษฐ์">Getting around Asok, and everyday life in the AI Engineering major.</p>
+      
     </div>
-    <div class="sg"><span class="ico s"><img class="ic" src="assets/ph/buildings.svg" alt=""></span><h3 data-th="ห้อง">Rooms</h3></div>
-    <div class="cg3">
-        <div class="dc"><span class="m" data-th="1909 · ชั้น 9">1909 · 9th floor</span><span class="big"><img class="ic" src="assets/ph/desktop.svg" alt=""></span><h3 data-th="ห้องคอมพิวเตอร์ AI">AI computer room</h3><p data-th="ห้องของเราบนชั้น 9">Our own room on the 9th floor.</p></div>
-        <div class="dc"><span class="m" data-th="1911–1912">1911–1912</span><span class="big"><img class="ic" src="assets/ph/chalkboard-teacher.svg" alt=""></span><h3 data-th="ห้องพักครู">Teacher office</h3><p data-th="ห้อง 1911 และ 1912">Rooms 1911 and 1912.</p></div>
-    </div>
-    <div class="sg"><span class="ico s"><img class="ic" src="assets/ph/info.svg" alt=""></span><h3 data-th="ควรรู้">Good to know</h3></div>
-    <div class="cg3">
-        <div class="dc"><span class="m" data-th="กฎ">Rule</span><span class="big"><img class="ic" src="assets/ph/prohibit.svg" alt=""></span><h3 data-th="ห้ามอาหารในห้อง 1909">No food in 1909</h3><p data-th="ไม่อนุญาตให้นำอาหารเข้าห้องคอมพิวเตอร์">Food is not allowed in the computer room.</p></div>
-        <div class="dc"><span class="m" data-th="บางคาบ">Some periods</span><span class="big"><img class="ic" src="assets/ph/video-camera.svg" alt=""></span><h3 data-th="ห้องเรียนกลับด้าน">Flipped classroom</h3><p data-th="บางคาบเรียนผ่านวิดีโอ ถ้าเป็นคาบสุดท้ายอาจได้กลับก่อน">Some lessons are videos. If it is the last period, you may leave early.</p></div>
-    </div>
-    <div class="sg"><span class="ico s"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""></span><h3 data-th="ตลอดปี">Through the year</h3></div>
-    <div class="cg3">
-        <div class="dc"><span class="m" data-th="ทัศนศึกษา">Field trips</span><span class="big"><img class="ic" src="assets/ph/bus.svg" alt=""></span><h3 data-th="ทัศนศึกษา 3–5 ครั้งต่อปี">3–5 field trips a year</h3><p data-th="ดูงานอุตสาหกรรม เช่น EEC Automation Park">Industry visits, like the EEC Automation Park.</p></div>
-        <div class="dc"><span class="m" data-th="ทุกปี">Every year</span><span class="big"><img class="ic" src="assets/ph/tent.svg" alt=""></span><h3 data-th="ค่ายวิชาเอก 3 วัน 2 คืน">Major camp, 3 days 2 nights</h3><p data-th="ค่ายประจำปีของ ม.4 ถึง ม.6 พร้อมส่งรุ่นพี่ที่กำลังจะจบ">A yearly retreat for M.4 to M.6, with a farewell to seniors.</p></div>
-        <div class="dc"><span class="m" data-th="Open House">Open House</span><span class="big"><img class="ic" src="assets/ph/storefront.svg" alt=""></span><h3 data-th="Open House 24 มกราคม 2027">Open House, 24 January 2027</h3><p data-th="มาดูผลงานของเรา รุ่นพี่ช่วยจัดการนำเสนอ">Come and see our work. Seniors help run the presentation.</p></div>
-        <a class="dc" href="events.html"><span class="m" data-th="กิจกรรม">Events</span><span class="big"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""></span><h3 data-th="ค่าย เวิร์กช็อป และทัศนศึกษา">Camps, workshops and trips</h3><p><span data-th="กิจกรรมทั้งหมดของวิชาเอก พร้อมวันที่และภาพ">Every activity of the major, with dates and photos.</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></p></a>
+    <div class="foot"><span class="hint"><img class="ic" src="assets/ph/caret-down.svg" alt=""><span data-th="เลื่อนลงเพื่อไปต่อ">Scroll to continue</span></span><a class="pill solid" href="events.html"><span data-th="กิจกรรม">Events</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+  </section>
+
+  <section class="sec c-navy" id="s2">
+    <div class="wrap two">
+      <div class="copy">
+        <h2 data-th="หนึ่งวันที่นี่">A day here</h2>
+        <p class="lead" data-th="เวลา ห้อง และสิ่งที่ควรรู้ สำหรับหนึ่งวันที่โรงเรียน">The times, the rooms and what to know for a day at school.</p>
+        <ul class="rxl"><li><div class="rx"><span class="m"><span data-th="07:45">07:45</span></span><h3><span data-th="โฮมรูม">Homeroom</span></h3><p><span data-th="สายกว่านี้ถือว่าสาย">Later than this is late.</span></p></div></li><li><div class="rx"><span class="m"><span data-th="11:20–12:55">11:20–12:55</span></span><h3><span data-th="พักเที่ยง">Lunch</span></h3><p><span data-th="ไปก่อนเวลา คิวยาวตั้งแต่ 11:20">Go early. The lines are packed by 11:20.</span></p></div></li><li><div class="rx"><span class="m"><span data-th="18:00–19:00">18:00–19:00</span></span><h3><span data-th="วันที่อยู่ดึก">Late days</span></h3><p><span data-th="โปรเจกต์ฮาร์ดแวร์อาจอยู่ดึก โปรดแจ้งผู้ปกครอง การเดินทางจะแออัด">Hardware projects can run late. Tell your parents; transport is crammed.</span></p></div></li><li><div class="rx"><span class="m"><span data-th="ทุกภาคเรียน">Every term</span></span><h3><span data-th="40 คาบต่อสัปดาห์">40 periods a week</span></h3><p><span data-th="ภาระเท่ากันทุกภาคเรียน หน่วยกิต 14.0 ถึง 15.5 ต่อภาคเรียน">The same load every term, with credits from 14.0 to 15.5 a semester.</span></p></div></li></ul>
+      </div>
+      <div class="fig"><div class="stage" data-fig="desks"></div><span class="read" aria-hidden="true"></span></div>
     </div>
   </section>
 
-  <section class="blk" id="around">
-    <div class="h-row"><h2 data-th="เดินทางมาโรงเรียน">Getting here</h2></div>
-    <p class="lead" data-th="เดินทางมาอย่างไร และลงที่ไหน">How to get here, and where to get off.</p>
-    <div class="cg3">
-        <div class="dc"><span class="m" data-th="รถไฟฟ้า">Train</span><span class="big"><img class="ic" src="assets/ph/train.svg" alt=""></span><h3 data-th="ลงที่ BTS อโศก / MRT สุขุมวิท">Get off at BTS Asok / MRT Sukhumvit</h3><p data-th="หรือ MRT เพชรบุรี, ARL มักกะสัน">Also MRT Phetchaburi, ARL Makkasan</p></div>
-        <div class="dc"><span class="m" data-th="รถเมล์">Bus</span><span class="big"><img class="ic" src="assets/ph/bus.svg" alt=""></span><h3 data-th="ลงที่ถนนอโศกมนตรี">Get off at Asok Montri Road</h3><p data-th="สาย 38 และ 136">Routes 38 and 136</p></div>
-        <div class="dc"><span class="m" data-th="เรือ">Boat</span><span class="big"><img class="ic" src="assets/ph/boat.svg" alt=""></span><h3 data-th="ลงที่ท่าเรืออโศก หรือท่าเรือประสานมิตร">Get off at Asok pier or Prasarnmit pier</h3><p data-th="เรือคลองแสนแสบ">Saen Saep canal boat</p></div>
-        <div class="dc"><span class="m" data-th="มอเตอร์ไซค์รับจ้าง">Motorcycle taxi</span><span class="big"><img class="ic" src="assets/ph/motorcycle.svg" alt=""></span><h3 data-th="ลงที่ทางออกสถานีใดก็ได้">Get off at any station exit</h3><p data-th="สำหรับช่วงสุดท้าย">For the last stretch</p></div>
-        <div class="dc"><span class="m" data-th="ห้างสรรพสินค้า">Malls</span><span class="big"><img class="ic" src="assets/ph/storefront.svg" alt=""></span><h3 data-th="ลงที่เทอร์มินอล 21 อโศก">Get off at Terminal 21 at Asok</h3><p data-th="เซ็นทรัล พระราม 9 ที่ MRT พระราม 9">Central Rama 9 at MRT Phra Ram 9</p></div>
-        <div class="dc"><span class="m" data-th="โรงเรียน">School</span><span class="big"><img class="ic" src="assets/ph/buildings.svg" alt=""></span><h3 data-th="ลงที่ มศว ประสานมิตร">Get off at SWU Prasarnmit campus</h3><p data-th="สุขุมวิท 23 วัฒนา">Sukhumvit 23, Watthana</p></div>
+  <section class="sec c-red" id="s3">
+    <div class="wrap two flip">
+      <div class="copy">
+        <h2 data-th="ห้อง">Rooms</h2>
+        <ul class="rxl"><li><div class="rx"><span class="m"><span data-th="1909 · ชั้น 9">1909 · 9th floor</span></span><h3><span data-th="ห้องคอมพิวเตอร์ AI">AI computer room</span></h3><p><span data-th="ห้องของเราบนชั้น 9">Our own room on the 9th floor.</span></p></div></li><li><div class="rx"><span class="m"><span data-th="1911–1912">1911–1912</span></span><h3><span data-th="ห้องพักครู">Teacher office</span></h3><p><span data-th="ห้อง 1911 และ 1912">Rooms 1911 and 1912.</span></p></div></li></ul>
+      </div>
+      <div class="copy">
+        <h2 data-th="ควรรู้">Good to know</h2>
+        <ul class="rxl"><li><div class="rx"><span class="m"><span data-th="กฎ">Rule</span></span><h3><span data-th="ห้ามอาหารในห้อง 1909">No food in 1909</span></h3><p><span data-th="ไม่อนุญาตให้นำอาหารเข้าห้องคอมพิวเตอร์">Food is not allowed in the computer room.</span></p></div></li><li><div class="rx"><span class="m"><span data-th="บางคาบ">Some periods</span></span><h3><span data-th="ห้องเรียนกลับด้าน">Flipped classroom</span></h3><p><span data-th="บางคาบเรียนผ่านวิดีโอ ถ้าเป็นคาบสุดท้ายอาจได้กลับก่อน">Some lessons are videos. If it is the last period, you may leave early.</span></p></div></li></ul>
+      </div>
     </div>
   </section>
 
-  <section class="blk" id="gallery">
-    <div class="h-row"><h2 data-th="รูปภาพ">Photos</h2></div>
-    <div class="cg3">
-        <a class="dc" href="gallery.html"><span class="m" data-th="แกลเลอรี">Gallery</span><span class="big"><img class="ic" src="assets/ph/images.svg" alt=""></span><h3 data-th="ดูแกลเลอรี">See the gallery</h3><p><span data-th="รูป 65 ภาพ ห้องเรียน รับน้อง ทัศนศึกษา Open House และค่าย">65 photos: classroom, welcoming, field trip, open house and camp</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></p></a>
+  <section class="sec c-navy" id="s4">
+    <div class="wrap col">
+      <div class="lhead"><h2 data-th="ตลอดปี">Through the year</h2></div>
+      <div class="cards c2"><div class="cd"><span class="m"><span data-th="ทัศนศึกษา">Field trips</span></span><h3><span data-th="ทัศนศึกษา 3–5 ครั้งต่อปี">3–5 field trips a year</span></h3><p><span data-th="ดูงานอุตสาหกรรม เช่น EEC Automation Park">Industry visits, like the EEC Automation Park.</span></p></div><div class="cd"><span class="m"><span data-th="ทุกปี">Every year</span></span><h3><span data-th="ค่ายวิชาเอก 3 วัน 2 คืน">Major camp, 3 days 2 nights</span></h3><p><span data-th="ค่ายประจำปีของ ม.4 ถึง ม.6 พร้อมส่งรุ่นพี่ที่กำลังจะจบ">A yearly retreat for M.4 to M.6, with a farewell to seniors.</span></p></div><div class="cd"><span class="m"><span data-th="Open House">Open House</span></span><h3><span data-th="Open House 24 มกราคม 2027">Open House, 24 January 2027</span></h3><p><span data-th="มาดูผลงานของเรา รุ่นพี่ช่วยจัดการนำเสนอ">Come and see our work. Seniors help run the presentation.</span></p></div><a class="cd" href="events.html"><span class="m"><span data-th="กิจกรรม">Events</span></span><h3><span data-th="ค่าย เวิร์กช็อป และทัศนศึกษา">Camps, workshops and trips</span></h3><p><span data-th="กิจกรรมทั้งหมดของวิชาเอก พร้อมวันที่และภาพ">Every activity of the major, with dates and photos.</span></p></a></div>
     </div>
   </section>
+
+  <section class="sec c-red" id="s5">
+    <div class="wrap col">
+      <div class="lhead"><h2 data-th="เดินทางมาโรงเรียน">Getting here</h2><p class="lead" data-th="เดินทางมาอย่างไร และลงที่ไหน">How to get here, and where to get off.</p></div>
+      <div class="cards c3"><div class="cd"><span class="m"><span data-th="รถไฟฟ้า">Train</span></span><h3><span data-th="ลงที่ BTS อโศก / MRT สุขุมวิท">Get off at BTS Asok / MRT Sukhumvit</span></h3><p><span data-th="หรือ MRT เพชรบุรี, ARL มักกะสัน">Also MRT Phetchaburi, ARL Makkasan</span></p></div><div class="cd"><span class="m"><span data-th="รถเมล์">Bus</span></span><h3><span data-th="ลงที่ถนนอโศกมนตรี">Get off at Asok Montri Road</span></h3><p><span data-th="สาย 38 และ 136">Routes 38 and 136</span></p></div><div class="cd"><span class="m"><span data-th="เรือ">Boat</span></span><h3><span data-th="ลงที่ท่าเรืออโศก หรือท่าเรือประสานมิตร">Get off at Asok pier or Prasarnmit pier</span></h3><p><span data-th="เรือคลองแสนแสบ">Saen Saep canal boat</span></p></div><div class="cd"><span class="m"><span data-th="มอเตอร์ไซค์รับจ้าง">Motorcycle taxi</span></span><h3><span data-th="ลงที่ทางออกสถานีใดก็ได้">Get off at any station exit</span></h3><p><span data-th="สำหรับช่วงสุดท้าย">For the last stretch</span></p></div><div class="cd"><span class="m"><span data-th="ห้างสรรพสินค้า">Malls</span></span><h3><span data-th="ลงที่เทอร์มินอล 21 อโศก">Get off at Terminal 21 at Asok</span></h3><p><span data-th="เซ็นทรัล พระราม 9 ที่ MRT พระราม 9">Central Rama 9 at MRT Phra Ram 9</span></p></div><div class="cd"><span class="m"><span data-th="โรงเรียน">School</span></span><h3><span data-th="ลงที่ มศว ประสานมิตร">Get off at SWU Prasarnmit campus</span></h3><p><span data-th="สุขุมวิท 23 วัฒนา">Sukhumvit 23, Watthana</span></p></div></div>
+    </div>
+  </section>
+
+  <section class="sec c-navy" id="s6">
+    <div class="wrap mid">
+      <h2 class="big" data-th="มาดูภาพถ่ายกัน">See it for yourself.</h2>
+      <p class="lead" data-th="ภาพถ่ายจากห้องเรียน ค่าย และทัศนศึกษา">Photos from the classroom, camps and trips.</p>
+      <div class="cta"><a class="pill solid" href="gallery.html"><span data-th="แกลเลอรี">Gallery</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a><a class="pill" href="events.html"><span data-th="กิจกรรม">Events</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a><a class="pill" href="apply.html"><span data-th="วิธีสมัคร">How to apply</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+    </div>
+    <p class="unof" data-th="&lt;b&gt;ไม่เป็นทางการ&lt;/b&gt; ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</p>
+  </section>
+
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="f-grid">
-      <div class="f-brand">
-        <b data-th="วิชาเอก EAI">EAI Major</b>
-        <p data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</p>
-        <p data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary)</p>
-      </div>
-      <div>
-        <h4 data-th="สำรวจ">Explore</h4>
-        <a href="index.html"><img class="ic" src="assets/ph/house.svg" alt=""><span data-th="หน้าแรก">Home</span></a>
-        <a href="join-us.html"><img class="ic" src="assets/ph/door-open.svg" alt=""><span data-th="สมัครเรียน">Apply</span></a>
-        <a href="about.html"><img class="ic" src="assets/ph/info.svg" alt=""><span data-th="เกี่ยวกับ">About</span></a>
-        <a href="curriculum.html"><img class="ic" src="assets/ph/list-checks.svg" alt=""><span data-th="โครงสร้างหลักสูตร">Curriculum</span></a>
-        <a href="universities.html"><img class="ic" src="assets/ph/chart-bar.svg" alt=""><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a>
-        <a href="alumni.html"><img class="ic" src="assets/ph/graduation-cap.svg" alt=""><span data-th="ศิษย์เก่า">Alumni</span></a>
-        <a href="works.html"><img class="ic" src="assets/ph/folder-open.svg" alt=""><span data-th="ผลงาน">Accomplishment</span></a>
-        <a href="faq.html"><img class="ic" src="assets/ph/question.svg" alt=""><span data-th="คำถามที่พบบ่อย">FAQ</span></a>
-      </div>
-      <div>
-        <h4 data-th="เพิ่มเติม">More</h4>
-        <a href="life.html"><img class="ic" src="assets/ph/camera.svg" alt=""><span data-th="ชีวิตที่ EAI">Life at EAI</span></a>
-          <a href="events.html"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="กิจกรรม">Events</span></a>
-          <a href="gallery.html"><img class="ic" src="assets/ph/images.svg" alt=""><span data-th="แกลเลอรี">Gallery</span></a>
-        <a href="docs.html"><img class="ic" src="assets/ph/notebook.svg" alt=""><span data-th="เอกสารประกอบ">Material</span></a>
-        <a href="classwork.html"><img class="ic" src="assets/ph/books.svg" alt=""><span data-th="วิชาเอก">Major Class</span></a>
-        <a href="tools.html"><img class="ic" src="assets/ph/wrench.svg" alt=""><span data-th="เครื่องมือ">Tools</span></a>
-      </div>
-      <div>
-        <h4 data-th="ติดต่อเรา">Contact</h4>
-        <a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/facebook-logo.svg" alt="">Facebook</a>
-        <a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><img class="ic" src="assets/ph/instagram-logo.svg" alt="">Instagram</a>
-        <a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><img class="ic" src="assets/ph/tiktok-logo.svg" alt="">TikTok</a>
-        <a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">GitHub</a>
-        <a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="LINE โอเพนแชท">LINE Openchat</span></a>
-      </div>
-    </div>
-    <div class="f-bot">
-      <span data-th="<b>© 2026 EAI</b> · สุขุมวิท 23 วัฒนา กรุงเทพฯ"><b>© 2026 EAI</b> · Sukhumvit 23, Watthana, Bangkok</span>
-      <span data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="site.js"></script>
-
+<script src="hl-kernel.js"></script>
+<script>window.FIGS={};window.hairline=function(f){FIGS[f.name]=f}</script>
+<script src="hl-kit.js"></script>
+<script src="hl-more.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

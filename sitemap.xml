@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://eaispsm.vercel.app/</loc></url>
   <url><loc>https://eaispsm.vercel.app/about</loc></url>
   <url><loc>https://eaispsm.vercel.app/curriculum</loc></url>
+  <url><loc>https://eaispsm.vercel.app/apply</loc></url>
   <url><loc>https://eaispsm.vercel.app/alumni</loc></url>
-  <url><loc>https://eaispsm.vercel.app/docs</loc></url>
-  <url><loc>https://eaispsm.vercel.app/events</loc></url>
-  <url><loc>https://eaispsm.vercel.app/</loc></url>
-  <url><loc>https://eaispsm.vercel.app/join-us</loc></url>
-  <url><loc>https://eaispsm.vercel.app/life</loc></url>
-  <url><loc>https://eaispsm.vercel.app/tools</loc></url>
   <url><loc>https://eaispsm.vercel.app/universities</loc></url>
   <url><loc>https://eaispsm.vercel.app/works</loc></url>
-  <url><loc>https://eaispsm.vercel.app/classwork</loc></url>
+  <url><loc>https://eaispsm.vercel.app/docs</loc></url>
+  <url><loc>https://eaispsm.vercel.app/tools</loc></url>
   <url><loc>https://eaispsm.vercel.app/faq</loc></url>
+  <url><loc>https://eaispsm.vercel.app/events</loc></url>
+  <url><loc>https://eaispsm.vercel.app/life</loc></url>
   <url><loc>https://eaispsm.vercel.app/gallery</loc></url>
-  <url><loc>https://eaispsm.vercel.app/summaries</loc></url>
-  <url><loc>https://eaispsm.vercel.app/math-sets-logic</loc></url>
-  <url><loc>https://eaispsm.vercel.app/math-real-numbers</loc></url>
-  <url><loc>https://eaispsm.vercel.app/math-analytic-geometry</loc></url>
-  <url><loc>https://eaispsm.vercel.app/math-conic-sections</loc></url>
-  <url><loc>https://eaispsm.vercel.app/math-functions</loc></url>
-  <url><loc>https://eaispsm.vercel.app/phy-kinematics</loc></url>
-  <url><loc>https://eaispsm.vercel.app/phy-newton</loc></url>
-  <url><loc>https://eaispsm.vercel.app/phy-incline</loc></url>
-  <url><loc>https://eaispsm.vercel.app/phy-projectile-circular</loc></url>
-  <url><loc>https://eaispsm.vercel.app/phy-energy</loc></url>
-  <url><loc>https://eaispsm.vercel.app/phy-equilibrium</loc></url>
-  <url><loc>https://eaispsm.vercel.app/phy-momentum</loc></url>
 </urlset>
