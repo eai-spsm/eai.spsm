@@ -65,6 +65,8 @@ a:hover>.ic,button:hover>.ic{opacity:1}
 @media(max-width:1000px){.three{grid-template-columns:1fr;gap:2.6rem}.three .wt{justify-items:center;text-align:center}.three .wt .donutwrap{align-items:center}}
 .unof.ap-unof{position:static;margin:2rem auto 0;padding-bottom:2.4rem}
 .faq2-ctr{align-self:stretch;width:100%;max-width:60em;margin:1.8rem auto 0;text-align:left}
+.faq2-ctr summary{font-size:clamp(12px,1vw,14px);padding:.65rem 0}
+.faq2-ctr details p{font-size:clamp(11px,.9vw,12.5px);padding-bottom:.7rem}
 
 /* apply: flowing page, no abh hero, so size spacing per section by hand */
 .flow .ap-sec{padding-top:2.6rem;padding-bottom:2.6rem}
