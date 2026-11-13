@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="flow">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="index.css" media="(min-width:601px)">
 <link rel="stylesheet" href="index-m.css" media="(max-width:600px)">
 </head>
-<body class="sub">
+<body class="sub flow">
 
 <header class="nav">
   <div class="wrap">
@@ -62,76 +62,52 @@
 
 <main class="track" id="track">
 
-  <!-- 1 · title, with the interview -->
-  <section class="sec c-navy on" id="s1">
-    <div class="wrap two">
-      <div class="copy">
-        <h2 class="big" data-th="วิธีสมัครเรียน">How to apply</h2>
-        <p class="lead" data-th="สิ่งที่เรามองหา วิธีให้คะแนน และรอบการสมัคร">What we look for, how applicants are scored and the rounds to get in.</p>
-      </div>
-      <div class="fig"><div class="stage" data-fig="interview"></div><span class="read" aria-hidden="true"></span></div>
+  <!-- 2 · score weights as a bar chart, then requirements and rounds as plain cards -->
+  <section class="sec fbody c-red ap-sec ap-hero on" id="s2">
+    <div class="wrap ap-cardw ap-cardw-top">
+      <h2 data-th="เกณฑ์และรอบการสมัคร">Requirements and rounds</h2>
+      <p class="lead ap-lead-1l" data-th="ไม่มีสอบปฏิบัติ นักเรียนภายในมีสามโอกาสสมัครก่อนแข่งกับภายนอก">No coding exam. Internal students get three rounds before competing with external applicants.</p>
     </div>
-    <div class="foot"><span class="hint"><img class="ic" src="assets/ph/caret-down.svg" alt=""><span data-th="เลื่อนลงเพื่อไปต่อ">Scroll to continue</span></span><a class="pill solid" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><span data-th="เข้ากลุ่ม LINE โอเพนแชท">Join our LINE Openchat</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
-  </section>
 
-  <!-- 2 · requirements and score weights, one section -->
-  <section class="sec c-red" id="s2">
-    <div class="wrap two">
-      <div class="copy">
-        <h2 data-th="เกณฑ์สำหรับผู้สมัครทุกคน">Requirements for all applicants</h2>
-        <p class="lead" data-th="ไม่มีสอบปฏิบัติ อาจารย์สอนตั้งแต่พื้นฐาน">No coding exam. Instructors start from the fundamentals.</p>
-        <ul class="facts">
-          <li><span class="ib"><img class="ic" src="assets/ph/chart-bar.svg" alt=""></span><div><b data-th="เกรดเฉลี่ยสะสม 2.00 ขึ้นไป">Cumulative GPA 2.00 or above</b><span data-th="ตลอด 5 ภาคเรียน เกณฑ์เดียวกันสำหรับนักเรียนภายในและภายนอก">Over 5 semesters. Same for internal and external applicants.</span></div></li>
-          <li><span class="ib"><img class="ic" src="assets/ph/users.svg" alt=""></span><div><b data-th="รับประมาณ 25 คนต่อรุ่น">About 25 students per cohort</b><span data-th="ที่นั่งนักเรียนมัธยมต้นประสานมิตรราว 10 และผู้สมัครภายนอก 15">Around 10 internal seats (PSM) and 15 external seats.</span></div></li>
+    <div class="wrap ap-wt">
+      <p class="sub"><b data-th="สัดส่วนคะแนน">Score weights</b><span data-th="วิธีให้คะแนนผู้สมัคร">How applicants are scored.</span></p>
+      <div class="donutwrap">
+        <svg class="donut" viewBox="0 0 120 120" role="img" aria-label="Score weights">
+          <circle class="track" cx="60" cy="60" r="46" pathLength="100"/>
+          <circle class="seg s1" cx="60" cy="60" r="46" pathLength="100" style="--p:30;--o:0"/>
+          <circle class="seg s2" cx="60" cy="60" r="46" pathLength="100" style="--p:25;--o:-30"/>
+          <circle class="seg s3" cx="60" cy="60" r="46" pathLength="100" style="--p:25;--o:-55"/>
+          <circle class="seg s4" cx="60" cy="60" r="46" pathLength="100" style="--p:10;--o:-80"/>
+          <circle class="seg s5" cx="60" cy="60" r="46" pathLength="100" style="--p:10;--o:-90"/>
+        </svg>
+        <ul class="key">
+          <li><i class="sw s1"></i><span data-th="คณิตศาสตร์">Mathematics</span><b>30%</b></li>
+          <li><i class="sw s2"></i><span data-th="วิทยาศาสตร์">Science</span><b>25%</b></li>
+          <li><i class="sw s3"></i><span data-th="ภาษาอังกฤษ">English</span><b>25%</b></li>
+          <li><i class="sw s4"></i><span data-th="สัมภาษณ์">Interview</span><b>10%</b></li>
+          <li><i class="sw s5"></i><span data-th="ภาษาไทย">Thai</span><b>10%</b></li>
         </ul>
       </div>
-      <div class="wt">
-        <p class="sub"><b data-th="สัดส่วนคะแนน">Score weights</b><span data-th="วิธีให้คะแนนผู้สมัคร">How applicants are scored.</span></p>
-        <div class="donutwrap">
-          <svg class="donut" viewBox="0 0 120 120" role="img" aria-label="Score weights">
-            <circle class="track" cx="60" cy="60" r="46" pathLength="100"/>
-            <circle class="seg s1" cx="60" cy="60" r="46" pathLength="100" style="--p:30;--o:0"/>
-            <circle class="seg s2" cx="60" cy="60" r="46" pathLength="100" style="--p:25;--o:-30"/>
-            <circle class="seg s3" cx="60" cy="60" r="46" pathLength="100" style="--p:25;--o:-55"/>
-            <circle class="seg s4" cx="60" cy="60" r="46" pathLength="100" style="--p:10;--o:-80"/>
-            <circle class="seg s5" cx="60" cy="60" r="46" pathLength="100" style="--p:10;--o:-90"/>
-          </svg>
-          <ul class="key">
-            <li><i class="sw s1"></i><span data-th="คณิตศาสตร์">Mathematics</span><b>30%</b></li>
-            <li><i class="sw s2"></i><span data-th="วิทยาศาสตร์">Science</span><b>25%</b></li>
-            <li><i class="sw s3"></i><span data-th="ภาษาอังกฤษ">English</span><b>25%</b></li>
-            <li><i class="sw s4"></i><span data-th="สัมภาษณ์">Interview</span><b>10%</b></li>
-            <li><i class="sw s5"></i><span data-th="ภาษาไทย">Thai</span><b>10%</b></li>
-          </ul>
-        </div>
+    </div>
+
+    <div class="wrap ap-cardw">
+      <div class="ap-cards">
+        <div class="apc"><h3 data-th="เกรดเฉลี่ยสะสม 2.00 ขึ้นไป">Cumulative GPA 2.00 or above</h3><p data-th="ตลอด 5 ภาคเรียน เกณฑ์เดียวกันสำหรับนักเรียนภายในและภายนอก">Over 5 semesters. Same for internal and external applicants.</p></div>
+        <div class="apc"><h3 data-th="รับประมาณ 25 คนต่อรุ่น">About 25 students per cohort</h3><p data-th="ที่นั่งนักเรียนมัธยมต้นประสานมิตรราว 10 และผู้สมัครภายนอก 15">Around 10 internal seats (PSM) and 15 external seats.</p></div>
+        <div class="apc"><h3 data-th="รอบ 1 · รอบหลัก">Round 1 · Main round</h3><p data-th="รอบสอบหลัก เปิดให้นักเรียนภายในทั้งห้าวิชาเอก เลือกหนึ่งวิชาเอกเป็นอันดับแรก ผู้ที่เกรดถึงเกณฑ์เข้าสอบได้โดยไม่ต้องลงทะเบียนล่วงหน้า">The primary round, open to internal students for all five majors. Applicants meeting the GPA requirement may walk in without registering.</p><span class="aptag" data-th="Walk-in">Walk-in</span></div>
+        <div class="apc"><h3 data-th="รอบ 2 · รอบเพิ่มเติม">Round 2 · Supplementary round</h3><p data-th="รอบเพิ่มเติมเมื่อมีที่นั่งเหลือหลังรอบหลัก ไม่ได้เปิดทุกปี ขึ้นอยู่กับประกาศของโรงเรียน">An additional round when seats remain after the main round. Not every year, by school announcement.</p><span class="aptag" data-th="แล้วแต่ปี">Varies by year</span></div>
+        <div class="apc"><h3 data-th="รอบ 3 · รอบภายนอก">Round 3 · External round</h3><p data-th="นักเรียนภายในที่พลาดสองรอบแรกสมัครพร้อมผู้สมัครภายนอกได้ ภายใต้เกณฑ์เดียวกัน">Internal students who miss the first two rounds may apply alongside external applicants, under the same requirements.</p><span class="aptag" data-th="โอกาสสุดท้าย">Final option</span></div>
       </div>
     </div>
   </section>
 
-  <!-- 4 · rounds -->
-  <section class="sec c-red" id="s4">
-    <div class="wrap two">
-      <div class="copy">
-        <h2 data-th="สามโอกาสสำหรับนักเรียนภายใน">Three opportunities for internal students</h2>
-        <p class="lead" data-th="นักเรียนช่วงชั้นมัธยมต้นของโรงเรียนมีสามโอกาสสมัครก่อนแข่งกับผู้สมัครภายนอก ภายใต้เกณฑ์เดียวกับด้านบน">Students already enrolled in the school&rsquo;s lower secondary division get three opportunities to enter before competing with external applicants, under the same requirements.</p>
-      </div>
-      <ul class="facts">
-        <li><span class="ib"><img class="ic" src="assets/ph/door-open.svg" alt=""></span><div><b data-th="รอบ 1 · รอบหลัก">Round 1 · Main round</b><span data-th="รอบสอบหลัก เปิดให้นักเรียนภายในทั้งห้าวิชาเอก เลือกหนึ่งวิชาเอกเป็นอันดับแรก ผู้ที่เกรดถึงเกณฑ์เข้าสอบได้โดยไม่ต้องลงทะเบียนล่วงหน้า">The primary examination round, open to internal students for all five majors, selecting one as first choice. Applicants meeting the GPA requirement may walk in without prior registration.</span><em class="tg" data-th="Walk-in">Walk-in</em></div></li>
-        <li><span class="ib"><img class="ic" src="assets/ph/calendar-plus.svg" alt=""></span><div><b data-th="รอบ 2 · รอบเพิ่มเติม">Round 2 · Supplementary round</b><span data-th="รอบเพิ่มเติมเมื่อมีที่นั่งเหลือหลังรอบหลัก ไม่ได้เปิดทุกปี ขึ้นอยู่กับประกาศของโรงเรียน">An additional round held when seats remain after the main round. Not offered every year, subject to official school announcement.</span><em class="tg" data-th="แล้วแต่ปี">Varies by year</em></div></li>
-        <li><span class="ib"><img class="ic" src="assets/ph/signpost.svg" alt=""></span><div><b data-th="รอบ 3 · รอบภายนอก">Round 3 · External round</b><span data-th="นักเรียนภายในที่พลาดสองรอบแรกสมัครพร้อมผู้สมัครภายนอกได้ ภายใต้เกณฑ์เดียวกัน">Internal students who miss the first two rounds may apply alongside external applicants, under identical requirements and criteria.</span><em class="tg" data-th="โอกาสสุดท้าย">Final option</em></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 5 · questions -->
-  <section class="sec c-navy" id="s5">
-    <div class="wrap two flip">
-      <div class="copy">
-        <h2 data-th="คำถามที่พบบ่อย">Frequently asked questions</h2>
-        <p class="lead" data-th="คำตอบสั้นๆ สำหรับสิ่งที่ผู้สมัครถามบ่อย">Short answers to what applicants ask most.</p>
-        <div class="acts"><a class="pill solid" href="faq.html"><span data-th="ดูคำถามทั้งหมด">See all questions</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
-      </div>
-      <div class="faq2">
+  <!-- questions, centered below the three sections -->
+  <section class="sec fbody c-navy ap-sec ap-faq" id="s5">
+    <div class="wrap mid">
+      <h2 data-th="คำถามที่พบบ่อย">Frequently asked questions</h2>
+      <p class="lead" data-th="คำตอบสั้นๆ สำหรับสิ่งที่ผู้สมัครถามบ่อย">Short answers to what applicants ask most.</p>
+      <div class="acts"><a class="pill solid" href="faq.html"><span data-th="ดูคำถามทั้งหมด">See all questions</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+      <div class="faq2 faq2-ctr">
           <details open><summary><span data-th="ต้องมีพื้นฐานเขียนโปรแกรมไหม">Is prior programming experience required?</span><img class="ic pl" src="assets/ph/plus.svg" alt=""></summary><p data-th="ไม่ต้อง ไม่มีสอบปฏิบัติ และอาจารย์สอนพื้นฐานตั้งแต่ต้น">No. There is no practical examination, and instructors introduce the fundamentals from the beginning of the program.</p></details>
           <details><summary><span data-th="ต้องมีพอร์ตโฟลิโอไหม">Is a portfolio required?</span><img class="ic pl" src="assets/ph/plus.svg" alt=""></summary><p data-th="ไม่บังคับ แต่แนะนำ ผลงานด้านคอมพิวเตอร์ได้รับการพิจารณาเพิ่มเติม">Not mandatory, though recommended. Computer-related work receives additional consideration during review.</p></details>
           <details><summary><span data-th="พอร์ตโฟลิโอควรมีอะไร">What should a portfolio include?</span><img class="ic pl" src="assets/ph/plus.svg" alt=""></summary><p data-th="ผลการเรียน กิจกรรมเสริมหลักสูตร โครงงาน และผลการแข่งขัน โดยให้ความสำคัญกับงานด้านคอมพิวเตอร์">Academic record, extracurricular activities, projects, and competition results. Computer-related work is given priority.</p></details>
@@ -143,25 +119,22 @@
     </div>
   </section>
 
-  <!-- 6 · close -->
-  <section class="sec c-red" id="s6">
-    <div class="wrap mid">
-      <h2 class="big" data-th="แล้วเจอกันในห้องสัมภาษณ์">See you at the interview.</h2>
-      <p class="lead" data-th="มาพร้อมคำถาม เราเริ่มสอนจากพื้นฐาน">Come with your questions. We start from the fundamentals.</p>
-      <div class="cta">
-        <a class="pill solid" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><span data-th="เข้ากลุ่ม LINE โอเพนแชท">Join our LINE Openchat</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
-        <a class="pill" href="faq.html"><span data-th="ดูคำถามทั้งหมด">See all questions</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
-        <a class="pill" href="index.html"><span data-th="กลับหน้าแรก">Back to home</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
+  <section class="sec fbody rfoot" id="s6">
+    <div class="wrap sfoot">
+      <div class="sfb">
+        <a class="sfl" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
+        <p data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์&lt;br&gt;สาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Artificial Intelligence Engineering<br>Satit Prasarnmit (Secondary)</p>
       </div>
+      <div class="sfc"><h3 data-th="วิชาเอก">The major</h3><a href="about.html"><span data-th="เกี่ยวกับ">About</span></a><a href="curriculum.html"><span data-th="หลักสูตร">Curriculum</span></a><a href="universities.html"><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a><a href="alumni.html"><span data-th="ศิษย์เก่า">Alumni</span></a><a href="faq.html"><span data-th="คำถามที่พบบ่อย">FAQ</span></a></div>
+      <div class="sfc"><h3 data-th="สำรวจ">Explore</h3><a href="works.html"><span data-th="ผลงาน">Accomplishment</span></a><a href="events.html"><span data-th="กิจกรรม">Events</span></a><a href="gallery.html"><span data-th="แกลเลอรี">Gallery</span></a><a href="docs.html"><span data-th="เอกสารประกอบ">Material</span></a><a href="apply.html"><span data-th="สมัครเรียน">Apply</span></a></div>
+      <div class="sfc"><h3 data-th="ติดต่อ">Contact</h3><a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><span data-th="LINE Openchat">LINE Openchat</span></a><a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><span data-th="Instagram">Instagram</span></a><a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><span data-th="Facebook">Facebook</span></a><a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><span data-th="TikTok">TikTok</span></a><a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><span data-th="GitHub">GitHub</span></a></div>
+    <div class="sfc"><h3 data-th="ผู้พัฒนาเว็บไซต์">Site developer</h3><a href="mailto:raphee.rattanamanoonporn@gmail.com"><span data-th="อีเมล">Email</span></a><a href="https://github.com/Ray0737" target="_blank" rel="noopener"><span>GitHub</span></a></div>
     </div>
     <p class="unof" data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</p>
   </section>
 
 </main>
 
-<script src="hl-kernel.js"></script>
-<script>window.FIGS={};window.hairline=function(f){FIGS[f.name]=f}</script>
-<script src="hl-interview.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
