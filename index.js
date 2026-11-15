@@ -81,12 +81,12 @@
   var thumbsA=$('.thumbs a');
   if(thumbsA.length){
     var lb=document.createElement('div');lb.className='lb';lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');
-    lb.innerHTML='<img alt=""><button class="p" type="button" aria-label="Previous">&lsaquo;</button><button class="n" type="button" aria-label="Next">&rsaquo;</button><button class="x" type="button" aria-label="Close">&times;</button><div class="cp"></div>';
+    lb.innerHTML='<img alt=""><button class="p" type="button" aria-label="Previous">&lsaquo;</button><button class="n" type="button" aria-label="Next">&rsaquo;</button><button class="x" type="button" aria-label="Close">&times;</button><div class="lbc"></div>';
     document.body.appendChild(lb);
     var grp=[],gi=0;
-    var show=function(i){gi=(i+grp.length)%grp.length;lb.querySelector('img').src=grp[gi].href;lb.querySelector('.cp').textContent=(gi+1)+' / '+grp.length};
+    var show=function(i){gi=(i+grp.length)%grp.length;lb.querySelector('img').src=grp[gi].href;lb.querySelector(".lbc").textContent=(gi+1)+' / '+grp.length};
     var shut=function(){lb.classList.remove('on')};
-    thumbsA.forEach(function(a){a.onclick=function(e){e.preventDefault();grp=[].slice.call(a.parentNode.querySelectorAll('a'));show(grp.indexOf(a));lb.classList.add('on')}});
+    thumbsA.forEach(function(a){a.onclick=function(e){e.preventDefault();grp=[].slice.call((a.closest('.thumbs')||a.parentNode).querySelectorAll('a'));show(grp.indexOf(a));lb.classList.add('on')}});
     lb.querySelector('.x').onclick=shut;lb.querySelector('.p').onclick=function(){show(gi-1)};lb.querySelector('.n').onclick=function(){show(gi+1)};
     lb.onclick=function(e){if(e.target===lb)shut()};
     addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')shut();else if(e.key==='ArrowLeft')show(gi-1);else if(e.key==='ArrowRight')show(gi+1)});
@@ -158,7 +158,7 @@
 
   /* pager: one section per gesture, then input is ignored while the transition plays */
   var track=document.getElementById('track'),secs=$('.sec',track),dots=document.getElementById('dots'),cur=0,locked=false,FLOW=document.body.classList.contains('flow');
-  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,LOCK=reduce?250:850;
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,LOCK=reduce?200:450;
   secs.forEach(function(s,i){
     var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Section '+(i+1));
     b.onclick=function(){go(i)};dots.appendChild(b);
@@ -166,7 +166,7 @@
   function go(i){
     if(locked||i<0||i>=secs.length||i===cur)return;
     var from=cur;locked=true;cur=i;
-    if(secs[i].dataset.steps){var ds=secs[i].dataset;step=from<i?+(ds.min||0):+ds.steps-1;var want=step;setTimeout(function(){folder().pick(want)},500)}
+    if(secs[i].dataset.steps){var ds=secs[i].dataset;step=from<i?+(ds.min||0):+ds.steps-1;var want=step;setTimeout(function(){folder().pick(want)},300)}
     track.style.transform='translate3d(0,'+(-i*100)+'%,0)';
     secs.forEach(function(s,k){s.classList.toggle('on',k===i)});
     [].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===i)});
@@ -181,7 +181,7 @@
   function nav(dir){
     if(locked)return;
     var d=secs[cur].dataset,n=+d.steps,mn=+(d.min||0);
-    if(n&&((dir>0&&step<n-1)||(dir<0&&step>mn))){locked=true;folder().pick(step+dir);setTimeout(function(){locked=false},450);return}
+    if(n&&((dir>0&&step<n-1)||(dir<0&&step>mn))){locked=true;folder().pick(step+dir);setTimeout(function(){locked=false},250);return}
     go(cur+dir);
   }
   var KEYGO=['works.html','alumni.html','universities.html'];
@@ -215,6 +215,8 @@
   if(FLOW){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.2});
     secs.forEach(function(s){io.observe(s)});
+    /* no stepping in a flowing page: show every keyboard card at once */
+    var kbs=document.querySelector('.stage[data-fig=keyboard]');if(kbs)setTimeout(function(){try{kbs._h.pick(2)}catch(x){}},700);
     var banner=secs[0],bdark=banner.classList.contains('dark');
     var nd=function(){document.body.classList.toggle('navdark',bdark&&scrollY<banner.offsetHeight-90)};
     addEventListener('scroll',nd,{passive:true});nd();

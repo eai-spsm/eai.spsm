@@ -41,7 +41,7 @@ a:hover>.ic,button:hover>.ic{opacity:1}
 .dd.open .dd-menu{visibility:visible;opacity:1;transform:none;pointer-events:auto;transition-delay:0s}
 
 /* pager: one section = one screen; the track slides, JS gates input */
-.track{height:100%;transition:transform .7s var(--ease);will-change:transform}
+.track{height:100%;transition:transform .5s var(--ease);will-change:transform}
 .sec{position:relative;height:100vh;height:100svh;padding:calc(var(--nav-h) + .6rem) 0 4.2rem;display:flex;flex-direction:column;overflow:hidden}
 .wrap{width:var(--wd);margin:0 auto}
 .sec>.wrap{flex:1;min-height:0}
@@ -492,7 +492,7 @@ a.cd:hover h3{color:var(--c)}
 .lb button{position:absolute;color:#fff;font-size:15px;font-weight:700;background:rgba(255,255,255,.14);border-radius:999px;height:40px;padding:0 1.1rem}
 .lb button:hover{background:rgba(255,255,255,.28)}
 .lb .x{top:1.2rem;right:1.2rem}.lb .p{left:1.2rem;top:50%}.lb .n{right:1.2rem;top:50%}
-.lb .cp{position:absolute;bottom:1.2rem;left:0;right:0;text-align:center;color:rgba(255,255,255,.7);font-size:12px}
+.lb .lbc{position:absolute;bottom:1.2rem;left:0;right:0;text-align:center;color:rgba(255,255,255,.7);font-size:12px}
 .crl{display:grid;margin-top:.4rem}
 .crl li{border-bottom:1px solid var(--w2)}
 .crl li:first-child{border-top:1px solid var(--w2)}
@@ -1178,3 +1178,289 @@ a.cd:hover{border-color:var(--navy)}
 .gpw-plain .gpc li>div>span{font-size:11px;color:var(--w5);margin-top:0}
 .gpw-plain .gpc li>div>b{font-size:12px;font-weight:600;color:var(--ink);text-align:left;line-height:1.45}
 .gpw-plain .gp .pill{margin-top:0}
+
+/* about: a tall picture card the width of the nav; the three photos sit under their cards */
+.abpic{height:60vh;min-height:260px;border-radius:26px;overflow:hidden;background:var(--w1)}
+.abpic picture,.abpic img{display:block;width:100%;height:100%}
+.abpic img{object-fit:cover}
+
+/* about: the four points sit closer under the picture */
+.flow #s3{padding-top:0}
+.flow #s3 .obg2{margin-top:3.7rem}
+
+/* about cards: no label, the description right under the title */
+.gpw-plain .gp .gps{margin-top:.25rem}
+
+/* about: the three cards sit closer under the four points */
+.flow #s3{padding-bottom:0}
+.flow #s4{padding-top:0}
+.flow #s4 .gpw{margin-top:3.6rem}
+html.flow body #s4.sec{padding-top:0}
+
+/* curriculum: room between the Major Class lists and the footer */
+html.flow body .sec:has(.ycards){padding-bottom:6rem!important}
+
+/* apply: smaller questions, room above the footer */
+html.flow body .sec.ap-faq{padding-bottom:6rem!important}
+.ap-faq .faq2-ctr summary{font-size:clamp(11px,.85vw,12.5px)}
+.ap-faq .faq2-ctr details p{font-size:clamp(10.5px,.8vw,12px)}
+
+/* every FAQ: a question turns navy and slides a little on hover, the plus tilts */
+.faq2 summary{transition:color .25s var(--ease),padding-left .25s var(--ease)}
+.faq2 summary:hover{color:var(--navy);padding-left:.5rem}
+.faq2 summary:hover .pl{opacity:1;transform:rotate(90deg)}
+.faq2 details[open] summary:hover .pl,.faq2 details.on summary:hover .pl{transform:rotate(135deg)}
+.faq2 summary .pl{opacity:.55;transition:transform .25s var(--ease),opacity .25s}
+
+/* accomplishment: more room under the banner and above the footer */
+html.flow body .sec:has(.wlist){padding-top:5rem!important;padding-bottom:7rem!important}
+
+/* about: a call to action on the left, a picture two cards wide on the right */
+.abcta{width:var(--wd);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;align-items:center;text-align:left}
+.abct h2{font-size:clamp(20px,2vw,28px);line-height:1.2}
+.abct p{margin:.5rem 0 1.2rem;max-width:20em;font-size:13.5px;line-height:1.6;color:var(--w5)}
+.abcp{grid-column:2/4;height:36vh;min-height:240px;border-radius:22px;overflow:hidden;background:var(--w1)}
+.abcp picture,.abcp img{display:block;width:100%;height:100%}
+.abcp img{object-fit:cover}
+html.flow body #s5.sec{padding:3.6rem 0 0}
+@media(max-width:1000px){.abcta{grid-template-columns:1fr;gap:1.6rem}.abcp{grid-column:auto;order:-1}}
+
+/* about: four bubble link cards beside the picture, the whole block under the three cards */
+.abcta{align-items:stretch}
+.ablg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:.8rem}
+.abl{display:flex;flex-direction:column;justify-content:space-between;padding:1.1rem 1.2rem;border-radius:22px;background:var(--w1);font-weight:700;font-size:14px;transition:background .25s var(--ease),transform .25s var(--ease)}
+.abl .ib{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#fff}
+.abl .ib .ic{width:19px;height:19px}
+.abl .ar{align-self:flex-end;width:18px;height:18px;opacity:.5;transition:transform .25s var(--ease),opacity .25s}
+.abl:hover{background:var(--w2)}
+.abl:hover .ar{opacity:1;transform:translate(3px,-3px)}
+html.flow body #s5.sec{padding:3.6rem 0 5rem}
+html.flow body #s6.sec{padding-top:0}
+@media(max-width:1000px){.ablg{grid-template-rows:none;grid-auto-rows:minmax(110px,auto)}}
+
+/* about: four bubble link cards beside the picture, the whole block under the three cards */
+.abcta{align-items:stretch}
+.ablg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:.8rem}
+.abl{display:flex;flex-direction:column;justify-content:space-between;padding:1.1rem 1.2rem;border-radius:22px;background:var(--w1);font-weight:700;font-size:14px;transition:background .25s var(--ease),transform .25s var(--ease)}
+.abl .ib{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#fff}
+.abl .ib .ic{width:19px;height:19px}
+.abl .ar{align-self:flex-end;width:18px;height:18px;opacity:.5;transition:transform .25s var(--ease),opacity .25s}
+.abl:hover{background:var(--w2)}
+.abl:hover .ar{opacity:1;transform:translate(3px,-3px)}
+html.flow body #s5.sec{padding:3.6rem 0 5rem}
+html.flow body #s6.sec{padding-top:0}
+@media(max-width:1000px){.ablg{grid-template-rows:none;grid-auto-rows:minmax(110px,auto)}}
+
+/* about: four bubble link cards beside the picture, the whole block under the three cards */
+.abcta{align-items:stretch}
+.ablg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,1fr);gap:.8rem}
+.abl{display:flex;flex-direction:column;justify-content:space-between;padding:1.1rem 1.2rem;border-radius:22px;background:var(--w1);font-weight:700;font-size:14px;transition:background .25s var(--ease),transform .25s var(--ease)}
+.abl .ib{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#fff}
+.abl .ib .ic{width:19px;height:19px}
+.abl .ar{align-self:flex-end;width:18px;height:18px;opacity:.5;transition:transform .25s var(--ease),opacity .25s}
+.abl:hover{background:var(--w2)}
+.abl:hover .ar{opacity:1;transform:translate(3px,-3px)}
+html.flow body #s5.sec{padding:3.6rem 0 5rem}
+html.flow body #s6.sec{padding-top:0}
+@media(max-width:1000px){.ablg{grid-template-rows:none;grid-auto-rows:minmax(110px,auto)}}
+.abl,.abl .alt{color:var(--ink)}
+
+/* about: three picture cards with a caption under each */
+.abimg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;margin-top:3.6rem}
+.aip{aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:var(--w1)}
+.aip img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.aic:hover .aip img{transform:scale(1.04)}
+.aic figcaption{margin-top:.9rem;font-size:clamp(13px,1.1vw,15px);line-height:1.35;font-weight:700;max-width:22em}
+@media(max-width:700px){.abimg{grid-template-columns:1fr;gap:1.8rem}}
+
+/* about picture captions: a little larger, balanced onto two lines */
+.aic figcaption{font-size:clamp(10.5px,.85vw,12px);max-width:17em;text-wrap:balance}
+
+/* about: four pictures across */
+.abimg{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1000px){.abimg{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.abimg{grid-template-columns:1fr}}
+
+/* about: an "explore more" list beside the picture, FAQ first */
+.abx{display:flex;flex-direction:column;justify-content:center}
+.abxh{font-size:12px;color:var(--w5);margin-bottom:.6rem}
+.abxr{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.15rem 0;border-top:1px solid var(--w3);font-size:14px;color:var(--ink);transition:color .25s var(--ease),padding .25s var(--ease),background .25s var(--ease)}
+.abxr:last-child{border-bottom:1px solid var(--w3)}
+.abv{display:inline-flex;align-items:center;gap:.4rem;font-size:13px;color:var(--w5);transition:color .25s,gap .25s var(--ease)}
+.abv .ic{width:15px;height:15px;transition:transform .25s var(--ease)}
+.abxr:hover{color:var(--navy);padding-left:.7rem;padding-right:.7rem;background:color-mix(in srgb,var(--navy) 5%,#fff)}
+.abxr:hover .abv{color:var(--navy);gap:.7rem}
+.abxr:hover .abv .ic{transform:translate(2px,-2px)}
+
+/* explore list: all bold, hover changes colour only (no fill) */
+.abx,.abx *{font-weight:700}
+.abxr:hover{background:none}
+.abxr:hover .abv{color:var(--red)}
+.abxr{padding:.95rem 0}
+.abxh{margin-bottom:.4rem}
+
+/* about: pictures sit above the four points now, so the points get their space back */
+.abimg{margin-top:0;margin-bottom:3.6rem}
+html.flow body #s3.sec{padding-top:3.6rem}
+html.flow body #s3.sec{padding-bottom:6rem}
+html.flow body #s4.sec{padding-bottom:0}
+
+/* about: the text close under the pictures, the whole block further from the cards */
+.abimg{margin-bottom:0}
+.flow #s3 .obg2{margin-top:1.6rem}
+html.flow body #s3.sec{padding-top:6.4rem}
+
+/* life, events, gallery: plain flow pages, same hero and footer as the rest */
+html.flow body .sec.blk{padding-top:3.2rem;padding-bottom:0}
+.gal{width:var(--wd);margin:0 auto}
+.mo .h-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin:0 0 .8rem;padding-bottom:.9rem;border-bottom:1px solid var(--w2)}
+.mo .h-row h2{font-size:clamp(17px,1.6vw,22px);letter-spacing:-.01em}
+.mo .cnt{font-size:12.5px;color:var(--w5);font-variant-numeric:tabular-nums}
+.mo .sm{display:flex;align-items:center;gap:.4rem;font-size:13px;color:var(--w5);margin:0 0 1.1rem}
+.mo .sm .ic{width:13px;height:13px}
+.jg{display:flex;flex-wrap:wrap;gap:0 8px;margin-top:0}
+.jg::after{content:"";flex-grow:1000000}
+.jg figure{margin:0;flex-grow:calc(var(--ar) * 100);flex-basis:calc(var(--ar) * 230px)}
+.jg figure a{display:block;aspect-ratio:var(--ar);border-radius:6px;overflow:hidden;background:var(--w1)}
+.jg img{display:block;width:100%;height:100%;object-fit:cover;transition:opacity .25s,transform .6s var(--ease)}
+.jg a:hover img{opacity:.88;transform:scale(1.03)}
+.jg figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .35rem;padding:.55rem 0 .9rem}
+.jg figcaption b{flex:0 0 100%;font-size:12.5px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tg{font-size:11px;line-height:1;padding:.32rem .65rem;border-radius:999px;border:1px solid var(--w2);color:var(--w7);font-variant-numeric:tabular-nums}
+.gal2{display:flex;flex-wrap:wrap;gap:.6rem}
+.gal2l{display:inline-flex;align-items:center;gap:.5rem;height:40px;padding:0 1.1rem;border-radius:999px;background:var(--w1);font-size:13px;font-weight:700;transition:background .25s var(--ease),color .25s}
+.gal2l .ic{width:15px;height:15px}
+.gal2l:hover{background:var(--w2);color:var(--navy)}
+html.flow body #photos.sec{padding-bottom:6rem}
+.lifecol .copy{max-width:60em;margin:0 auto;text-align:left}
+@media(max-width:600px){.jg{gap:0 3px}.jg figcaption{padding:.4rem 0 .6rem}.jg figcaption b{font-size:12px}.jg figcaption .tg:first-of-type{display:none}.tg{font-size:11px;padding:.28rem .5rem}}
+
+/* events: four picture cards in a row, like the about page */
+html.flow body .evg{grid-template-columns:repeat(4,minmax(0,1fr));gap:3rem 1.4rem;padding-right:0;margin-top:1.4rem}
+html.flow body .evc{display:block}
+html.flow body .evc>img{display:block;width:100%;height:auto;aspect-ratio:4/3;border-radius:10px;margin-bottom:1rem}
+html.flow body .evc .evd{display:block;font-size:12px;color:var(--w5);margin-bottom:.35rem}
+html.flow body .evc h3{font-size:clamp(13px,1.1vw,15px);line-height:1.35;margin-bottom:.4rem}
+html.flow body .evc p{font-size:12.5px;line-height:1.6;color:var(--w7);margin:0 0 .8rem;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;line-clamp:4;overflow:hidden}
+@media(max-width:1000px){html.flow body .evg{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){html.flow body .evg{grid-template-columns:1fr}}
+
+/* events: the same room above the footer as the contests page */
+html.flow body #s2.sec:has(.wlist){padding-bottom:1rem!important}
+
+/* events: a picture at the top of each card */
+.evp{aspect-ratio:2/1;border-radius:10px;overflow:hidden;background:var(--w1);margin-bottom:1rem}
+.evp img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.wk:hover .evp img{transform:scale(1.04)}
+
+html.flow body.sub main > .sec.blk:first-child{padding-top:7.5rem!important}
+
+.evgal{margin-top:1.2rem}
+html.flow body #s1.abh-plain+#s2.sec{padding-top:2.4rem!important}
+
+.wk .lk a{transition:color .2s ease,opacity .2s ease}
+.wk .lk a:hover{color:var(--navy)}
+.wk .lk a:hover .ic{opacity:.7}
+
+html.flow body #track .sec.lf:has(.wlist){padding-top:2.6rem!important;padding-bottom:1.2rem!important;min-height:0}
+html.flow body #track #s5.sec.lf:has(.wlist){padding-bottom:5rem!important}
+html.flow body #s1.abh-plain+#s2.sec.lf{padding-top:1.6rem!important}
+.flow .wlist.w4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.flow .wlist.lf4{row-gap:2rem}
+.flow .wlist.w4 .ab,.flow .wlist.w3 .ab{min-height:0}
+.flow a.wk:hover h3{color:var(--navy)}
+@media(max-width:1000px){.flow .wlist.w4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.flow .wlist.w4,.flow .wlist.w3{grid-template-columns:1fr}}
+
+.lfh{display:flex;align-items:center;gap:.55rem}
+.lfh .ic{width:20px;height:20px}
+.fcol .rxl{margin-top:0}
+.fcol .rx{grid-template-columns:6.2rem 1fr;gap:.15rem .8rem;padding:.65rem 0}
+.fcol .rx .m{font-size:12px;font-weight:700}
+.fcol .rx h3{font-size:clamp(12px,.95vw,13.5px)}
+.fcol .rx p{font-size:12px;line-height:1.65;color:var(--w7)}
+.fcol .rx h3 a{transition:color .25s var(--ease)}
+.fcol .rx h3 a:hover{color:var(--navy)}
+.fcol.fwide{grid-column:1/-1}
+.fcol.fwide .rxl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:3rem}
+.fcol.fwide .rxl li:nth-child(2),.fcol.fwide .rxl li:nth-child(3){border-top:1px solid var(--w2)}
+html.flow body #s1.abh-plain+#s2.sec.lf{padding-top:2rem!important;padding-bottom:0!important}
+html.flow body #s3.sec.lf{padding-top:0!important;padding-bottom:5rem!important}
+@media(max-width:1000px){.fcol.fwide .rxl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.fcol.fwide .rxl{grid-template-columns:1fr}.fcol.fwide .rxl li{border-top:0}.fcol.fwide .rxl li:first-child{border-top:1px solid var(--w2)}}
+
+.fcol .facts{opacity:1;transform:none;gap:.9rem;margin-top:0}
+.fcol .facts b{font-size:clamp(12.5px,1vw,14px);margin-bottom:.1rem}
+.fcol .facts li span:not(.ib){font-size:12px;line-height:1.55}
+.fcol .facts li{align-items:flex-start}
+.fcol .facts b a{transition:color .25s var(--ease)}
+.fcol .facts b a:hover{color:var(--navy)}
+.fcol .facts .lrt{display:flex;flex-wrap:wrap;gap:.3rem .4rem;align-items:center}
+.fcol .facts .lln{display:inline-flex!important;align-items:center;gap:.35rem;white-space:nowrap;padding:.12rem .55rem;border-radius:999px;background:var(--w1);font-size:11.5px;font-weight:700;color:var(--ink)}
+.fcol .facts .lln i{width:8px;height:8px;border-radius:50%;background:var(--ink);flex:none}
+.fcol .facts .lln.g i{background:#4aa84a}
+.fcol .facts .lln.b i{background:#1f4fa3}
+.fcol .facts .lln.r i{background:#d9272e}
+.fcol .facts .lnt{font-size:12px;color:var(--w5)}
+.fcol.fwide .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem 3rem}
+@media(max-width:1000px){.fcol.fwide .facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.fcol.fwide .facts{grid-template-columns:1fr}}
+
+.fcol .facts{opacity:1;transform:none;gap:.9rem;margin-top:0}
+.fcol .facts b{font-size:clamp(12.5px,1vw,14px);margin-bottom:.1rem}
+.fcol .facts li span:not(.ib){font-size:12px;line-height:1.55}
+.fcol .facts li{align-items:flex-start}
+.fcol .facts b a{transition:color .25s var(--ease)}
+.fcol .facts b a:hover{color:var(--navy)}
+.fcol .facts .lrt{display:flex;flex-wrap:wrap;gap:.3rem .4rem;align-items:center}
+.fcol .facts .lln{display:inline-flex!important;align-items:center;gap:.35rem;white-space:nowrap;padding:.12rem .55rem;border-radius:999px;background:var(--w1);font-size:11.5px;font-weight:700;color:var(--ink)}
+.fcol .facts .lln i{width:8px;height:8px;border-radius:50%;background:var(--ink);flex:none}
+.fcol .facts .lln.g i{background:#4aa84a}
+.fcol .facts .lln.b i{background:#1f4fa3}
+.fcol .facts .lln.r i{background:#d9272e}
+.fcol .facts .lnt{font-size:12px;color:var(--w5)}
+.fcol.fwide .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem 3rem}
+@media(max-width:1000px){.fcol.fwide .facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.fcol.fwide .facts{grid-template-columns:1fr}}
+.fcol .facts b span,.fcol .facts .lln span{display:inline!important;font-size:inherit!important;color:inherit!important}
+.fcol .facts .lnt{display:inline!important;color:var(--w5)!important}
+.fcol .facts li>div>span:not(.lrt){color:var(--w5)}
+.fcol.fwide .facts>li:first-child{grid-column:span 2}
+@media(max-width:1000px){.fcol.fwide .facts>li:first-child{grid-column:auto}}
+.fcol .facts .lln{background:none!important;padding:0!important;border-radius:0!important;gap:.4rem}
+.fcol .facts .lrt{gap:.2rem 1.1rem}
+.fcol.fwide .facts{row-gap:1.5rem}
+.fcol.fwide .facts{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:6rem}
+.fcol.fwide .facts>li:first-child{grid-column:auto}
+@media(max-width:700px){.fcol.fwide .facts{grid-template-columns:1fr}}
+html.flow body #photos.sec.blk{padding-bottom:0!important}
+html.flow body #photos.sec.blk+.sec.blk{padding-top:2.4rem!important}
+.gal2l{height:30px;padding:0 .8rem;font-size:12px;gap:.4rem}
+.gal2l .ic{width:12px;height:12px}
+.gal2l{height:34px;padding:0 .95rem;font-size:12.5px;gap:.45rem}
+.gal2l .ic{width:13px;height:13px}
+.gal2l .ic.gi{width:15px;height:15px}
+html.flow body #sp+#s2.sec.lf{padding-top:2rem!important}
+
+html.flow body #s4.sec{padding-bottom:0!important}
+.gpw-one{grid-template-columns:1fr!important}
+.gpw-one .gpc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:3rem}
+.gpw-one .gpc li:nth-child(2){border-top:1px solid var(--w2)}
+.gpw-plain .gpc li b.lrt{display:flex;flex-wrap:wrap;gap:.1rem 1rem;font-weight:600}
+.gpw-plain .lln{display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap}
+.gpw-plain .lln i{width:8px;height:8px;border-radius:50%;background:var(--ink);flex:none}
+.gpw-plain .lln.g i{background:#4aa84a}
+.gpw-plain .lln.b i{background:#1f4fa3}
+.gpw-plain .lln.r i{background:#d9272e}
+@media(max-width:900px){.gpw-one .gpc{grid-template-columns:1fr}.gpw-one .gpc li:nth-child(2){border-top:0}}
+.gpw-plain .gpc li b.lrt span{font-size:inherit!important;color:inherit!important;margin:0!important}
+
+.menufull.open .grp:nth-of-type(5){transition-delay:.3s}.menufull.open .grp:nth-of-type(6){transition-delay:.36s}
+html.flow body .sec.blk:has(+.rfoot){padding-bottom:6rem!important}
+.menufull .mf-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem 2rem}
+.menufull .mf-in .grp a{font-size:clamp(12px,.9vw,13.5px);gap:.6rem;padding:.28rem 0}
+.menufull .mf-in .ib{width:28px;height:28px;border-radius:8px}
+.menufull .mf-in .ib .ic{width:14px;height:14px}
+.menufull .mf-in .grp p{font-size:12px}
+.menufull .mf-in .qline,.menufull .mf-in .qrow{flex:0 0 100%}
+.menufull .mf-in .grp{flex:0 0 auto;min-width:0}
