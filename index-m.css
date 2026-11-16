@@ -1429,3 +1429,38 @@ body{animation:eaiload .45s ease both}
 @keyframes gproll{to{transform:translateX(-140px)}}
 @media(max-width:900px){.gal3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.gp-up,.gp-sh,.gp-mv,.gp-roll{animation:none}}
+
+/* phone gutters: one 16px gutter on both sides for every page container (was a mix of 84%+4% left, 88% and an undefined --wd) */
+:root{--wd:calc(100% - 32px)}
+.wrap,.nav .wrap,.mf-in,.ah,.abw,.sfoot,.rfoot .unof,.abpic,.abcta,.gal,.fn{width:var(--wd);margin-left:auto;margin-right:auto}
+.foot{width:var(--wd)}
+.wrap .wrap{width:100%}
+/* card grids: columns may not grow past the screen; long repo names and emails wrap */
+.cards.c3,.cards.c4{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cd h3,.cd p{overflow-wrap:anywhere}
+/* phone vertical rhythm: sections size to their content instead of 70% of the screen; page intros keep room for their bottom bar */
+.flow .sec:not(.ban):not(.fbody){min-height:0;padding-top:3.2rem;padding-bottom:3.2rem}
+.flow #s1.sec:not(.ban):not(.fbody):not(.dark){min-height:56vh;min-height:56svh;padding-top:calc(var(--nav-h) + 2rem);padding-bottom:5rem}
+/* hierarchy: university names sit under the 41px headline, not next to it */
+.ux-s h3{font-size:22px}
+/* footer small print lines up with the 16px gutter; works list entries closer together */
+.rfoot .unof{padding-left:0;padding-right:0}
+.flow .wlist{row-gap:2.2rem}
+:where(img[width][height]){height:auto} /* size attributes reserve space but never stretch an image */
+/* phone: more vertical room in the about-page lists (Know the major / places you can be / finish the major) */
+.gpw-plain{row-gap:3.6rem}
+.gpw-plain .gp h2,.gpw-plain .sec .gp h2{margin-top:0}
+.gpw-plain .gp .gps{margin-top:.4rem}
+.gpw-plain .gpc{margin:1.3rem 0 1.4rem}
+.gpw-plain .gpc li{padding:.95rem 0;gap:.8rem}
+.gpw-plain .gpc li div>span{display:block;margin-bottom:.15rem}
+/* life "Getting here": three transport cards reuse the gallery dot-matrix card; the vehicles roll and the boat bobs */
+.gal3.gal3-3{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:1.6rem;align-self:stretch;text-align:left}
+.gp-c .sl{fill:none;stroke:#1a1a1a;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.tp .gp-c:hover{background:none}
+.tp-ride{animation:tpride 2.4s ease-in-out infinite}
+@keyframes tpride{0%,100%{transform:translateX(-4px)}50%{transform:translateX(4px)}}
+.tp-bob{transform-box:fill-box;transform-origin:50% 100%;animation:tpbob 3s ease-in-out infinite}
+@keyframes tpbob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-4px) rotate(1deg)}}
+@media(prefers-reduced-motion:reduce){.tp-ride,.tp-bob{animation:none}}
+@media(max-width:600px){.gal3.gal3-3{grid-template-columns:1fr}}

@@ -1554,3 +1554,13 @@ body{animation:eaiload .45s ease both}
 @keyframes gproll{to{transform:translateX(-140px)}}
 @media(max-width:900px){.gal3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.gp-up,.gp-sh,.gp-mv,.gp-roll{animation:none}}
+:where(img[width][height]){height:auto} /* size attributes reserve space but never stretch an image */
+/* life "Getting here": three transport cards reuse the gallery dot-matrix card; the vehicles roll and the boat bobs */
+.gal3.gal3-3{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:1.6rem;align-self:stretch;text-align:left}
+.gp-c .sl{fill:none;stroke:#1a1a1a;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.tp .gp-c:hover{background:none}
+.tp-ride{animation:tpride 2.4s ease-in-out infinite}
+@keyframes tpride{0%,100%{transform:translateX(-4px)}50%{transform:translateX(4px)}}
+.tp-bob{transform-box:fill-box;transform-origin:50% 100%;animation:tpbob 3s ease-in-out infinite}
+@keyframes tpbob{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-4px) rotate(1deg)}}
+@media(prefers-reduced-motion:reduce){.tp-ride,.tp-bob{animation:none}}

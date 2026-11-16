@@ -184,17 +184,19 @@
       SUB=['Basic Programming','Microcontroller','Physics in Robotics','Chatbot','Computer Vision','Microcontroller and AI','Deep Learning','Research'],
       LOSS=[2.314,1.402,0.871,0.522,0.318,0.201,0.133,0.094],ACC=[.12,.48,.71,.82,.89,.93,.95,.97],
       pad=function(s,n){while(s.length<n)s+=' ';return s},
-      head=function(k){return 'epoch '+(k+1)+'/8   '+pad(SUB[k],24)},
-      bar=function(f){var s='[';for(var j=0;j<20;j++)s+=j<f?'#':'.';return s+']'},
-      done=function(k){return head(k)+bar(20)+'   loss '+LOSS[k].toFixed(3)+'   acc '+ACC[k].toFixed(2)},
-      INFO='loading data: 8 subjects, 3 years (M.4 to M.6)',END='saved: eai-09.pt   ready to build.';
+      /* phones get a compact line (about 46 characters) so nothing runs off the screen */
+      NW=matchMedia('(max-width:600px)').matches,N=NW?10:20,
+      head=function(k){return NW?(k+1)+'/8 '+pad(SUB[k],23):'epoch '+(k+1)+'/8   '+pad(SUB[k],24)},
+      bar=function(f){var s='[';for(var j=0;j<N;j++)s+=j<f?'#':'.';return s+']'},
+      done=function(k){return head(k)+bar(N)+(NW?' '+LOSS[k].toFixed(2)+' '+ACC[k].toFixed(2):'   loss '+LOSS[k].toFixed(3)+'   acc '+ACC[k].toFixed(2))},
+      INFO=NW?'data: 8 subjects, 3 years   (loss, acc)':'loading data: 8 subjects, 3 years (M.4 to M.6)',END='saved: eai-09.pt   ready to build.';
   var out=[],cur=document.createElement('span');cur.className='cr';
   function show(extra){el.textContent=out.concat(extra==null?[]:[extra]).join('\n');el.appendChild(cur)}
   if(matchMedia('(prefers-reduced-motion:reduce)').matches){el.textContent=[CMD,INFO,''].concat(SUB.map(function(s,k){return done(k)}),['',END]).join('\n');return}
   function typeCmd(i){show(CMD.slice(0,i));if(i<CMD.length)return setTimeout(typeCmd,40,i+1);out.push(CMD);setTimeout(function(){out.push(INFO,'');show();setTimeout(epoch,500,0,0)},450)}
   function epoch(k,f){
     if(k===SUB.length){out.push('',END);return show()}
-    if(f<=20){show(head(k)+bar(f));return setTimeout(epoch,30+Math.random()*40,k,f+1)}
+    if(f<=N){show(head(k)+bar(f));return setTimeout(epoch,30+Math.random()*40,k,f+1)}
     out.push(done(k));show();setTimeout(epoch,160,k+1,0);
   }
   show('$ ');

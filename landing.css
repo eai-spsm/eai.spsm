@@ -100,3 +100,17 @@ html.flow body.lp .sec.lp-model{min-height:0;padding:5rem 0 1rem}
 @media(prefers-reduced-motion:reduce){.lp .lp-mv,.lp .lp-row,.lp .lp-bar,.lp .lp-ok{animation:none}}
 /* opening: statement + training log sit in one centred column, text stays left-aligned */
 .lp #s0 .wrap.ah,.lp #s0p>.wrap{width:min(var(--wd),940px);margin-left:auto;margin-right:auto}
+/* phone */
+@media(max-width:600px){
+  html.flow body.lp .sec.lp-p{min-height:0;padding:2.8rem 0}
+  html.flow body.lp .sec.lp-stats{padding:2.6rem 0 .6rem}
+  html.flow body.lp #s4.sec{padding-top:1.6rem}
+  html.flow body.lp .sec.lp-model{padding-top:3rem}
+  html.flow body.lp .sec.rfoot{margin-top:2rem}
+  .lp .lp-plain{font-size:11px;line-height:1.75;min-height:0;margin:1.4rem 0 1rem;overflow:hidden}
+  .lp .lp-quote{font-size:20px}
+  .lp .lp-sh{font-size:19px;margin-bottom:1.8rem}
+  .lp .lp-num b{font-size:30px}
+  .lp .lp-path .lp-step{padding:1.3rem 1rem 1.1rem}
+  .lp .lp-step svg{margin-top:1rem}
+}
