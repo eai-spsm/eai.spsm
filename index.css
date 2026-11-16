@@ -1532,3 +1532,25 @@ body{animation:eaiload .45s ease both}
 .tapblink{animation:eaiblink .3s ease}
 @keyframes eaiblink{40%{opacity:.35}}
 @media(prefers-reduced-motion:reduce){body{animation:none}.tapblink{animation:none}}
+
+/* gallery "All photos": four joined link cards with dot-matrix drawings (dotted strokes + dot-pattern fills) */
+.gp-defs{position:absolute;width:0;height:0}
+.gal3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--w2);border-radius:14px;overflow:hidden;background:#fff;margin-top:.4rem}
+.gp-c{display:flex;flex-direction:column;gap:.35rem;padding:1.4rem 1.4rem 1.3rem;box-shadow:1px 0 0 var(--w2),0 1px 0 var(--w2);transition:background .25s var(--ease)}
+.gp-c:hover{background:var(--w1)}
+.gp-c svg{display:block;width:100%;height:auto;margin-bottom:.9rem;overflow:hidden}
+.gp-c .ds{fill:none;stroke:#1a1a1a;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:0 4}
+.gp-t{display:flex;align-items:center;gap:.5rem;font-size:14px}
+.gp-t .ic{width:15px;height:15px}
+.gp-t .gp-a{margin-left:auto;width:12px;height:12px}
+.gp-s{font-size:12.5px;color:var(--w5)}
+.gp-up{transform-box:fill-box;animation:gpup 3.6s var(--ease) infinite;animation-delay:calc(var(--i)*.25s)}
+@keyframes gpup{0%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}}
+.gp-sh{transform-box:fill-box;transform-origin:50% 50%;animation:gpsh 3s var(--ease) infinite}
+@keyframes gpsh{0%,80%,100%{transform:none}88%{transform:scale(.25)}}
+.gp-mv{animation:gpmv 1s linear infinite}
+@keyframes gpmv{to{stroke-dashoffset:-8}}
+.gp-roll{animation:gproll 6s linear infinite}
+@keyframes gproll{to{transform:translateX(-140px)}}
+@media(max-width:900px){.gal3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.gp-up,.gp-sh,.gp-mv,.gp-roll{animation:none}}
