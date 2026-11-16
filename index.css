@@ -11,7 +11,7 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 img{display:block;max-width:100%}
 ul{list-style:none}
-a,button{-webkit-tap-highlight-color:transparent}
+*{-webkit-tap-highlight-color:transparent}
 b,h1,h2,h3{font-weight:700}
 .ic{width:15px;height:15px;flex:none;opacity:.65;transition:var(--tr)}
 a:hover>.ic,button:hover>.ic{opacity:1}
@@ -1525,3 +1525,10 @@ html.flow body.sub #s1.sec.dark{height:100vh!important;height:100svh!important;m
 .mf2 .mf-ic a .ic{width:18px;height:18px;opacity:1}
 .mf2 .mf-ic a:hover{background:var(--ink)}.mf2 .mf-ic a:hover .ic{filter:invert(1)}
 .mf2 .mf-ic i{width:1px;height:24px;background:var(--w2);margin:0 .4rem}
+
+/* blink: pages fade in on load; on phones a tapped link or button blinks instead of the grey tap highlight (class added by index.js) */
+body{animation:eaiload .45s ease both}
+@keyframes eaiload{from{opacity:0}}
+.tapblink{animation:eaiblink .3s ease}
+@keyframes eaiblink{40%{opacity:.35}}
+@media(prefers-reduced-motion:reduce){body{animation:none}.tapblink{animation:none}}

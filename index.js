@@ -224,3 +224,13 @@
   /* start from the hash, e.g. index.html#s3 */
   var h=parseInt((location.hash.match(/s(\d)/)||[])[1],10);if(h>1&&h<=secs.length){cur=h-1;track.style.transition='none';document.body.classList.toggle('navdark',secs[h-1].classList.contains('dark'));track.style.transform='translate3d(0,'+(-cur*100)+'%,0)';secs.forEach(function(s,k){s.classList.toggle('on',k===cur)});[].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===cur)});requestAnimationFrame(function(){track.style.transition=''})}
 })();
+
+/* phones: a tapped link, button or menu group blinks once (the grey tap highlight is off in the CSS) */
+(function(){
+  document.addEventListener('pointerdown',function(e){
+    if(e.pointerType!=='touch')return;
+    var el=e.target.closest&&e.target.closest('a,button,summary,label');if(!el)return;
+    el.classList.remove('tapblink');void el.offsetWidth;el.classList.add('tapblink');
+  },{passive:true});
+  document.addEventListener('animationend',function(e){if(e.animationName==='eaiblink')e.target.classList.remove('tapblink')});
+})();

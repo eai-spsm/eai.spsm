@@ -11,7 +11,7 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 img{display:block;max-width:100%}
 ul{list-style:none}
-a,button{-webkit-tap-highlight-color:transparent}
+*{-webkit-tap-highlight-color:transparent}
 b,h1,h2,h3{font-weight:700}
 .ic{width:15px;height:15px;flex:none;opacity:.65}
 .c-navy{--c:var(--navy);--on:#fff}.c-red{--c:var(--red);--on:#fff}.c-yel{--c:var(--yel);--on:var(--ink)}
@@ -1400,3 +1400,10 @@ html.flow body.sub #s1.sec.dark{height:100vh!important;height:100svh!important;m
 .mf2 .mf-big{font-size:26px}
 .mf2 .mf-card{padding:1.1rem}.mf2 .mf-ci{width:56px;height:56px}.mf2 .mf-ci .ic{width:26px;height:26px}
 .mf2 .mf-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.mf2 .mf-nav{justify-self:stretch;width:auto}.mf2 .mf-ci{width:56px;height:56px}.mf2 .mf-ct b{font-size:18px}.mf2 .mf-ct span{font-size:12.5px}
+
+/* blink: pages fade in on load; on phones a tapped link or button blinks instead of the grey tap highlight (class added by index.js) */
+body{animation:eaiload .45s ease both}
+@keyframes eaiload{from{opacity:0}}
+.tapblink{animation:eaiblink .3s ease}
+@keyframes eaiblink{40%{opacity:.35}}
+@media(prefers-reduced-motion:reduce){body{animation:none}.tapblink{animation:none}}
