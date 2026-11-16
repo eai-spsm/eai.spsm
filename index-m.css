@@ -1333,3 +1333,30 @@ html.flow body #s4.sec{padding-bottom:0!important}
 
 .menufull.open .grp:nth-of-type(5){transition-delay:.3s}.menufull.open .grp:nth-of-type(6){transition-delay:.36s}
 html.flow body .sec.blk:has(+.rfoot){padding-bottom:6rem!important}
+
+/* open house: a Catppuccin Mocha editor typing out the event */
+html.flow body.sub #s1.sec.dark{background:#1e1e2e;color:#cdd6f4;min-height:100vh;min-height:100svh;padding:calc(var(--nav-h) + 1.6rem) 0 0;position:relative;display:flex;flex-direction:column;align-items:center}
+.ohw{width:min(var(--wd),980px);margin:0 auto;flex:1;display:flex;flex-direction:column;min-height:0;position:relative}
+.oh{flex:1;min-height:0;height:calc(100vh - var(--nav-h) - 6.2rem);height:calc(100svh - var(--nav-h) - 6.2rem);overflow:hidden;font-family:Consolas,"Cascadia Code","Courier New",Menlo,Monaco,monospace;font-size:clamp(12px,1.25vw,16px);line-height:1.7;color:#cdd6f4}
+.ohc{padding-bottom:3rem}
+.oh .l{display:flex;gap:1.4rem;white-space:pre;border-radius:4px}
+.oh .l.act{background:rgba(205,214,244,.06)}
+.oh .n{flex:0 0 2.6em;text-align:right;color:#6c7086;user-select:none}
+.oh .l.act .n{color:#cdd6f4}
+.oh i{font-style:normal}
+.oh i.m{color:#6c7086;font-style:italic}.oh i.k{color:#cba6f7}.oh i.s{color:#a6e3a1}.oh i.n{color:#fab387}.oh i.v{color:#eba0ac}.oh i.f{color:#89b4fa}.oh i.t{color:#f9e2af}.oh i.y{color:#f9e2af}.oh i.u{color:#fab387}.oh i.o{color:#fab387}.oh i.d{color:#f5c2e7}
+.oc{position:relative;display:inline-block;width:2px;height:1.25em;margin-left:0;vertical-align:-.25em;background:#f5e0dc;animation:ohb 1s steps(1) infinite}
+.oc em{position:absolute;left:0;top:100%;margin-top:2px;padding:1px 6px;border-radius:0 4px 4px 4px;background:#f38ba8;color:#1e1e2e;font-style:normal;font-weight:700;font-size:9px;line-height:1.4}
+@keyframes ohb{50%{opacity:.3}}
+.ohcta{position:absolute;left:0;right:0;bottom:1.2rem;display:flex;justify-content:center;gap:.6rem;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.ohcta.on{opacity:1;transform:none;pointer-events:auto}
+.ohcta .pill{background:#313244;color:#cdd6f4}.ohcta .pill:hover{background:#45475a}.ohcta .pill .ic{filter:invert(1);opacity:1}
+.ohcta .pill.solid{background:#cba6f7;color:#1e1e2e}.ohcta .pill.solid:hover{background:#d8bcfa}.ohcta .pill.solid .ic{filter:none}
+.ohs{width:100%;display:flex;gap:1.6rem;align-items:center;padding:.45rem 1.2rem;background:#181825;color:#a6adc8;font-size:12px}
+.ohs .ohb{background:#cba6f7;color:#1e1e2e;padding:.1rem .6rem;border-radius:4px;font-weight:700}
+.ohs #ohpos{margin-left:auto}
+@media(max-width:600px){.ohw{width:92%}.oh{font-size:11.5px}.oh .l{gap:.8rem}.ohcta{flex-wrap:wrap}.ohs span:nth-child(2),.ohs span:nth-child(4){display:none}}
+html.flow body.sub #s1.sec.dark{height:100vh!important;height:100svh!important;min-height:0!important;overflow:hidden}
+.ohw{min-height:0;overflow:hidden}
+.oh{flex:1 1 0;min-height:0;height:auto!important}
+.ohc{padding-bottom:5rem}

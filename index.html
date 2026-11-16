@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="flow">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Home | EAI</title>
-<meta name="description" content="EAI: Artificial Intelligence Engineering major at Satit Prasarnmit (Secondary), Mathayom 4-6.">
+<title>AI Engineering | EAI</title>
+<meta name="description" content="Artificial Intelligence Engineering at Satit Prasarnmit: three years, 25 students a generation, learning and building with AI.">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preload" href="assets/fonts/lineseedsansth_rg.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="index.css" media="(min-width:601px)">
 <link rel="stylesheet" href="index-m.css" media="(max-width:600px)">
+<link rel="stylesheet" href="landing.css">
 </head>
-<body>
+<body class="sub flow lp">
 
 <header class="nav">
   <div class="wrap">
@@ -73,84 +74,134 @@
 
 <main class="track" id="track">
 
-  <!-- 1 · quote, wide, with the editor plate under it -->
-  <section class="sec c-navy on" id="s1">
-    <div class="wrap col">
-      <p class="qtxt" data-th="<mark>วิศวกรรมซอฟต์แวร์คือศิลปะและทักษะ</mark>ในการส่งมอบ<b>โค้ดและผลิตภัณฑ์คุณภาพระดับโปรดักชัน</b>สู่โลกอย่าง<b>น่าเชื่อถือและปลอดภัย</b> พร้อม<mark>ความสามารถในการกู้คืนจากภัยพิบัติ</mark>"><mark>Software engineering is the art and skill</mark> of releasing <b>production-quality code and products</b> to the world in a <b>reliable and safe manner</b>, with the <mark>ability to recover from disaster</mark>.</p>
-      <div class="fig plate"><div class="stage" data-fig="editor"></div><span class="read" aria-hidden="true"></span></div>
-    </div>
-    <div class="foot"><span class="hint"><img class="ic" src="assets/ph/caret-down.svg" alt=""><span data-th="เลื่อนลงเพื่อไปต่อ">Scroll to continue</span></span><a class="pill solid" href="apply.html"><span data-th="ข้ามไปสมัคร">Skip to apply</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
-  </section>
 
-  <!-- 2 · abstract + keyboard hub -->
-  <section class="sec c-red" id="s2" data-steps="3" data-min="-1">
-    <div class="wrap col">
-      <div class="head">
-        <div>
-          <h2 data-th="วิศวกรรมปัญญาประดิษฐ์ ม.4 ถึง ม.6">AI Engineering, M.4 to M.6.</h2>
-          <p class="lead" data-th="สามปี รุ่นละ 25 คน เรียนรู้และสร้างด้วย AI">Three years, 25 students a generation, learning and building with AI.</p>
-        </div>
-      </div>
-      <div class="wcard w1" data-i="0"><span class="hd"><b class="n">11</b><span data-th="รายการแข่งขัน">contests</span></span><span class="ln"><span>Samsung Solve for Tomorrow</span></span><span class="ln"><span>National Software Contest</span></span><span class="ln"><span>CEDT Hackathon</span></span><span class="ln"><span>AI Builders</span></span><a class="pill" href="works.html"><span data-th="ดูทั้งหมด">See all</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
-      <div class="wcard w2" data-i="1"><span class="hd"><b class="n">122</b><span data-th="ผู้สำเร็จการศึกษาทั้งหมด">graduates in total</span></span><span class="g2"><span class="ln"><span data-th="รุ่น 1">Gen 1</span><b>26</b></span><span class="ln"><span data-th="รุ่น 2">Gen 2</span><b>22</b></span><span class="ln"><span data-th="รุ่น 3">Gen 3</span><b>34</b></span><span class="ln"><span data-th="รุ่น 4">Gen 4</span><b>19</b></span><span class="ln"><span data-th="รุ่น 5">Gen 5</span><b>21</b></span></span><a class="pill" href="alumni.html"><span data-th="ดูทั้งหมด">See all</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
-      <div class="wcard w3" data-i="2"><span class="hd"><b class="n">119</b><span data-th="ไปเรียนต่อที่ไหน">where they go</span></span><span class="ln"><span>KMITL</span><b>34</b></span><span class="ln"><span>CU</span><b>32</b></span><span class="ln"><span>KMUTT</span><b>19</b></span><span class="ln"><span>TU</span><b>14</b></span><span class="ln"><span>KU</span><b>6</b></span><span class="ft" data-th="มีที่เรียนแล้ว 119 จาก 122 คน">119 of 122 placed</span><a class="pill" href="universities.html"><span data-th="ดูทั้งหมด">See all</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
-      <div class="fig kb"><div class="stage" data-fig="keyboard"></div><span class="read" aria-hidden="true"></span></div>
+
+  <!-- 1 · opening: two-line statement, then a plain typed code block -->
+  <section class="sec fbody abh abh-plain on" id="s0">
+    <div class="wrap ah ah-left">
+      <p class="ahlead"><b data-th="ความรู้เท่าทัน AI และการลงมือสร้าง">AI literacy and building.</b><br><span data-th="วิชาเอกของเราเปลี่ยนนักเรียนช่างสงสัยเป็นนวัตกรที่เข้าใจและสร้างด้วย AI ตั้งแต่ ม.4 ถึง ม.6">Our major turns curious students into innovators who build with AI, from M.4 to M.6.</span></p>
     </div>
   </section>
 
-  <!-- 6 · what you learn: pull a sheet from the folder -->
-  <section class="sec c-navy" id="s6" data-steps="8">
-    <div class="wrap two flip">
-      <div class="copy">
-        <h2 data-th="สิ่งที่คุณจะได้เรียนรู้">What you will learn</h2>
-        <p class="hint"><img class="ic" src="assets/ph/caret-down.svg" alt=""><span id="stepN">1 / 8</span><span data-th="เลื่อนเพื่อดึงแผ่นถัดไป">Scroll to pull the next sheet</span></p>
-        <div class="panes" id="panes">
-          <article class="pane on" data-i="0"><div class="hl-ti"><img class="ic" src="assets/ph/code.svg" alt=""><h3 data-th="การเขียนโปรแกรมพื้นฐาน">Basic Programming</h3></div><p class="hl-br" data-th="เรียนเขียนโค้ดไพธอน ตั้งแต่บรรทัดแรกจนถึงแอปเล็กๆ">Learn to code in Python, from your first lines to a small app.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""></span><div><b data-th="แบบฝึกหัดรายสัปดาห์">Weekly exercises</b><span data-th="ฝึกไพธอนตั้งแต่สัปดาห์ที่ 1 ถึง 11 สัปดาห์ละหนึ่งหัวข้อ">Python practice from W01 to W11, one topic a week.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/brackets-curly.svg" alt=""></span><div><b data-th="พื้นฐานไพธอน">Core Python</b><span data-th="ตัวแปร ลูป ฟังก์ชัน และการดีบัก">Variables, loops, functions and debugging.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/terminal-window.svg" alt=""></span><div><b data-th="ข้อสอบ ATM บนเทอร์มินัล">Terminal ATM exam</b><span data-th="สอบปลายภาค: เขียนโปรแกรม ATM ที่ใช้งานได้บนเทอร์มินัล">Final exam: build a working ATM program in the terminal.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/notebook.svg" alt=""></span><div><b data-th="ตารางอ่านหนังสือด้วย Tkinter">Tkinter study planner</b><span data-th="โปรเจกต์ปิดท้าย: แอปบนเดสก์ท็อปที่วางแผนเวลาอ่านหนังสือ">Capstone: a desktop app that plans your study time.</span></div></li></ul></article>
-          <article class="pane" data-i="1"><div class="hl-ti"><img class="ic" src="assets/ph/cpu.svg" alt=""><h3 data-th="ไมโครคอนโทรลเลอร์">Microcontroller</h3></div><p class="hl-br" data-th="ต่อวงจรและเขียนโปรแกรมบอร์ดที่รับรู้และเคลื่อนไหวได้">Wire circuits and program boards that sense and move.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/plug.svg" alt=""></span><div><b data-th="วงจรไฟฟ้าเบื้องต้น">Basic circuits</b><span data-th="กฎของโอห์ม วงจรอนุกรมและขนาน และพื้นฐานเบรดบอร์ด">Ohm's law, series and parallel circuits, breadboard basics.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/cpu.svg" alt=""></span><div><b data-th="Arduino และ GPIO">Arduino and GPIO</b><span data-th="เขียนโปรแกรมบอร์ดให้อ่านอินพุตและควบคุมเอาต์พุต">Program boards to read inputs and control outputs.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/lightning.svg" alt=""></span><div><b data-th="PWM และมอเตอร์">PWM and motors</b><span data-th="หรี่ไฟและขับเซอร์โวด้วย PWM">Dim lights and drive a servo with PWM.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/ruler.svg" alt=""></span><div><b data-th="เซนเซอร์และจอแสดงผล">Sensors and display</b><span data-th="วัดระยะด้วยอัลตราโซนิกและแสดงบนจอ LCD แบบ I2C">Measure distance with ultrasound and show it on an I2C LCD.</span></div></li></ul></article>
-          <article class="pane" data-i="2"><div class="hl-ti"><img class="ic" src="assets/ph/robot.svg" alt=""><h3 data-th="ฟิสิกส์ในหุ่นยนต์">Physics in Robotics</h3></div><p class="hl-br" data-th="สร้างหุ่นยนต์ที่เคลื่อนที่ตามหลักฟิสิกส์">Build a robot that drives and follows the physics.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/robot.svg" alt=""></span><div><b data-th="หุ่นยนต์ ESP32">ESP32 robot</b><span data-th="สร้างหุ่นยนต์ล้อต่างกันที่ควบคุมด้วย ESP32">Build a differential-drive robot controlled by an ESP32.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/cube.svg" alt=""></span><div><b data-th="ออกแบบด้วย CAD">CAD design</b><span data-th="ออกแบบชิ้นส่วนของหุ่นยนต์ใน Onshape">Model the robot's parts in Onshape.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/gear-six.svg" alt=""></span><div><b data-th="โปรโตคอลมอเตอร์">Motor protocol</b><span data-th="ควบคุมมอเตอร์ Dynamixel ผ่านโปรโตคอลของมัน">Control Dynamixel motors over their own protocol.</span></div></li></ul></article>
-          <article class="pane" data-i="3"><div class="hl-ti"><img class="ic" src="assets/ph/chat-circle-dots.svg" alt=""><h3 data-th="แชตบอต">Chatbot</h3></div><p class="hl-br" data-th="สร้างแชตบอต LINE ที่ตอบคำถามได้จริง">Make a LINE chatbot that answers real questions.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/chat-text.svg" alt=""></span><div><b data-th="Dialogflow Intents">Dialogflow intents</b><span data-th="กำหนดสิ่งที่ผู้ใช้ถามและวิธีที่บอตตอบ">Define what users ask and how the bot answers.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/code.svg" alt=""></span><div><b data-th="Apps Script Webhook">Apps Script webhook</b><span data-th="เชื่อมต่อ LINE กับตรรกะของคุณเอง">Connect LINE to your own logic.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/notebook.svg" alt=""></span><div><b data-th="ฐานข้อมูล Sheets">Sheets database</b><span data-th="เก็บและค้นหาคำตอบใน Google Sheets">Store and look up answers in Google Sheets.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/list-checks.svg" alt=""></span><div><b data-th="การ์ด Flex Message">Flex Message cards</b><span data-th="ตอบกลับด้วยการ์ดที่ออกแบบสวยงาม">Reply with rich, designed cards.</span></div></li></ul></article>
-          <article class="pane" data-i="4"><div class="hl-ti"><img class="ic" src="assets/ph/eye.svg" alt=""><h3 data-th="คอมพิวเตอร์วิทัศน์">Computer Vision</h3></div><p class="hl-br" data-th="สอนคอมพิวเตอร์ให้มองเห็นภาพและวิดีโอ">Teach a computer to see images and video.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/camera.svg" alt=""></span><div><b data-th="ประมวลผลภาพ">Image processing</b><span data-th="กรองและแปลงภาพด้วย OpenCV">Filter and transform images with OpenCV.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/hand-pointing.svg" alt=""></span><div><b data-th="ตรวจจับใบหน้าและมือ">Face and hand detection</b><span data-th="หาใบหน้าและมือจากภาพกล้องสด">Find faces and hands in a live camera feed.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/cube-focus.svg" alt=""></span><div><b data-th="ตรวจจับด้วย YOLO">YOLO detection</b><span data-th="ตรวจจับและระบุวัตถุแบบเรียลไทม์">Detect and label objects in real time.</span></div></li></ul></article>
-          <article class="pane" data-i="5"><div class="hl-ti"><img class="ic" src="assets/ph/circuitry.svg" alt=""><h3 data-th="ไมโครคอนโทรลเลอร์และ AI">Microcontroller and AI</h3></div><p class="hl-br" data-th="รัน AI บนบอร์ดเล็กในโลกจริง">Run AI on a small board in the real world.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/cpu.svg" alt=""></span><div><b data-th="ปฏิบัติการ Raspberry Pi">Raspberry Pi labs</b><span data-th="วิชันและ GPIO บนคอมพิวเตอร์บอร์ดเดี่ยว">Vision and GPIO on a single-board computer.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/hand-pointing.svg" alt=""></span><div><b data-th="ติดตามมือ">Hand tracking</b><span data-th="ติดตามมือจากภาพกล้อง">Follow a hand from the camera.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/gear-six.svg" alt=""></span><div><b data-th="ควบคุมเซอร์โว">Servo control</b><span data-th="ขยับเซอร์โวตามสิ่งที่กล้องเห็น">Move a servo based on what the camera sees.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/cube-focus.svg" alt=""></span><div><b data-th="ตรวจจับด้วย YOLOv8">YOLOv8 detection</b><span data-th="รันการตรวจจับวัตถุบนบอร์ด">Run object detection on the board.</span></div></li></ul></article>
-          <article class="pane" data-i="6"><div class="hl-ti"><img class="ic" src="assets/ph/brain.svg" alt=""><h3 data-th="ดีปเลิร์นนิง">Deep Learning</h3></div><p class="hl-br" data-th="ดูว่าโครงข่ายประสาทเทียมเรียนรู้อย่างไร แล้วฝึกของตัวเอง">See how neural networks learn, then train your own.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/brain.svg" alt=""></span><div><b data-th="AI ML และ DL">AI vs ML vs DL</b><span data-th="ทั้งสามต่างกันและเกี่ยวข้องกันอย่างไร">How the three differ and fit together.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/circuitry.svg" alt=""></span><div><b data-th="โครงสร้างโครงข่ายประสาทเทียม">Neural network anatomy</b><span data-th="ชั้น น้ำหนัก และฟังก์ชันกระตุ้น">Layers, weights and activations.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/books.svg" alt=""></span><div><b data-th="ตระกูลของโมเดล">Model families</b><span data-th="CNN RNN Transformer และ LLM และแต่ละแบบใช้ทำอะไร">CNN, RNN, Transformer and LLM, and what each is for.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/chart-line-up.svg" alt=""></span><div><b data-th="ฝึกและประเมินผล">Training and evaluation</b><span data-th="ฝึกโมเดลและวัดว่าทำงานได้ดีเพียงใด">Train a model and measure how well it works.</span></div></li></ul></article>
-          <article class="pane" data-i="7"><div class="hl-ti"><img class="ic" src="assets/ph/flask.svg" alt=""><h3 data-th="งานวิจัย">Research</h3></div><p class="hl-br" data-th="ตั้งคำถาม ทดสอบอย่างเป็นระบบ และเขียนสรุปผล">Ask a question, test it properly and write it up.</p><ul class="hl-rw"><li><span class="hl-ri"><img class="ic" src="assets/ph/magnifying-glass.svg" alt=""></span><div><b data-th="คำถามวิจัย">Research question</b><span data-th="เลือกปัญหาที่น่าศึกษา">Pick a problem worth investigating.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/flask.svg" alt=""></span><div><b data-th="การทดลอง">Experiments</b><span data-th="ออกแบบและทำการทดสอบที่เป็นธรรม">Design and run a fair test.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/chart-line-up.svg" alt=""></span><div><b data-th="การวิเคราะห์">Analysis</b><span data-th="อ่านผลลัพธ์อย่างซื่อตรง">Read your results honestly.</span></div></li><li><span class="hl-ri"><img class="ic" src="assets/ph/flag-checkered.svg" alt=""></span><div><b data-th="โปรเจกต์สุดท้าย">Final project</b><span data-th="ต่อยอดงานวิจัยเป็นโปรเจกต์ที่สมบูรณ์">Turn the research into a finished project.</span></div></li></ul></article>
-
-        </div>
-      </div>
-      <div class="fig"><div class="stage" data-fig="folder"></div><span class="read" aria-hidden="true"></span></div>
-    </div>
+  <section class="sec fbody" id="s0p">
+    <div class="wrap"><pre class="lp-plain" id="lpCode" aria-label="A training log: one epoch per subject, loss falling, accuracy rising"></pre></div>
   </section>
 
-  <!-- 7 · close -->
-  <section class="sec c-red" id="s7">
-    <div class="wrap mid">
-      <h2 class="big" data-th="มาดูผลงานของเรา<br>แล้วมาสมัครเรียน">Come see our work.<br>Then apply.</h2>
-      <p class="lead" data-th="ในยุค AI สิ่งที่คุณสร้างคือสิ่งที่พิสูจน์ว่าโลกต้องการคุณ">In the age of AI, what you build proves why the world needs you.</p>
-      <p class="when"><img class="ic" src="assets/ph/calendar-dots.svg" alt=""><span data-th="Open House 24 ม.ค. 2570">Open House · 24 Jan 2027</span></p>
-      <div class="cta">
-        <a class="pill solid" href="apply.html"><span data-th="วิธีสมัคร">How to apply</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
-        <a class="pill" href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><img class="ic" src="assets/bi/line.svg" alt=""><span data-th="เข้ากลุ่ม LINE โอเพนแชท">Join our LINE Openchat</span></a>
-        <a class="pill" href="about.html"><span data-th="เกี่ยวกับวิชาเอก">About the major</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a>
+  <!-- 3 · numbers -->
+  <section class="sec lp-white lp-stats" id="s3">
+    <div class="wrap lp-sw">
+      <h2 class="lp-sh rv" data-th="สามปีแห่งการเรียนรู้และสร้างสรรค์ด้วย AI">Three years of learning and building with AI</h2>
+      <div class="lp-nums">
+        <div class="lp-num rv"><b data-count="25">25</b><p data-th="นักเรียนต่อรุ่น ตั้งแต่ ม.4 ถึง ม.6">Students per generation, M.4 to M.6</p><a class="pill" href="about.html"><span data-th="เกี่ยวกับวิชาเอก">About the major</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+        <div class="lp-num rv"><b data-count="11">11</b><p data-th="รายการแข่งขัน ตั้งแต่ Samsung Solve for Tomorrow ถึง NSC">Contests, from Samsung Solve for Tomorrow to NSC</p><a class="pill" href="works.html"><span data-th="ดูผลงาน">See contests</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+        <div class="lp-num rv"><b data-count="122">122</b><p data-th="ผู้สำเร็จการศึกษาจากห้ารุ่น">Graduates across five generations</p><a class="pill" href="alumni.html"><span data-th="ดูศิษย์เก่า">See alumni</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
+        <div class="lp-num rv"><b data-count="119">119</b><p data-th="จาก 122 คน ได้ที่เรียนมหาวิทยาลัย">Of 122 placed at university</p><a class="pill" href="universities.html"><span data-th="สถิติมหาวิทยาลัย">University stats</span><img class="ic" src="assets/ph/arrow-up-right.svg" alt=""></a></div>
       </div>
     </div>
   </section>
 
-  <!-- 8 · footer: a brush quote in the middle, the small print at the bottom -->
-  <section class="sec fnew c-navy" id="s8">
-    <div class="wrap fq"><p class="brush" data-th="วิศวกรเปลี่ยนความฝันให้เป็นจริง">Engineers turn dreams into reality.</p></div>
-    <div class="wrap fbot">
-      <p class="ft1" data-th="ช่วยเราพัฒนาเว็บไซต์">Help us update</p>
-      <p class="ft2"><span class="ft2a"><img class="ic" src="assets/ph/code.svg" alt=""><span data-th="&lt;b&gt;ไม่เป็นทางการ&lt;/b&gt; โครงงานของนักเรียนที่กำลังพัฒนาอยู่ ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student project in active development, not an official website of the school or the major.</span></span><i aria-hidden="true">|</i><span data-th="หากต้องการร่วมพัฒนา ส่งอีเมลถึง &lt;a href=&quot;mailto:raphee.rattanamanoonporn@gmail.com&quot;&gt;&lt;img class=&quot;ic&quot; src=&quot;assets/ph/envelope-simple.svg&quot; alt=&quot;&quot;&gt;raphee.rattanamanoonporn@gmail.com&lt;/a&gt; หรือ GitHub &lt;a href=&quot;https://github.com/Ray0737&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img class=&quot;ic&quot; src=&quot;assets/ph/github-logo.svg&quot; alt=&quot;&quot;&gt;Ray0737&lt;/a&gt;">If you wish to collaborate, mail <a href="mailto:raphee.rattanamanoonporn@gmail.com"><img class="ic" src="assets/ph/envelope-simple.svg" alt="">raphee.rattanamanoonporn@gmail.com</a> or GitHub <a href="https://github.com/Ray0737" target="_blank" rel="noopener"><img class="ic" src="assets/ph/github-logo.svg" alt="">Ray0737</a>.</span></p>
-      <p class="ft3"><span data-th="วิศวกรรมปัญญาประดิษฐ์">Artificial Intelligence Engineering</span><i aria-hidden="true">|</i><span data-th="โรงเรียนสาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Satit Prasarnmit Demonstration School (Secondary Division)</span></p>
+  <!-- 4 · what you learn: joined cards, one per subject -->
+  <section class="sec lp-p lp-white lp-line" id="s4">
+    <div class="wrap lp-in">
+      <div class="lp-grid">
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/code.svg" alt=""><h3 data-th="การเขียนโปรแกรมพื้นฐาน">Basic Programming</h3><p data-th="เรียนเขียนโค้ดไพธอน ตั้งแต่บรรทัดแรกจนถึงแอปเล็กๆ">Learn to code in Python, from your first lines to a small app.</p></a>
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/cpu.svg" alt=""><h3 data-th="ไมโครคอนโทรลเลอร์">Microcontroller</h3><p data-th="ต่อวงจรและเขียนโปรแกรมบอร์ดที่รับรู้และเคลื่อนไหวได้">Wire circuits and program boards that sense and move.</p></a>
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/robot.svg" alt=""><h3 data-th="ฟิสิกส์ในหุ่นยนต์">Physics in Robotics</h3><p data-th="สร้างหุ่นยนต์ที่เคลื่อนที่ตามหลักฟิสิกส์">Build a robot that drives and follows the physics.</p></a>
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/chat-circle-dots.svg" alt=""><h3 data-th="แชตบอต">Chatbot</h3><p data-th="สร้างแชตบอต LINE ที่ตอบคำถามได้จริง">Make a LINE chatbot that answers real questions.</p></a>
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/eye.svg" alt=""><h3 data-th="คอมพิวเตอร์วิทัศน์">Computer Vision</h3><p data-th="สอนคอมพิวเตอร์ให้มองเห็นภาพและวิดีโอ">Teach a computer to see images and video.</p></a>
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/circuitry.svg" alt=""><h3 data-th="ไมโครคอนโทรลเลอร์และ AI">Microcontroller and AI</h3><p data-th="รัน AI บนบอร์ดเล็กในโลกจริง">Run AI on a small board in the real world.</p></a>
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/brain.svg" alt=""><h3 data-th="ดีปเลิร์นนิง">Deep Learning</h3><p data-th="ดูว่าโครงข่ายประสาทเทียมเรียนรู้อย่างไร แล้วฝึกของตัวเอง">See how neural networks learn, then train your own.</p></a>
+        <a class="lp-cell rv" href="curriculum.html"><img class="lp-ico" src="assets/ph/flask.svg" alt=""><h3 data-th="งานวิจัย">Research</h3><p data-th="ตั้งคำถาม ทดสอบอย่างเป็นระบบ และเขียนสรุปผล">Ask a question, test it properly and write it up.</p></a>
+      </div>
+      <div class="lp-head lp-foothead rv">
+        <p data-th="แปดวิชา ตั้งแต่บรรทัดแรกของโค้ดจนถึงงานวิจัยของคุณเอง">Eight subjects, from your first line of code to your own research.</p>
+      </div>
     </div>
+  </section>
+
+
+  <!-- 5 · a student, trained like a model: learn, train, test, real world (dot-matrix drawings) -->
+  <section class="sec lp-white lp-model" id="s5">
+    <svg class="lp-defs" aria-hidden="true"><defs><pattern id="lpd" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".95" fill="#1a1a1a"/></pattern></defs></svg>
+    <div class="wrap">
+      <h2 class="lp-sh rv" data-th="เหมือนโมเดล AI: เรียนรู้ ฝึก ทดสอบ แล้วออกสู่โลกจริง">Like a model: learn, train, test, then the real world.</h2>
+      <div class="lp-grid lp-path">
+        <article class="lp-step rv"><span class="lp-sk">01</span><h3 data-th="รับความรู้เข้าไป">Take it all in.</h3><p data-th="ไพธอน วงจร และหุ่นยนต์ เข้ามาก่อน ทีละวิชา ตั้งแต่ ม.4">Python, circuits and robots go in first, one subject at a time, from M.4.</p><svg viewBox="0 0 300 160" aria-hidden="true"><line class="ds" x1="10" y1="12" x2="190" y2="12"/><line class="ds" x1="10" y1="148" x2="190" y2="148"/><circle cx="18" cy="35" r="6" fill="url(#lpd)"/><rect class="lp-row" style="--i:0" x="32" y="28" width="150" height="14" fill="url(#lpd)"/><circle cx="18" cy="65" r="6" fill="url(#lpd)"/><rect class="lp-row" style="--i:1" x="32" y="58" width="110" height="14" fill="url(#lpd)"/><circle cx="18" cy="95" r="6" fill="url(#lpd)"/><rect class="lp-row" style="--i:2" x="32" y="88" width="135" height="14" fill="url(#lpd)"/><circle cx="18" cy="125" r="6" fill="url(#lpd)"/><rect class="lp-row" style="--i:3" x="32" y="118" width="90" height="14" fill="url(#lpd)"/><line class="ds lp-mv" x1="198" y1="80" x2="228" y2="80"/><path class="sl" d="M226 75l6 5-6 5"/><circle class="ds" cx="266" cy="80" r="30"/><circle cx="266" cy="80" r="22" fill="url(#lpd)"/></svg></article>
+        <article class="lp-step rv"><span class="lp-sk">02</span><h3 data-th="ฝึกจนเป็น">Practise until it sticks.</h3><p data-th="แล็บและโปรเจกต์ทุกสัปดาห์ ทุกครั้งที่ลองทำให้ครั้งต่อไปดีขึ้น">Weekly labs and projects. Every attempt makes the next one better.</p><svg viewBox="0 0 300 160" aria-hidden="true"><path class="ds" d="M24 12V140H292"/><rect class="lp-bar" style="--i:0" x="40" y="120" width="17" height="20" fill="url(#lpd)"/><rect class="lp-bar" style="--i:1" x="71" y="106" width="17" height="34" fill="url(#lpd)"/><rect class="lp-bar" style="--i:2" x="102" y="90" width="17" height="50" fill="url(#lpd)"/><rect class="lp-bar" style="--i:3" x="133" y="76" width="17" height="64" fill="url(#lpd)"/><rect class="lp-bar" style="--i:4" x="164" y="62" width="17" height="78" fill="url(#lpd)"/><rect class="lp-bar" style="--i:5" x="195" y="50" width="17" height="90" fill="url(#lpd)"/><rect class="lp-bar" style="--i:6" x="226" y="40" width="17" height="100" fill="url(#lpd)"/><rect class="lp-bar" style="--i:7" x="257" y="32" width="17" height="108" fill="url(#lpd)"/><path class="ds lp-mv" d="M40 26C96 92 150 112 282 122"/></svg></article>
+        <article class="lp-step rv"><span class="lp-sk">03</span><h3 data-th="พิสูจน์ว่าใช้ได้จริง">Prove it works.</h3><p data-th="สอบ แข่งขัน และสาธิตผลงาน เพื่อดูว่าคุณสร้างอะไรได้จริง">Exams, contests and demos check what you can really build.</p><svg viewBox="0 0 300 160" aria-hidden="true"><rect class="ds" x="34" y="22" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:0" x="38" y="26" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="74" y="22" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:1" x="78" y="26" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="114" y="22" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:2" x="118" y="26" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="154" y="22" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:3" x="158" y="26" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="194" y="22" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:4" x="198" y="26" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="234" y="22" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:5" x="238" y="26" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="34" y="64" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:6" x="38" y="68" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="74" y="64" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:7" x="78" y="68" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="114" y="64" width="28" height="28" rx="3"/><rect class="ds" x="154" y="64" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:9" x="158" y="68" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="194" y="64" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:10" x="198" y="68" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="234" y="64" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:11" x="238" y="68" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="34" y="106" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:12" x="38" y="110" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="74" y="106" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:13" x="78" y="110" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="114" y="106" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:14" x="118" y="110" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="154" y="106" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:15" x="158" y="110" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="194" y="106" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:16" x="198" y="110" width="20" height="20" fill="url(#lpd)"/><rect class="ds" x="234" y="106" width="28" height="28" rx="3"/><rect class="lp-ok" style="--i:17" x="238" y="110" width="20" height="20" fill="url(#lpd)"/><path class="sl" d="M122 72l12 12m0-12l-12 12"/></svg></article>
+        <article class="lp-step rv"><span class="lp-sk">04</span><h3 data-th="ออกสู่โลกจริง">Take it to the real world.</h3><p data-th="ผลงานออกจากห้องเรียน สู่การแข่งขัน งาน Open House และมหาวิทยาลัย">Projects leave the classroom: competitions, the open house, then university.</p><svg viewBox="0 0 300 160" aria-hidden="true"><rect class="ds" x="14" y="50" width="72" height="48" rx="4"/><rect x="21" y="57" width="58" height="34" fill="url(#lpd)" opacity=".55"/><line class="ds" x1="6" y1="106" x2="94" y2="106"/><line class="ds lp-mv" x1="102" y1="78" x2="130" y2="78"/><path class="sl" d="M128 73l6 5-6 5"/><rect x="142" y="52" width="40" height="18" rx="2" fill="url(#lpd)"/><rect x="142" y="74" width="40" height="18" rx="2" fill="url(#lpd)"/><rect x="142" y="96" width="40" height="18" rx="2" fill="url(#lpd)"/><path class="ds lp-mv" d="M188 85C222 85 230 40 258 40"/><circle cx="270" cy="40" r="9" fill="url(#lpd)"/><path class="ds lp-mv" d="M188 85C222 85 230 85 258 85"/><circle cx="270" cy="85" r="9" fill="url(#lpd)"/><path class="ds lp-mv" d="M188 85C222 85 230 130 258 130"/><circle cx="270" cy="130" r="9" fill="url(#lpd)"/><line class="ds" x1="10" y1="152" x2="290" y2="152"/></svg></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · quote, centred, last before the footer -->
+  <section class="sec lp-p lp-white" id="s2">
+    <div class="wrap lp-q">
+      <p class="lp-quote rv" data-par=".05" data-th="วิศวกรรมซอฟต์แวร์คือ<u>ศิลปะและทักษะ</u>ในการส่งมอบ<mark>โค้ดและผลิตภัณฑ์คุณภาพระดับโปรดักชัน</mark>สู่โลกอย่าง<mark>น่าเชื่อถือและปลอดภัย</mark> พร้อม<mark>ความสามารถในการกู้คืนจากภัยพิบัติ</mark>">Software engineering is <u>the art and skill</u> of releasing <mark>production-quality code and products</mark> to the world in a <mark>reliable and safe manner</mark>, with the <mark>ability to recover from disaster</mark>.</p>
+    </div>
+  </section>
+
+  <!-- 6 · footer: same as the other pages -->
+  <section class="sec fbody rfoot" id="s6">
+    <div class="wrap sfoot">
+      <div class="sfb">
+        <a class="sfl" href="index.html"><img class="ic" src="assets/logo/eai-mark.svg" alt="">Satitcom@eai</a>
+        <p data-th="วิชาเอกวิศวกรรมปัญญาประดิษฐ์&lt;br&gt;สาธิต มศว ประสานมิตร (ฝ่ายมัธยม)">Artificial Intelligence Engineering<br>Satit Prasarnmit (Secondary)</p>
+      </div>
+      <div class="sfc"><h3 data-th="วิชาเอก">The major</h3><a href="about.html"><span data-th="เกี่ยวกับ">About</span></a><a href="curriculum.html"><span data-th="หลักสูตร">Curriculum</span></a><a href="universities.html"><span data-th="สถิติมหาวิทยาลัย">Universities Stats</span></a><a href="alumni.html"><span data-th="ศิษย์เก่า">Alumni</span></a><a href="faq.html"><span data-th="คำถามที่พบบ่อย">FAQ</span></a></div>
+      <div class="sfc"><h3 data-th="สำรวจ">Explore</h3><a href="works.html"><span data-th="ผลงาน">Accomplishment</span></a><a href="events.html"><span data-th="กิจกรรม">Events</span></a><a href="gallery.html"><span data-th="แกลเลอรี">Gallery</span></a><a href="docs.html"><span data-th="เอกสารประกอบ">Material</span></a><a href="apply.html"><span data-th="สมัครเรียน">Apply</span></a></div>
+      <div class="sfc"><h3 data-th="ติดต่อ">Contact</h3><a href="https://bit.ly/3jFACxV" target="_blank" rel="noopener"><span data-th="LINE Openchat">LINE Openchat</span></a><a href="https://www.instagram.com/e.ai_official/" target="_blank" rel="noopener"><span data-th="Instagram">Instagram</span></a><a href="https://www.facebook.com/eaispsm" target="_blank" rel="noopener"><span data-th="Facebook">Facebook</span></a><a href="https://www.tiktok.com/@e.ai_official" target="_blank" rel="noopener"><span data-th="TikTok">TikTok</span></a><a href="https://github.com/eai-spsm" target="_blank" rel="noopener"><span data-th="GitHub">GitHub</span></a></div>
+    <div class="sfc"><h3 data-th="ผู้พัฒนาเว็บไซต์">Site developer</h3><a href="mailto:raphee.rattanamanoonporn@gmail.com"><span data-th="อีเมล">Email</span></a><a href="https://github.com/Ray0737" target="_blank" rel="noopener"><span>GitHub</span></a></div>
+    </div>
+    <p class="unof" data-th="<b>ไม่เป็นทางการ</b> ผลงานที่นักเรียนสร้างขึ้น ไม่ใช่เว็บไซต์ทางการของโรงเรียนหรือวิชาเอก"><b>Unofficial.</b> A student creation, not an official website of the school or the major.</p>
   </section>
 
 </main>
 
-<script src="hl-kernel.js"></script>
-<script>window.FIGS={};window.hairline=function(f){FIGS[f.name]=f}</script>
-<script src="hl-editor.js"></script>
-<script src="hl-keyboard.js"></script>
-<script src="hl-folder.js"></script>
 <script src="index.js"></script>
+<script>
+/* [data-par] drifts slightly with scroll */
+(function(){
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var par=[].slice.call(document.querySelectorAll('[data-par]')),busy=false;
+  function frame(){
+    busy=false;var H=innerHeight;
+    par.forEach(function(e){
+      var r=e.getBoundingClientRect();
+      if(r.bottom<-200||r.top>H+200)return;
+      e.style.translate='0 '+(-(r.top+r.height/2-H/2)*e.dataset.par).toFixed(1)+'px';
+    });
+  }
+  addEventListener('scroll',function(){if(!busy){busy=true;requestAnimationFrame(frame)}},{passive:true});
+  addEventListener('resize',frame);
+  frame();
+})();
+</script>
+<script>
+/* plain training log: the command types out, then one epoch per subject fills a [####] bar,
+   loss falls and accuracy climbs, then the model is saved. Plain text only, thin blinking caret. */
+(function(){
+  var el=document.getElementById("lpCode");if(!el)return;
+  var CMD='$ python train.py --student eai-09',
+      SUB=['Basic Programming','Microcontroller','Physics in Robotics','Chatbot','Computer Vision','Microcontroller and AI','Deep Learning','Research'],
+      LOSS=[2.314,1.402,0.871,0.522,0.318,0.201,0.133,0.094],ACC=[.12,.48,.71,.82,.89,.93,.95,.97],
+      pad=function(s,n){while(s.length<n)s+=' ';return s},
+      head=function(k){return 'epoch '+(k+1)+'/8   '+pad(SUB[k],24)},
+      bar=function(f){var s='[';for(var j=0;j<20;j++)s+=j<f?'#':'.';return s+']'},
+      done=function(k){return head(k)+bar(20)+'   loss '+LOSS[k].toFixed(3)+'   acc '+ACC[k].toFixed(2)},
+      INFO='loading data: 8 subjects, 3 years (M.4 to M.6)',END='saved: eai-09.pt   ready to build.';
+  var out=[],cur=document.createElement('span');cur.className='cr';
+  function show(extra){el.textContent=out.concat(extra==null?[]:[extra]).join('\n');el.appendChild(cur)}
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){el.textContent=[CMD,INFO,''].concat(SUB.map(function(s,k){return done(k)}),['',END]).join('\n');return}
+  function typeCmd(i){show(CMD.slice(0,i));if(i<CMD.length)return setTimeout(typeCmd,40,i+1);out.push(CMD);setTimeout(function(){out.push(INFO,'');show();setTimeout(epoch,500,0,0)},450)}
+  function epoch(k,f){
+    if(k===SUB.length){out.push('',END);return show()}
+    if(f<=20){show(head(k)+bar(f));return setTimeout(epoch,30+Math.random()*40,k,f+1)}
+    out.push(done(k));show();setTimeout(epoch,160,k+1,0);
+  }
+  show('$ ');
+  new IntersectionObserver(function(es,o){if(es[0].isIntersecting){o.disconnect();setTimeout(typeCmd,300,2)}},{threshold:.3}).observe(el);
+})();
+</script>
 </body>
 </html>
