@@ -24,7 +24,7 @@
   (function(){
     var base=function(h){return (h.split('#')[0].split('?')[0].split('/').pop()||'index.html').replace(/\.html$/,'').replace(/^home$/,'index')};
     var here=base(location.pathname);
-    $('.menufull .grp a').forEach(function(a){if(base(a.getAttribute('href'))===here){a.classList.add('cur');a.setAttribute('aria-current','page')}});
+    $('.menufull .mfl a').forEach(function(a){if(base(a.getAttribute('href'))===here){a.classList.add('cur');a.setAttribute('aria-current','page');var g=a.closest('details');if(g){g.open=true;g.classList.add('cur')}}});
   })();
   function mopen(o){mf.classList.toggle('open',o);document.body.classList.toggle('menuopen',o);mb.setAttribute('aria-expanded',o);var mi=mb.querySelector('.mi');mi.src=o?'assets/bi/plus-lg.svg':'assets/ph/list.svg';mi.style.transform=o?'rotate(45deg)':''}
   mb.onclick=function(e){e.stopPropagation();$('.dd.open').forEach(function(x){x.classList.remove('open')});mopen(!mf.classList.contains('open'))};
@@ -45,7 +45,7 @@
 
 
   /* FAQ: open and close slide, and opening one closes the others */
-  var faqs=$('.faq2 details'),FD=matchMedia('(prefers-reduced-motion:reduce)').matches?0:340,EZ='cubic-bezier(.65,0,.35,1)';
+  var faqs=$('.faq2 details,.mf2 .mf-g'),FD=matchMedia('(prefers-reduced-motion:reduce)').matches?0:340,EZ='cubic-bezier(.65,0,.35,1)';
   faqs.forEach(function(d){if(d.open)d.classList.add('on')});
   function faqTo(d,open){
     if(d._a)d._a.cancel();
@@ -60,7 +60,7 @@
   faqs.forEach(function(d){d.querySelector('summary').addEventListener('click',function(e){
     e.preventDefault();
     var open=!d.classList.contains('on');
-    if(open)faqs.forEach(function(o){if(o!==d&&o.parentNode===d.parentNode&&o.classList.contains('on'))faqTo(o,false)});
+    if(open&&!d.classList.contains('mf-g'))faqs.forEach(function(o){if(o!==d&&o.parentNode===d.parentNode&&o.classList.contains('on'))faqTo(o,false)}); /* menu groups can stay open together */
     faqTo(d,open);
   })});
 

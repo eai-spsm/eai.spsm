@@ -98,3 +98,5 @@ html.flow body.lp .sec.lp-model{min-height:0;padding:5rem 0 1rem}
 .lp .lp-ok{animation:lpok 4.5s steps(1) infinite;animation-delay:calc(var(--i)*.2s)}
 @keyframes lpok{0%{opacity:0}8%,85%{opacity:1}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.lp .lp-mv,.lp .lp-row,.lp .lp-bar,.lp .lp-ok{animation:none}}
+/* opening: statement + training log sit in one centred column, text stays left-aligned */
+.lp #s0 .wrap.ah,.lp #s0p>.wrap{width:min(var(--wd),940px);margin-left:auto;margin-right:auto}
